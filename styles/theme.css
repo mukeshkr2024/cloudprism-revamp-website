@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .background_primary {
+    @apply bg-[#000000];
+  }
+  .background_button {
+    @apply bg-[#02FFB3];
+  }
+
+  .h1-bold {
+    @apply text-white;
+  }
+}
