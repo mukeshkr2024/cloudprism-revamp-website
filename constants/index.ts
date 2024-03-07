@@ -10,7 +10,7 @@ export const navbarLinks: NavbarLinks[] = [
     label: "Services",
   },
   {
-    route: "/blogs",
+    route: "/blog",
     label: "Blogs",
   },
   {

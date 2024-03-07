@@ -6,6 +6,7 @@
   .background_primary {
     @apply bg-[#000000];
   }
+
   .background_button {
     @apply bg-[#02FFB3];
   }
