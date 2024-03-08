@@ -14,4 +14,8 @@
   .h1-bold {
     @apply text-white;
   }
+
+  .h2-semibold {
+    @apply text-5xl font-bold text-white;
+  }
 }

@@ -6,7 +6,7 @@ export default function OurServices() {
   return (
     <section className="flex w-full py-4">
       <div className="flex w-1/3 items-start gap-6 px-4">
-        <h2 className="text-5xl font-semibold text-white">
+        <h2 className="h2-semibold">
           Our <br /> Services
         </h2>
         <Image

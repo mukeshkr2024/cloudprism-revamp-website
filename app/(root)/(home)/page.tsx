@@ -1,7 +1,19 @@
+import { SuccessCard } from "@/components/card/SuccessCard";
+import BlogCard from "@/components/card/blog-card";
+import WhyStandOutCard from "@/components/card/why-stand-out-card";
 import OurServices from "@/components/home/our-services";
 import ProjectsDelivered from "@/components/home/projects-delivered";
+import SalesforcePartnerSlider from "@/components/home/salesforce-partner-slider";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import CustomButton from "@/components/shared/custom-button";
+import {
+  certifiedDevelopers,
+  readOurBlogs,
+  successStory,
+  technologPartners,
+  whyStandOut,
+} from "@/constants";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -39,9 +51,106 @@ export default function Home() {
           <ProjectsDelivered />
         </div>
 
-        <div className="mx-auto mt-14 max-w-7xl border ">
+        <div className="mx-auto mt-14 max-w-7xl  ">
           <OurServices />
         </div>
+
+        <section className="mx-auto mt-24 max-w-6xl ">
+          <h2 className="h2-semibold text-center">
+            Our Customer Success Story
+          </h2>
+
+          <div className="mt-20 flex justify-between">
+            {successStory.map((item) => (
+              <SuccessCard
+                key={item.title}
+                imgUrl={item.imgUrl}
+                title={item.title}
+              />
+            ))}
+          </div>
+        </section>
+
+        {/* Technology partners */}
+        <section className="mx-auto my-8 max-w-3xl">
+          <h2 className="h2-semibold text-center">
+            Our Technological Partners{" "}
+          </h2>
+
+          <div className="my-28 flex justify-between px-16">
+            {technologPartners.map((item) => (
+              <div
+                key={item.title}
+                className="flex flex-col items-center justify-center gap-4"
+              >
+                <Image
+                  src={item.imgUrl}
+                  alt={item.title}
+                  width={120}
+                  height={120}
+                />
+                <p className="text-lg font-normal text-white">{item.title}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* SalesforcePartner Slider  */}
+
+        <section>
+          <SalesforcePartnerSlider />
+        </section>
+
+        {/* Certified Devlopers  */}
+        <section className="mx-auto max-w-6xl ">
+          <h2 className="h2-semibold text-center">Our Certified Developers </h2>
+
+          <div className="mt-24 flex flex-wrap items-center justify-center gap-6 px-4">
+            {certifiedDevelopers.map((item) => (
+              <div key={item.id}>
+                <Image
+                  src={item.imgUrl}
+                  alt={item.imgUrl}
+                  width={120}
+                  height={120}
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Stand out  */}
+        <section className="mx-auto mt-24 max-w-6xl ">
+          <h2 className="h2-semibold text-center">
+            Why Cloud Prism Stands Out
+          </h2>
+
+          <div className="mt-24 flex flex-col gap-4 px-4">
+            {whyStandOut.map((item) => (
+              <WhyStandOutCard
+                key={item.title}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
+          </div>
+        </section>
+
+        <section className="mx-auto mt-28 max-w-7xl ">
+          <h2 className="h2-semibold text-center">Read Our Blogs</h2>
+          <div className="mt-24 flex justify-between px-6">
+            {readOurBlogs.map((item) => (
+              <BlogCard
+                key={item.href}
+                description={item.description}
+                href={item.href}
+                imgUrl={item.imgUrl}
+                readTime={item.read_time}
+                title={item.title}
+              />
+            ))}
+          </div>
+        </section>
 
         {/* Connect to us  */}
         <ConnectToUs />
