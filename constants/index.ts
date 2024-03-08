@@ -1,4 +1,4 @@
-import { FooterLinks, NavbarLinks, OurTeams } from "@/types";
+import { FooterLinks, NavbarLinks, OurTeams, SocialLinks } from "@/types";
 
 export const navbarLinks: NavbarLinks[] = [
   {
@@ -144,5 +144,32 @@ export const usefullLinks: FooterLinks[] = [
   {
     label: "Useful Links",
     route: "/useful-link",
+  },
+  {
+    label: "Useful Links",
+    route: "/useful-link",
+  },
+];
+
+export const socialLinks: SocialLinks[] = [
+  {
+    href: "/",
+    title: "Linkdein",
+    icon: "/assets/icons/linkdein.svg",
+  },
+  {
+    href: "/",
+    title: "Twitter",
+    icon: "/assets/icons/twitter.svg",
+  },
+  {
+    href: "/",
+    title: "Fcaebook",
+    icon: "/assets/icons/facebook.svg",
+  },
+  {
+    href: "/",
+    title: "Instagram",
+    icon: "/assets/icons/instagram.svg",
   },
 ];

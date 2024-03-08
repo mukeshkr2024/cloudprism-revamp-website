@@ -1,5 +1,6 @@
 import OurServices from "@/components/home/our-services";
 import ProjectsDelivered from "@/components/home/projects-delivered";
+import ConnectToUs from "@/components/shared/connect-to-us";
 import CustomButton from "@/components/shared/custom-button";
 
 export default function Home() {
@@ -41,6 +42,9 @@ export default function Home() {
         <div className="mx-auto mt-14 max-w-7xl border ">
           <OurServices />
         </div>
+
+        {/* Connect to us  */}
+        <ConnectToUs />
       </div>
     </div>
   );

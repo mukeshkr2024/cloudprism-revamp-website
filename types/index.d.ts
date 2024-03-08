@@ -18,3 +18,9 @@ export interface FooterLinks {
   route: string;
   label: string;
 }
+
+export interface SocialLinks {
+  href: string;
+  title?: string;
+  icon: string;
+}
