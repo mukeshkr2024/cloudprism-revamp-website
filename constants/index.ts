@@ -328,3 +328,46 @@ export const readOurBlogs = [
     read_time: "2-Minute ",
   },
 ];
+
+export const salesForcePartners = [
+  {
+    id: 1,
+    imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+  {
+    id: 2,
+    imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+  {
+    id: 3,
+    imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+  {
+    id: 4,
+    imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+  {
+    id: 5,
+    imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+  {
+    id: 6,
+    imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+  {
+    id: 7,
+    imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+  {
+    id: 8,
+    imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+  {
+    id: 9,
+    imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+  {
+    id: 10,
+    imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+];

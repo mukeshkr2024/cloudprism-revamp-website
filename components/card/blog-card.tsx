@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import CustomButton from "../shared/custom-button";
 import Link from "next/link";
 
 interface BlogProps {

@@ -71,6 +71,9 @@ export default function Home() {
           </div>
         </section>
 
+        {/* SalesforcePartner Slider  */}
+        <SalesforcePartnerSlider />
+
         {/* Technology partners */}
         <section className="mx-auto my-8 max-w-3xl">
           <h2 className="h2-semibold text-center">
@@ -93,12 +96,6 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </section>
-
-        {/* SalesforcePartner Slider  */}
-
-        <section>
-          <SalesforcePartnerSlider />
         </section>
 
         {/* Certified Devlopers  */}

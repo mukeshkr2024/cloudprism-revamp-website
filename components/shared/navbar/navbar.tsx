@@ -8,9 +8,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-4 mx-auto w-full ">
+    <nav className="fixed top-3 z-50 w-full">
       <div
-        className="flex w-full items-center justify-between rounded-lg px-12 py-2 "
+        className="mx-auto flex max-w-7xl items-center justify-between rounded-lg border px-12 py-2 "
         style={{
           background:
             " linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",

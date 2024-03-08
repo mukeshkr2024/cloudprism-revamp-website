@@ -1,14 +1,9 @@
-import Image from "next/image";
-import React from "react";
-
 interface SuccessCardProps {
   imgUrl: string;
   title: string;
 }
 
 export const SuccessCard = ({ imgUrl, title }: SuccessCardProps) => {
-  console.log(imgUrl);
-
   return (
     <div
       className="h-[420px] w-[260px] rounded-3xl border bg-cover bg-no-repeat p-6"
