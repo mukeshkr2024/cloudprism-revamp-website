@@ -1,8 +1,10 @@
+import OurServices from "@/components/home/our-services";
+import ProjectsDelivered from "@/components/home/projects-delivered";
 import CustomButton from "@/components/shared/custom-button";
 
 export default function Home() {
   return (
-    <main className="background_primary">
+    <div className="background_primary">
       <div>
         {/* Main section  */}
         <div className="flex h-screen items-center justify-center">
@@ -18,8 +20,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex w-full items-center justify-center">
-          <p className="max-w-6xl text-center text-3xl leading-9 text-white">
+        <div className="flex-center w-full">
+          <p className="max-w-6xl text-center text-3xl leading-9 text-[#F5F5F5]">
             Cloudprism a certified digital consulting partner specializing in
             Directing Business Progress via Salesforce implementation and
             consulting services. Promising 100+ Salesforce-certified developers
@@ -30,7 +32,16 @@ export default function Home() {
             for the end-user in their professional and technical services.
           </p>
         </div>
+
+        <div className="flex-center mt-8">
+          {/* TODO  add green gradient */}
+          <ProjectsDelivered />
+        </div>
+
+        <div className="mx-auto mt-14 max-w-7xl border ">
+          <OurServices />
+        </div>
       </div>
-    </main>
+    </div>
   );
 }
