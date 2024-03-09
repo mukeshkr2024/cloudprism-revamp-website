@@ -5,7 +5,8 @@ import OurServices from "@/components/home/our-services";
 import ProjectsDelivered from "@/components/home/projects-delivered";
 import SalesforcePartnerSlider from "@/components/home/salesforce-partner-slider";
 import ConnectToUs from "@/components/shared/connect-to-us";
-import CustomButton from "@/components/shared/custom-button";
+
+import MainSection from "@/components/home/main-section";
 import {
   certifiedDevelopers,
   readOurBlogs,
@@ -17,21 +18,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="background_primary">
-      <div>
+    <div className="background_primary w-full">
+      <div className="w-full">
         {/* Main section  */}
-        <div className="flex h-screen items-center justify-center">
-          <div className="flex max-w-4xl flex-col items-center justify-center gap-6  text-white">
-            <h1 className="text-center text-8xl font-bold">
-              Create Value That Empowers
-            </h1>
-            <p className="text-center text-3xl text-[#C0C0C0]">
-              with the Salesforce Consulting Partner and Salesforce
-              Implementation.
-            </p>
-            <CustomButton text="Let's grow together" className="" href="" />
-          </div>
-        </div>
+        <MainSection />
 
         <div className="flex-center w-full">
           <p className="max-w-6xl text-center text-3xl leading-9 text-[#F5F5F5]">
