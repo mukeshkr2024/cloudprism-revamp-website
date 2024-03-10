@@ -1,5 +1,6 @@
 import Footer from "@/components/shared/footer/footer";
 import Navbar from "@/components/shared/navbar/navbar";
+import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import React from "react";
 
 export default function RootLayout({
@@ -8,10 +9,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="background_primary">
-      <Navbar />
-      <main>{children}</main>
-      <Footer />
-    </div>
+    <ScrollBarProgress>
+      <div className="background_primary">
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </div>
+    </ScrollBarProgress>
   );
 }
