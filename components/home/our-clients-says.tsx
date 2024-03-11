@@ -5,16 +5,16 @@ import { clientSays } from "@/constants";
 export default function OurClientSay() {
   return (
     <div
-      className="w-full  bg-center"
+      className="w-full bg-center"
       style={{
         backgroundImage: "url('/assets/gradients/client-say-gradient.svg')",
       }}
     >
       <div className="flex flex-col gap-y-16 py-12">
-        <h1 className="h2_semibold mt-32 text-center">
+        <h1 className="h2_semibold mt-8 text-center sm:mt-12 md:mt-16 lg:mt-24 xl:mt-32">
           Hear What Our Clients Say
         </h1>
-        <div className="mx-auto mt-8 flex max-w-4xl gap-x-6">
+        <div className="mx-auto flex max-w-4xl gap-x-6 lg:mt-8">
           {clientSays &&
             clientSays.map(({ name, description, profilePic }) => (
               <ClientCard

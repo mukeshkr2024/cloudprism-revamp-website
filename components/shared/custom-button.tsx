@@ -20,10 +20,12 @@ export default function CustomButton({ text, href, className }: ButtonProps) {
     >
       {href ? (
         <Link href={href}>
-          <p className="text-2xl font-semibold text-black">{text}</p>
+          <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+            {text}
+          </p>
         </Link>
       ) : (
-        <p className="text-2xl font-semibold text-black">{text}</p>
+        <p className="font-semibold text-black md:text-2xl">{text}</p>
       )}
     </button>
   );

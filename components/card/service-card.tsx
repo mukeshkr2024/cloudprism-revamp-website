@@ -18,7 +18,7 @@ export default function ServiceCard({
 }: ServiceProps) {
   return (
     <div
-      className="w-full rounded-[19px] border px-14 pb-20 pt-10"
+      className="w-full rounded-[19px] border px-6 py-8 sm:px-8  sm:py-12 md:px-10 md:pb-12 lg:px-12 lg:pb-16 xl:px-14 xl:pb-20"
       style={{
         background:
           "linear-gradient(149.64deg, rgba(25, 25, 25, 0.56) 21.24%, rgba(14, 14, 14, 0.56) 105.43%);",

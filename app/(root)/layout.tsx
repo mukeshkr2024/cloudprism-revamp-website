@@ -13,7 +13,7 @@ export default function RootLayout({
       <div className="background_primary">
         <Navbar />
         <main>{children}</main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </ScrollBarProgress>
   );

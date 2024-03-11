@@ -3,13 +3,13 @@ import React from "react";
 export default function ProjectsDelivered() {
   return (
     <div
-      className="w-full  pt-56  "
+      className="w-full pt-40  xl:pt-56  "
       style={{
         backgroundImage: "url('/assets/gradients/project-gradient.svg')",
         backgroundPosition: "top center",
       }}
     >
-      <div className="mx-auto flex max-w-6xl flex-col gap-y-24 rounded-[36px]  bg-black px-28 py-16">
+      <div className="mx-1.5 flex max-w-6xl flex-col gap-y-24 rounded-[36px] bg-black py-16 sm:mx-10  md:mx-16 xl:mx-auto xl:px-28">
         <div className="flex w-full justify-between">
           <ProjectItem projects="420" description="Projects Delivered" />
           <ProjectItem
@@ -39,8 +39,12 @@ const ProjectItem = ({
 }) => {
   return (
     <div className="flex w-1/2 flex-col items-center justify-center">
-      <span className="text-9xl font-extrabold text-white">{projects}+</span>
-      <p className="text-2xl font-light text-[#D4D4D4]">{description} </p>
+      <span className="text-4xl font-extrabold text-white sm:text-5xl  md:text-6xl lg:text-7xl xl:text-9xl">
+        {projects}+
+      </span>
+      <p className="text-center text-sm font-light text-[#D4D4D4] sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+        {description}{" "}
+      </p>
     </div>
   );
 };

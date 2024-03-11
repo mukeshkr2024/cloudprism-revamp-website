@@ -12,15 +12,18 @@ function MainSection() {
   return (
     <div className="relative flex h-screen w-full items-center justify-center">
       <div className="size-full">
-        {/* <Spline scene="https://prod.spline.design/xboa1Cf0xqy0IBde/scene.splinecode" /> */}
+        <Spline scene="https://prod.spline.design/xboa1Cf0xqy0IBde/scene.splinecode" />
       </div>
 
       <div className="absolute flex max-w-4xl flex-col items-center justify-center gap-6  text-white">
-        <h1 className="text-center text-8xl font-bold">
-          Create Value That Empowers
+        <h1 className="h1_bold">
+          Create Value That <br /> Empowers
         </h1>
-        <p className="text-center text-3xl text-[#C0C0C0]">
-          with the Salesforce Consulting Partner and Salesforce Implementation.
+        <p className="xl::text-3xl px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl ">
+          with the Salesforce Consulting Partner and{" "}
+          <br className="hidden md:block lg:hidden" /> Salesforce{" "}
+          <br className="hidden lg:block" />
+          Implementation.
         </p>
         <CustomButton text="Let's grow together" className="" href="" />
       </div>

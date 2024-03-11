@@ -6,13 +6,13 @@ interface SuccessCardProps {
 export const SuccessCard = ({ imgUrl, title }: SuccessCardProps) => {
   return (
     <div
-      className="h-[420px] w-[260px] rounded-3xl border bg-cover bg-no-repeat p-6"
+      className=" h-[282px] w-[175px] rounded-lg border bg-cover bg-no-repeat p-6 sm:h-[320px] sm:w-[200px] md:h-[420px] md:w-[260px] xl:rounded-3xl"
       style={{
         backgroundImage: `url(${imgUrl})`,
       }}
     >
-      <p className="text-sm text-[#E5E5E5]"> RESEARCH REPORT</p>
-      <h3 className="mt-10 text-xl font-medium text-[#EDEDED]">
+      <p className="text-xs text-[#E5E5E5] md:text-sm"> RESEARCH REPORT</p>
+      <h3 className="mt-10 text-base font-medium text-[#EDEDED] md:text-xl">
         Reinvention in the age of generative AI
       </h3>
     </div>

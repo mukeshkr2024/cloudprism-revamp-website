@@ -78,7 +78,7 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full gap-x-32 py-4 w-max flex-nowrap",
+          " flex min-w-full xl:gap-x-32 gap-x-16 sm:gap-x-20 md:gap-x-24 lg:gap-x-28 py-4 w-max flex-nowrap",
           start && "animate-scroll ",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
@@ -90,6 +90,7 @@ export const InfiniteMovingCards = ({
               alt="Salesforce Partner"
               height={130}
               width={120}
+              className="size-24 md:size-28 xl:size-32"
             />
           </li>
         ))}

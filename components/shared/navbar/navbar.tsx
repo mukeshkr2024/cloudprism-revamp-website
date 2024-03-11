@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-3 z-50 w-full">
       <div
-        className="mx-auto flex max-w-7xl items-center justify-between rounded-lg border px-12 py-2 "
+        className="mx-auto flex max-w-sm items-center justify-between rounded-lg border px-4 py-2 sm:max-w-2xl sm:px-12 md:max-w-4xl lg:max-w-5xl xl:max-w-7xl "
         style={{
           background:
             " linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",

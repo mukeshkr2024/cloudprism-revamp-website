@@ -19,13 +19,13 @@ import OurClientSay from "@/components/home/our-clients-says";
 
 export default function Home() {
   return (
-    <div className="background_primary w-full">
+    <div className="background_primary w-full overflow-hidden">
       <div className="w-full">
         {/* Main section  */}
         <MainSection />
 
         <div className="flex-center w-full">
-          <p className="max-w-6xl text-center text-3xl leading-9 text-[#F5F5F5]">
+          <p className="max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
             Cloudprism a certified digital consulting partner specializing in
             Directing Business Progress via Salesforce implementation and
             consulting services. Promising 100+ Salesforce-certified developers
@@ -46,12 +46,12 @@ export default function Home() {
           <OurServices />
         </div>
 
-        <section className="mx-auto mt-24 max-w-6xl ">
+        <section className="mx-auto mt-6 max-w-6xl sm:mt-10 md:mt-12 lg:mt-16 xl:mt-24 ">
           <h2 className="h2_semibold text-center">
-            Our Customer Success Story
+            Our Customer Success <br className="sm:hidden" /> Story
           </h2>
 
-          <div className="mt-20 flex justify-between">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-2 sm:mt-12 md:mt-16 lg:mt-20">
             {successStory.map((item) => (
               <SuccessCard
                 key={item.title}
@@ -71,7 +71,7 @@ export default function Home() {
         {/* Technology partners */}
         <section className="mx-auto my-8 max-w-3xl">
           <h2 className="h2_semibold text-center">
-            Our Technological Partners{" "}
+            Our Technological <br className="sm:hidden" /> Partners{" "}
           </h2>
 
           <div className="my-28 flex justify-between px-16">
@@ -94,9 +94,11 @@ export default function Home() {
 
         {/* Certified Devlopers  */}
         <section className="mx-auto max-w-6xl ">
-          <h2 className="h2_semibold text-center">Our Certified Developers </h2>
+          <h2 className="h2_semibold text-center">
+            Our Certified <br className="sm:hidden" /> Developers{" "}
+          </h2>
 
-          <div className="mt-24 flex flex-wrap items-center justify-center gap-6 px-4">
+          <div className="mt-12 flex flex-wrap items-center justify-center gap-6 px-4 sm:mt-14 md:mt-16 lg:mt-20 xl:mt-24">
             {certifiedDevelopers.map((item) => (
               <div key={item.id}>
                 <Image
@@ -104,6 +106,7 @@ export default function Home() {
                   alt={item.imgUrl}
                   width={120}
                   height={120}
+                  className="size-20 sm:size-24 md:size-28 xl:size-[120px]"
                 />
               </div>
             ))}
@@ -127,9 +130,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mx-auto mt-28 max-w-7xl ">
+        <section className="mx-auto mt-28 max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl ">
           <h2 className="h2_semibold text-center">Read Our Blogs</h2>
-          <div className="mt-24 flex justify-between px-6">
+          <div className="mt-24 flex flex-wrap  justify-center gap-y-6 px-6  sm:justify-between">
             {readOurBlogs.map((item) => (
               <BlogCard
                 key={item.href}
