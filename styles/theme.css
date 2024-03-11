@@ -11,11 +11,19 @@
     @apply bg-[#02FFB3];
   }
 
-  .h1-bold {
-    @apply text-white;
+  .paragraph_1 {
+    @apply text-center text-3xl text-[#C0C0C0];
   }
 
-  .h2-semibold {
+  .paragraph_2 {
+    @apply text-2xl font-light text-center text-[#F2EFEF];
+  }
+
+  .h1_bold {
+    @apply text-white text-center text-8xl font-bold;
+  }
+
+  .h2_semibold {
     @apply text-5xl font-bold text-white;
   }
 }

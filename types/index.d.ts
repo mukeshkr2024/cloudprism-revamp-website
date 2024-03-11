@@ -2,11 +2,12 @@ export interface NavbarLinks {
   route: string;
   label: string;
 }
-export interface OurTeams {
+export interface OurTeamProps {
   name: string;
   description: string;
   profilePic: string;
   linkdein: string;
+  linkdeinUrl: string;
 }
 
 export interface SucessStory {

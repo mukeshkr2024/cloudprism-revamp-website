@@ -1,4 +1,4 @@
-import { FooterLinks, NavbarLinks, OurTeams, SocialLinks } from "@/types";
+import { FooterLinks, NavbarLinks, OurTeamProps, SocialLinks } from "@/types";
 
 export const navbarLinks: NavbarLinks[] = [
   {
@@ -23,66 +23,76 @@ export const navbarLinks: NavbarLinks[] = [
   },
 ];
 
-export const ourTeams: OurTeams[] = [
+export const ourTeams: OurTeamProps[] = [
   {
     name: "Akash Umang",
     description: "UI/UX Designer",
     profilePic: "/assets/images/team-1.svg",
     linkdein: "https",
+    linkdeinUrl: "/",
   },
   {
     name: "Akash Umang",
     description: "UI/UX Designer",
     profilePic: "/assets/images/team-1.svg",
     linkdein: "https",
+    linkdeinUrl: "/",
   },
   {
     name: "Akash Umang",
     description: "UI/UX Designer",
     profilePic: "/assets/images/team-1.svg",
     linkdein: "https",
+    linkdeinUrl: "/",
   },
   {
     name: "Akash Umang",
     description: "UI/UX Designer",
     profilePic: "/assets/images/team-1.svg",
     linkdein: "https",
+    linkdeinUrl: "/",
   },
   {
     name: "Akash Umang",
     description: "UI/UX Designer",
     profilePic: "/assets/images/team-1.svg",
     linkdein: "https",
+    linkdeinUrl: "/",
   },
   {
     name: "Akash Umang",
     description: "UI/UX Designer",
     profilePic: "/assets/images/team-1.svg",
     linkdein: "https",
+    linkdeinUrl: "/",
   },
   {
     name: "Akash Umang",
     description: "UI/UX Designer",
     profilePic: "/assets/images/team-1.svg",
     linkdein: "https",
+    linkdeinUrl: "/",
   },
   {
     name: "Akash Umang",
     description: "UI/UX Designer",
     profilePic: "/assets/images/team-1.svg",
     linkdein: "https",
+    linkdeinUrl: "/",
   },
   {
     name: "Akash Umang",
     description: "UI/UX Designer",
     profilePic: "/assets/images/team-1.svg",
     linkdein: "https",
+    linkdeinUrl: "/",
   },
   {
     name: "Akash Umang",
     description: "UI/UX Designer",
     profilePic: "/assets/images/team-1.svg",
     linkdein: "https",
+    linkdeinUrl: "/",
   },
 ];
 
@@ -369,5 +379,36 @@ export const salesForcePartners = [
   {
     id: 10,
     imgUrl: "/assets/images/salesforce-partner.svg",
+  },
+];
+
+export const clientSays = [
+  {
+    name: "Akash Umang",
+    description: [
+      {
+        content:
+          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+      },
+      {
+        content:
+          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+      },
+    ],
+    profilePic: "/assets/images/client-1.svg",
+  },
+  {
+    name: "Akash Umang",
+    description: [
+      {
+        content:
+          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+      },
+      {
+        content:
+          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+      },
+    ],
+    profilePic: "/assets/images/client-1.svg",
   },
 ];

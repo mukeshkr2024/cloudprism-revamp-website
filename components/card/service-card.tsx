@@ -5,14 +5,16 @@ interface ServiceProps {
   imgUrl: string;
   title: string;
   description: string;
+  svgUrl: string;
 }
 
-// TODO add gradient effects
+// TODO: add gradient effects
 
 export default function ServiceCard({
   description,
   imgUrl,
   title,
+  svgUrl,
 }: ServiceProps) {
   return (
     <div
@@ -23,7 +25,12 @@ export default function ServiceCard({
       }}
     >
       <div className="flex flex-col gap-4">
-        <div>
+        <div
+          className="h-24 w-32  bg-cover " // TODO: gradient hover effect
+          style={{
+            backgroundImage: `url('${svgUrl}')`,
+          }}
+        >
           <Image src={imgUrl} alt={title} width={50} height={50} />
         </div>
         <h3 className="text-[19px] font-bold text-white">{title}</h3>

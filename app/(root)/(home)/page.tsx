@@ -15,6 +15,7 @@ import {
   whyStandOut,
 } from "@/constants";
 import Image from "next/image";
+import OurClientSay from "@/components/home/our-clients-says";
 
 export default function Home() {
   return (
@@ -36,7 +37,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex-center mt-8">
+        <div className="flex-center">
           {/* TODO  add green gradient */}
           <ProjectsDelivered />
         </div>
@@ -46,7 +47,7 @@ export default function Home() {
         </div>
 
         <section className="mx-auto mt-24 max-w-6xl ">
-          <h2 className="h2-semibold text-center">
+          <h2 className="h2_semibold text-center">
             Our Customer Success Story
           </h2>
 
@@ -64,9 +65,12 @@ export default function Home() {
         {/* SalesforcePartner Slider  */}
         <SalesforcePartnerSlider />
 
+        {/* Our client Says  */}
+        <OurClientSay />
+
         {/* Technology partners */}
         <section className="mx-auto my-8 max-w-3xl">
-          <h2 className="h2-semibold text-center">
+          <h2 className="h2_semibold text-center">
             Our Technological Partners{" "}
           </h2>
 
@@ -90,7 +94,7 @@ export default function Home() {
 
         {/* Certified Devlopers  */}
         <section className="mx-auto max-w-6xl ">
-          <h2 className="h2-semibold text-center">Our Certified Developers </h2>
+          <h2 className="h2_semibold text-center">Our Certified Developers </h2>
 
           <div className="mt-24 flex flex-wrap items-center justify-center gap-6 px-4">
             {certifiedDevelopers.map((item) => (
@@ -108,7 +112,7 @@ export default function Home() {
 
         {/* Stand out  */}
         <section className="mx-auto mt-24 max-w-6xl ">
-          <h2 className="h2-semibold text-center">
+          <h2 className="h2_semibold text-center">
             Why Cloud Prism Stands Out
           </h2>
 
@@ -124,7 +128,7 @@ export default function Home() {
         </section>
 
         <section className="mx-auto mt-28 max-w-7xl ">
-          <h2 className="h2-semibold text-center">Read Our Blogs</h2>
+          <h2 className="h2_semibold text-center">Read Our Blogs</h2>
           <div className="mt-24 flex justify-between px-6">
             {readOurBlogs.map((item) => (
               <BlogCard
