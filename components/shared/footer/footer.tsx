@@ -6,19 +6,19 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className=" mx-auto mt-12 max-w-7xl ">
-      <div className="flex w-full flex-col gap-y-12 pl-16">
+      <div className="flex w-full flex-col gap-y-12 p-4 xl:pl-16">
         <div className=" flex max-w-5xl justify-between">
-          <div className=" flex flex-col justify-between">
+          <div className=" flex flex-col border">
             <div className="flex flex-col gap-y-4">
-              <Link href="/" className="flex">
+              <Link href="/" className="sm:flex ">
                 <Image
                   src="/assets/icons/company-logo.svg"
                   alt="Company-logo"
                   width={80}
                   height={80}
                 />
-                <span className="text-white">
-                  Cloudprism <br /> Solutions
+                <span className="gap-y-0 text-xs text-white sm:text-base">
+                  Cloudprism <br className="" /> Solutions
                 </span>
               </Link>
 
@@ -30,56 +30,66 @@ export default function Footer() {
                       alt={item.title ? item.title : "Social icons"}
                       height={25}
                       width={25}
+                      className="size-5 md:size-6"
                     />
                   </Link>
                 ))}
               </div>
             </div>
-
-            <div className="mt-16">
-              <p className="font-normal text-white">
-                Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
-                Maharashtra 411028, IN
-              </p>
-            </div>
           </div>
 
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col border">
             <div className="flex flex-col gap-y-1.5">
               {footerLinks.map((item) => (
                 <Link key={item.route} href={item.route}>
-                  <p className="font-normal text-white">{item.label}</p>
+                  <p className="text-sm font-normal text-white sm:text-base">
+                    {item.label}
+                  </p>
                 </Link>
               ))}
-            </div>
-            <div className="mt-16">
-              <p className="font-normal text-white">
-                Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
-                Maharashtra 411028, IN
-              </p>
             </div>
           </div>
 
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col  border">
             <div className="flex flex-col gap-y-1.5">
               {usefullLinks.map((item) => (
                 <Link key={item.route} href={item.route}>
-                  <p className="text-white">{item.label}</p>
+                  <p className="text-sm text-white sm:text-base">
+                    {item.label}
+                  </p>
                 </Link>
               ))}
             </div>
-            <div className="mt-16">
-              <p className="font-normal text-white">
-                Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
-                Maharashtra 411028, IN
-              </p>
-            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col justify-between gap-y-4 p-2 md:flex-row">
+          <div className=" border ">
+            <p className="text-sm font-normal text-white sm:text-base">
+              Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
+              Maharashtra 411028, IN
+            </p>
+          </div>
+
+          <div className=" border">
+            <p className="text-sm font-normal text-white sm:text-base">
+              Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
+              Maharashtra 411028, IN
+            </p>
+          </div>
+
+          <div className="border">
+            <p className="text-sm font-normal text-white sm:text-base">
+              Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
+              Maharashtra 411028, IN
+            </p>
           </div>
         </div>
       </div>
-      <div className="mt-16 pb-24">
+
+      <div className="mt-6 pb-24 xl:mt-16">
         <div className="border border-[#2D2D2D]" />
-        <div className="flex gap-16 pl-16 pt-1">
+        <div className="flex flex-wrap gap-x-16 gap-y-4 px-4 pt-1 sm:px-6 md:px-0 xl:pl-16">
           <span className="text-[#636363]">copyright@cloudprism</span>
           <Link href="/privacy">
             <p className="text-[#636363]">Privacy Policy</p>
