@@ -12,7 +12,7 @@ export default function TeamCard({
 }: OurTeamProps) {
   return (
     <div
-      className="relative h-[250px] w-[220px] rounded-lg p-4"
+      className="relative h-[200px] w-[170px] rounded-lg p-4 sm:h-[250px] sm:w-[220px]"
       style={{
         background:
           "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)",
@@ -26,10 +26,16 @@ export default function TeamCard({
           alt="linkdein"
         />
       </Link>
-      <div className="flex size-full flex-col items-center justify-center">
+      <div className="flex size-full flex-col items-center justify-center gap-1.5">
         <Image src={profilePic} alt={name} width={103} height={103} />
-        <h4 className="text-xl font-semibold text-white">{name}</h4>
-        <p className="text-base font-light text-[#C6C6C6]">{description}</p>
+        <div className="flex flex-col gap-1">
+          <h4 className="text-lg font-semibold text-white sm:text-xl">
+            {name}
+          </h4>
+          <p className="text-sm font-light text-[#C6C6C6] sm:text-base">
+            {description}
+          </p>
+        </div>
       </div>
     </div>
   );

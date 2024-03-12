@@ -5,10 +5,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className=" mx-auto mt-12 max-w-7xl ">
+    <footer className=" mx-auto max-w-7xl lg:mt-12 ">
       <div className="flex w-full flex-col gap-y-12 p-4 xl:pl-16">
         <div className=" flex max-w-5xl justify-between">
-          <div className=" flex flex-col border">
+          <div className=" flex flex-col ">
             <div className="flex flex-col gap-y-4">
               <Link href="/" className="sm:flex ">
                 <Image
@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col border">
+          <div className="flex flex-col ">
             <div className="flex flex-col gap-y-1.5">
               {footerLinks.map((item) => (
                 <Link key={item.route} href={item.route}>
@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col  border">
+          <div className="flex flex-col  ">
             <div className="flex flex-col gap-y-1.5">
               {usefullLinks.map((item) => (
                 <Link key={item.route} href={item.route}>
@@ -64,21 +64,21 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col justify-between gap-y-4 p-2 md:flex-row">
-          <div className=" border ">
+          <div className="  ">
             <p className="text-sm font-normal text-white sm:text-base">
               Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
               Maharashtra 411028, IN
             </p>
           </div>
 
-          <div className=" border">
+          <div className=" ">
             <p className="text-sm font-normal text-white sm:text-base">
               Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
               Maharashtra 411028, IN
             </p>
           </div>
 
-          <div className="border">
+          <div className="">
             <p className="text-sm font-normal text-white sm:text-base">
               Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
               Maharashtra 411028, IN

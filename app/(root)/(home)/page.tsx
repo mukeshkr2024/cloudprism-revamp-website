@@ -69,24 +69,26 @@ export default function Home() {
         <OurClientSay />
 
         {/* Technology partners */}
-        <section className="mx-auto my-8 max-w-3xl">
+        <section className="mx-auto my-8 sm:max-w-xl  lg:mt-16  lg:max-w-2xl">
           <h2 className="h2_semibold text-center">
             Our Technological <br className="sm:hidden" /> Partners{" "}
           </h2>
-
-          <div className="my-28 flex justify-between px-16">
+          <div className="my-12 flex justify-between px-6 sm:px-10 lg:my-20 lg:px-14 ">
             {technologPartners.map((item) => (
               <div
                 key={item.title}
-                className="flex flex-col items-center justify-center gap-4"
+                className="flex w-full flex-col items-center justify-center gap-y-2 text-center"
               >
                 <Image
                   src={item.imgUrl}
                   alt={item.title}
-                  width={120}
-                  height={120}
+                  width={70}
+                  height={70}
+                  className=" sm:size-[85px] lg:size-24"
                 />
-                <p className="text-lg font-normal text-white">{item.title}</p>
+                <p className="text-sm font-normal  text-white sm:text-base md:text-lg">
+                  {item.title}
+                </p>
               </div>
             ))}
           </div>
