@@ -10,6 +10,7 @@ export default function AboutPage() {
   return (
     <div className="w-full">
       {/* Scalable Success Section  */}
+      TODO: Add responsiveness
       <section
         className="flex h-screen w-full flex-col items-center justify-center "
         style={{
@@ -25,10 +26,10 @@ export default function AboutPage() {
           <CustomButton text="Let's grow together" className="" href="" />
         </div>
       </section>
-      <div className="mx-auto mb-20 flex max-w-5xl flex-col gap-y-20 ">
+      <div className="mx-auto mb-20 flex max-w-5xl flex-col gap-y-20  ">
         <h2 className="h2_semibold text-center">About us</h2>
         <div className="flex flex-col gap-5">
-          <p className="max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
+          <p className="mx-auto max-w-sm  px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
             <span className="font-bold">
               CloudPrism, a Salesforce Ridge Partner,
             </span>{" "}
@@ -39,7 +40,7 @@ export default function AboutPage() {
             creating value within the community, distinguishing ourselves
             without relying on conventional means of establishing presence.
           </p>
-          <p className="max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
+          <p className="mx-auto max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
             With a team of over 50 certified developers, CloudPrism excels in
             Salesforce-certified consultancy and serves as a Salesforce ISV
             Partner, boasting proficient full-stack expertise. Our technical
@@ -48,7 +49,7 @@ export default function AboutPage() {
             meet your specific timeline and requirements, ensuring optimal
             outcomes for your business success.
           </p>
-          <p className="max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
+          <p className="mx-auto max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
             <span className="font-bold">With CloudPrism by your side </span>,
             you can trust that your Salesforce journey will be guided by
             industry best practices and unparalleled expertise
@@ -64,7 +65,6 @@ export default function AboutPage() {
         svgUrl="/assets/gradients/mission-card-gradient-2.svg"
         className="flex-col-reverse  lg:flex-row"
       />
-
       <MissionCard
         title="Vision"
         description1="CloudPrism strives to be a platinum partner of Salesforce, that will enable us to convert industry of all sizes to cloud by providing them the best SAAS Tools of salesforce deployment and consulting. We aspire to improve consumer experiences, optimize company operations by bringing firm data into the cloud, and reach development prospects by constantly pushing the frontiers of technology and honoring innovations. Together with our clients, we hope to modify sectors and impact the future of business using Salesforce's revolutionary power."
@@ -72,10 +72,8 @@ export default function AboutPage() {
         svgUrl="/assets/gradients/mission-card-gradient.svg"
         className="flex-col-reverse lg:flex-row-reverse"
       />
-
       {/* History-section */}
       <HistorySection />
-
       <div>
         {/* TODO: add a right image  */}
         <Image
@@ -85,9 +83,8 @@ export default function AboutPage() {
           width={1286}
         />
       </div>
-
       {/* Team */}
-      <section className="mx-auto mb-36 flex max-w-7xl flex-col gap-y-28 ">
+      <section className="mx-auto mb-36 flex max-w-7xl flex-col gap-y-16 sm:gap-y-20 md:gap-y-24 lg:gap-y-28 ">
         <h2 className="h2_semibold text-center">Our Team</h2>
 
         <div className="flex flex-wrap justify-center gap-3 sm:gap-6">

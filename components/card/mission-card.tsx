@@ -23,11 +23,15 @@ export default function MissionCard({
       <h1 className="h2_semibold text-center">{title}</h1>
 
       <div className={`flex ${className}`}>
-        <div className="flex flex-1 flex-col gap-4  py-14">
-          <p className="text-lg font-light text-[#F2EFEF]">{description1}</p>
+        <div className="flex flex-1 flex-col gap-4  px-6 py-14 sm:px-10 md:px-16 lg:px-0">
+          <p className="text-center font-light text-[#F2EFEF] sm:text-lg lg:text-start">
+            {description1}
+          </p>
 
           {description2 && (
-            <p className="text-lg font-light text-[#F2EFEF]">{description2}</p>
+            <p className="text-center font-light text-[#F2EFEF] sm:text-lg lg:text-start">
+              {description2}
+            </p>
           )}
         </div>
 
@@ -42,7 +46,7 @@ export default function MissionCard({
             alt={title}
             height={350}
             width={350}
-            className="rounded-b-full"
+            className="size-[260px] rounded-b-full sm:size-[310px] md:size-[330px] lg:size-[350px]"
           />
         </div>
       </div>

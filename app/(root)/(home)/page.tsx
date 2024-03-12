@@ -37,13 +37,13 @@ export default function Home() {
           </p>
         </div>
 
+        <div className="mx-auto mt-14 max-w-7xl  ">
+          <OurServices />
+        </div>
+
         <div className="flex-center">
           {/* TODO  add green gradient */}
           <ProjectsDelivered />
-        </div>
-
-        <div className="mx-auto mt-14 max-w-7xl  ">
-          <OurServices />
         </div>
 
         <section className="mx-auto mt-6 max-w-6xl sm:mt-10 md:mt-12 lg:mt-16 xl:mt-24 ">

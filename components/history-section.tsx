@@ -25,19 +25,21 @@ export default function HistorySection() {
   };
 
   return (
-    <section className="mx-auto flex max-w-7xl flex-col gap-y-16  lg:min-h-[400px]">
-      <h1 className="h2_semibold pt-16 text-center">History</h1>
-      <div className="flex w-full flex-col gap-y-12">
-        <div className="flex justify-between">
-          <h1
-            key={animationKey}
-            className="h2_semibold year-animation pt-16 text-center"
-          >
-            {data?.year}
-          </h1>
-          <div className="flex gap-x-4">
+    <section className="mx-auto max-w-7xl ">
+      <h2 className="h2_semibold pt-8 text-center sm:pt-10 md:pt-12 lg:pt-16">
+        History
+      </h2>
+      <div
+        className="mt-8 flex w-full flex-col gap-y-8   px-4 sm:mt-12 sm:gap-y-10 sm:px-12 md:mt-16 md:gap-y-12 md:px-20
+     lg:px-0 "
+      >
+        <div className="flex size-full items-center justify-between ">
+          <h2 key={animationKey} className="h2_semibold year-animation  ">
+            {data.year}
+          </h2>
+          <div className="flex gap-x-2 sm:gap-x-4">
             <div
-              className="flex h-[50px] w-[125px] cursor-pointer items-center justify-center rounded-[35px]"
+              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] border sm:w-24 md:h-12 md:w-32 "
               style={{
                 background:
                   "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
@@ -47,7 +49,7 @@ export default function HistorySection() {
               <ChevronLeft className="text-[#5C5B5B]" />
             </div>
             <div
-              className="flex h-[50px] w-[125px] cursor-pointer items-center justify-center rounded-[35px]"
+              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] border sm:w-24 md:h-12 md:w-32 "
               style={{
                 background:
                   "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
@@ -58,7 +60,9 @@ export default function HistorySection() {
             </div>
           </div>
         </div>
-        <p className="text-xl font-light text-white">{data?.description}</p>
+        <p className="text-sm font-light text-white sm:text-lg md:text-xl">
+          {data?.description}
+        </p>
       </div>
     </section>
   );

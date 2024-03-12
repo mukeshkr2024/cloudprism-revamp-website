@@ -39,7 +39,7 @@ const ProjectItem = ({
 }) => {
   return (
     <div className="flex w-1/2 flex-col items-center justify-center">
-      <span className="text-4xl font-extrabold text-white sm:text-5xl  md:text-6xl lg:text-7xl xl:text-9xl">
+      <span className="text-4xl font-extrabold text-white sm:text-5xl  md:text-6xl lg:text-8xl ">
         {projects}+
       </span>
       <p className="text-center text-sm font-light text-[#D4D4D4] sm:text-base md:text-lg lg:text-xl xl:text-2xl">
