@@ -12,14 +12,14 @@ export default function LatestBlog() {
 "
           title="How talent leaders can help capitalize on generative AI"
           intro="Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them."
-          slug="/"
+          slug="/blog-2"
         />
         <LatestBlogItem
           bgUrl="/assets/images/blog-1-picture-1.svg
 "
           title="How talent leaders can help capitalize on generative AI"
           intro="Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them."
-          slug="/"
+          slug="/blog-2"
         />
       </div>
     </section>

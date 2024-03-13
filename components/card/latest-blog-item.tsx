@@ -22,7 +22,7 @@ export const LatestBlogItem = ({ slug, bgUrl, title, intro }: Props) => {
 
   return (
     <Link
-      href={`/blogs/${slug}`}
+      href={`/blog/${slug}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className="flex  max-w-sm flex-col gap-2.5 rounded-lg bg-no-repeat p-4 text-white transition-all duration-300 hover:backdrop-blur-xl sm:p-6 md:p-12 lg:max-w-xl "
