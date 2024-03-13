@@ -1,6 +1,10 @@
 export interface NavbarLinks {
   route: string;
   label: string;
+  subItems?: {
+    route: string;
+    label: string;
+  }[];
 }
 export interface OurTeamProps {
   name: string;

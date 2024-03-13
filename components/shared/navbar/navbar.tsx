@@ -5,7 +5,7 @@ import NavItem from "./nav-item";
 import Link from "next/link";
 import { MobileNav } from "./mobile-nav";
 
-// TODO : add border gradient
+// TODO: add border gradient
 
 export default function Navbar() {
   return (
@@ -36,7 +36,12 @@ export default function Navbar() {
 
         <div className="hidden gap-4 md:flex ">
           {navbarLinks.map((item) => (
-            <NavItem key={item.route} href={item.route} label={item.label} />
+            <NavItem
+              key={item.route}
+              href={item.route}
+              label={item.label}
+              subItems={item?.subItems}
+            />
           ))}
         </div>
 

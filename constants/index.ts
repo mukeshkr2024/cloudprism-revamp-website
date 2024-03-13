@@ -4,22 +4,41 @@ export const navbarLinks: NavbarLinks[] = [
   {
     route: "/about",
     label: "About Us",
+    subItems: [
+      {
+        route: "/company",
+        label: "Company",
+      },
+      {
+        route: "/events",
+        label: "Events",
+      },
+    ],
   },
   {
     route: "/services",
     label: "Services",
+    subItems: [],
   },
   {
-    route: "/blogs",
-    label: "Blogs",
+    route: "#",
+    label: "Resources",
+    subItems: [
+      {
+        route: "/blogs",
+        label: "Blogs",
+      },
+      {
+        route: "/case-studies",
+        label: "Case Studies",
+      },
+    ],
   },
-  {
-    route: "/events",
-    label: "Events",
-  },
+
   {
     route: "/carreers",
     label: "Careers",
+    subItems: [],
   },
 ];
 
