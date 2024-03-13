@@ -8,17 +8,17 @@ export default function CaseStudies() {
   return (
     <div className="w-full">
       <section
-        className="flex h-screen  w-full flex-col justify-center "
+        className="flex h-[70vh] w-full flex-col justify-center bg-cover bg-center"
         style={{
           backgroundImage: "url('/assets/images/case-studies-bg.svg')",
         }}
       >
-        <div className="mb-10 flex flex-col gap-y-8  px-24">
-          <p className="text-xl text-white">Case Studies</p>
-          <h2 className="h2_semibold max-w-lg leading-[65.66px]">
-            Our Customer Success Story
+        <div className=" flex flex-col gap-y-4 px-6 text-white lg:px-20">
+          <p className="text-sm sm:text-base lg:text-xl ">Case Studies</p>
+          <h2 className="h2_semibold leading-[40px] sm:leading-[50px] lg:leading-[65px]">
+            Our Customer Success <br /> Story
           </h2>
-          <p className="max-w-2xl text-xl font-normal text-white">
+          <p className="max-w-2xl text-sm sm:text-base md:text-xl">
             Discover exciting stories from our bloggers: From cloud, AI and data
             to the metaverse, this is the place where new ideas come alive.
           </p>

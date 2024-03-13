@@ -22,10 +22,10 @@ export const LatestBlogItem = ({ slug, bgUrl, title, intro }: Props) => {
 
   return (
     <Link
-      href={`/blog/${slug}`}
+      href={`/blogs/${slug}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="flex h-full max-h-[349px] flex-col gap-2.5 rounded-lg bg-no-repeat p-4 text-white transition-all duration-300 hover:backdrop-blur-xl sm:p-6 md:p-12 lg:w-full"
+      className="flex  max-w-sm flex-col gap-2.5 rounded-lg bg-no-repeat p-4 text-white transition-all duration-300 hover:backdrop-blur-xl sm:p-6 md:p-12 lg:max-w-xl "
       style={{
         backgroundImage: `url(${bgUrl})`,
       }}
@@ -41,10 +41,10 @@ export const LatestBlogItem = ({ slug, bgUrl, title, intro }: Props) => {
           }}
         />
       )}
-      <div className="max-w-md pb-4 md:pb-10">
+      <div className="pb-2 md:pb-10">
         <h3 className="sm:text-base">Latest Blog</h3>
         <h2
-          className={`mt-8 text-lg font-bold sm:text-xl md:text-2xl ${
+          className={`mt-4 text-lg font-bold lg:mt-8 lg:text-xl xl:text-2xl ${
             isHovered
               ? "md:scale-105 md:transition-all md:duration-500"
               : "transition-all duration-500"
@@ -53,7 +53,7 @@ export const LatestBlogItem = ({ slug, bgUrl, title, intro }: Props) => {
           {title}
         </h2>
         <p
-          className={`mt-4 text-sm sm:text-base md:text-lg ${
+          className={`mt-4 text-sm lg:text-base xl:text-lg ${
             isHovered
               ? "md:scale-105 md:transition-all md:duration-500"
               : "transition-all duration-500"
@@ -68,6 +68,9 @@ export const LatestBlogItem = ({ slug, bgUrl, title, intro }: Props) => {
               : "bottom-0 opacity-0"
           }`}
         >
+          Read More
+        </p>
+        <p className="mt-2.5 cursor-pointer font-semibold hover:underline md:hidden">
           Read More
         </p>
       </div>

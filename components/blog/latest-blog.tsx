@@ -6,7 +6,7 @@ export default function LatestBlog() {
   return (
     <section className="mx-auto max-w-7xl ">
       <h2 className="h2_semibold text-center">Latest Blogs</h2>
-      <div className="my-16 flex gap-6">
+      <div className="mx-2 my-16 flex flex-wrap justify-center gap-4  lg:gap-6">
         <LatestBlogItem
           bgUrl="/assets/images/blog-1-picture-1.svg
 "
