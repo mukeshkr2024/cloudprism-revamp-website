@@ -42,7 +42,7 @@ export default function Home() {
           <OurServices />
         </div>
 
-        <div className="flex-center">
+        <div className="flex-center ">
           {/* TODO  add green gradient */}
           <ProjectsDelivered />
         </div>
@@ -136,9 +136,9 @@ export default function Home() {
 
         <section className="mx-auto mt-24 max-w-6xl ">
           <h2 className="h2_semibold text-center">
-            Why Cloud Prism Stands Out
+            Why Cloud Prism Stands <br /> Out
           </h2>
-          <div className="mt-20 flex flex-col gap-4 px-4">
+          <div className="mt-12 flex flex-col gap-4 px-4 sm:mt-16 md:mt-20">
             {whyStandOut.map((item) => (
               <AccordingItem
                 key={item.title}

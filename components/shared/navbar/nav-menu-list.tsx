@@ -7,6 +7,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import Link from "next/link";
 
 interface Props {
   label: string;
@@ -25,13 +26,13 @@ export default function NavMenuList({ label, subItems }: Props) {
             <p className="text-[15px] text-[#EBEBEB] ">{label}</p>
           </NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="flex min-w-[120px] flex-col gap-y-4 p-4">
+            <ul className="flex min-w-[120px] flex-col gap-y-2.5 p-4">
               {subItems.map((item) => (
                 <li
                   key={item.label}
                   className="cursor-pointer text-sm hover:underline"
                 >
-                  {item.label}
+                  <Link href={item.route}>{item.label}</Link>
                 </li>
               ))}
             </ul>

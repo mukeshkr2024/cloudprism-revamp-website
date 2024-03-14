@@ -2,11 +2,11 @@ import { FooterLinks, NavbarLinks, OurTeamProps, SocialLinks } from "@/types";
 
 export const navbarLinks: NavbarLinks[] = [
   {
-    route: "/about",
+    route: "#",
     label: "About Us",
     subItems: [
       {
-        route: "/company",
+        route: "/about-us",
         label: "Company",
       },
       {

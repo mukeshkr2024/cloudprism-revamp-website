@@ -9,7 +9,7 @@ export default function ProjectsDelivered() {
         backgroundPosition: "top center",
       }}
     >
-      <div className="mx-1.5 flex max-w-6xl flex-col gap-y-24 rounded-[36px] bg-black py-16 sm:mx-10  md:mx-16 xl:mx-auto xl:px-28">
+      <div className=" mx-1.5 flex max-w-6xl flex-col gap-y-24 rounded-2xl bg-black py-16 sm:mx-10 sm:rounded-[36px]  md:mx-16 xl:mx-auto xl:px-28">
         <div className="flex w-full justify-between">
           <ProjectItem projects="420" description="Projects Delivered" />
           <ProjectItem
