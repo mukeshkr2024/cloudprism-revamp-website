@@ -1,6 +1,6 @@
 import { SuccessCard } from "@/components/card/SuccessCard";
 import BlogCard from "@/components/card/blog-card";
-import WhyStandOutCard from "@/components/card/why-stand-out-card";
+// import WhyStandOutCard from "@/components/card/why-stand-out-card";
 import OurServices from "@/components/home/our-services";
 import ProjectsDelivered from "@/components/home/projects-delivered";
 import SalesforcePartnerSlider from "@/components/home/salesforce-partner-slider";
@@ -16,6 +16,7 @@ import {
 } from "@/constants";
 import Image from "next/image";
 import OurClientSay from "@/components/home/our-clients-says";
+import { AccordingItem } from "@/components/card/according-card";
 
 export default function Home() {
   return (
@@ -115,8 +116,9 @@ export default function Home() {
           </div>
         </section>
 
+        {/* TODO: remove later  */}
         {/* Stand out  */}
-        <section className="mx-auto mt-24 max-w-6xl ">
+        {/* <section className="mx-auto mt-24 max-w-6xl ">
           <h2 className="h2_semibold text-center">
             Why Cloud Prism Stands Out
           </h2>
@@ -124,6 +126,21 @@ export default function Home() {
           <div className="mt-24 flex flex-col gap-4 px-4">
             {whyStandOut.map((item) => (
               <WhyStandOutCard
+                key={item.title}
+                title={item.title}
+                description={item.description}
+              />
+            ))}
+          </div>
+        </section> */}
+
+        <section className="mx-auto mt-24 max-w-6xl ">
+          <h2 className="h2_semibold text-center">
+            Why Cloud Prism Stands Out
+          </h2>
+          <div className="mt-20 flex flex-col gap-4 px-4">
+            {whyStandOut.map((item) => (
+              <AccordingItem
                 key={item.title}
                 title={item.title}
                 description={item.description}
