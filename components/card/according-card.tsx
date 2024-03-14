@@ -22,7 +22,7 @@ export const AccordingItem = ({ description, title }: Props) => {
       }}
     >
       <AccordionItem value="item-1">
-        <AccordionTrigger className="text-start text-base font-semibold text-[#A5A5A5] sm:text-lg  md:text-xl lg:text-2xl ">
+        <AccordionTrigger className="pr-2 text-start text-base font-semibold text-[#A5A5A5]   sm:text-lg md:text-xl lg:text-2xl ">
           {title}
         </AccordionTrigger>
         <AccordionContent className="text-xs text-[#E2E2E2] sm:text-sm md:text-base">

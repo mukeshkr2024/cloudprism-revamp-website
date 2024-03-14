@@ -136,7 +136,7 @@ export const successStory = [
 
 export const footerLinks: FooterLinks[] = [
   {
-    route: "/about",
+    route: "/about-us",
     label: "About",
   },
   {

@@ -1,6 +1,6 @@
 import { SuccessCard } from "@/components/card/SuccessCard";
 import BlogCard from "@/components/card/blog-card";
-// import WhyStandOutCard from "@/components/card/why-stand-out-card";
+import WhyStandOutCard from "@/components/card/why-stand-out-card";
 import OurServices from "@/components/home/our-services";
 import ProjectsDelivered from "@/components/home/projects-delivered";
 import SalesforcePartnerSlider from "@/components/home/salesforce-partner-slider";
@@ -116,35 +116,28 @@ export default function Home() {
           </div>
         </section>
 
-        {/* TODO: remove later  */}
         {/* Stand out  */}
-        {/* <section className="mx-auto mt-24 max-w-6xl ">
-          <h2 className="h2_semibold text-center">
-            Why Cloud Prism Stands Out
-          </h2>
-
-          <div className="mt-24 flex flex-col gap-4 px-4">
-            {whyStandOut.map((item) => (
-              <WhyStandOutCard
-                key={item.title}
-                title={item.title}
-                description={item.description}
-              />
-            ))}
-          </div>
-        </section> */}
-
         <section className="mx-auto mt-24 max-w-6xl ">
           <h2 className="h2_semibold text-center">
-            Why Cloud Prism Stands <br /> Out
+            Why Cloud Prism Stands <br className="sm:hidden" /> Out
           </h2>
           <div className="mt-12 flex flex-col gap-4 px-4 sm:mt-16 md:mt-20">
             {whyStandOut.map((item) => (
-              <AccordingItem
-                key={item.title}
-                title={item.title}
-                description={item.description}
-              />
+              <div key={item.title} className="size-full">
+                <div className=" size-full lg:hidden">
+                  <AccordingItem
+                    title={item.title}
+                    description={item.description}
+                  />
+                </div>
+                <div className="hidden size-full lg:block">
+                  <WhyStandOutCard
+                    key={item.title}
+                    title={item.title}
+                    description={item.description}
+                  />
+                </div>
+              </div>
             ))}
           </div>
         </section>

@@ -14,7 +14,7 @@ export default function RecentBlogCard({ imgUrl, slug, title }: Props) {
         style={{
           backgroundImage: `url('${imgUrl}')`,
         }}
-        className="relative h-40 w-64 rounded-[9px] bg-cover bg-no-repeat"
+        className="relative h-44 w-[320px] rounded-[9px] bg-cover bg-no-repeat lg:h-40 lg:w-64"
       >
         <p className="absolute bottom-4 left-4 text-base font-normal">
           {title}
