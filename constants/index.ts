@@ -430,6 +430,76 @@ export const clientSays = [
     ],
     profilePic: "/assets/images/client-1.svg",
   },
+  {
+    name: "Akash Umang",
+    description: [
+      {
+        content:
+          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+      },
+      {
+        content:
+          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+      },
+    ],
+    profilePic: "/assets/images/client-1.svg",
+  },
+  {
+    name: "Akash Umang",
+    description: [
+      {
+        content:
+          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+      },
+      {
+        content:
+          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+      },
+    ],
+    profilePic: "/assets/images/client-1.svg",
+  },
+  {
+    name: "Akash Umang",
+    description: [
+      {
+        content:
+          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+      },
+      {
+        content:
+          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+      },
+    ],
+    profilePic: "/assets/images/client-1.svg",
+  },
+  {
+    name: "Akash Umang",
+    description: [
+      {
+        content:
+          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+      },
+      {
+        content:
+          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+      },
+    ],
+    profilePic: "/assets/images/client-1.svg",
+  },
+  {
+    name: "Akash Umang",
+    description: [
+      {
+        content:
+          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+      },
+      {
+        content:
+          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+      },
+    ],
+    profilePic: "/assets/images/client-1.svg",
+  },
 ];
 
 export const recentWorks = [

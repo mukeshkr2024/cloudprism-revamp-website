@@ -1,38 +1,46 @@
 import React from "react";
 import ClientCard from "../card/client-card";
 import { clientSays } from "@/constants";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
 
 export default function OurClientSay() {
   return (
     <div
-      className="w-full bg-center"
+      className="flex h-[520px] w-full flex-col justify-center  bg-cover bg-center text-white sm:h-[600px] md:h-[700px] lg:h-[800px]  xl:h-[950px]"
       style={{
         backgroundImage: "url('/assets/gradients/client-say-gradient.svg')",
       }}
     >
-      <div className="flex flex-col gap-y-16 py-12">
-        <h1 className="h2_semibold mt-8 text-center sm:mt-12 md:mt-16 lg:mt-24 xl:mt-32">
+      <div className="mx-auto flex max-w-[310px] flex-col gap-y-10   sm:max-w-md  sm:gap-y-12 md:max-w-2xl  md:gap-y-14 lg:max-w-[850px] lg:gap-y-20 xl:gap-y-24">
+        <h1 className="h2_semibold text-center xl:!text-6xl ">
           Hear What Our Clients Say
         </h1>
-        <div className="mx-auto flex max-w-4xl gap-x-6 lg:mt-8">
-          {clientSays &&
-            clientSays.map(({ name, description, profilePic }) => (
-              <ClientCard
-                key={name}
-                description={description}
-                name={name}
-                profilePic={profilePic}
-              />
-            ))}
-        </div>
-
-        <div
-          style={{
-            background:
-              "linear-gradient(90deg, rgba(127, 127, 127, 0) 0%, rgba(25, 25, 25, 0.47) 50.5%, rgba(127, 127, 127, 0) 100%);",
+        <Carousel
+          opts={{
+            align: "start",
           }}
-          className="mb-10 h-1.5"
-        ></div>
+        >
+          <CarouselContent>
+            {clientSays.map(({ name, description, profilePic }, index) => (
+              <CarouselItem key={name} className="md:basis-1/2 ">
+                <ClientCard
+                  description={description}
+                  name={name}
+                  profilePic={profilePic}
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </div>
     </div>
   );
