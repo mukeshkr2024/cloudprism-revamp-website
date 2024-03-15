@@ -119,18 +119,26 @@ export const successStory = [
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-1.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend. ",
   },
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-2.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend. ",
   },
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-3.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend. ",
   },
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-4.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend. ",
   },
 ];
 

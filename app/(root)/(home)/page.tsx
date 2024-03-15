@@ -52,12 +52,13 @@ export default function Home() {
             Our Customer Success <br className="sm:hidden" /> Story
           </h2>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-2 sm:mt-12 md:mt-16 lg:mt-20">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-2 sm:mt-12 md:mt-16 lg:mt-20 lg:gap-6">
             {successStory.map((item) => (
               <SuccessCard
                 key={item.title}
                 imgUrl={item.imgUrl}
                 title={item.title}
+                description={item.description}
               />
             ))}
           </div>
