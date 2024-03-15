@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import CustomButton from "../shared/custom-button";
 
 interface BlogProps {
   imgUrl: string;
@@ -10,6 +13,11 @@ interface BlogProps {
   readTime: string;
 }
 
+// border: 1px solid;
+
+// border-image-source: linear-gradient(0deg, #171717, #171717),
+// linear-gradient(90deg, rgba(2, 255, 179, 0) 2.62%, #02FFB3 59.68%, rgba(2, 255, 179, 0) 90.09%);
+
 export default function BlogCard({
   imgUrl,
   title,
@@ -17,31 +25,36 @@ export default function BlogCard({
   description,
   readTime,
 }: BlogProps) {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="w-[279px] rounded-[8px]">
+    <div
+      className="w-[279px] rounded-lg "
+      style={{
+        border: "1px solid",
+        borderImage: isHovered
+          ? "linear-gradient(90deg, rgba(2, 255, 179, 0) 2.62%, #02FFB3 59.68%, rgba(2, 255, 179, 0) 90.09%) 1"
+          : " linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 1",
+      }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <Image height={154} width={279} alt={title} src={imgUrl} />
       <div
         style={{
           background:
             "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
         }}
-        className="flex flex-col gap-y-8 px-6 py-12"
+        className="flex flex-col gap-y-8 rounded-lg px-6 py-12"
       >
         <h3 className="text-xl font-bold text-white">{title}</h3>
         <p className="text-sm font-normal text-[#798882] ">{description}</p>
         <div className="flex items-center justify-between">
           <span className="text-sm text-[#798882]">{readTime} Read</span>
-          <button
-            className="background_button rounded-3xl px-5 py-1.5"
-            style={{
-              boxShadow:
-                "0px 1px 2px 0px #3BE88E61, 0px 4px 4px 0px #3BE88E54, 0px 8px 5px 0px #3BE88E30, 0px 14px 6px 0px #3BE88E0F, 0px 23px 6px 0px #3BE88E03",
-            }}
-          >
+          <CustomButton className="rounded-3xl px-5 py-1.5">
             <Link href={href}>
-              <p className="text-sm font-semibold">Read More</p>
+              <p>Read More</p>
             </Link>
-          </button>
+          </CustomButton>
         </div>
       </div>
     </div>

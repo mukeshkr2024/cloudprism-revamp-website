@@ -1,5 +1,7 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 type Props = {
   name: string;
@@ -8,13 +10,21 @@ type Props = {
 };
 
 export default function ClientCard({ description, name, profilePic }: Props) {
+  const [hovered, setHovered] = useState(false);
   return (
     <div
       className="flex h-[210px] w-[310px]  flex-col gap-3 rounded-lg p-5 md:w-[330px] lg:h-[223px] lg:w-[390px]"
       style={{
         background:
-          "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
+          "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)",
+        border: "1.5px solid",
+        borderImage: hovered
+          ? "linear-gradient(90deg, rgba(2, 255, 179, 0.38) 0.67%, rgba(2, 255, 179, 0.0573585) 36.23%, rgba(2, 255, 179, 0) 71.3%, rgba(2, 255, 179, 0.42) 99.46%) 1.5"
+          : "linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 1.5",
+        borderRadius: "8px",
       }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       <div className="flex items-center gap-4">
         <Image

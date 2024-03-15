@@ -307,27 +307,27 @@ export const whyStandOut = [
   {
     title: "SalesForce Implementation- Don't get lost in the sea of CRM,",
     description:
-      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share.Grab the opportunity to restructure your traditional CRM management with the right team of ",
+      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. ",
   },
   {
     title: "SalesForce Implementation- Don't get lost in the sea of CRM,",
     description:
-      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share.Grab the opportunity to restructure your traditional CRM management with the right team of ",
+      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. ",
   },
   {
     title: "SalesForce Implementation- Don't get lost in the sea of CRM,",
     description:
-      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share.Grab the opportunity to restructure your traditional CRM management with the right team of ",
+      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. ",
   },
   {
     title: "SalesForce Implementation- Don't get lost in the sea of CRM,",
     description:
-      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share.Grab the opportunity to restructure your traditional CRM management with the right team of ",
+      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. ",
   },
   {
     title: "SalesForce Implementation- Don't get lost in the sea of CRM,",
     description:
-      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share.Grab the opportunity to restructure your traditional CRM management with the right team of ",
+      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. ",
   },
 ];
 
@@ -514,34 +514,50 @@ export const recentWorks = [
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-1.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend",
   },
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-2.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend",
   },
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-3.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend",
   },
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-4.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend",
   },
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-1.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend",
   },
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-2.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend",
   },
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-3.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend",
   },
   {
     title: "Reinvention in the age of generative AI",
     imgUrl: "/assets/images/success-story-4.svg",
+    description:
+      "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend",
   },
 ];
 

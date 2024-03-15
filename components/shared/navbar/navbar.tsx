@@ -4,6 +4,7 @@ import React from "react";
 import NavItem from "./nav-item";
 import Link from "next/link";
 import { MobileNav } from "./mobile-nav";
+import CustomButton from "../custom-button";
 
 // TODO: add border gradient
 
@@ -15,9 +16,9 @@ export default function Navbar() {
         style={{
           background:
             " linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
-          border: "1px solid",
-          borderImageSource:
-            " linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%);",
+          border: "2px solid",
+          borderImage:
+            "linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 2",
         }}
       >
         <Link href="/" className="flex-center">
@@ -47,17 +48,11 @@ export default function Navbar() {
 
         <MobileNav />
 
-        <button
-          className="background_button hidden rounded-3xl px-5 py-2 md:block"
-          style={{
-            boxShadow:
-              "0px 1px 2px 0px #3BE88E61, 0px 4px 4px 0px #3BE88E54, 0px 8px 5px 0px #3BE88E30, 0px 14px 6px 0px #3BE88E0F, 0px 23px 6px 0px #3BE88E03",
-          }}
-        >
-          <Link href="/contact">
-            <p className="text-base font-bold"> Contact Us</p>
+        <CustomButton className="hidden rounded-3xl px-5 py-2 md:block">
+          <Link href="/conact-us">
+            <p className="text-base font-bold">Contact Us</p>
           </Link>
-        </button>
+        </CustomButton>
       </div>
     </nav>
   );

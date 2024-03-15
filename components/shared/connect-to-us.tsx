@@ -1,5 +1,6 @@
 import React from "react";
 import CustomButton from "./custom-button";
+import Link from "next/link";
 
 export default function ConnectToUs() {
   return (
@@ -15,7 +16,14 @@ export default function ConnectToUs() {
           Our experienced support team will respond to your message within 24
           hours.
         </p>
-        <CustomButton text="Let's grow together" href="/" />
+
+        <CustomButton className="rounded-3xl px-5 py-1.5">
+          <Link href="/">
+            <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+              Let&apos;s grow together
+            </p>
+          </Link>
+        </CustomButton>
       </div>
     </section>
   );

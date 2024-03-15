@@ -1,32 +1,28 @@
-import Link from "next/link";
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 interface ButtonProps {
-  text: string;
-  href?: string;
   className?: string;
+  children: React.ReactNode;
 }
 
-// TODO  add button hover effect
+export default function CustomButton({ children, className }: ButtonProps) {
+  const [isHovered, setIsHovered] = useState(false);
 
-export default function CustomButton({ text, href, className }: ButtonProps) {
   return (
     <button
-      className={`background_button rounded-3xl px-5 py-1.5  ${className}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className={`background_button   ${className}`}
       style={{
-        boxShadow:
-          "0px 1px 2px 0px #3BE88E61, 0px 4px 4px 0px #3BE88E54, 0px 8px 5px 0px #3BE88E30, 0px 14px 6px 0px #3BE88E0F, 0px 23px 6px 0px #3BE88E03",
+        boxShadow: isHovered
+          ? "0px 1px 2px 0px #3BE88E61,0px 4px 4px 0px #3BE88E54 "
+          : "0px 1px 2px 0px #3BE88E61, 0px 4px 4px 0px #3BE88E54, 0px 8px 5px 0px #3BE88E30, 0px 14px 6px 0px #3BE88E0F, 0px 23px 6px 0px #3BE88E03",
+        transition: "box-shadow 0.3s ease;",
       }}
     >
-      {href ? (
-        <Link href={href}>
-          <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-            {text}
-          </p>
-        </Link>
-      ) : (
-        <p className="font-semibold text-black md:text-2xl">{text}</p>
-      )}
+      {children}
     </button>
   );
 }

@@ -3,6 +3,7 @@
 import React from "react";
 import CustomButton from "../shared/custom-button";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
   ssr: false,
@@ -12,7 +13,7 @@ function MainSection() {
   return (
     <div className="relative flex h-screen w-full items-center justify-center">
       <div className="size-full">
-        {/* <Spline scene="https://prod.spline.design/xboa1Cf0xqy0IBde/scene.splinecode" /> */}
+        <Spline scene="https://prod.spline.design/xboa1Cf0xqy0IBde/scene.splinecode" />
       </div>
 
       <div className="absolute flex max-w-4xl flex-col items-center justify-center gap-6  text-white">
@@ -25,7 +26,14 @@ function MainSection() {
           <br className="hidden lg:block" />
           Implementation.
         </p>
-        <CustomButton text="Let's grow together" className="" href="" />
+
+        <CustomButton className="rounded-3xl px-5 py-1.5">
+          <Link href="/">
+            <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+              Let&apos;s grow together
+            </p>
+          </Link>
+        </CustomButton>
       </div>
     </div>
   );
