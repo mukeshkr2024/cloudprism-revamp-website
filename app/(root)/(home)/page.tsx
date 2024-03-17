@@ -25,7 +25,7 @@ export default function Home() {
         {/* Main section  */}
         <MainSection />
 
-        <div className="flex-center w-full">
+        <div className="flex-center mt-8 w-full lg:mt-12">
           <p className="max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
             Cloudprism a certified digital consulting partner specializing in
             Directing Business Progress via Salesforce implementation and

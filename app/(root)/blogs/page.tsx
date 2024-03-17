@@ -1,8 +1,11 @@
+import { latestBlogs } from "@/actions/blog.actions";
 import LatestBlog from "@/components/blog/latest-blog";
 import BlogCard from "@/components/card/blog-card";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import { readBlogs } from "@/constants/blogs-data";
 import React from "react";
+
+const latestblogs = latestBlogs();
 
 export default function BlogPage() {
   return (
@@ -26,7 +29,7 @@ export default function BlogPage() {
       </section>
 
       {/* Latest Posts  */}
-      <LatestBlog />
+      <LatestBlog latestblogs={latestblogs} />
       {/* Read our blog  */}
       <section className="mx-auto  mt-4 max-w-7xl lg:mt-8 ">
         <h2 className="h2_semibold text-center">Read Our Blogs</h2>

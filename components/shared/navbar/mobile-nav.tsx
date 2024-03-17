@@ -27,6 +27,8 @@ export function MobileNav() {
         style={{
           background:
             "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
+          opacity: "100%",
+          backdropFilter: "blur(9px)",
         }}
       >
         <SheetHeader className="flex w-full items-end justify-end">

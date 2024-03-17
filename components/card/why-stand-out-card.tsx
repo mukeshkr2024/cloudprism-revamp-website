@@ -34,7 +34,7 @@ export default function WhyStandOutCard({ description, title }: Props) {
         </p>
       ) : (
         /* Render title by default */
-        <h3 className="text-2xl font-semibold text-[#A5A5A5] transition-transform duration-300 ease-in-out">
+        <h3 className="text-xl font-semibold text-[#A5A5A5] transition-transform duration-300 ease-in-out">
           {title}
         </h3>
       )}

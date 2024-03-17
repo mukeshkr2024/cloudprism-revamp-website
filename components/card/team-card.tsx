@@ -1,7 +1,9 @@
+"use client";
+
 import { OurTeamProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 export default function TeamCard({
   description,
@@ -10,13 +12,21 @@ export default function TeamCard({
   profilePic,
   linkdeinUrl,
 }: OurTeamProps) {
+  const [hovered, setHovered] = useState(false);
   return (
     <div
-      className="relative h-[200px] w-[170px] rounded-lg p-4 sm:h-[250px] sm:w-[220px]"
+      className={`relative h-[200px] w-[170px] rounded-lg p-4 sm:h-[250px] sm:w-[220px]`}
       style={{
-        background:
-          "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)",
+        background: hovered
+          ? "linear-gradient(149.64deg, rgba(25, 25, 25, 0.99) 21.24%, rgba(14, 14, 14, 0.99) 105.43%)"
+          : "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)",
+        borderBottom: "1.5px solid",
+        borderImage: hovered
+          ? "linear-gradient(90deg, rgba(2, 255, 179, 0) 2.62%, #02FFB3 59.68%, rgba(2, 255, 179, 0) 90.09%) 1.5"
+          : "linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 1.5",
       }}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
     >
       <Link href={linkdeinUrl} className="absolute right-4 top-4">
         <Image

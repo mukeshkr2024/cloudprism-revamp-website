@@ -49,7 +49,9 @@ export const SuccessCard = ({
       <div
         className={`absolute bottom-0 right-0 h-2/3 w-full bg-opacity-90 px-6 transition-all duration-500 ${isHovered ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
       >
-        <p className="pt-8 text-sm text-[#A4A4A4]">{description}</p>
+        <p className="mt-10 pt-8 text-sm text-[#A4A4A4]  md:line-clamp-5">
+          {description}
+        </p>
       </div>
 
       <div

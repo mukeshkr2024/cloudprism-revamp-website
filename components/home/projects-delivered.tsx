@@ -3,14 +3,14 @@ import React from "react";
 export default function ProjectsDelivered() {
   return (
     <div
-      className="w-full pt-40  xl:pt-56  "
+      className="mx-1.5 w-full rounded-2xl pt-40 sm:rounded-none xl:pt-56  "
       style={{
         backgroundImage: "url('/assets/gradients/project-gradient.svg')",
         backgroundPosition: "top center",
       }}
     >
       <div
-        className=" mx-1.5 flex max-w-6xl flex-col gap-y-24 rounded-2xl bg-black py-16 sm:mx-10 sm:rounded-[36px]  md:mx-16 xl:mx-auto xl:px-28"
+        className="mb-[-1px] flex max-w-6xl flex-col gap-y-24 rounded-2xl bg-black py-16 sm:mx-10 sm:rounded-[36px]  md:mx-16 xl:mx-auto xl:px-28"
         style={{
           borderTop: "2px solid",
           borderImage:

@@ -13,11 +13,6 @@ interface BlogProps {
   readTime: string;
 }
 
-// border: 1px solid;
-
-// border-image-source: linear-gradient(0deg, #171717, #171717),
-// linear-gradient(90deg, rgba(2, 255, 179, 0) 2.62%, #02FFB3 59.68%, rgba(2, 255, 179, 0) 90.09%);
-
 export default function BlogCard({
   imgUrl,
   title,
@@ -47,10 +42,12 @@ export default function BlogCard({
         className="flex flex-col gap-y-8 rounded-lg px-6 py-12"
       >
         <h3 className="text-xl font-bold text-white">{title}</h3>
-        <p className="text-sm font-normal text-[#798882] ">{description}</p>
+        <p className="line-clamp-3 text-sm font-normal text-[#798882]">
+          {description}
+        </p>
         <div className="flex items-center justify-between">
           <span className="text-sm text-[#798882]">{readTime} Read</span>
-          <CustomButton className="rounded-3xl px-5 py-1.5">
+          <CustomButton className="rounded-3xl px-3 py-1.5">
             <Link href={href}>
               <p>Read More</p>
             </Link>

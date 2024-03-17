@@ -1,15 +1,18 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import CustomButton from "../shared/custom-button";
+import { createSlug } from "@/utils/cn";
 
 type Props = {
-  slug: string;
   bgUrl: string;
   title: string;
   intro: string;
 };
 
-export const LatestBlogItem = ({ slug, bgUrl, title, intro }: Props) => {
+export const LatestBlogItem = ({ bgUrl, title, intro }: Props) => {
+  const slug = createSlug(title);
+
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -21,8 +24,7 @@ export const LatestBlogItem = ({ slug, bgUrl, title, intro }: Props) => {
   };
 
   return (
-    <Link
-      href={`/blog/${slug}`}
+    <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className="flex  max-w-sm flex-col gap-2.5 rounded-lg bg-no-repeat p-4 text-white transition-all duration-300 hover:backdrop-blur-xl sm:p-6 md:p-12 lg:max-w-xl "
@@ -53,7 +55,7 @@ export const LatestBlogItem = ({ slug, bgUrl, title, intro }: Props) => {
           {title}
         </h2>
         <p
-          className={`mt-4 text-sm lg:text-base xl:text-lg ${
+          className={`mt-4 line-clamp-2 text-sm lg:text-[15px]  ${
             isHovered
               ? "md:scale-105 md:transition-all md:duration-500"
               : "transition-all duration-500"
@@ -61,19 +63,29 @@ export const LatestBlogItem = ({ slug, bgUrl, title, intro }: Props) => {
         >
           {intro}
         </p>
-        <p
-          className={`absolute bottom-0 left-24 mt-4 hidden -translate-x-1/2 text-xl font-semibold underline md:flex ${
+        <div
+          className={`absolute bottom-0 right-0 mt-4 hidden -translate-x-1/2 md:flex ${
             isHovered
               ? "duration-[600ms] bottom-[40px] opacity-100 transition-all"
               : "bottom-0 opacity-0"
           }`}
         >
-          Read More
-        </p>
-        <p className="mt-2.5 cursor-pointer font-semibold hover:underline md:hidden">
-          Read More
-        </p>
+          <CustomButton className="rounded-3xl px-3 py-1.5">
+            <Link href={`/blog/${slug}`}>
+              <p className="text-sm  font-semibold text-black lg:text-[16px]">
+                Read More
+              </p>
+            </Link>
+          </CustomButton>
+        </div>
+        <CustomButton className="rounded-3xl px-3 py-1.5 md:hidden">
+          <Link href={`/blog/${slug}`}>
+            <p className="text-sm  font-semibold text-black lg:text-[16px]">
+              Read More
+            </p>
+          </Link>
+        </CustomButton>
       </div>
-    </Link>
+    </div>
   );
 };

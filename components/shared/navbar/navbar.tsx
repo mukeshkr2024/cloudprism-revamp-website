@@ -6,8 +6,6 @@ import Link from "next/link";
 import { MobileNav } from "./mobile-nav";
 import CustomButton from "../custom-button";
 
-// TODO: add border gradient
-
 export default function Navbar() {
   return (
     <nav className="fixed top-3 z-50 w-full">
@@ -19,6 +17,7 @@ export default function Navbar() {
           border: "2px solid",
           borderImage:
             "linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 2",
+          backdropFilter: "blur(9.2px)",
         }}
       >
         <Link href="/" className="flex-center">

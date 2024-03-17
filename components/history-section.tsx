@@ -24,6 +24,8 @@ export default function HistorySection() {
     setAnimationKey((prevKey) => prevKey + 1);
   };
 
+  // TODO:
+
   return (
     <section className="mx-auto max-w-7xl ">
       <h2 className="h2_semibold pt-8 text-center sm:pt-10 md:pt-12 lg:pt-16">
@@ -39,28 +41,56 @@ export default function HistorySection() {
           </h2>
           <div className="flex gap-x-2 sm:gap-x-4">
             <div
-              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] border sm:w-24 md:h-12 md:w-32 "
+              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] sm:w-24 md:h-14 md:w-32"
               style={{
                 background:
                   "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
+                border: "1.5px solid",
+                borderImage:
+                  "linear-gradient(326.06deg, rgba(46, 46, 46, 0.79) -110.75%, rgba(255, 255, 255, 0) 54.98%) 1.5",
+                transition: "background-color 0.3s",
               }}
               onClick={handlePrev}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor =
+                  "rgba(25, 25, 25, 0.90)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor =
+                  "rgba(25, 25, 25, 0.77)";
+              }}
             >
-              <ChevronLeft className="text-[#5C5B5B]" />
+              <ChevronLeft className="text-[#5C5B5B] hover:font-bold hover:text-[#7d7b7b]" />
             </div>
+
             <div
-              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] border sm:w-24 md:h-12 md:w-32 "
+              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] sm:w-24 md:h-14 md:w-32"
               style={{
                 background:
                   "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
+                border: "1.5px solid",
+                borderImage:
+                  "linear-gradient(326.06deg, rgba(46, 46, 46, 0.79) -110.75%, rgba(255, 255, 255, 0) 54.98%) 1.5",
+                transition: "background-color 0.3s",
               }}
               onClick={handleNext}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor =
+                  "rgba(25, 25, 25, 0.90)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor =
+                  "rgba(25, 25, 25, 0.77)";
+              }}
             >
-              <ChevronRight className="text-[#5C5B5B]" />
+              <ChevronRight className="text-[#5C5B5B] hover:font-bold hover:text-[#7d7b7b] " />
             </div>
           </div>
         </div>
-        <p className="text-sm font-light text-white sm:text-lg md:text-xl">
+        <p
+          key={animationKey}
+          className="year-animation text-sm font-light text-white sm:text-lg md:text-xl"
+        >
           {data?.description}
         </p>
       </div>
