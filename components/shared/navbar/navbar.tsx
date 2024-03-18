@@ -17,7 +17,7 @@ export default function Navbar() {
           border: "2px solid",
           borderImage:
             "linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 2",
-          backdropFilter: "blur(9.2px)",
+          backdropFilter: "blur(60px)",
         }}
       >
         <Link href="/" className="flex-center">
