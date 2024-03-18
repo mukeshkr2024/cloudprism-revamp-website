@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <div className="w-full">
       {/* Scalable Success Section  */}
-      TODO: Add responsiveness
+      {/* TODO: Add responsiveness */}
       <section
         className="flex h-screen w-full flex-col items-center justify-center "
         style={{
