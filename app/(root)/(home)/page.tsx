@@ -148,9 +148,8 @@ export default function Home() {
           <div className="mt-24 flex flex-wrap  justify-center gap-y-6 px-6  sm:justify-between">
             {readOurBlogs.map((item) => (
               <BlogCard
-                key={item.href}
+                key={item.title}
                 description={item.description}
-                href={item.href}
                 imgUrl={item.imgUrl}
                 readTime={item.read_time}
                 title={item.title}

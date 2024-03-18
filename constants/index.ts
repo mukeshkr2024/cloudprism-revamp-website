@@ -18,7 +18,16 @@ export const navbarLinks: NavbarLinks[] = [
   {
     route: "/services",
     label: "Services",
-    subItems: [],
+    subItems: [
+      {
+        route: "/salesforce-services",
+        label: "Salesforce ",
+      },
+      {
+        route: "/full-stack",
+        label: "Full Stack",
+      },
+    ],
   },
   {
     route: "#",
@@ -34,9 +43,8 @@ export const navbarLinks: NavbarLinks[] = [
       },
     ],
   },
-
   {
-    route: "/carreers",
+    route: "/careers",
     label: "Careers",
     subItems: [],
   },
@@ -147,6 +155,7 @@ export const footerLinks: FooterLinks[] = [
     route: "/about-us",
     label: "About",
   },
+  // TODO:  add salesforce and fullstack
   {
     route: "/services",
     label: "Services",
@@ -335,7 +344,6 @@ export const readOurBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
@@ -343,7 +351,6 @@ export const readOurBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
@@ -351,7 +358,6 @@ export const readOurBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
@@ -359,7 +365,6 @@ export const readOurBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",

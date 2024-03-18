@@ -4,11 +4,11 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 import CustomButton from "../shared/custom-button";
+import { createSlug } from "@/utils/cn";
 
 interface BlogProps {
   imgUrl: string;
   title: string;
-  href: string;
   description: string;
   readTime: string;
 }
@@ -16,11 +16,12 @@ interface BlogProps {
 export default function BlogCard({
   imgUrl,
   title,
-  href,
   description,
   readTime,
 }: BlogProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const slug = createSlug(title);
+
   return (
     <div
       className="w-[279px] rounded-lg "
@@ -48,7 +49,7 @@ export default function BlogCard({
         <div className="flex items-center justify-between">
           <span className="text-sm text-[#798882]">{readTime} Read</span>
           <CustomButton className="rounded-3xl px-3 py-1.5">
-            <Link href={href}>
+            <Link href={`/blog/${slug}`}>
               <p>Read More</p>
             </Link>
           </CustomButton>

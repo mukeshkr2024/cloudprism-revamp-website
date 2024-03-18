@@ -36,9 +36,8 @@ export default function BlogPage() {
         <div className="mt-16 flex flex-wrap justify-center gap-6 sm:mt-20 lg:mt-24">
           {readBlogs.map((blog) => (
             <BlogCard
-              key={blog.href}
+              key={blog.title}
               description={blog.description}
-              href={blog.href}
               imgUrl={blog.imgUrl}
               readTime={blog.read_time}
               title={blog.title}

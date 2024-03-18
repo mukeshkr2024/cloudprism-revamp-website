@@ -24,7 +24,7 @@ export default function AboutPage() {
             Your Salesforce consultant & implementation partner
           </p>
           <CustomButton className="rounded-3xl px-5 py-1.5">
-            <Link href="/">
+            <Link href="/contact-us">
               <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
                 Let&apos;s grow together
               </p>

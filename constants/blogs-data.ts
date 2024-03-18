@@ -2,7 +2,6 @@ export const readBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
@@ -11,7 +10,6 @@ export const readBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
@@ -20,7 +18,6 @@ export const readBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
@@ -29,7 +26,6 @@ export const readBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
@@ -39,7 +35,6 @@ export const readBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
@@ -48,7 +43,6 @@ export const readBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
@@ -57,7 +51,6 @@ export const readBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
@@ -66,7 +59,6 @@ export const readBlogs = [
   {
     imgUrl: "/assets/images/blog-1.svg",
     title: "Is Salesforce Outdated",
-    href: "/",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",

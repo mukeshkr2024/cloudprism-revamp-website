@@ -2,6 +2,7 @@ import { findBlogBySlug } from "@/actions/blog.actions";
 import RightSideBar from "@/components/blog/right-sidebar";
 import { TracingBeam } from "@/components/blog/tracing-beam";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 import React from "react";
 
 interface Params {
@@ -13,7 +14,9 @@ interface Params {
 function BlogDetailsPage({ params }: Params) {
   const blogData = findBlogBySlug(params.slug);
 
-  if (!blogData) return null;
+  if (!blogData) {
+    redirect("/blogs");
+  }
 
   return (
     <div className="flex w-full flex-col justify-center  pb-32 pt-40 lg:flex-row lg:justify-between">

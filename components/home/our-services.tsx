@@ -29,10 +29,10 @@ export default function OurServices() {
         <Image
           src="/assets/icons/arrow-down.svg"
           alt="Arrow-down"
-          height={100}
-          width={100}
+          height={80}
+          width={80}
           style={{ transform: `rotate(${scrollRotation}deg)` }}
-          className="size-16 lg:size-24"
+          className="size-16 lg:size-[80px]"
         />
       </div>
 
