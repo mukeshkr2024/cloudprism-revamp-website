@@ -12,6 +12,14 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
+.input-background_primary {
+  background: linear-gradient(
+    97.49deg,
+    rgba(255, 255, 255, 0.18) -18.1%,
+    rgba(29, 28, 28, 0.18) 109.71%
+  );
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

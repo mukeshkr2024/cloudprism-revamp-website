@@ -4,7 +4,7 @@ import React from "react";
 interface Props {
   title: string;
   description1: string;
-  description2: string;
+  description2?: string;
   imgUrl: string;
   className: string;
 }
@@ -17,7 +17,7 @@ export default function SectionCard({
   className,
 }: Props) {
   return (
-    <section className="mx-auto flex max-w-7xl flex-col  border">
+    <section className="mx-auto flex max-w-7xl flex-col  ">
       <h1 className="h2_semibold text-center">{title}</h1>
       <div
         className={`${className} flex w-full  items-center justify-center  `}
@@ -35,13 +35,7 @@ export default function SectionCard({
           )}
         </div>
 
-        <Image
-          src={imgUrl}
-          alt={title}
-          width={570}
-          height={620}
-          className="border"
-        />
+        <Image src={imgUrl} alt={title} width={570} height={620} className="" />
       </div>
     </section>
   );
