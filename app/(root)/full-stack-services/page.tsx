@@ -14,7 +14,7 @@ function FullStackPage() {
       >
         <div className="flex max-w-7xl flex-col items-center justify-center gap-y-6">
           <h1 className="h1_bold xl:!text-[90px]">
-            Simplify Your Operations, Breathe Easier with Salesforce.
+            Level Up Your Digital. <br /> with our Software Solutions
           </h1>
 
           <CustomButton className="rounded-3xl px-5 py-1.5">

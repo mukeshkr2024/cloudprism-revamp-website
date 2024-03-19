@@ -24,7 +24,7 @@ export const navbarLinks: NavbarLinks[] = [
         label: "Salesforce ",
       },
       {
-        route: "/full-stack",
+        route: "/full-stack-services",
         label: "Full Stack",
       },
     ],

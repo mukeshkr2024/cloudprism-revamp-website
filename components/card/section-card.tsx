@@ -7,6 +7,7 @@ interface Props {
   description2?: string;
   imgUrl: string;
   className: string;
+  imagSize?: string;
 }
 
 export default function SectionCard({
@@ -15,6 +16,7 @@ export default function SectionCard({
   description2,
   imgUrl,
   className,
+  imagSize,
 }: Props) {
   return (
     <section className="mx-auto flex max-w-7xl flex-col  ">
@@ -35,7 +37,13 @@ export default function SectionCard({
           )}
         </div>
 
-        <Image src={imgUrl} alt={title} width={570} height={620} className="" />
+        <Image
+          src={imgUrl}
+          alt={title}
+          width={570}
+          height={620}
+          className={imagSize}
+        />
       </div>
     </section>
   );

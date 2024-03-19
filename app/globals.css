@@ -20,6 +20,15 @@ body {
   );
 }
 
+.input-background_secondary {
+  background: linear-gradient(
+    149.64deg,
+    rgba(25, 25, 25, 0.56) 21.24%,
+    rgba(14, 14, 14, 0.56) 105.43%
+  );
+  backdrop-filter: blur(9px);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

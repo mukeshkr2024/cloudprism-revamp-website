@@ -4,9 +4,11 @@ import WhyStandOutCard from "@/components/card/why-stand-out-card";
 import OurServices from "@/components/home/our-services";
 import ProjectsDelivered from "@/components/home/projects-delivered";
 import SalesforcePartnerSlider from "@/components/home/salesforce-partner-slider";
-import ConnectToUs from "@/components/shared/connect-to-us";
 
+import { AccordingItem } from "@/components/card/according-card";
+import ContactForm from "@/components/home/contact-form";
 import MainSection from "@/components/home/main-section";
+import OurClientSay from "@/components/home/our-clients-says";
 import {
   certifiedDevelopers,
   readOurBlogs,
@@ -15,8 +17,6 @@ import {
   whyStandOut,
 } from "@/constants";
 import Image from "next/image";
-import OurClientSay from "@/components/home/our-clients-says";
-import { AccordingItem } from "@/components/card/according-card";
 
 export default function Home() {
   return (
@@ -24,7 +24,6 @@ export default function Home() {
       <div className="w-full">
         {/* Main section  */}
         <MainSection />
-
         <div className="flex-center mt-8 w-full lg:mt-12">
           <p className="max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
             Cloudprism a certified digital consulting partner specializing in
@@ -37,16 +36,13 @@ export default function Home() {
             for the end-user in their professional and technical services.
           </p>
         </div>
-
         <div className="mx-auto mt-14 max-w-7xl  ">
           <OurServices />
         </div>
-
         <div className="flex-center ">
           {/* TODO  add green gradient */}
           <ProjectsDelivered />
         </div>
-
         <section className="mx-auto mt-6 max-w-6xl sm:mt-10 md:mt-12 lg:mt-16 xl:mt-24 ">
           <h2 className="h2_semibold text-center">
             Our Customer Success <br className="sm:hidden" /> Story
@@ -63,13 +59,10 @@ export default function Home() {
             ))}
           </div>
         </section>
-
         {/* SalesforcePartner Slider  */}
         <SalesforcePartnerSlider />
-
         {/* Our client Says  */}
         <OurClientSay />
-
         {/* Technology partners */}
         <section className="mx-auto my-8 sm:max-w-xl  lg:mt-16  lg:max-w-2xl">
           <h2 className="h2_semibold text-center">
@@ -95,7 +88,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
         {/* Certified Devlopers  */}
         <section className="mx-auto max-w-6xl ">
           <h2 className="h2_semibold text-center">
@@ -116,7 +108,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
         {/* Stand out  */}
         <section className="mx-auto mt-24 max-w-6xl ">
           <h2 className="h2_semibold text-center">
@@ -142,7 +133,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-
         <section className="mx-auto mt-28 max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl ">
           <h2 className="h2_semibold text-center">Read Our Blogs</h2>
           <div className="mt-24 flex flex-wrap  justify-center gap-y-6 px-6  sm:justify-between">
@@ -157,9 +147,25 @@ export default function Home() {
             ))}
           </div>
         </section>
-
         {/* Connect to us  */}
-        <ConnectToUs />
+
+        <section
+          className="flex size-full flex-col bg-cover bg-center md:px-12 lg:h-[600px] lg:flex-row  lg:px-16"
+          style={{
+            backgroundImage: "url('/assets/images/connect-to-us.svg')",
+          }}
+        >
+          <div className="flex flex-1 flex-col gap-y-6   px-10 lg:gap-y-10">
+            <h2 className="h2_semibold mt-[90px]">Connect with us</h2>
+            <p className="mb-2 max-w-md text-base font-light text-[#A4A4A4] sm:text-lg md:text-xl">
+              Our experienced support team will respond to your message within
+              24 hours.
+            </p>
+          </div>
+          <div className="my-10 flex  items-center justify-center  px-4 lg:my-0 lg:w-full lg:flex-1 ">
+            <ContactForm />
+          </div>
+        </section>
       </div>
     </div>
   );

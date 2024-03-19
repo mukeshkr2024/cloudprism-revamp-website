@@ -7,7 +7,7 @@ import React from "react";
 
 export default function SaleforceMainSection() {
   return (
-    <section className="relative flex h-screen w-full items-center justify-center border">
+    <section className="relative flex h-screen w-full items-center justify-center ">
       <div className=" flex  flex-col gap-6 text-white ">
         <div className="flex max-w-5xl flex-col items-center justify-center gap-y-4 lg:mx-6">
           <h1 className="h1_bold lg:!leading-[98.46px] xl:!text-7xl">

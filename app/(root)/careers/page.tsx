@@ -11,8 +11,8 @@ function CarrierPage() {
           backgroundImage: "url('/assets/images/carrier-image.svg')",
         }}
       >
-        <h2 className="h1_bold text-center md:text-start">
-          Be Part Of <br /> New Generation
+        <h2 className="h1_bold text-center md:text-start lg:!text-[80px]">
+          Where Talent Meets <br /> Opportunity.{" "}
         </h2>
       </div>
 
