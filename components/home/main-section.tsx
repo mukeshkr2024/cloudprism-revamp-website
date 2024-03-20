@@ -2,18 +2,19 @@
 
 import React from "react";
 import CustomButton from "../shared/custom-button";
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 
-// const Spline = dynamic(() => import("@splinetool/react-spline"), {
-//   ssr: false,
-// });
+const Spline = dynamic(() => import("@splinetool/react-spline"), {
+  ssr: false,
+});
 
 function MainSection() {
   return (
     <div className="relative flex h-screen w-full items-center justify-center">
       <div className="size-full">
         {/* <Spline scene="https://prod.spline.design/xboa1Cf0xqy0IBde/scene.splinecode" /> */}
+        <Spline scene="https://prod.spline.design/2vZlQQ5DGv5WqORt/scene.splinecode" />
       </div>
 
       <div className="absolute flex max-w-4xl flex-col items-center justify-center gap-6  text-white">
