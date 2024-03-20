@@ -603,3 +603,41 @@ export const historyData = [
       "As we move forward into 2022, CloudPrism remains dedicated to driving digital transformation through Salesforce solutions. With a track record of success and a passion for innovation, we are poised to continue our journey as a trusted partner for businesses seeking to unlock the full potential of the cloud. Our comprehensive suite of SAAS tools and consulting services is designed to empower organizations of all sizes to thrive in the digital age.",
   },
 ];
+
+export const fullstackBuisnessPoints = [
+  {
+    id: 1,
+    content: "300+ Certified Salesforce Developers",
+  },
+  {
+    id: 2,
+    content: "Intutive User Experience",
+  },
+  {
+    id: 3,
+    content: "Open To Sign Non-Disclosure Agreement",
+  },
+  {
+    id: 4,
+    content: "Dedicated Team Of Salesforce Experts",
+  },
+  {
+    id: 5,
+    content: "Multi-Cloud Salesforce Expertise",
+  },
+];
+
+export const fullStackbuisnessData = [
+  {
+    total: "120",
+    description: "Projects Delivered",
+  },
+  {
+    total: "100",
+    description: "Salesforce-certified developers",
+  },
+  {
+    total: "20",
+    description: "Countries Served",
+  },
+];

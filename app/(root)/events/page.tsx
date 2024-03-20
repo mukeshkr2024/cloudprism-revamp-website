@@ -1,6 +1,6 @@
-import BlogCard from "@/components/card/blog-card";
+import EventCard from "@/components/card/event-card";
 import CustomButton from "@/components/shared/custom-button";
-import { readBlogs } from "@/constants/blogs-data";
+import { events } from "@/constants/event-data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -67,13 +67,13 @@ export default function EventsPage() {
       <section className="mx-auto  my-8 max-w-7xl lg:mt-8 ">
         <h1 className="h2_semibold text-center">News & Events</h1>
         <div className="mt-16 flex flex-wrap justify-center gap-6 sm:mt-20 lg:mt-24">
-          {readBlogs.map((blog) => (
-            <BlogCard
-              key={blog.title}
-              description={blog.description}
-              imgUrl={blog.imgUrl}
-              readTime={blog.read_time}
-              title={blog.title}
+          {events.map((event) => (
+            <EventCard
+              key={event.title}
+              description={event.description}
+              imgUrl={event.imgUrl}
+              readTime={event.read_time}
+              title={event.title}
             />
           ))}
         </div>

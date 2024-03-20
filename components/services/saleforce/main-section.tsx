@@ -1,7 +1,7 @@
 "use client";
 
 import CustomButton from "@/components/shared/custom-button";
-import Spline from "@splinetool/react-spline";
+// import Spline from "@splinetool/react-spline";
 import Link from "next/link";
 import React from "react";
 
@@ -24,7 +24,7 @@ export default function SaleforceMainSection() {
         </div>
 
         <div className="w-full ">
-          <Spline scene="https://prod.spline.design/d8ZBFBocqNNEUCcx/scene.splinecode" />
+          {/* <Spline scene="https://prod.spline.design/d8ZBFBocqNNEUCcx/scene.splinecode" /> */}
         </div>
       </div>
     </section>

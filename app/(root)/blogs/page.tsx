@@ -19,11 +19,11 @@ export default function BlogPage() {
         <div className=" flex flex-col gap-y-4 px-6 text-white lg:px-20">
           <p className="text-sm sm:text-base lg:text-xl ">Blogs</p>
           <h2 className="h2_semibold leading-[40px] sm:leading-[50px] lg:leading-[65px]">
-            CloudPrism Solutions <br /> Blogs{" "}
+            Discover, Learn, Inspire
           </h2>
           <p className="max-w-2xl text-sm sm:text-base md:text-xl">
-            Discover exciting stories from our bloggers: From cloud, AI and data
-            to the metaverse, this is the place where new ideas come alive.
+            Explore insightful articles, captivating stories, and expert tips on
+            our blog page, your go-to destination for inspiration and knowledge.
           </p>
         </div>
       </section>

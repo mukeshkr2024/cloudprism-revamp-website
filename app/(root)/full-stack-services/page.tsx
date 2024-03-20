@@ -1,5 +1,7 @@
+import BuisnesGrowthCard from "@/components/card/buisness-growth-card";
 import FullStackServices from "@/components/services/full-stack/full-stack-services";
 import CustomButton from "@/components/shared/custom-button";
+import { fullStackbuisnessData, fullstackBuisnessPoints } from "@/constants";
 import Link from "next/link";
 import React from "react";
 
@@ -29,6 +31,13 @@ function FullStackPage() {
 
       {/* Services */}
       <FullStackServices />
+
+      <div className="mx-auto my-16 max-w-sm px-2 sm:max-w-md md:max-w-lg lg:max-w-7xl ">
+        <BuisnesGrowthCard
+          buisnessData={fullStackbuisnessData}
+          buisnessPoints={fullstackBuisnessPoints}
+        />
+      </div>
     </div>
   );
 }

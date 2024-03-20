@@ -41,13 +41,13 @@ export default function OurServices() {
           svgUrl="/assets/gradients/one-stop-gradient.svg"
           imgUrl="/assets/icons/one-stop.svg"
           title="One Stop Salesforce Solution"
-          description="CloudPrism provides salesforce consultancy services by understanding your firm's basic needs that is some people want to make more money, some people want to save money, and some people want to save time. Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. Grab the opportunity to restructure your traditional CRM management with the right team of Salesforce implementation at CloudPrism to transform."
+          description="Optimize workflows, elevate customer experiences, and boost efficiency with our integrated Salesforce and IT solutions. From initial implementation to advanced customization, along with expert Salesforce consultation, we offer end-to-end services modified to your business needs. Seamlessly streamline your service delivery and IT solutions, making progress happen all in one step."
         />
         <ServiceCard
           svgUrl="/assets/gradients/full-stack-gradient.svg"
           imgUrl="/assets/icons/full-stack.svg"
           title="Full Stack Development"
-          description=" Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. Grab the opportunity to restructure your traditional CRM management with the right team of Salesforce implementation at CloudPrism to transform. Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. Grab the opportunity to restructure your traditional CRM management with the right team of Salesforce implementation at CloudPrism to transform."
+          description="Improve your online projects with CloudPrism's experts in Software Development. We specialize in crafting user-friendly websites and robust behind-the-scenes systems. Our services encompass data management, connecting various software components, and providing customized solutions tailored to your needs. Whether you're initiating a project or ensuring its seamless operation, our Inclusive Software Solutions are here for you"
         />
       </div>
     </section>

@@ -28,7 +28,7 @@ export default function ScrollBarProgress({
     <>
       <div className="fixed left-0 top-0 z-[1] h-4  w-full">
         <div
-          className="h-[4px] w-[15%] rounded-md  "
+          className="h-[3px] w-[15%] rounded-md  "
           style={{
             width: `${scrollTop}%`,
             background:

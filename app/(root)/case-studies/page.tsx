@@ -16,11 +16,11 @@ export default function CaseStudies() {
         <div className=" flex flex-col gap-y-4 px-6 text-white lg:px-20">
           <p className="text-sm sm:text-base lg:text-xl ">Case Studies</p>
           <h2 className="h2_semibold leading-[40px] sm:leading-[50px] lg:leading-[65px]">
-            Our Customer Success <br /> Story
+            Learn Real-World <br /> Success Stories{" "}
           </h2>
           <p className="max-w-2xl text-sm sm:text-base md:text-xl">
-            Discover exciting stories from our bloggers: From cloud, AI and data
-            to the metaverse, this is the place where new ideas come alive.
+            Dive into real-world success stories: Explore our compelling case
+            studies
           </p>
         </div>
       </section>
