@@ -17,6 +17,7 @@ import {
   whyStandOut,
 } from "@/constants";
 import Image from "next/image";
+import HomePage from "@/components/forms/home-form-dialog";
 
 export default function Home() {
   return (
@@ -167,6 +168,7 @@ export default function Home() {
           </div>
         </section>
       </div>
+      <HomePage />
     </div>
   );
 }

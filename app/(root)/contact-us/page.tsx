@@ -99,7 +99,7 @@ function ContactUsPage() {
               Let us know more about you.
             </p>
 
-            <div className="w-full ">
+            <div className="mt-6 w-full ">
               <Form {...form}>
                 <form
                   onSubmit={form.handleSubmit(onSubmit)}
@@ -115,7 +115,7 @@ function ContactUsPage() {
                             <Input
                               placeholder="First Name"
                               {...field}
-                              className="input-background_primary rounded-md  placeholder:text-[#C3C3C3]"
+                              className="input-background_primary rounded-md border-[#1D1C1C] placeholder:text-[#C3C3C3]"
                             />
                           </FormControl>
                           <FormMessage className="text-[13px] text-red-500" />
@@ -131,7 +131,7 @@ function ContactUsPage() {
                             <Input
                               placeholder="LastName"
                               {...field}
-                              className="input-background_primary rounded-md placeholder:text-[#C3C3C3]"
+                              className="input-background_primary rounded-md border-[#1D1C1C] placeholder:text-[#C3C3C3]"
                             />
                           </FormControl>
                           <FormMessage className="text-[13px] text-red-500" />
@@ -149,7 +149,7 @@ function ContactUsPage() {
                           <Input
                             placeholder="Email"
                             {...field}
-                            className="input-background_primary rounded-md placeholder:text-[#C3C3C3]"
+                            className="input-background_primary rounded-md border-[#1D1C1C] placeholder:text-[#C3C3C3]"
                           />
                         </FormControl>
                         <FormMessage className="text-[13px] text-red-500" />
@@ -166,7 +166,8 @@ function ContactUsPage() {
                           <Input
                             placeholder="Phone"
                             {...field}
-                            className="input-background_primary rounded-md placeholder:text-[#C3C3C3]"
+                            className="input-background_primary rounded-md
+                            border-[#1D1C1C] placeholder:text-[#C3C3C3]"
                           />
                         </FormControl>
                         <FormMessage className="text-[13px] text-red-500" />
@@ -183,7 +184,7 @@ function ContactUsPage() {
                           <Textarea
                             placeholder="Message"
                             {...field}
-                            className="input-background_primary rounded-md placeholder:text-[#C3C3C3]"
+                            className="input-background_primary rounded-md border-[#1D1C1C] placeholder:text-[#C3C3C3]"
                           />
                         </FormControl>
                         <FormMessage className="text-[13px] text-red-500" />

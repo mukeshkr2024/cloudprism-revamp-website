@@ -8,18 +8,20 @@ import { Input } from "../ui/input";
 import CustomButton from "../shared/custom-button";
 
 const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
-  }),
+  firstName: z.string().min(1, { message: "First Name is requires" }).max(50),
+  lastName: z.string().min(1, { message: "Last Name is required" }).max(50),
+  email: z.string().email({ message: "Email is invalid" }),
+  countryCode: z.string().min(1, { message: "Invalid country code" }).max(3),
+  phone: z.string().min(1, { message: "Phone No is invalid" }).max(12),
+  message: z.string().min(1, { message: "Message is required" }).max(250),
+  lookingFor: z.string().optional(),
 });
 
 function ContactForm() {
   // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: "",
-    },
+    defaultValues: {},
   });
 
   // 2. Define a submit handler.
@@ -38,7 +40,7 @@ function ContactForm() {
           <div className="flex w-full gap-4">
             <FormField
               control={form.control}
-              name="username"
+              name="firstName"
               render={({ field }) => (
                 <FormItem className="flex-1">
                   <FormControl>
@@ -56,7 +58,7 @@ function ContactForm() {
 
             <FormField
               control={form.control}
-              name="username"
+              name="lastName"
               render={({ field }) => (
                 <FormItem className="flex-1">
                   <FormControl>
@@ -75,7 +77,7 @@ function ContactForm() {
 
           <FormField
             control={form.control}
-            name="username"
+            name="email"
             render={({ field }) => (
               <FormItem className="flex-1">
                 <FormControl>
@@ -94,7 +96,7 @@ function ContactForm() {
           <div className="flex gap-4">
             <FormField
               control={form.control}
-              name="username"
+              name="countryCode"
               render={({ field }) => (
                 <FormItem className="flex-1">
                   <FormControl>
@@ -112,7 +114,7 @@ function ContactForm() {
 
             <FormField
               control={form.control}
-              name="username"
+              name="phone"
               render={({ field }) => (
                 <FormItem className="flex-1">
                   <FormControl>
@@ -131,7 +133,7 @@ function ContactForm() {
 
           <FormField
             control={form.control}
-            name="username"
+            name="lookingFor"
             render={({ field }) => (
               <FormItem className="flex-1">
                 <FormControl>
@@ -149,7 +151,7 @@ function ContactForm() {
 
           <FormField
             control={form.control}
-            name="username"
+            name="message"
             render={({ field }) => (
               <FormItem>
                 <FormControl>

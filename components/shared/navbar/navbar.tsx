@@ -48,7 +48,7 @@ export default function Navbar() {
         <MobileNav />
 
         <CustomButton className="hidden rounded-3xl px-5 py-2 md:block">
-          <Link href="/conact-us">
+          <Link href="/contact-us">
             <p className="text-base font-bold">Contact Us</p>
           </Link>
         </CustomButton>
