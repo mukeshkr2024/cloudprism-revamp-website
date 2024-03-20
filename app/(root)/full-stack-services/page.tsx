@@ -32,7 +32,7 @@ function FullStackPage() {
       {/* Services */}
       <FullStackServices />
 
-      <div className="mx-auto my-16 max-w-sm px-2 sm:max-w-md md:max-w-lg lg:max-w-7xl ">
+      <div className="mx-auto mb-20 mt-16 max-w-sm px-2 sm:max-w-md md:max-w-lg lg:max-w-7xl ">
         <BuisnesGrowthCard
           buisnessData={fullStackbuisnessData}
           buisnessPoints={fullstackBuisnessPoints}

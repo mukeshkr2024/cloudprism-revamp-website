@@ -22,13 +22,13 @@ export default function FullStackServices() {
 
   return (
     <div className="flex w-full flex-col items-center justify-center space-y-8 overflow-hidden">
-      <div className="mb-12 flex gap-6 lg:mb-24">
+      <div className="mb-12 mt-4 flex gap-6 lg:mb-24">
         <h2 className="h2_semibold">
           Our <br />
           Services
         </h2>
         <Image
-          src="/assets/icons/arrow-down.svg"
+          src="/assets/icons/arrow-down.png"
           alt="Arrow-down"
           height={60}
           width={60}
@@ -39,7 +39,7 @@ export default function FullStackServices() {
         />
       </div>
 
-      <div className="flex flex-col space-y-8">
+      <div className="flex flex-col space-y-12">
         <SectionCard
           title="Software Consultation"
           imgUrl="/assets/images/software-consultation.svg"

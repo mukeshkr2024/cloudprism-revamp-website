@@ -41,13 +41,13 @@ export default function HistorySection() {
           </h2>
           <div className="flex gap-x-2 sm:gap-x-4">
             <div
-              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] sm:w-24 md:h-14 md:w-32"
+              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] border-2 border-[#191919C4] shadow-md sm:w-24 md:h-14 md:w-32"
               style={{
                 background:
                   "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
-                border: "1.5px solid",
-                borderImage:
-                  "linear-gradient(326.06deg, rgba(46, 46, 46, 0.79) -110.75%, rgba(255, 255, 255, 0) 54.98%) 1.5",
+                // border: "1.5px solid",
+                // borderImage:
+                //   "linear-gradient(326.06deg, rgba(46, 46, 46, 0.79) -110.75%, rgba(255, 255, 255, 0) 54.98%) 1.5",
                 transition: "background-color 0.3s",
               }}
               onClick={handlePrev}
@@ -64,13 +64,13 @@ export default function HistorySection() {
             </div>
 
             <div
-              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] sm:w-24 md:h-14 md:w-32"
+              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] border-2 border-[#191919C4] shadow-md sm:w-24 md:h-14 md:w-32"
               style={{
                 background:
                   "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
-                border: "1.5px solid",
-                borderImage:
-                  "linear-gradient(326.06deg, rgba(46, 46, 46, 0.79) -110.75%, rgba(255, 255, 255, 0) 54.98%) 1.5",
+                // border: "1.5px solid",
+                // borderImage:
+                //   "linear-gradient(326.06deg, rgba(46, 46, 46, 0.79) -110.75%, rgba(255, 255, 255, 0) 54.98%) 1.5",
                 transition: "background-color 0.3s",
               }}
               onClick={handleNext}

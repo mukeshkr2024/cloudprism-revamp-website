@@ -35,7 +35,7 @@ export default function MissionCard({
           alt={title}
           width={525}
           height={495}
-          className="flex size-[300px] flex-1 items-center justify-center  sm:size-[350px] md:size-[400px] lg:h-[495px] lg:w-[525px] "
+          className="flex size-[300px] flex-1 items-center justify-center  sm:size-[350px] md:size-[400px] lg:h-[495px] lg:w-[550px] "
         />
       </div>
     </section>

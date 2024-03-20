@@ -27,7 +27,7 @@ export default function SalesForceServices() {
           Our <br /> Services
         </h2>
         <Image
-          src="/assets/icons/arrow-down.svg"
+          src="/assets/icons/arrow-down.png"
           alt="Arrow-down"
           height={80}
           width={80}

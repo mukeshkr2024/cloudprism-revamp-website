@@ -14,10 +14,10 @@ export default function EventsPage() {
           backgroundImage: "url('/assets/images/about-us-bg.svg')",
         }}
       >
-        <div className="flex max-w-4xl flex-col items-center justify-center gap-y-6">
-          <h1 className="h1_bold">Cloud Solutions, Scalable Success.</h1>
+        <div className="flex max-w-6xl flex-col items-center justify-center gap-y-4 sm:gap-y-6">
+          <h1 className="h1_bold">Explore Upcoming Events and Webinars.</h1>
           <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
-            Your Salesforce consultant & implementation partner
+            Stay Connected
           </p>
           <CustomButton className="rounded-3xl px-5 py-1.5">
             <Link href="/contact-us">
@@ -35,36 +35,32 @@ export default function EventsPage() {
         >
           <div className="flex flex-1 flex-col gap-4  px-6 py-2 sm:px-10 sm:py-14 md:px-16 lg:px-6">
             <p className="text-center font-light text-[#F2EFEF] sm:text-[17px] lg:text-start">
-              CloudPrism is dedicated to modifying your business process through
-              smart Salesforce deployment and consulting services. Our goal is
-              to enhance efficiency, boost productivity,of all sizes and
-              industries and drive your organization to remarkable success by
-              preferring Salesforce, the global leader in customer relationship
-              management (CRM) platforms. With a focus on quality and client
-              satisfaction, we are committed to guiding your company to its
-              fullest potential in the digital realm.
+              Stay at the forefront of innovation and connect with like-minded
+              individuals!
             </p>
 
             <p className="text-center font-light text-[#F2EFEF] sm:text-[17px] lg:text-start">
-              Our partnership extends beyond mere transactions, as we share a
-              commitment to social responsibility and ethical practices. At
-              CloudPrism, empathy guides our approach to ethical resource
-              management and fair treatment of all individuals involved.
-              Partnering with us not only aligns with your values but also
-              demonstrates a shared commitment to making a positive imp
+              Our dynamic Events page is your gateway to a world of learning,
+              inspiration, and engagement. Explore upcoming workshops,
+              conferences, and webinars designed to spark your curiosity, refine
+              your skills, and fuel your professional growth. Don&apos;t miss
+              out on valuable networking opportunities and the chance to
+              interact with industry leaders. Bookmark this page and check back
+              often to discover the next event that will propel you forward.
             </p>
           </div>
 
           <Image
-            src="/assets/images/mission-svg.svg"
+            src="/assets/images/event-svg.svg"
             alt="Image"
-            width={620}
+            width={650}
             height={620}
+            className="ml-[-30px] mt-[-30px] w-[680px]"
           />
         </div>
       </section>
 
-      <section className="mx-auto  my-8 max-w-7xl lg:mt-8 ">
+      <section className="mx-auto  my-10 max-w-7xl ">
         <h1 className="h2_semibold text-center">News & Events</h1>
         <div className="mt-16 flex flex-wrap justify-center gap-6 sm:mt-20 lg:mt-24">
           {events.map((event) => (

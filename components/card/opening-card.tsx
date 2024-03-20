@@ -6,13 +6,13 @@ import Image from "next/image";
 export default function JobOpeningCard() {
   return (
     <div
-      className="flex h-[390px] w-[374px] flex-col justify-between rounded-lg p-6  text-white"
+      className="flex h-[390px] w-[374px] flex-col justify-between rounded-lg border-2 border-[#191919C4] p-6 text-white shadow-md"
       style={{
         background:
           "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%); ",
-        border: "1px solid",
-        borderImage:
-          "linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 1",
+        // border: "1px solid",
+        // borderImage:
+        //   "linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 1",
       }}
     >
       <div className="flex w-full items-center justify-between">

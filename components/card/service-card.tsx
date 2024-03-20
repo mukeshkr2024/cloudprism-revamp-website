@@ -10,7 +10,7 @@ interface ServiceProps {
   svgUrl: string;
 }
 
-// TODO: Fix the issue or border radius
+// TODO: Fix the issue or border radius - border-2 border-[#191919C4]
 
 export default function ServiceCard({
   description,
@@ -21,7 +21,7 @@ export default function ServiceCard({
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className="w-full rounded-[19px] px-6 py-8 sm:px-8 sm:py-12 md:px-10 md:pb-12 lg:px-12 lg:pb-16 xl:px-14 xl:pb-20"
+      className="w-full rounded-[19px] px-6 py-8 sm:px-8 sm:py-12 md:px-10 md:pb-12 lg:px-12 lg:pb-16  xl:px-14 xl:pb-20"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
