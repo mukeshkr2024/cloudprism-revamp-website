@@ -126,7 +126,7 @@ function ContactUsPage() {
                       />
                       <FormField
                         control={form.control}
-                        name="firstName"
+                        name="lastName"
                         render={({ field }) => (
                           <FormItem className="flex-1">
                             <FormControl>

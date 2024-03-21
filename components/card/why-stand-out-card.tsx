@@ -29,7 +29,7 @@ export default function WhyStandOutCard({ description, title }: Props) {
     >
       {/* Render description when hovered */}
       {hovered ? (
-        <p className="text-lg text-[#E2E2E2] transition-transform duration-300 ease-in-out ">
+        <p className="text-base text-[#E2E2E2] transition-transform duration-300 ease-in-out ">
           {description}
         </p>
       ) : (

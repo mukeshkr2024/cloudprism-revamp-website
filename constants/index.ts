@@ -125,7 +125,7 @@ export const ourTeams: OurTeamProps[] = [
 
 export const successStory = [
   {
-    title: "Reinvention in the age of generative AI",
+    title: "Is Salesforce Outdated",
     imgUrl: "/assets/images/success-story-1.svg",
     description:
       "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend. ",
@@ -509,7 +509,7 @@ export const clientSays = [
 
 export const recentWorks = [
   {
-    title: "Reinvention in the age of generative AI",
+    title: "Is Salesforce Outdated",
     imgUrl: "/assets/images/success-story-1.svg",
     description:
       "In this digital kingdom, isolation, and niche is not an option. Growing together with other CRM software, systems, or applications is the new trend",

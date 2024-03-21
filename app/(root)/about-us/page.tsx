@@ -12,7 +12,6 @@ export default function AboutPage() {
   return (
     <ScrollBarProgress>
       <div className="w-full overflow-hidden">
-        {/* Scalable Success Section  */}
         {/* TODO: Add responsiveness */}
         <section
           className="flex h-screen w-full flex-col items-center justify-center "

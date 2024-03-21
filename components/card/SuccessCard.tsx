@@ -1,7 +1,9 @@
 /* eslint-disable tailwindcss/migration-from-tailwind-2 */
 "use client";
 
+import { createSlug } from "@/utils/cn";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
 
 interface SuccessCardProps {
@@ -49,7 +51,7 @@ export const SuccessCard = ({
       <div
         className={`absolute bottom-0 right-0 h-2/3 w-full bg-opacity-90 px-6 transition-all duration-500 ${isHovered ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
       >
-        <p className="mt-10 pt-8 text-sm text-[#A4A4A4]  md:line-clamp-5">
+        <p className="mt-10 line-clamp-2 pt-8 text-sm text-[#A4A4A4] md:line-clamp-5">
           {description}
         </p>
       </div>
@@ -58,8 +60,13 @@ export const SuccessCard = ({
         className={`absolute bottom-7 left-0 w-full bg-opacity-90 px-5 transition-all duration-500 ${isHovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}`}
       >
         <div className="flex w-full items-center justify-end bg-cover bg-no-repeat text-xl font-semibold text-[#02FFB3]">
-          Expand
-          <ChevronRight className="size-6" />
+          <Link
+            href={`/case-study/${createSlug(title)}`}
+            className="flex items-center justify-center"
+          >
+            Expand
+            <ChevronRight className="size-6" />
+          </Link>
         </div>
       </div>
     </div>
