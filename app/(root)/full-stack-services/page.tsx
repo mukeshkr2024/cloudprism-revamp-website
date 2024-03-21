@@ -16,10 +16,16 @@ function FullStackPage() {
             backgroundImage: "url('/assets/images/about-us-bg.svg')",
           }}
         >
-          <div className="flex max-w-7xl flex-col items-center justify-center gap-y-6">
+          <div className="mb-16 flex max-w-7xl flex-col items-center justify-center gap-y-6">
             <h1 className="h1_bold xl:!text-[90px]">
               Level Up Your Digital. <br /> with our Software Solutions
             </h1>
+
+            <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
+              Build your digital journey with our seamless full-stack solutions
+              - from frontend finesse to backend brilliance, weve got you
+              covered!
+            </p>
 
             <CustomButton className="rounded-3xl px-5 py-1.5">
               <Link href="/contact-us">

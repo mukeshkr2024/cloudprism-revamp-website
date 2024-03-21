@@ -3,6 +3,8 @@ import ConnectToUs from "@/components/shared/connect-to-us";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import React from "react";
 
+// TODO:  to add content
+
 function CarrierPage() {
   return (
     <ScrollBarProgress>
@@ -14,7 +16,7 @@ function CarrierPage() {
           }}
         >
           <h2 className="h1_bold text-center md:text-start lg:!text-[80px]">
-            Where Talent Meets <br /> Opportunity.{" "}
+            Where Talent Meets <br /> Opportunity.
           </h2>
         </div>
 
@@ -26,22 +28,29 @@ function CarrierPage() {
 
           <div className="flex flex-1 flex-col gap-y-6">
             <p className="text-xl font-light text-[#F2EFEF]">
-              CloudPrism is dedicated to modifying your business process through
-              smart Salesforce deployment and consulting services. Our goal is
-              to enhance efficiency, boost productivity,of all sizes and
-              industries and drive your organization to remarkable success by
-              preferring Salesforce, the global leader in customer relationship
-              management (CRM) platforms. With a focus on quality and client
-              satisfaction, we are committed to guiding your company to its
-              fullest potential in the digital realm.
+              {
+                "CloudPrism Solutions isn't just a workplace—it's a community. Here, you're not just an employee; you're a valued member of a team united by shared values yet diverse in our individuality."
+              }
             </p>
             <p className="text-xl font-light text-[#F2EFEF]">
-              Our partnership extends beyond mere transactions, as we share a
-              commitment to social responsibility and ethical practices. At
-              CloudPrism, empathy guides our approach to ethical resource
-              management and fair treatment of all individuals involved.
-              Partnering with us not only aligns with your values but also
-              demonstrates a shared commitment to making a positive imp
+              Experience a culture of perpetual progress, where personal growth
+              is not just encouraged, but celebrated. Together, we navigate
+              challenges, standing as pillars of support for one another through
+              every triumph and trial.
+            </p>
+            <p className="text-xl font-light text-[#F2EFEF]">
+              At CloudPrism Solutions, creativity thrives in an environment of
+              freedom, fostering growth, enjoyment, and impactful contributions.
+              Our team pours passion into every endeavor, delivering excellence
+              at every turn.
+            </p>
+
+            <p className="text-xl font-light text-[#F2EFEF]">
+              We are Innovators. We are Champions. We are Unstoppable.
+            </p>
+
+            <p className="text-xl font-light text-[#F2EFEF]">
+              Welcome to CloudPrism Solutions!
             </p>
           </div>
         </div>

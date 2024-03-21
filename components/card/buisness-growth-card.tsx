@@ -16,16 +16,7 @@ export default function BuisnesGrowthCard({
   buisnessPoints,
 }: Props) {
   return (
-    <section
-      className="flex h-[720px] flex-col rounded-lg  border-2 border-[#191919C4] shadow-md lg:h-[443px] lg:flex-row"
-      style={{
-        background:
-          "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
-        // border: "1px solid",
-        // borderImage:
-        //   "linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 1",
-      }}
-    >
+    <section className="growth_background flex h-[720px] flex-col rounded-lg  border-2 border-[#191919C4] shadow-md lg:h-[443px] lg:flex-row">
       <div className="flex flex-1 flex-col items-start justify-center px-4 sm:px-8 md:px-10 lg:px-12">
         <h3 className="text-2xl font-extralight text-white lg:text-[36px]">
           Why Choose CloudPrism

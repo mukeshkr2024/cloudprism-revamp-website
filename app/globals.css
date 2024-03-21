@@ -12,6 +12,38 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
+.card_primary_background {
+  background: linear-gradient(
+    149.64deg,
+    rgba(25, 25, 25, 0.77) 21.24%,
+    rgba(14, 14, 14, 0.77) 105.43%
+  );
+}
+
+.card_primary_background:hover {
+  background: linear-gradient(
+    150.16deg,
+    rgba(45, 45, 45, 0.77) 25.13%,
+    rgba(0, 0, 0, 0.77) 105.45%
+  );
+}
+
+.growth_background {
+  background: linear-gradient(
+    149.64deg,
+    rgba(25, 25, 25, 0.77) 21.24%,
+    rgba(14, 14, 14, 0.77) 105.43%
+  );
+}
+
+.job_opening_card {
+  background: linear-gradient(
+    149.64deg,
+    rgba(25, 25, 25, 0.77) 21.24%,
+    rgba(14, 14, 14, 0.77) 105.43%
+  );
+}
+
 .input-background_primary {
   background: linear-gradient(
     97.49deg,

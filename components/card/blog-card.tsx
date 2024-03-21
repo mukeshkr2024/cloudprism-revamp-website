@@ -24,7 +24,7 @@ export default function BlogCard({
 
   return (
     <div
-      className="w-[279px] rounded-lg "
+      className=" w-[279px] rounded-lg "
       style={{
         border: "1px solid",
         borderImage: isHovered
@@ -35,14 +35,7 @@ export default function BlogCard({
       onMouseLeave={() => setIsHovered(false)}
     >
       <Image height={154} width={279} alt={title} src={imgUrl} />
-      <div
-        style={{
-          background: isHovered
-            ? "background: linear-gradient(149.64deg, rgba(45, 45, 45, 0.77) 21.24%, rgba(0, 0, 0, 0.77) 105.43%)"
-            : "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
-        }}
-        className="flex flex-col gap-y-8 rounded-lg px-6 py-12"
-      >
+      <div className="card_primary_background flex flex-col gap-y-8 rounded-b-lg px-6 py-12">
         <h3 className="text-xl font-bold text-white">{title}</h3>
         <p className="line-clamp-3 text-sm font-normal text-[#798882]">
           {description}

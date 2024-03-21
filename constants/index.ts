@@ -176,21 +176,13 @@ export const footerLinks: FooterLinks[] = [
 
 export const usefullLinks: FooterLinks[] = [
   {
-    label: "Salesforce Developement",
+    label: "Salesforce ",
     route: "/salesforce-services",
   },
   {
-    label: "Full Stack Devlopement",
+    label: "Full Stack ",
     route: "/full-stack-services",
   },
-  // {
-  //   label: "Useful Links",
-  //   route: "/usefull-link",
-  // },
-  // {
-  //   label: "Useful Links",
-  //   route: "/useful-link",
-  // },
   {
     label: "Case Studies",
     route: "/case-studies",

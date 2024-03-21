@@ -11,7 +11,7 @@ import React from "react";
 export default function AboutPage() {
   return (
     <ScrollBarProgress>
-      <div className="w-full">
+      <div className="w-full overflow-hidden">
         {/* Scalable Success Section  */}
         {/* TODO: Add responsiveness */}
         <section
@@ -20,8 +20,8 @@ export default function AboutPage() {
             backgroundImage: "url('/assets/images/about-us-bg.svg')",
           }}
         >
-          <div className="flex max-w-4xl flex-col items-center justify-center gap-y-6">
-            <h1 className="h1_bold">Cloud Solutions, Scalable Success.</h1>
+          <div className="mb-16 flex max-w-5xl flex-col items-center justify-center gap-y-6">
+            <h1 className="h1_bold">Accelerate Your Vision with CloudPrism</h1>
             <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
               Your Salesforce consultant & implementation partner
             </p>
@@ -34,7 +34,7 @@ export default function AboutPage() {
             </CustomButton>
           </div>
         </section>
-        <div className="mx-auto mb-20 flex max-w-5xl flex-col gap-y-20  ">
+        <div className="mx-auto mb-28 flex max-w-5xl flex-col gap-y-20  ">
           <h2 className="h2_semibold text-center">About us</h2>
           <div className="flex flex-col gap-5">
             <p className="mx-auto max-w-sm  px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
@@ -53,18 +53,21 @@ export default function AboutPage() {
               skill outshines that of other small and medium Salesforce
               companies, as we specialize in providing Custom-built solutions
               designed to meet your specific timeline and requirements, ensuring
-              optimal outcomes for your business success. With CloudPrism by
-              your side, you can trust that your IT Solutions journey will be
-              guided by industry best practices and unparalleled expertise.
+              optimal outcomes for your business success.
+            </p>
+            <p className="mx-auto max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
+              With CloudPrism by your side, you can trust that your IT Solutions
+              journey will be guided by industry best practices and unparalleled
+              expertise.
             </p>
           </div>
         </div>
         {/* Mission Section */}
-        <div className="flex flex-col space-y-12 lg:space-y-4">
+        <div className="flex flex-col space-y-12  lg:space-y-4">
           <SectionCard
             title="Mission"
-            description1="CloudPrism is dedicated to modifying your business process through smart Salesforce deployment and consulting services. Our goal is to enhance efficiency, boost productivity,of all sizes and industries and drive your organization to remarkable success by preferring Salesforce, the global leader in customer relationship management (CRM) platforms. With a focus on quality and client satisfaction, we are committed to guiding your company to its fullest potential in the digital realm."
-            description2="Our partnership extends beyond mere transactions, as we share a commitment to social responsibility and ethical practices. At CloudPrism, empathy guides our approach to ethical resource management and fair treatment of all individuals involved.  Partnering with us not only aligns with your values but also demonstrates a shared commitment to making a positive imp."
+            description1="CloudPrism is dedicated to modifying  your business process through smart Salesforce deployment and consulting services. Our goal is to enhance efficiency, boost productivity,of all sizes and industries and drive your organization to remarkable success by preferring Salesforce, the global leader in customer relationship management (CRM) platforms. With a focus on quality and client satisfaction, we are committed to guiding your company to its fullest potential in the digital realm."
+            description2="Our partnership extends beyond mere transactions, as we share a commitment to social responsibility and ethical practices. At CloudPrism, empathy guides our approach to ethical resource management and fair treatment of all individuals involved. Partnering with us not only aligns with your values but also demonstrates a shared commitment to making a positive impact."
             imgUrl="/assets/images/mission-svg.svg"
             className="flex-col-reverse  lg:flex-row"
             imagSize="w-[710px] ml-[-50px]"

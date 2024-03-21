@@ -15,11 +15,8 @@ export default function TeamCard({
   const [hovered, setHovered] = useState(false);
   return (
     <div
-      className={`relative h-[200px] w-[170px] rounded-lg p-4 sm:h-[250px] sm:w-[220px]`}
+      className={`card_primary_background relative h-[200px] w-[170px] rounded-lg p-4 sm:h-[250px] sm:w-[220px]`}
       style={{
-        background: hovered
-          ? "linear-gradient(149.64deg, rgba(25, 25, 25, 0.99) 21.24%, rgba(14, 14, 14, 0.99) 105.43%)"
-          : "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)",
         borderBottom: "1.5px solid",
         borderImage: hovered
           ? "linear-gradient(90deg, rgba(2, 255, 179, 0) 2.62%, #02FFB3 59.68%, rgba(2, 255, 179, 0) 90.09%) 1.5"

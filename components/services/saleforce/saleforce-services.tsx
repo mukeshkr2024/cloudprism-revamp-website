@@ -5,12 +5,12 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function SalesForceServices() {
-  const [scrollRotation, setScrollRotation] = useState(240);
+  const [scrollRotation, setScrollRotation] = useState(300);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const rotation = 240 + (scrollPosition / window.innerHeight) * 80;
+      const rotation = 300 + (scrollPosition / window.innerHeight) * 80;
       setScrollRotation(rotation);
     };
 
@@ -56,7 +56,7 @@ export default function SalesForceServices() {
         demonstrates a shared commitment to making a positive imp"
         imagSize="w-[750px] mt-[-40px] flex items-center justify-center ml-[-40px]"
         className="flex-col-reverse lg:flex-row"
-        imgUrl="/assets/images/salesforce-consulting.svg"
+        imgUrl="/assets/images/salesforce-consulting.png" // TODO: add later svg
       />
       <SectionCard
         title="Salesforce Consulting"

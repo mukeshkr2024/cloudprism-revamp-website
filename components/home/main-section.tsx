@@ -23,10 +23,6 @@ function MainSection() {
           Create Value That <br /> Empowers
         </h1>
         <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
-          {/* with the Salesforce Consulting Partner and{" "}
-          <br className="hidden md:block lg:hidden" /> Salesforce{" "}
-          <br className="hidden lg:block" />
-          Implementation. */}
           Maximizing the Power of Complete IT Consultation and Solutions for
           Your Success
         </p>

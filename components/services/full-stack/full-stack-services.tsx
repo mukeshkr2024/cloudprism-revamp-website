@@ -5,12 +5,12 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function FullStackServices() {
-  const [scrollRotation, setScrollRotation] = useState(260);
+  const [scrollRotation, setScrollRotation] = useState(280);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const rotation = 260 + (scrollPosition / window.innerHeight) * 80;
+      const rotation = 280 + (scrollPosition / window.innerHeight) * 80;
       setScrollRotation(rotation);
     };
 
