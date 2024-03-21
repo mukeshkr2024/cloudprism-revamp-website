@@ -44,7 +44,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="fixed left-0 top-0 z-50 flex size-full items-center justify-center">
       <div className="background_primary flex w-[1100px] rounded-md">
-        <div className="flex-1 px-6 py-8">
+        <div className="relative flex-1 px-6 py-8">
           <div
             className="w-full rounded-lg border-[#767575] px-6 py-8"
             style={{
@@ -55,6 +55,12 @@ const HomePage: React.FC = () => {
               backdropFilter: "blur(23px)",
             }}
           >
+            <div
+              className="absolute right-4 top-4 cursor-pointer rounded-full lg:hidden"
+              onClick={() => setShowPopup(false)}
+            >
+              <Image src="/assets/icons/x.svg" alt="x" width={15} height={15} />
+            </div>
             <div className="flex items-center space-x-3 text-white">
               <div className="flex flex-col items-center justify-center">
                 <Image

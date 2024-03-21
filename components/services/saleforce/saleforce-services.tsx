@@ -21,7 +21,7 @@ export default function SalesForceServices() {
   }, []);
 
   return (
-    <div className="flex w-full flex-col items-center justify-center space-y-8">
+    <div className="mt-6 flex w-full flex-col items-center justify-center space-y-8">
       <div className="mb-12 flex gap-4 lg:mb-16">
         <h2 className="h2_semibold">
           Our <br /> Services
@@ -34,7 +34,7 @@ export default function SalesForceServices() {
           style={{
             transform: `rotate(${scrollRotation}deg)`,
           }}
-          className=" size-14 lg:size-20"
+          className=" size-12 lg:size-[75px]"
         />
       </div>
 

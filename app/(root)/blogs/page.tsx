@@ -1,6 +1,7 @@
 import { latestBlogs } from "@/actions/blog.actions";
 import LatestBlog from "@/components/blog/latest-blog";
 import BlogCard from "@/components/card/blog-card";
+import BlogFormPopup from "@/components/forms/blog-form-dialog";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import { readBlogs } from "@/constants/blogs-data";
 import React from "react";
@@ -10,6 +11,7 @@ const latestblogs = latestBlogs();
 export default function BlogPage() {
   return (
     <div className="w-full">
+      <BlogFormPopup />
       <section
         className="flex h-[80vh] w-full flex-col justify-center bg-cover bg-center"
         style={{

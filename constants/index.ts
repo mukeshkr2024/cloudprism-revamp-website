@@ -176,24 +176,24 @@ export const footerLinks: FooterLinks[] = [
 
 export const usefullLinks: FooterLinks[] = [
   {
-    label: "Useful Links",
-    route: "/usefull-link",
+    label: "Salesforce Developement",
+    route: "/salesforce-services",
   },
   {
-    label: "Useful Links",
-    route: "/usefull-link",
+    label: "Full Stack Devlopement",
+    route: "/full-stack-services",
   },
+  // {
+  //   label: "Useful Links",
+  //   route: "/usefull-link",
+  // },
+  // {
+  //   label: "Useful Links",
+  //   route: "/useful-link",
+  // },
   {
-    label: "Useful Links",
-    route: "/usefull-link",
-  },
-  {
-    label: "Useful Links",
-    route: "/useful-link",
-  },
-  {
-    label: "Useful Links",
-    route: "/useful-link",
+    label: "Case Studies",
+    route: "/case-studies",
   },
 ];
 
@@ -314,29 +314,29 @@ export const certifiedDevelopers = [
 
 export const whyStandOut = [
   {
-    title: "SalesForce Implementation- Don't get lost in the sea of CRM,",
+    title: "Discover Unmatched Talent,",
     description:
-      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. ",
+      "Our pride lies in assembling a top-notch team of skilled professionals committed to delivering exceptional results.",
   },
   {
-    title: "SalesForce Implementation- Don't get lost in the sea of CRM,",
+    title: "Experience our Swift Turnaround Time,",
     description:
-      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. ",
+      "Experience a rapid and efficient project cycle with CloudPrism, ensuring timely delivery of high-quality solutions. ",
   },
   {
-    title: "SalesForce Implementation- Don't get lost in the sea of CRM,",
+    title: "Dedicated teams who are ready to tackle any challenge,",
     description:
-      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. ",
+      " Your project deserves undivided attention. CloudPrism provides a committed team that works exclusively on your requirements, ensuring personalized service.",
   },
   {
-    title: "SalesForce Implementation- Don't get lost in the sea of CRM,",
+    title: "Experience Smooth Communication,",
     description:
-      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. ",
+      " Communication is key. CloudPrism ensures flawless and transparent communication throughout the project lifecycle, keeping you informed every step of the way.",
   },
   {
-    title: "SalesForce Implementation- Don't get lost in the sea of CRM,",
+    title: "We Provide Free Expert Consultation,",
     description:
-      "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce Implementation a leading CRM tool, holding the largest market share. ",
+      " Explore the possibilities with CloudPrism through our complimentary expert consultation, helping you make informed decisions for your IT projects. ",
   },
 ];
 

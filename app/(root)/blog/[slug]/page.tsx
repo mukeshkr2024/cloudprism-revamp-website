@@ -1,6 +1,7 @@
 import { findBlogBySlug } from "@/actions/blog.actions";
 import RightSideBar from "@/components/blog/right-sidebar";
 import { TracingBeam } from "@/components/blog/tracing-beam";
+import BlogFormPopup from "@/components/forms/blog-form-dialog";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import React from "react";
@@ -21,6 +22,7 @@ function BlogDetailsPage({ params }: Params) {
   return (
     <div className="flex w-full flex-col justify-center  pb-32 pt-40 lg:flex-row lg:justify-between">
       <TracingBeam className="px-6">
+        <BlogFormPopup />
         <div className=" text-white">
           <div className="flex flex-col gap-y-8 py-4">
             <p className="text-base font-normal ">BLOG</p>

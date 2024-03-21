@@ -18,7 +18,9 @@ export default function NavItem({ href, label, subItems }: NavItemProps) {
         <NavMenuList label={label} subItems={subItems} />
       ) : (
         <Link href={href} className="flex items-center  ">
-          <p className="p-1.5 text-[15px] text-[#EBEBEB]">{label}</p>
+          <p className="p-1.5 text-[15px] text-[#EBEBEB] transition-transform duration-300 hover:scale-110">
+            {label}
+          </p>{" "}
         </Link>
       )}
     </>

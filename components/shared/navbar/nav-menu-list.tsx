@@ -23,7 +23,9 @@ export default function NavMenuList({ label, subItems }: Props) {
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <p className="text-[15px] text-[#EBEBEB] ">{label}</p>
+            <p className="text-[15px] text-[#EBEBEB] transition-transform duration-300 hover:scale-110">
+              {label}
+            </p>
           </NavigationMenuTrigger>
           <NavigationMenuContent className="border-none">
             <ul
@@ -40,7 +42,7 @@ export default function NavMenuList({ label, subItems }: Props) {
               {subItems.map((item) => (
                 <li
                   key={item.label}
-                  className="cursor-pointer text-sm hover:underline"
+                  className="cursor-pointer text-sm duration-300 hover:scale-110 hover:transition-transform "
                 >
                   <Link href={item.route}>{item.label}</Link>
                 </li>
