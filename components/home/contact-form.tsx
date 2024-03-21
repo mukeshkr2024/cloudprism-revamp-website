@@ -49,7 +49,7 @@ function ContactForm() {
                       {...field}
                       className="input-background_secondary 
                     rounded-[57px] border-[#767575]
-                    px-5 text-white placeholder:text-[#767575] lg:py-6"
+                    px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>
                 </FormItem>
@@ -67,7 +67,7 @@ function ContactForm() {
                       {...field}
                       className="input-background_secondary 
                       rounded-[57px] border-[#767575]
-                      px-5 text-white placeholder:text-[#767575] lg:py-6"
+                      px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>
                 </FormItem>
@@ -86,7 +86,7 @@ function ContactForm() {
                     {...field}
                     className="input-background_secondary 
                     rounded-[57px] border-[#767575]
-                    px-5 text-white placeholder:text-[#767575] lg:py-6"
+                    px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                   />
                 </FormControl>
               </FormItem>
@@ -105,7 +105,7 @@ function ContactForm() {
                       {...field}
                       className="input-background_secondary 
                     rounded-[57px] border-[#767575]
-                    px-5 text-white placeholder:text-[#767575] lg:py-6"
+                    px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>
                 </FormItem>
@@ -123,7 +123,7 @@ function ContactForm() {
                       {...field}
                       className="input-background_secondary 
                       rounded-[57px] border-[#767575]
-                      px-5 text-white placeholder:text-[#767575] lg:py-6"
+                      px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>
                 </FormItem>
@@ -142,7 +142,7 @@ function ContactForm() {
                     {...field}
                     className="input-background_secondary 
                     rounded-[57px] border-[#767575]
-                    px-5 text-white placeholder:text-[#767575] lg:py-6"
+                    px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                   />
                 </FormControl>
               </FormItem>
@@ -160,7 +160,7 @@ function ContactForm() {
                     {...field}
                     className="input-background_secondary 
                     rounded-[57px] border-[#767575]
-                    px-5 text-white placeholder:text-[#767575] lg:py-6"
+                    px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                   />
                 </FormControl>
               </FormItem>

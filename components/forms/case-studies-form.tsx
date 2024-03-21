@@ -27,7 +27,7 @@ const formSchema = z.object({
   message: z.string().optional(),
 });
 
-const BlogFormPopup: React.FC = () => {
+const CaseStudiesFormPopup: React.FC = () => {
   const { setShowPopup, showPopup } = useContext(PopupFormContext);
 
   useEffect(() => {
@@ -40,13 +40,7 @@ const BlogFormPopup: React.FC = () => {
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {
-      email: "",
-      firstName: "",
-      lastName: "",
-      message: "",
-      phone: "",
-    },
+    defaultValues: {},
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
@@ -58,12 +52,12 @@ const BlogFormPopup: React.FC = () => {
   return (
     <div className="fixed left-0 top-0 z-50 flex size-full items-center justify-center">
       <div
-        className="background_primary mx-2 flex w-[1100px] rounded-md bg-cover bg-center lg:mx-0 "
+        className="background_primary flex w-[1100px] rounded-md bg-cover bg-center"
         style={{
           backgroundImage: "url('/assets/images/blog-form-svg.svg')",
         }}
       >
-        <div className="relative flex-1 lg:px-6 lg:py-8">
+        <div className="relative flex-1 px-6 py-8">
           <div
             className="w-full rounded-lg border-[#767575] px-6 py-8"
             style={{
@@ -252,4 +246,4 @@ const BlogFormPopup: React.FC = () => {
   );
 };
 
-export default BlogFormPopup;
+export default CaseStudiesFormPopup;

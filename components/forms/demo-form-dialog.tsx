@@ -2,7 +2,13 @@
 
 import { PopupFormContext } from "@/context/form-context";
 import React, { useContext, useEffect } from "react";
-import { Form, FormField, FormControl, FormItem } from "../ui/form";
+import {
+  Form,
+  FormField,
+  FormControl,
+  FormItem,
+  FormMessage,
+} from "../ui/form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -10,16 +16,18 @@ import Image from "next/image";
 import CustomButton from "../shared/custom-button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
+import { socialLinks } from "@/constants";
+import Link from "next/link";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is required" }).max(50),
   lastName: z.string().min(1, { message: "Last Name is required" }).max(50),
   email: z.string().email({ message: "Email is invalid" }),
   phone: z.string().min(1, { message: "Phone No is invalid" }).max(12),
-  message: z.string().min(1, { message: "Message is required" }).max(250),
+  message: z.string().optional(),
 });
 
-const HomePage: React.FC = () => {
+const DemoFormPopup: React.FC = () => {
   const { setShowPopup, showPopup } = useContext(PopupFormContext);
 
   useEffect(() => {
@@ -108,9 +116,10 @@ const HomePage: React.FC = () => {
                               <Input
                                 placeholder="First Name"
                                 {...field}
-                                className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#767575] lg:py-1.5"
+                                className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                               />
                             </FormControl>
+                            <FormMessage className="text-xs text-red-500" />
                           </FormItem>
                         )}
                       />
@@ -123,9 +132,10 @@ const HomePage: React.FC = () => {
                               <Input
                                 placeholder="Last Name"
                                 {...field}
-                                className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#767575] lg:py-1.5"
+                                className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                               />
                             </FormControl>
+                            <FormMessage className="text-xs text-red-500" />
                           </FormItem>
                         )}
                       />
@@ -139,9 +149,10 @@ const HomePage: React.FC = () => {
                             <Input
                               placeholder="Email Address"
                               {...field}
-                              className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#767575] lg:py-1.5"
+                              className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                             />
                           </FormControl>
+                          <FormMessage className="text-xs text-red-500" />
                         </FormItem>
                       )}
                     />
@@ -154,9 +165,10 @@ const HomePage: React.FC = () => {
                             <Input
                               placeholder="Phone No"
                               {...field}
-                              className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#767575] lg:py-1.5"
+                              className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                             />
                           </FormControl>
+                          <FormMessage className="text-xs text-red-500" />
                         </FormItem>
                       )}
                     />
@@ -169,9 +181,10 @@ const HomePage: React.FC = () => {
                             <Textarea
                               placeholder="Message"
                               {...field}
-                              className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#767575] lg:py-1.5"
+                              className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                             />
                           </FormControl>
+                          <FormMessage className="text-xs text-red-500" />
                         </FormItem>
                       )}
                     />
@@ -189,7 +202,7 @@ const HomePage: React.FC = () => {
           </div>
         </div>
         <div
-          className="relative rounded-md bg-cover bg-center lg:w-[40%]"
+          className="relative hidden rounded-md bg-cover bg-center lg:block lg:w-[40%]"
           style={{
             backgroundImage: "url('/assets/images/home-form-bg.svg')",
           }}
@@ -200,10 +213,38 @@ const HomePage: React.FC = () => {
           >
             <Image src="/assets/icons/x.svg" alt="x" width={22} height={22} />
           </div>
+
+          <div
+            className="flex size-full items-end  py-8 text-white
+          "
+          >
+            <div className="flex w-full max-w-xs flex-col gap-y-1.5  text-[17px] font-normal">
+              <p>Call us: +91 70045 35083</p>
+              <p>Mail us: hello@cloudprism.in</p>
+              <p>Website: www.cloudprism.in</p>
+              <p className="mt-6">
+                Building Name: Gera Imperium Alpha, Block Sector: Vitthal Nagar,
+                Kharadi, Pune, 411014
+              </p>
+              <div className="mb-6 mt-2 flex gap-1.5">
+                {socialLinks.map((item) => (
+                  <Link href={item.href} key={item.href}>
+                    <Image
+                      src={item.icon}
+                      alt={item.title ? item.title : "Social icons"}
+                      height={25}
+                      width={25}
+                      className="size-5 md:size-6"
+                    />
+                  </Link>
+                ))}
+              </div>{" "}
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default HomePage;
+export default DemoFormPopup;
