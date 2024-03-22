@@ -3,6 +3,7 @@
 
 import { createSlug } from "@/utils/cn";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -54,6 +55,21 @@ export const SuccessCard = ({
         <p className="mt-10 line-clamp-2 pt-8 text-sm text-[#A4A4A4] md:line-clamp-5">
           {description}
         </p>
+      </div>
+
+      <div
+        className={`absolute bottom-0 right-0 mt-4 hidden -translate-x-1/2 md:flex ${
+          isHovered
+            ? "duration-[100ms] bottom-[-20px] right-[-40px] opacity-100 transition-all"
+            : "bottom-0 opacity-0"
+        }`}
+      >
+        <Image
+          src="/assets/icons/arrow-up.svg"
+          alt="Arrow up"
+          width={110}
+          height={110}
+        />
       </div>
 
       <div

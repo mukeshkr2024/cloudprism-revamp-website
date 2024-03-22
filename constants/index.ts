@@ -155,11 +155,6 @@ export const footerLinks: FooterLinks[] = [
     route: "/about-us",
     label: "About",
   },
-  // TODO:  add salesforce and fullstack
-  {
-    route: "/services",
-    label: "Services",
-  },
   {
     route: "/blogs",
     label: "Blogs",
@@ -562,37 +557,32 @@ export const historyData = [
   {
     year: 2016,
     description:
-      "CloudPrism strives to be a platinum partner of Salesforce, that will enable us to convert industry of all sizes to cloud by providing them the best SAAS Tools of salesforce deployment and consulting.CloudPrism is dedicated to modifying your business process through smart Salesforce deployment and consulting services",
-  },
-  {
-    year: 2017,
-    description:
-      "In 2017, CloudPrism solidified its position as a leading provider of Salesforce solutions, offering tailored SAAS tools and consulting services to businesses across various industries. Our commitment to excellence and innovation continued to drive us forward as we helped organizations optimize their business processes through intelligent Salesforce deployments.",
+      "Since 2016, CloudPrism: Pioneering IT Excellence, Tailoring Tomorrow's Solutions.",
   },
   {
     year: 2018,
     description:
-      "As the demand for cloud solutions soared, CloudPrism expanded its suite of services in 2018, offering comprehensive Salesforce deployment and consulting services to meet the evolving needs of businesses. Our team remained dedicated to delivering top-notch solutions that empowered organizations to harness the full potential of Salesforce for enhanced efficiency and growth.",
-  },
-  {
-    year: 2019,
-    description:
-      "In 2019, CloudPrism continued to thrive as a trusted partner of Salesforce, providing cutting-edge SAAS tools and expert consulting services to businesses worldwide. Our focus on innovation and customer satisfaction propelled us to new heights, as we helped organizations leverage Salesforce to drive digital transformation and achieve their strategic objectives.",
+      "Inaugurated our inaugural office in Pune, marking the beginning of our journey.",
   },
   {
     year: 2020,
     description:
-      "Amidst unprecedented challenges, CloudPrism remained steadfast in its mission to empower businesses through Salesforce solutions in 2020. Despite the global upheaval, our team adapted swiftly to deliver seamless Salesforce deployments and consulting services, enabling organizations to navigate uncertainties and stay competitive in an ever-changing landscape.",
+      "Achieved the prestigious Startup of the Year Award in 2020, recognizing our innovation and impact.",
   },
   {
     year: 2021,
     description:
-      "In 2021, CloudPrism reaffirmed its commitment to excellence, emerging as a frontrunner in the realm of Salesforce solutions. With a focus on innovation and customer-centricity, we continued to pioneer new approaches to Salesforce deployment and consulting, empowering businesses to achieve greater agility, scalability, and success in the cloud.",
+      "Inaugurated our Patna office in 2021, solidifying our commitment to regional growth.",
   },
   {
     year: 2022,
     description:
-      "As we move forward into 2022, CloudPrism remains dedicated to driving digital transformation through Salesforce solutions. With a track record of success and a passion for innovation, we are poised to continue our journey as a trusted partner for businesses seeking to unlock the full potential of the cloud. Our comprehensive suite of SAAS tools and consulting services is designed to empower organizations of all sizes to thrive in the digital age.",
+      "Launched our Austin, TX office in 2022, furthering our global footprint and commitment to expansion.",
+  },
+  {
+    year: 2023,
+    description:
+      "Achieved the esteemed Company of the Year award in 2023, reflecting our continuous excellence and leadership.",
   },
 ];
 

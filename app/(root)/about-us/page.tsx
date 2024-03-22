@@ -12,7 +12,6 @@ export default function AboutPage() {
   return (
     <ScrollBarProgress>
       <div className="w-full overflow-hidden">
-        {/* TODO: Add responsiveness */}
         <section
           className="flex h-screen w-full flex-col items-center justify-center "
           style={{
@@ -61,7 +60,6 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-        {/* Mission Section */}
         <div className="flex flex-col space-y-12  lg:space-y-4">
           <SectionCard
             title="Mission"
@@ -79,11 +77,8 @@ export default function AboutPage() {
             imagSize="w-[710px] mr-[-50px]"
           />
         </div>
-
-        {/* History-section */}
         <HistorySection />
-        <div>
-          {/* TODO: add a right image  */}
+        <div className="mx-2 my-12  max-w-7xl  sm:mx-4 lg:mx-auto lg:my-24">
           <Image
             src={"/assets/images/history-svg.svg"}
             alt="History"
@@ -91,10 +86,8 @@ export default function AboutPage() {
             width={1286}
           />
         </div>
-        {/* Team */}
         <section className="mx-auto mb-36 flex max-w-7xl flex-col gap-y-16 sm:gap-y-20 md:gap-y-24 lg:gap-y-28 ">
           <h2 className="h2_semibold text-center">Our Team</h2>
-
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
             {ourTeams.map((team) => (
               <TeamCard

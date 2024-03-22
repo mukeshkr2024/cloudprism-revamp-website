@@ -24,8 +24,6 @@ export default function HistorySection() {
     setAnimationKey((prevKey) => prevKey + 1);
   };
 
-  // TODO:
-
   return (
     <section className="mx-auto max-w-7xl ">
       <h2 className="h2_semibold pt-8 text-center sm:pt-10 md:pt-12 lg:pt-16">
@@ -45,9 +43,6 @@ export default function HistorySection() {
               style={{
                 background:
                   "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
-                // border: "1.5px solid",
-                // borderImage:
-                //   "linear-gradient(326.06deg, rgba(46, 46, 46, 0.79) -110.75%, rgba(255, 255, 255, 0) 54.98%) 1.5",
                 transition: "background-color 0.3s",
               }}
               onClick={handlePrev}
@@ -68,9 +63,6 @@ export default function HistorySection() {
               style={{
                 background:
                   "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
-                // border: "1.5px solid",
-                // borderImage:
-                //   "linear-gradient(326.06deg, rgba(46, 46, 46, 0.79) -110.75%, rgba(255, 255, 255, 0) 54.98%) 1.5",
                 transition: "background-color 0.3s",
               }}
               onClick={handleNext}
