@@ -38,7 +38,7 @@ export default function OurServices() {
 
       <div className="mx-2.5 flex flex-col gap-y-8 sm:mx-4 md:mx-8 lg:w-2/3">
         <ServiceCard
-          svgUrl="/assets/gradients/one-stop-gradient.svg"
+          svgUrl="/assets/gradients/one-stop-vector.svg"
           imgUrl="/assets/icons/one-stop.svg"
           title="One Stop Salesforce Solution"
           description="Optimize workflows, elevate customer experiences, and boost efficiency with our integrated Salesforce and IT solutions. From initial implementation to advanced customization, along with expert Salesforce consultation, we offer end-to-end services modified to your business needs. Seamlessly streamline your service delivery and IT solutions, making progress happen all in one step."

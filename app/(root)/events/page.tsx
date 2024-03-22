@@ -16,10 +16,11 @@ export default function EventsPage() {
             backgroundImage: "url('/assets/images/about-us-bg.svg')",
           }}
         >
-          <div className="flex max-w-6xl flex-col items-center justify-center gap-y-4 sm:gap-y-6">
+          <div className="flex max-w-6xl flex-col items-center justify-center gap-y-4 sm:gap-y-6 md:pb-24">
             <h1 className="h1_bold">Explore Upcoming Events and Webinars.</h1>
             <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
-              Stay Connected
+              Step into a world of excitement, inspiration, and connection at
+              our exclusive event - where unforgettable moments await
             </p>
             <CustomButton className="rounded-3xl px-5 py-1.5">
               <Link href="/contact-us">

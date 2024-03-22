@@ -29,7 +29,7 @@ export default function NavMenuList({ label, subItems }: Props) {
           </NavigationMenuTrigger>
           <NavigationMenuContent className="border-none">
             <ul
-              className="flex min-w-[120px] flex-col gap-y-2.5 p-4"
+              className="flex flex-col gap-y-2.5 text-nowrap p-4"
               style={{
                 background:
                   "linear-gradient(149.64deg, rgba(25, 25, 25, 0.9) 21.24%, rgba(14, 14, 14, 0.9) 105.43%)",
@@ -42,7 +42,7 @@ export default function NavMenuList({ label, subItems }: Props) {
               {subItems.map((item) => (
                 <li
                   key={item.label}
-                  className="cursor-pointer text-sm duration-300 hover:scale-110 hover:transition-transform "
+                  className="cursor-pointer text-sm duration-300 hover:scale-105 hover:transition-transform "
                 >
                   <Link href={item.route}>{item.label}</Link>
                 </li>

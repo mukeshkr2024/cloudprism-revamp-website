@@ -20,11 +20,9 @@ export default function BlogCard({
   readTime,
 }: BlogProps) {
   const [isHovered, setIsHovered] = useState(false);
-  const slug = createSlug(title);
-
   return (
     <div
-      className=" w-[279px] rounded-lg "
+      className="w-[279px] rounded-lg text-white"
       style={{
         border: "1px solid",
         borderImage: isHovered
@@ -34,17 +32,17 @@ export default function BlogCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Image height={154} width={279} alt={title} src={imgUrl} />
-      <div className="card_primary_background flex flex-col gap-y-8 rounded-b-lg px-6 py-12">
-        <h3 className="text-xl font-bold text-white">{title}</h3>
+      <Image height={154} alt={title} src={imgUrl} width={279} />
+      <div className="card_primary_background flex h-[280px] flex-col justify-between rounded-b-lg px-6 py-8">
+        <h3 className="line-clamp-2 text-xl font-bold text-white">{title}</h3>
         <p className="line-clamp-3 text-sm font-normal text-[#798882]">
           {description}
         </p>
         <div className="flex items-center justify-between">
-          <span className="text-sm text-[#798882]">{readTime} Read</span>
+          <span className="text-sm text-[#798882]">{readTime}</span>
           <CustomButton className="rounded-3xl px-3 py-1.5">
-            <Link href={`/blog/${slug}`}>
-              <p>Read More</p>
+            <Link href={`/blog/${createSlug(title)}`}>
+              <p className="text-black">Read More</p>
             </Link>
           </CustomButton>
         </div>

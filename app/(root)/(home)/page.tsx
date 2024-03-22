@@ -10,7 +10,6 @@ import MainSection from "@/components/home/main-section";
 import OurClientSay from "@/components/home/our-clients-says";
 import {
   certifiedDevelopers,
-  readOurBlogs,
   successStory,
   technologPartners,
   whyStandOut,
@@ -18,6 +17,9 @@ import {
 import Image from "next/image";
 import DemoFormPopup from "@/components/forms/demo-form-dialog";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
+import { BlogsData } from "@/constants/blogs-data";
+
+const readBlogs = BlogsData.slice(0, 4);
 
 export default function Home() {
   return (
@@ -132,12 +134,12 @@ export default function Home() {
           <section className="mx-auto mt-28 max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl ">
             <h2 className="h2_semibold text-center">Read Our Blogs</h2>
             <div className="mt-24 flex flex-wrap  justify-center gap-y-6 px-6  sm:justify-between">
-              {readOurBlogs.map((item) => (
+              {readBlogs.map((item) => (
                 <BlogCard
                   key={item.title}
-                  description={item.description}
-                  imgUrl={item.imgUrl}
-                  readTime={item.read_time}
+                  description={item.intro}
+                  imgUrl={item.featuredImage}
+                  readTime={item.readTime}
                   title={item.title}
                 />
               ))}

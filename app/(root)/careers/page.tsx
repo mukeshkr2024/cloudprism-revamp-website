@@ -3,21 +3,27 @@ import ConnectToUs from "@/components/shared/connect-to-us";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import React from "react";
 
-// TODO:  to add content
-
 function CarrierPage() {
   return (
     <ScrollBarProgress>
       <div>
         <div
-          className="flex h-screen w-full items-center justify-center bg-cover bg-no-repeat sm:px-8 md:justify-start md:px-12 lg:px-16"
+          className="flex h-screen w-full items-center px-8 md:px-12 lg:px-12 "
           style={{
             backgroundImage: "url('/assets/images/carrier-image.svg')",
           }}
         >
-          <h2 className="h1_bold text-center md:text-start lg:!text-[80px]">
-            Where Talent Meets <br /> Opportunity.
-          </h2>
+          <div className="max-w-7xl">
+            <h1 className="text-start text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+              Where Talent Meets Opportunity. Explore Careers at Cloudprism
+              Solutions.
+            </h1>
+            <h3 className="mt-4 max-w-5xl text-base text-[#C0C0C0] sm:text-lg md:text-xl">
+              Join a team where you&apos;re not just an employee, but the
+              protagonist of your career tale – let&#39;s create your success
+              story together
+            </h3>
+          </div>
         </div>
 
         <div className="mx-4 mt-[-50px]  flex max-w-7xl flex-col gap-y-12 text-center lg:mx-auto  lg:flex-row lg:px-8 lg:text-start xl:px-0">

@@ -20,11 +20,14 @@ import { socialLinks } from "@/constants";
 import Link from "next/link";
 
 const formSchema = z.object({
-  firstName: z.string().min(1, { message: "First Name is required" }).max(50),
-  lastName: z.string().min(1, { message: "Last Name is required" }).max(50),
-  email: z.string().email({ message: "Email is invalid" }),
-  phone: z.string().min(1, { message: "Phone No is invalid" }).max(12),
-  message: z.string().optional(),
+  firstName: z.string().min(1, { message: "FirstName is required" }).max(50),
+  lastName: z.string().min(1, { message: "LastName is required" }).max(50),
+  email: z.string().email({ message: "Invalid Email" }),
+  phone: z
+    .string()
+    .min(1, { message: "Phone is required" })
+    .max(12, { message: "Invalid phone number" }),
+  message: z.string().min(1, { message: "Message is required" }).optional(),
 });
 
 const DemoFormPopup: React.FC = () => {
@@ -54,7 +57,7 @@ const DemoFormPopup: React.FC = () => {
       <div className="background_primary flex w-[1100px] rounded-md">
         <div className="relative flex-1 px-6 py-8">
           <div
-            className="w-full rounded-lg border-[#767575] px-6 py-8"
+            className="w-full rounded-lg border-2  border-b-[#121212] border-l-[#252525] border-r-[#121212] border-t-[#252525]  px-6 py-8"
             style={{
               background:
                 "linear-gradient(149.64deg, rgba(25, 25, 25, 0.56) 21.24%, rgba(14, 14, 14, 0.56) 105.43%)",
@@ -69,29 +72,7 @@ const DemoFormPopup: React.FC = () => {
             >
               <Image src="/assets/icons/x.svg" alt="x" width={15} height={15} />
             </div>
-            <div className="flex items-center space-x-3 text-white">
-              <div className="flex flex-col items-center justify-center">
-                <Image
-                  src="/assets/icons/company-logo.svg"
-                  width={77}
-                  height={45}
-                  alt="Logo icon"
-                />
-                <p className="text-[10px]">CloudPrism Solutions</p>
-              </div>
-              <div className="h-[45px] w-[2px] bg-white" />
-              <div className="flex items-center gap-2 lg:gap-4">
-                <Image
-                  src="/assets/icons/saleforce.svg"
-                  alt="Saleforce"
-                  width={54}
-                  height={38}
-                />
-                <p className="text-[13px]">
-                  Ridge Consulting <br /> Partner
-                </p>
-              </div>
-            </div>
+
             <div className="mt-4 flex w-full flex-col text-white">
               <h2 className="text-3xl font-bold">
                 Ready to bring your ideas to life?
@@ -116,7 +97,7 @@ const DemoFormPopup: React.FC = () => {
                               <Input
                                 placeholder="First Name"
                                 {...field}
-                                className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
+                                className="input-background_secondary rounded-[6px] border-none px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                               />
                             </FormControl>
                             <FormMessage className="text-xs text-red-500" />
@@ -132,7 +113,7 @@ const DemoFormPopup: React.FC = () => {
                               <Input
                                 placeholder="Last Name"
                                 {...field}
-                                className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
+                                className="input-background_secondary rounded-[6px] border-none px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                               />
                             </FormControl>
                             <FormMessage className="text-xs text-red-500" />
@@ -149,7 +130,7 @@ const DemoFormPopup: React.FC = () => {
                             <Input
                               placeholder="Email Address"
                               {...field}
-                              className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
+                              className="input-background_secondary rounded-[6px] border-none px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                             />
                           </FormControl>
                           <FormMessage className="text-xs text-red-500" />
@@ -165,7 +146,7 @@ const DemoFormPopup: React.FC = () => {
                             <Input
                               placeholder="Phone No"
                               {...field}
-                              className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
+                              className="input-background_secondary rounded-[6px] border-none px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                             />
                           </FormControl>
                           <FormMessage className="text-xs text-red-500" />
@@ -181,7 +162,7 @@ const DemoFormPopup: React.FC = () => {
                             <Textarea
                               placeholder="Message"
                               {...field}
-                              className="input-background_secondary rounded-[6px] border-[#767575] px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
+                              className="input-background_secondary rounded-[6px] border-none px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                             />
                           </FormControl>
                           <FormMessage className="text-xs text-red-500" />

@@ -88,6 +88,7 @@ export interface BlogData {
   featuredImage: string;
   intro: string;
   summary: BlogSummary[];
+  imgUrl: string;
   sections: Section[];
 }
 
@@ -96,7 +97,8 @@ export const BlogsData: BlogData[] = [
     title: "How talent leaders can help capitalize on generative AI ",
     readTime: "5-MINUTE READ",
     postDate: "10 MARCH",
-    featuredImage: "/assets/images/blog-1-picture-1.svg",
+    featuredImage: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1-picture-1.svg",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
     summary: [
@@ -143,7 +145,9 @@ export const BlogsData: BlogData[] = [
     title: "Title of Second Blog",
     readTime: "3-MINUTE READ",
     postDate: "20 FEBRUARY",
-    featuredImage: "/assets/images/blog-1-picture-1.svg",
+    imgUrl: "/assets/images/blog-1-picture-1.svg",
+
+    featuredImage: "/assets/images/blog-1.svg",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
     summary: [
@@ -177,7 +181,9 @@ export const BlogsData: BlogData[] = [
     title: "Title of Third Blog",
     readTime: "4-MINUTE READ",
     postDate: "25 FEBRUARY",
-    featuredImage: "/assets/images/blog-1-picture-1.svg",
+    imgUrl: "/assets/images/blog-1-picture-1.svg",
+
+    featuredImage: "/assets/images/blog-1.svg",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
     summary: [
@@ -209,8 +215,9 @@ export const BlogsData: BlogData[] = [
   {
     title: "Title of Fourth Blog",
     readTime: "6-MINUTE READ",
+    imgUrl: "/assets/images/blog-1-picture-1.svg",
     postDate: "28 FEBRUARY",
-    featuredImage: "/assets/images/blog-1-picture-1.svg",
+    featuredImage: "/assets/images/blog-1.svg",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
     summary: [
@@ -244,7 +251,8 @@ export const BlogsData: BlogData[] = [
     title: "Title of Fifth Blog",
     readTime: "7-MINUTE READ",
     postDate: "5 MARCH",
-    featuredImage: "/assets/images/blog-1-picture-1.svg",
+    imgUrl: "/assets/images/blog-1-picture-1.svg",
+    featuredImage: "/assets/images/blog-1.svg",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
     summary: [
@@ -267,6 +275,150 @@ export const BlogsData: BlogData[] = [
           },
           {
             content: "More content of the first section of the fifth blog...",
+            imgUrl: "",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "How talent leaders can help capitalize on generative AI ",
+    readTime: "5-MINUTE READ",
+    postDate: "10 MARCH",
+    featuredImage: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1-picture-1.svg",
+    intro:
+      "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
+    summary: [
+      {
+        content:
+          "Generative AI has been making headlines across the world as individuals and business leaders explore the possibilities created by this powerful new tool. Public services are no exception. The technology is poised to reinvent many of the ways public service organizations serve citizen needs and get work done.",
+      },
+      {
+        content:
+          "One recent Accenture study estimated that as much as three-quarters (74%) of public service employees’ working hours are spent on tasks that involve the use of language to some extent – across both front-line and back-office work, as well as interactions across different channels (voice, email, digital apps, and so on). Generative AI creates numerous opportunities for automating, augmenting and optimizing these language-based tasks. This includes everything from generating automated case summaries for social workers to providing intelligent multi-language chatbots for public services to performing proactive threat analysis in areas like public safety",
+      },
+    ],
+
+    sections: [
+      {
+        id: 1,
+        title: "A timely arrival",
+        contentSections: [
+          {
+            content:
+              "Generative AI has been making headlines across the world as individuals and business leaders explore the possibilities created by this powerful new tool. Public services are no exception. The technology is poised to reinvent many of the ways public service organizations serve citizen needs and get work done.",
+            imgUrl: "",
+          },
+          {
+            content:
+              "One recent Accenture study estimated that as much as three-quarters (74%) of public service employees’ working hours are spent on tasks that involve the use of language to some extent – across both front-line and back-office work, as well as interactions across different channels (voice, email, digital apps, and so on). Generative AI creates numerous opportunities for automating, augmenting and optimizing these language-based tasks. This includes everything from generating automated case summaries for social workers to providing intelligent multi-language chatbots for public services to performing proactive threat analysis in areas like public safety.",
+            imgUrl: "/assets/images/blog-1-picture-1.svg",
+          },
+          {
+            content:
+              "Generative AI has been making headlines across the world as individuals and business leaders explore the possibilities created by this powerful new tool. Public services are no exception. The technology is poised to reinvent many of the ways public service organizations serve citizen needs and get work done.",
+            imgUrl: "",
+          },
+          {
+            content:
+              "One recent Accenture study estimated that as much as three-quarters (74%) of public service employees’ working hours are spent on tasks that involve the use of language to some extent – across both front-line and back-office work, as well as interactions across different channels (voice, email, digital apps, and so on). Generative AI creates numerous opportunities for automating, augmenting and optimizing these language-based tasks. This includes everything from generating automated case summaries for social workers to providing intelligent multi-language chatbots for public services to performing proactive threat analysis in areas like public safety.",
+            imgUrl: "",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "How talent leaders can help capitalize on generative AI ",
+    readTime: "5-MINUTE READ",
+    postDate: "10 MARCH",
+    featuredImage: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1-picture-1.svg",
+    intro:
+      "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
+    summary: [
+      {
+        content:
+          "Generative AI has been making headlines across the world as individuals and business leaders explore the possibilities created by this powerful new tool. Public services are no exception. The technology is poised to reinvent many of the ways public service organizations serve citizen needs and get work done.",
+      },
+      {
+        content:
+          "One recent Accenture study estimated that as much as three-quarters (74%) of public service employees’ working hours are spent on tasks that involve the use of language to some extent – across both front-line and back-office work, as well as interactions across different channels (voice, email, digital apps, and so on). Generative AI creates numerous opportunities for automating, augmenting and optimizing these language-based tasks. This includes everything from generating automated case summaries for social workers to providing intelligent multi-language chatbots for public services to performing proactive threat analysis in areas like public safety",
+      },
+    ],
+
+    sections: [
+      {
+        id: 1,
+        title: "A timely arrival",
+        contentSections: [
+          {
+            content:
+              "Generative AI has been making headlines across the world as individuals and business leaders explore the possibilities created by this powerful new tool. Public services are no exception. The technology is poised to reinvent many of the ways public service organizations serve citizen needs and get work done.",
+            imgUrl: "",
+          },
+          {
+            content:
+              "One recent Accenture study estimated that as much as three-quarters (74%) of public service employees’ working hours are spent on tasks that involve the use of language to some extent – across both front-line and back-office work, as well as interactions across different channels (voice, email, digital apps, and so on). Generative AI creates numerous opportunities for automating, augmenting and optimizing these language-based tasks. This includes everything from generating automated case summaries for social workers to providing intelligent multi-language chatbots for public services to performing proactive threat analysis in areas like public safety.",
+            imgUrl: "/assets/images/blog-1-picture-1.svg",
+          },
+          {
+            content:
+              "Generative AI has been making headlines across the world as individuals and business leaders explore the possibilities created by this powerful new tool. Public services are no exception. The technology is poised to reinvent many of the ways public service organizations serve citizen needs and get work done.",
+            imgUrl: "",
+          },
+          {
+            content:
+              "One recent Accenture study estimated that as much as three-quarters (74%) of public service employees’ working hours are spent on tasks that involve the use of language to some extent – across both front-line and back-office work, as well as interactions across different channels (voice, email, digital apps, and so on). Generative AI creates numerous opportunities for automating, augmenting and optimizing these language-based tasks. This includes everything from generating automated case summaries for social workers to providing intelligent multi-language chatbots for public services to performing proactive threat analysis in areas like public safety.",
+            imgUrl: "",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    title: "How talent leaders can help capitalize on generative AI ",
+    readTime: "5-MINUTE READ",
+    postDate: "10 MARCH",
+    featuredImage: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1-picture-1.svg",
+    intro:
+      "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
+    summary: [
+      {
+        content:
+          "Generative AI has been making headlines across the world as individuals and business leaders explore the possibilities created by this powerful new tool. Public services are no exception. The technology is poised to reinvent many of the ways public service organizations serve citizen needs and get work done.",
+      },
+      {
+        content:
+          "One recent Accenture study estimated that as much as three-quarters (74%) of public service employees’ working hours are spent on tasks that involve the use of language to some extent – across both front-line and back-office work, as well as interactions across different channels (voice, email, digital apps, and so on). Generative AI creates numerous opportunities for automating, augmenting and optimizing these language-based tasks. This includes everything from generating automated case summaries for social workers to providing intelligent multi-language chatbots for public services to performing proactive threat analysis in areas like public safety",
+      },
+    ],
+
+    sections: [
+      {
+        id: 1,
+        title: "A timely arrival",
+        contentSections: [
+          {
+            content:
+              "Generative AI has been making headlines across the world as individuals and business leaders explore the possibilities created by this powerful new tool. Public services are no exception. The technology is poised to reinvent many of the ways public service organizations serve citizen needs and get work done.",
+            imgUrl: "",
+          },
+          {
+            content:
+              "One recent Accenture study estimated that as much as three-quarters (74%) of public service employees’ working hours are spent on tasks that involve the use of language to some extent – across both front-line and back-office work, as well as interactions across different channels (voice, email, digital apps, and so on). Generative AI creates numerous opportunities for automating, augmenting and optimizing these language-based tasks. This includes everything from generating automated case summaries for social workers to providing intelligent multi-language chatbots for public services to performing proactive threat analysis in areas like public safety.",
+            imgUrl: "/assets/images/blog-1-picture-1.svg",
+          },
+          {
+            content:
+              "Generative AI has been making headlines across the world as individuals and business leaders explore the possibilities created by this powerful new tool. Public services are no exception. The technology is poised to reinvent many of the ways public service organizations serve citizen needs and get work done.",
+            imgUrl: "",
+          },
+          {
+            content:
+              "One recent Accenture study estimated that as much as three-quarters (74%) of public service employees’ working hours are spent on tasks that involve the use of language to some extent – across both front-line and back-office work, as well as interactions across different channels (voice, email, digital apps, and so on). Generative AI creates numerous opportunities for automating, augmenting and optimizing these language-based tasks. This includes everything from generating automated case summaries for social workers to providing intelligent multi-language chatbots for public services to performing proactive threat analysis in areas like public safety.",
             imgUrl: "",
           },
         ],

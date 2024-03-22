@@ -7,6 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
+// TODO:  to add image left slide
+
 interface SuccessCardProps {
   imgUrl: string;
   title: string;
@@ -22,9 +24,8 @@ export const SuccessCard = ({
 
   return (
     <div
-      className="relative h-[282px] w-[175px] overflow-hidden rounded-[15px] bg-cover bg-no-repeat p-6 sm:h-[320px] sm:w-[200px] md:h-[420px] md:w-[260px]"
+      className="relative h-[282px] w-[175px] overflow-hidden rounded-[15px] bg-cover bg-center bg-no-repeat p-6 sm:h-[320px] sm:w-[200px] md:h-[420px] md:w-[260px]"
       style={{
-        backgroundImage: `url(${imgUrl})`,
         boxShadow: isHovered
           ? "0px 3px 7px 0px #42FF9E1F, 0px 13px 13px 0px #42FF9E1C, 0px 30px 18px 0px #42FF9E0F, 0px 53px 21px 0px #42FF9E05, 0px 83px 23px 0px #42FF9E00"
           : "none",
@@ -32,15 +33,14 @@ export const SuccessCard = ({
       onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
     >
-      {isHovered && (
-        <div
-          className="absolute inset-0 rounded-[15px] transition-opacity duration-500"
-          style={{
-            backdropFilter: "blur(20px)",
-            opacity: 0.85,
-          }}
-        />
-      )}
+      <div
+        className="absolute inset-0 rounded-[15px] bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: `url(${imgUrl})`,
+          filter: isHovered ? "blur(25px)" : "none",
+          transition: "filter 0.5s ease-in-out",
+        }}
+      />
       <div className="relative">
         <p className="z-10 text-xs text-[#E5E5E5] md:text-sm">
           RESEARCH REPORT
@@ -60,7 +60,7 @@ export const SuccessCard = ({
       <div
         className={`absolute bottom-0 right-0 mt-4 hidden -translate-x-1/2 md:flex ${
           isHovered
-            ? "duration-[100ms] bottom-[-20px] right-[-40px] opacity-100 transition-all"
+            ? "duration-[100ms] bottom-[-50px] right-[-40px] opacity-100 transition-all"
             : "bottom-0 opacity-0"
         }`}
       >

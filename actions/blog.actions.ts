@@ -39,3 +39,16 @@ export const eventBySlug = (slug: string) => {
 
   return null;
 };
+
+export const readBlogs = () => {
+  const data = BlogsData.slice(0, 4);
+
+  const blogs = data.map((blog) => ({
+    imgUrl: blog.featuredImage,
+    title: blog.title,
+    description: blog.intro,
+    read_time: blog.readTime,
+  }));
+
+  return blogs;
+};

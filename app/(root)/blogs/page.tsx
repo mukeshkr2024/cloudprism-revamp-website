@@ -3,10 +3,12 @@ import LatestBlog from "@/components/blog/latest-blog";
 import BlogCard from "@/components/card/blog-card";
 import BlogFormPopup from "@/components/forms/blog-form-dialog";
 import ConnectToUs from "@/components/shared/connect-to-us";
-import { readBlogs } from "@/constants/blogs-data";
+import { BlogsData } from "@/constants/blogs-data";
 import React from "react";
 
 const latestblogs = latestBlogs();
+
+const readBlogs = BlogsData;
 
 export default function BlogPage() {
   return (
@@ -39,9 +41,9 @@ export default function BlogPage() {
           {readBlogs.map((blog) => (
             <BlogCard
               key={blog.title}
-              description={blog.description}
+              description={blog.intro}
               imgUrl={blog.imgUrl}
-              readTime={blog.read_time}
+              readTime={blog.readTime}
               title={blog.title}
             />
           ))}

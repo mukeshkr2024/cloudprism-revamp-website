@@ -16,7 +16,7 @@ export default function LatestBlog({ latestblogs }: Props) {
           latestblogs.map((blog) => (
             <LatestBlogItem
               key={blog.title}
-              bgUrl={blog.featuredImage}
+              bgUrl={blog.imgUrl}
               title={blog.title}
               intro={blog.intro}
             />

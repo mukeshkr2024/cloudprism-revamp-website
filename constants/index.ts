@@ -21,11 +21,11 @@ export const navbarLinks: NavbarLinks[] = [
     subItems: [
       {
         route: "/salesforce-services",
-        label: "Salesforce ",
+        label: "Complete Salesforce Solutions",
       },
       {
         route: "/full-stack-services",
-        label: "Full Stack",
+        label: "Software Consultation and Developement",
       },
     ],
   },
