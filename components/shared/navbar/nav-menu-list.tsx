@@ -7,7 +7,9 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
+import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 interface Props {
   label: string;
@@ -18,14 +20,33 @@ interface Props {
 }
 
 export default function NavMenuList({ label, subItems }: Props) {
+  const [hovered, setIHovered] = useState(false);
+
   return (
     <NavigationMenu className="  text-white">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>
-            <p className="text-[15px] text-[#EBEBEB] transition-transform duration-300 hover:scale-110">
-              {label}
-            </p>
+            <div
+              className="flex w-full items-center justify-center"
+              onMouseEnter={() => setIHovered(true)}
+              onMouseLeave={() => setIHovered(false)}
+            >
+              {hovered && (
+                <div className="absolute flex w-full items-center justify-center">
+                  <Image
+                    src="/assets/gradients/project-gradient.svg"
+                    width={65}
+                    height={40}
+                    alt="Svg"
+                    className="opacity-20"
+                  />
+                </div>
+              )}
+              <p className="text-[15px] text-[#EBEBEB] transition-transform duration-300 hover:scale-110">
+                {label}
+              </p>
+            </div>
           </NavigationMenuTrigger>
           <NavigationMenuContent className="border-none">
             <ul
