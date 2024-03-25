@@ -9,9 +9,9 @@ import React from "react";
 export default function EventsPage() {
   return (
     <ScrollBarProgress>
-      <div className="w-full">
+      <div className="mx-auto w-full max-w-[90rem]">
         <section
-          className="flex h-screen w-full flex-col items-center justify-center "
+          className="flex h-[600px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat md:h-[800px] "
           style={{
             backgroundImage: "url('/assets/images/about-us-bg.svg')",
           }}

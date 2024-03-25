@@ -12,12 +12,12 @@ const readBlogs = BlogsData;
 
 export default function BlogPage() {
   return (
-    <div className="w-full">
+    <div className="mx-auto w-full max-w-[90rem]">
       <BlogFormPopup />
       <section
         className="flex h-[80vh] w-full flex-col justify-center bg-cover bg-center"
         style={{
-          backgroundImage: "url('/assets/images/case-studies-bg.svg')",
+          backgroundImage: "url('/assets/images/blog-bg-svg.svg')",
         }}
       >
         <div className=" flex flex-col gap-y-4 px-6 text-white lg:px-20">

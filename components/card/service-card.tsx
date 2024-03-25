@@ -11,7 +11,7 @@ interface ServiceProps {
   svgUrl: string;
 }
 
-// TODO: Fix the issue or border radius - border-2 border-[#191919C4]
+// TODO: Fix the issue or border radius - border-2 border-[#2E2E2E]
 
 export default function ServiceCard({
   description,
@@ -22,18 +22,18 @@ export default function ServiceCard({
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className="relative w-full px-6 py-8 sm:px-8 sm:py-12 md:px-10 md:pb-12 lg:px-12 lg:pb-16  xl:px-14 xl:pb-20 "
+      className="relative w-full rounded-[19px] border border-[#2E2E2E] px-6 py-8 shadow-md transition-colors duration-300 ease-in-out hover:border-[#02FFB3] sm:px-8 sm:py-12 md:px-10 md:pb-12 lg:px-12 lg:pb-16  xl:px-14 xl:pb-20 "
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{
         background:
           "linear-gradient(149.64deg, rgba(25, 25, 25, 0.56) 21.24%, rgba(14, 14, 14, 0.56) 105.43%)",
-        boxShadow:
-          "-14px 3px 33px 0px #0000001C, -58px 14px 59px 0px #0000001A,  -129px 31px 80px 0px #0000000F,-230px 56px 95px 0px #00000005, -360px 87px 104px 0px #00000000",
-        border: "1.5px solid",
-        borderImage: isHovered
-          ? "linear-gradient(145.67deg, #02FFB3 -40.26%, rgba(2, 255, 179, 0.04) 97.86%) 1"
-          : "linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 1.5",
+        // boxShadow:
+        //   "-14px 3px 33px 0px #0000001C, -58px 14px 59px 0px #0000001A,  -129px 31px 80px 0px #0000000F,-230px 56px 95px 0px #00000005, -360px 87px 104px 0px #00000000",
+        // border: "1.5px solid",
+        // borderImage: isHovered
+        //   ? "linear-gradient(145.67deg, #02FFB3 -40.26%, rgba(2, 255, 179, 0.04) 97.86%) 1"
+        //   : "linear-gradient(145.67deg, rgba(46, 46, 46, 0.79) -128.7%, rgba(255, 255, 255, 0) 59.5%) 1.5",
       }}
     >
       <div className="flex flex-col gap-4">

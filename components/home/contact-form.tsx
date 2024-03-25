@@ -3,7 +3,13 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { Form, FormControl, FormField, FormItem } from "../ui/form";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormMessage,
+} from "../ui/form";
 import { Input } from "../ui/input";
 import CustomButton from "../shared/custom-button";
 
@@ -18,16 +24,12 @@ const formSchema = z.object({
 });
 
 function ContactForm() {
-  // 1. Define your form.
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {},
   });
 
-  // 2. Define a submit handler.
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     console.log(values);
   }
   return (
@@ -52,6 +54,7 @@ function ContactForm() {
                     px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>
+                  <FormMessage className="text-xs text-red-500" />
                 </FormItem>
               )}
             />
@@ -70,6 +73,7 @@ function ContactForm() {
                       px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>
+                  <FormMessage className="text-xs text-red-500" />
                 </FormItem>
               )}
             />
@@ -89,6 +93,7 @@ function ContactForm() {
                     px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                   />
                 </FormControl>
+                <FormMessage className="text-xs text-red-500" />
               </FormItem>
             )}
           />
@@ -108,6 +113,7 @@ function ContactForm() {
                     px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>
+                  <FormMessage className="text-xs text-red-500" />
                 </FormItem>
               )}
             />
@@ -125,7 +131,8 @@ function ContactForm() {
                       rounded-[57px] border-[#767575]
                       px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
-                  </FormControl>
+                  </FormControl>{" "}
+                  <FormMessage className="text-xs text-red-500" />
                 </FormItem>
               )}
             />
@@ -145,6 +152,7 @@ function ContactForm() {
                     px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                   />
                 </FormControl>
+                <FormMessage className="text-xs text-red-500" />
               </FormItem>
             )}
           />
@@ -163,6 +171,7 @@ function ContactForm() {
                     px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                   />
                 </FormControl>
+                <FormMessage className="text-xs text-red-500" />
               </FormItem>
             )}
           />

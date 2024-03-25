@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ConnectToUs() {
   return (
     <section
-      className="h-[600px] w-full  bg-cover bg-center bg-no-repeat md:h-[650px]  "
+      className="mx-auto h-[500px] w-full max-w-[90rem]   bg-cover bg-center bg-no-repeat md:h-[650px]  "
       style={{
         backgroundImage: "url('/assets/images/connect-to-us.svg')",
       }}

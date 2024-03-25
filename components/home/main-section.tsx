@@ -12,7 +12,7 @@ const Spline = dynamic(() => import("@splinetool/react-spline"), {
 
 function MainSection() {
   return (
-    <div className="relative flex h-screen w-full items-center justify-center">
+    <div className="relative flex h-screen max-h-[1000px] w-full items-center justify-center ">
       <div className="size-full">
         {/* <Spline scene="https://prod.spline.design/xboa1Cf0xqy0IBde/scene.splinecode" /> */}
         <Spline scene="https://prod.spline.design/2vZlQQ5DGv5WqORt/scene.splinecode" />

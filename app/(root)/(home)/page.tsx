@@ -29,7 +29,7 @@ export default function Home() {
           {/* Main section  */}
           <MainSection />
           <div className="flex-center mt-8 w-full lg:mt-12">
-            <p className="max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
+            <p className="mb-10 max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
               Cloudprism a certified digital consulting partner specializing in
               Directing Business Progress via Salesforce implementation and
               consulting services. Promising 100+ Salesforce-certified
@@ -131,7 +131,7 @@ export default function Home() {
               ))}
             </div>
           </section>
-          <section className="mx-auto mt-28 max-w-sm sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl ">
+          <section className="mx-auto mt-20 max-w-sm sm:mt-28 sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl ">
             <h2 className="h2_semibold text-center">Read Our Blogs</h2>
             <div className="mt-24 flex flex-wrap  justify-center gap-y-6 px-6  sm:justify-between">
               {readBlogs.map((item) => (
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
           </section>
           <section
-            className="flex size-full flex-col bg-cover bg-center md:px-12 lg:h-[600px] lg:flex-row  lg:px-16"
+            className="mx-auto flex size-full max-w-[90rem] flex-col bg-cover bg-center md:px-12  lg:h-[600px] lg:flex-row lg:px-16"
             style={{
               backgroundImage: "url('/assets/images/connect-to-us.svg')",
             }}

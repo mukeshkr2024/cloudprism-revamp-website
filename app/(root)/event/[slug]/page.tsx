@@ -22,7 +22,7 @@ function BlogDetailsPage({ params }: Params) {
 
   return (
     <ScrollBarProgress>
-      <div className="w-full">
+      <div className="mx-auto w-full max-w-[90rem]">
         <div className="flex w-full flex-col justify-center  pb-32 pt-40 lg:flex-row lg:justify-between">
           <TracingBeam className="px-6">
             <div className=" text-white">

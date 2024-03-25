@@ -2,18 +2,21 @@ import React from "react";
 import CustomButton from "../shared/custom-button";
 import { Home, MapPin, MessageSquareText } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function JobOpeningCard() {
   return (
-    <div className="job_opening_card flex h-[390px] w-[374px] flex-col justify-between rounded-lg border-2 border-[#191919C4] p-6 text-white shadow-md">
+    <div className="job_opening_card flex h-[390px] w-[374px] flex-col justify-between rounded-lg border border-[#2E2E2E] p-6 text-white shadow-md transition duration-300 ease-in-out hover:scale-105  hover:border-[#02FFB3]">
       <div className="flex w-full items-center justify-between">
         <p className="text-[27px] text-white">UI/UX Designer</p>
-        <Image
-          src="/assets/icons/linkdein-dark.svg"
-          alt="Linkdein"
-          width={30}
-          height={30}
-        />
+        <Link href={`/`}>
+          <Image
+            src="/assets/icons/linkdein-dark.svg"
+            alt="Linkdein"
+            width={30}
+            height={30}
+          />
+        </Link>
       </div>
       <div className="flex flex-col items-start justify-start gap-y-4">
         <div

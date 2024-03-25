@@ -1,14 +1,14 @@
 import JobOpeningCard from "@/components/card/opening-card";
-import ConnectToUs from "@/components/shared/connect-to-us";
+import CustomButton from "@/components/shared/custom-button";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
-import React from "react";
+import Link from "next/link";
 
 function CarrierPage() {
   return (
     <ScrollBarProgress>
-      <div>
+      <div className="mx-auto max-w-[90rem]">
         <div
-          className="flex h-screen w-full items-center px-8 md:px-12 lg:px-12 "
+          className="flex h-[600px] w-full items-center bg-cover bg-center bg-no-repeat px-8 md:h-[800px] md:px-12 lg:px-12 "
           style={{
             backgroundImage: "url('/assets/images/carrier-image.svg')",
           }}
@@ -25,7 +25,6 @@ function CarrierPage() {
             </h3>
           </div>
         </div>
-
         <div className="mx-4 mt-[-50px]  flex max-w-7xl flex-col gap-y-12 text-center lg:mx-auto  lg:flex-row lg:px-8 lg:text-start xl:px-0">
           <h2 className="h2_semibold flex-1">
             We Are <br className="hidden lg:block" />
@@ -60,7 +59,6 @@ function CarrierPage() {
             </p>
           </div>
         </div>
-
         <section className="mx-auto mt-20 max-w-sm sm:max-w-lg md:max-w-2xl lg:mt-32 lg:max-w-5xl xl:max-w-7xl ">
           <h2 className="h2_semibold text-center">Job Openings</h2>
           <p className="mt-10 text-center text-xl font-light text-[#F2EFEF]">
@@ -77,7 +75,24 @@ function CarrierPage() {
             <JobOpeningCard />
           </div>
         </section>
-        <ConnectToUs />
+        <section
+          className="mx-auto h-[500px] w-full max-w-[90rem]   bg-cover bg-center bg-no-repeat md:h-[650px]  "
+          style={{
+            backgroundImage: "url('/assets/images/connect-to-us.svg')",
+          }}
+        >
+          <div className="flex flex-col items-center justify-center gap-y-5 px-6 pt-20 md:gap-y-6 md:pt-24 xl:px-24">
+            <h2 className="h2_semibold">Send us your resume at</h2>
+
+            <CustomButton className="rounded-3xl px-5 py-1.5">
+              <Link href="/contact-us">
+                <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+                  hr@cloudprism.in{" "}
+                </p>
+              </Link>
+            </CustomButton>
+          </div>
+        </section>{" "}
       </div>
     </ScrollBarProgress>
   );

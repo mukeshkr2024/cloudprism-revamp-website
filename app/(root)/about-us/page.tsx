@@ -11,9 +11,9 @@ import React from "react";
 export default function AboutPage() {
   return (
     <ScrollBarProgress>
-      <div className="w-full overflow-hidden">
+      <div className="mx-auto w-full max-w-[90rem] overflow-hidden">
         <section
-          className="flex h-screen w-full flex-col items-center justify-center "
+          className="flex h-[600px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat md:h-[800px] "
           style={{
             backgroundImage: "url('/assets/images/about-us-bg.svg')",
           }}
@@ -32,10 +32,10 @@ export default function AboutPage() {
             </CustomButton>
           </div>
         </section>
-        <div className="mx-auto mb-28 flex max-w-5xl flex-col gap-y-20  ">
+        <div className="mx-auto mb-28 flex max-w-7xl flex-col gap-y-20  ">
           <h2 className="h2_semibold text-center">About us</h2>
           <div className="flex flex-col gap-5">
-            <p className="mx-auto max-w-sm  px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
+            <p className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
               CloudPrism, a IT Consultation and IT Solutions Partner,we provide
               premium one-stop Salesforce solutions and full-stack development
               services. Based in a tier 2 city in India, our unique origin in
@@ -44,7 +44,7 @@ export default function AboutPage() {
               community, distinguishing ourselves without relying on
               conventional means of establishing presence.
             </p>
-            <p className="mx-auto max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
+            <p className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
               With a team of over 50 certified developers, CloudPrism excels in
               Salesforce-certified consultancy and serves as a Salesforce ISV
               Partner, boasting proficient full-stack expertise. Our technical
@@ -53,7 +53,7 @@ export default function AboutPage() {
               designed to meet your specific timeline and requirements, ensuring
               optimal outcomes for your business success.
             </p>
-            <p className="mx-auto max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
+            <p className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
               With CloudPrism by your side, you can trust that your IT Solutions
               journey will be guided by industry best practices and unparalleled
               expertise.
