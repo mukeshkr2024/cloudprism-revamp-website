@@ -11,7 +11,7 @@ interface RightSideBarProps {
 export default function RightSideBar({ author, role }: RightSideBarProps) {
   const sortedBlogs: Blog[] = sortBlogs(allBlogs);
 
-  const recentBlogs = sortedBlogs.slice(0, 9);
+  const recentBlogs = sortedBlogs.slice(0, 6);
 
   return (
     <div className="mt-12 w-full  px-6 lg:w-[320px]">

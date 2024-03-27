@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+// TODO: allignment of location
+
 export default function Footer() {
   return (
     <footer className=" mx-auto max-w-7xl lg:mt-12 ">
@@ -66,23 +68,28 @@ export default function Footer() {
         <div className="flex flex-col justify-between gap-y-4 p-2 md:flex-row">
           <div className="  ">
             <p className="text-sm font-normal text-white sm:text-base">
-              Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
-              Maharashtra 411028, IN
+              Office no: 917, <br /> Gera Imperium Alpha,
+              <br /> Rajaram Patil Nagar,
+              <br />
+              Vitthal Nagar, Kharadi,
+              <br /> Pune, Maharashtra 411014
             </p>
           </div>
 
           <div className=" ">
             <p className="text-sm font-normal text-white sm:text-base">
-              Location <br />
-              Shivpuri Rd, South Shivpuri,
-              <br /> Patna, Bihar 800029
+              Shivpuri Rd,
+              <br /> South Shivpuri, Shivpuri,
+              <br /> Rajbansi Nagar, Patna, <br />
+              Bihar 800029
             </p>
           </div>
 
           <div className="">
             <p className="text-sm font-normal text-white sm:text-base">
-              Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
-              Maharashtra 411028, IN
+              701 Tillery St,
+              <br /> Austin, TX 78702,
+              <br /> United States
             </p>
           </div>
         </div>

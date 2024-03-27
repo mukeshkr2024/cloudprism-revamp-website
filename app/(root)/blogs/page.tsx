@@ -1,10 +1,9 @@
 import { Blog, allBlogs } from "@/.contentlayer/generated";
 import LatestBlog from "@/components/blog/latest-blog";
-import BlogCard from "@/components/card/blog-card";
+import ReadBlogs from "@/components/blog/read-blogs";
 import BlogFormPopup from "@/components/forms/blog-form-dialog";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import { sortBlogs } from "@/utils/cn";
-import React from "react";
 
 const sortedBlogs: Blog[] = sortBlogs(allBlogs);
 const latestBlogs: Blog[] = sortedBlogs?.slice(0, 2);
@@ -31,22 +30,7 @@ export default function BlogPage() {
         </div>
       </section>
       <LatestBlog latestblogs={latestBlogs} />
-      <section className="mx-auto  mt-4 max-w-7xl lg:mt-8 ">
-        <h2 className="h2_semibold text-center">Read Our Blogs</h2>
-        <div className="mt-16 flex flex-wrap justify-center gap-6 sm:mt-20 lg:mt-24">
-          {sortedBlogs &&
-            sortedBlogs.map((blog) => (
-              <BlogCard
-                key={blog.title}
-                description={blog.description}
-                image={blog.image!}
-                readTime={blog.readingTime}
-                title={blog.title}
-                slug={blog.url}
-              />
-            ))}
-        </div>
-      </section>
+      <ReadBlogs blogs={sortedBlogs} />
       <ConnectToUs />
     </div>
   );
