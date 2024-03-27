@@ -52,7 +52,7 @@ export default function FullStackServices() {
         <SectionCard
           title="Web Development"
           imgUrl="/assets/images/full-stack-service.svg"
-          description1="In today's digital age, your website is your storefront to the world. Our web development expertise helps you craft a captivating online presence that reflects your brand's unique identity. We go beyond just aesthetics, building user-friendly interfaces that guide visitors effortlessly through your offerings
+          description1="In today's digital age, your website is your storefront to the world. Our web development expertise helps you craft a captivating online presence that reflects your brand's unique identity. We go beyond just aesthetics, building user-friendly interfaces that guide visitors effortlessly through your offerings.
           "
           imagSize="w-[770px] mt-[-60px] flex items-center justify-center  mr-[-40px]"
           className="flex-col-reverse lg:flex-row"
@@ -62,6 +62,7 @@ export default function FullStackServices() {
           title="Mobile App Development"
           imgUrl="/assets/images/mobile-app-devlopement.svg"
           description1="Want your business in every pocket? Our mobile app development team creates intuitive and engaging apps that put your brand at your customers' fingertips. We handle everything from concept to launch, ensuring a seamless user experience that drives engagement and loyalty. Let's build your mobile app success story today.
+          .
       "
           imagSize="w-[730px] mt-[-60px] flex items-center justify-center  mr-[-60px]"
           className="flex-col-reverse lg:flex-row-reverse"

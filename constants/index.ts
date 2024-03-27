@@ -301,29 +301,29 @@ export const certifiedDevelopers = [
 
 export const whyStandOut = [
   {
-    title: "Discover Unmatched Talent,",
+    title: "Discover Unmatched Talent",
     description:
       "Our pride lies in assembling a top-notch team of skilled professionals committed to delivering exceptional results.",
   },
   {
-    title: "Experience our Swift Turnaround Time,",
+    title: "Experience our Swift Turnaround Time",
     description:
       "Experience a rapid and efficient project cycle with CloudPrism, ensuring timely delivery of high-quality solutions. ",
   },
   {
-    title: "Dedicated teams who are ready to tackle any challenge,",
+    title: "Dedicated teams who are ready to tackle any challenge",
     description:
       " Your project deserves undivided attention. CloudPrism provides a committed team that works exclusively on your requirements, ensuring personalized service.",
   },
   {
-    title: "Experience Smooth Communication,",
+    title: "Experience Smooth Communication",
     description:
       " Communication is key. CloudPrism ensures flawless and transparent communication throughout the project lifecycle, keeping you informed every step of the way.",
   },
   {
-    title: "We Provide Free Expert Consultation,",
+    title: "We Provide Free Expert Consultation",
     description:
-      " Explore the possibilities with CloudPrism through our complimentary expert consultation, helping you make informed decisions for your IT projects. ",
+      " Explore the possibilities with CloudPrism through our complimentary expert consultation, helping you make informed decisions for your IT projects.",
   },
 ];
 
@@ -557,32 +557,32 @@ export const historyData = [
   {
     year: 2016,
     description:
-      "Since 2016, CloudPrism: Pioneering IT Excellence, Tailoring Tomorrow's Solutions.",
+      "Since 2016, CloudPrism has led the charge in pioneering IT excellence, consistently delivering innovative solutions tailored to meet the evolving needs of tomorrow's digital landscape.",
   },
   {
     year: 2018,
     description:
-      "Inaugurated our inaugural office in Pune, marking the beginning of our journey.",
+      "With the inauguration of our inaugural office in Pune, CloudPrism embarks on a new chapter, symbolizing the commencement of our journey towards greater expansion and success.",
   },
   {
     year: 2020,
     description:
-      "Achieved the prestigious Startup of the Year Award in 2020, recognizing our innovation and impact.",
+      "In 2020, CloudPrism proudly clinched the esteemed Startup of the Year Award, a testament to our relentless innovation and significant impact within the industry.",
   },
   {
     year: 2021,
     description:
-      "Inaugurated our Patna office in 2021, solidifying our commitment to regional growth.",
+      "In 2021, CloudPrism expanded its footprint with the inauguration of our Patna office, reaffirming our dedication to fostering regional growth and accessibility.",
   },
   {
     year: 2022,
     description:
-      "Launched our Austin, TX office in 2022, furthering our global footprint and commitment to expansion.",
+      "In 2022, CloudPrism marked a significant milestone with the launch of our Austin, TX office, expanding our global footprint and reinforcing our commitment to growth.",
   },
   {
     year: 2023,
     description:
-      "Achieved the esteemed Company of the Year award in 2023, reflecting our continuous excellence and leadership.",
+      "In 2023, CloudPrism proudly attained the esteemed Company of the Year award, a testament to our unwavering commitment to excellence and industry leadership.",
   },
 ];
 

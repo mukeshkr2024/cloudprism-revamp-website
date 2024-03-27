@@ -29,3 +29,13 @@ export interface SocialLinks {
   title?: string;
   icon: string;
 }
+
+export interface ImageProps {
+  filePath: string;
+  relativeFilePath: string;
+  format: string;
+  height: number;
+  width: number;
+  aspectRatio: number;
+  blurhashDataUrl: string;
+}

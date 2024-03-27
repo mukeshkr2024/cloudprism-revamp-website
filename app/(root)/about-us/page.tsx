@@ -21,7 +21,7 @@ export default function AboutPage() {
           <div className="mb-16 flex max-w-5xl flex-col items-center justify-center gap-y-6">
             <h1 className="h1_bold">Accelerate Your Vision with CloudPrism</h1>
             <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
-              Your Salesforce consultant & implementation partner
+              Your IT Consultant and Solutions Partner{" "}
             </p>
             <CustomButton className="rounded-3xl px-5 py-1.5">
               <Link href="/contact-us">
@@ -71,7 +71,8 @@ export default function AboutPage() {
           />
           <SectionCard
             title="Vision"
-            description1="CloudPrism strives to be a platinum partner of Salesforce, that will enable us to convert industry of all sizes to cloud by providing them the best SAAS Tools of salesforce deployment and consulting. We aspire to improve consumer experiences, optimize company operations by bringing firm data into the cloud, and reach development prospects by constantly pushing the frontiers of technology and honoring innovations. Together with our clients, we hope to modify sectors and impact the future of business using Salesforce's revolutionary power."
+            description1="CloudPrism strives to be a platinum partner of Salesforce, that will enable us to convert industry of all sizes to cloud by providing them the best SAAS Tools of salesforce deployment and consulting. We aspire to improve consumer experiences, optimize company operations by bringing firm data into the cloud, and reach development prospects by constantly pushing the frontiers of technology and honoring innovations. Together with our clients, we hope to modify sectors and impact the future of business using Salesforce's revolutionary power.
+            "
             imgUrl="/assets/images/vision-svg.svg"
             className="flex-col-reverse lg:flex-row-reverse"
             imagSize="w-[710px] mr-[-50px]"

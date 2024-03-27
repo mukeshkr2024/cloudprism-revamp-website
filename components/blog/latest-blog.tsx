@@ -1,9 +1,9 @@
 import React from "react";
 import { LatestBlogItem } from "../card/latest-blog-item";
-import { BlogData } from "@/constants/blogs-data";
+import { Blog } from "@/.contentlayer/generated";
 
 interface Props {
-  latestblogs: BlogData[];
+  latestblogs: Blog[];
 }
 
 export default function LatestBlog({ latestblogs }: Props) {
@@ -16,9 +16,10 @@ export default function LatestBlog({ latestblogs }: Props) {
           latestblogs.map((blog) => (
             <LatestBlogItem
               key={blog.title}
-              bgUrl={blog.imgUrl}
               title={blog.title}
-              intro={blog.intro}
+              image={blog?.image!}
+              description={blog.description}
+              slug={blog.url}
             />
           ))}
       </div>

@@ -4,22 +4,28 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 import CustomButton from "../shared/custom-button";
-import { createSlug } from "@/utils/cn";
+import { ImageProps } from "@/types";
 
 interface BlogProps {
-  imgUrl: string;
+  image: ImageProps;
   title: string;
   description: string;
-  readTime: string;
+  readTime: {
+    text: string;
+  };
+  slug: string;
 }
 
 export default function BlogCard({
-  imgUrl,
+  image,
   title,
   description,
   readTime,
+  slug,
 }: BlogProps) {
+  const imgUrL = image?.filePath.replace("../public", "");
   const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div
       className="w-[279px] rounded-lg text-white"
@@ -32,16 +38,18 @@ export default function BlogCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Image height={154} alt={title} src={imgUrl} width={279} />
+      <Image height={154} alt={title} src={imgUrL} width={279} />
       <div className="card_primary_background flex h-[280px] flex-col justify-between rounded-b-lg px-6 py-8 transition-colors duration-200 ease-in-out">
         <h3 className="line-clamp-2 text-xl font-bold text-white">{title}</h3>
         <p className="line-clamp-3 text-sm font-normal text-[#798882]">
           {description}
         </p>
         <div className="flex items-center justify-between">
-          <span className="text-sm text-[#798882]">{readTime}</span>
+          <span className="text-sm capitalize text-[#798882]">
+            {readTime?.text}
+          </span>
           <CustomButton className="rounded-3xl px-3 py-1.5">
-            <Link href={`/blog/${createSlug(title)}`}>
+            <Link href={slug}>
               <p className="text-black">Read More</p>
             </Link>
           </CustomButton>

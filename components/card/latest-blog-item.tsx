@@ -2,17 +2,18 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import CustomButton from "../shared/custom-button";
-import { createSlug } from "@/utils/cn";
 import Image from "next/image";
+import { ImageProps } from "@/types";
 
 type Props = {
-  bgUrl: string;
+  image: ImageProps;
   title: string;
-  intro: string;
+  description: string;
+  slug: string;
 };
 
-export const LatestBlogItem = ({ bgUrl, title, intro }: Props) => {
-  const slug = createSlug(title);
+export const LatestBlogItem = ({ title, slug, description, image }: Props) => {
+  const imgUrL = image?.filePath.replace("../public", "");
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -30,13 +31,13 @@ export const LatestBlogItem = ({ bgUrl, title, intro }: Props) => {
       onMouseLeave={handleMouseLeave}
       className="flex  max-w-sm flex-col gap-2.5 overflow-hidden rounded-lg bg-no-repeat p-4 text-white transition-all duration-500 hover:backdrop-blur-xl sm:p-6 md:p-12  lg:max-w-xl"
       style={{
-        backgroundImage: `url(${bgUrl})`,
+        backgroundImage: `url(${imgUrL})`,
       }}
     >
       <div className="pb-2 md:pb-10">
         <h3 className="sm:text-base">Latest Blog</h3>
         <h2
-          className={`mt-4 text-lg font-bold lg:mt-8 lg:text-xl xl:text-2xl ${
+          className={`mt-4 line-clamp-2 text-lg font-bold lg:mt-8 lg:text-xl xl:text-2xl ${
             isHovered
               ? "md:scale-105 md:transition-all md:duration-500"
               : "transition-all duration-500"
@@ -51,7 +52,7 @@ export const LatestBlogItem = ({ bgUrl, title, intro }: Props) => {
               : "transition-all duration-500"
           }`}
         >
-          {intro}
+          {description}
         </p>
 
         <div
@@ -77,7 +78,7 @@ export const LatestBlogItem = ({ bgUrl, title, intro }: Props) => {
           }`}
         >
           <CustomButton className="rounded-3xl px-3 py-1.5">
-            <Link href={`/blog/${slug}`}>
+            <Link href={slug}>
               <p className="text-sm  font-semibold text-black lg:text-[16px]">
                 Read More
               </p>
@@ -85,7 +86,7 @@ export const LatestBlogItem = ({ bgUrl, title, intro }: Props) => {
           </CustomButton>
         </div>
         <CustomButton className="mt-3 rounded-3xl px-3 py-1.5 md:hidden">
-          <Link href={`/blog/${slug}`}>
+          <Link href={slug}>
             <p className="text-sm  font-semibold text-black lg:text-[16px]">
               Read More
             </p>

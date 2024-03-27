@@ -1,13 +1,14 @@
 import { SuccessCard } from "@/components/card/SuccessCard";
-import BlogCard from "@/components/card/blog-card";
-import WhyStandOutCard from "@/components/card/why-stand-out-card";
-import OurServices from "@/components/home/our-services";
-import ProjectsDelivered from "@/components/home/projects-delivered";
-import SalesforcePartnerSlider from "@/components/home/salesforce-partner-slider";
 import { AccordingItem } from "@/components/card/according-card";
+import WhyStandOutCard from "@/components/card/why-stand-out-card";
+import DemoFormPopup from "@/components/forms/demo-form-dialog";
 import ContactForm from "@/components/home/contact-form";
 import MainSection from "@/components/home/main-section";
 import OurClientSay from "@/components/home/our-clients-says";
+import OurServices from "@/components/home/our-services";
+import ProjectsDelivered from "@/components/home/projects-delivered";
+import SalesforcePartnerSlider from "@/components/home/salesforce-partner-slider";
+import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import {
   certifiedDevelopers,
   successStory,
@@ -15,11 +16,14 @@ import {
   whyStandOut,
 } from "@/constants";
 import Image from "next/image";
-import DemoFormPopup from "@/components/forms/demo-form-dialog";
-import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
-import { BlogsData } from "@/constants/blogs-data";
 
-const readBlogs = BlogsData.slice(0, 4);
+import { Blog, allBlogs } from "@/.contentlayer/generated";
+import BlogCard from "@/components/card/blog-card";
+import { sortBlogs } from "@/utils/cn";
+
+const sortedBlogs: Blog[] = sortBlogs(allBlogs);
+
+const readBlogs: Blog[] = sortedBlogs.slice(0, 4);
 
 export default function Home() {
   return (
@@ -30,15 +34,14 @@ export default function Home() {
           <MainSection />
           <div className="flex-center mt-8 w-full lg:mt-12">
             <p className="mb-10 max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
-              Cloudprism a certified digital consulting partner specializing in
-              Directing Business Progress via Salesforce implementation and
-              consulting services. Promising 100+ Salesforce-certified
-              developers and delivering over 120 projects in more than 20
-              countries. An AGILE methodology enables Cloudprism to provide
-              tailored solutions, cost savings, and faster implementation and
-              adoption. Empowering small-town talent, resource outsourcing, and
-              prioritizing empathy for the end-user in their professional and
-              technical services.
+              Cloudprism is your Certified IT Solution Partner, promoting
+              business development with complete IT Consultation and solutions.
+              With 100+ qualified developers, we&apos;ve completed 420+
+              successful projects in 20+ countries. Our Agile technique,
+              Customized by our expert IT consultants, provides specific
+              solutions, cost reductions, and quick deployment of IT solutions.
+              Choose Cloudprism for experienced advice on expanding your
+              business through unique IT techniques.
             </p>
           </div>
           <div className="mx-auto mt-14 max-w-7xl  ">
@@ -134,15 +137,17 @@ export default function Home() {
           <section className="mx-auto mt-20 max-w-sm sm:mt-28 sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl ">
             <h2 className="h2_semibold text-center">Read Our Blogs</h2>
             <div className="mt-24 flex flex-wrap  justify-center gap-y-6 px-6  sm:justify-between">
-              {readBlogs.map((item) => (
-                <BlogCard
-                  key={item.title}
-                  description={item.intro}
-                  imgUrl={item.featuredImage}
-                  readTime={item.readTime}
-                  title={item.title}
-                />
-              ))}
+              {readBlogs &&
+                readBlogs.map((blog) => (
+                  <BlogCard
+                    key={blog.title}
+                    description={blog.description}
+                    image={blog.image!}
+                    readTime={blog.readingTime}
+                    title={blog.title}
+                    slug={blog.url}
+                  />
+                ))}
             </div>
           </section>
           <section

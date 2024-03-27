@@ -73,8 +73,9 @@ export default function Footer() {
 
           <div className=" ">
             <p className="text-sm font-normal text-white sm:text-base">
-              Location <br /> Hadapsar Highway Dreams Aakruti <br /> Pune,
-              Maharashtra 411028, IN
+              Location <br />
+              Shivpuri Rd, South Shivpuri,
+              <br /> Patna, Bihar 800029
             </p>
           </div>
 

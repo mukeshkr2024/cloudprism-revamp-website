@@ -20,7 +20,7 @@ export default function EventsPage() {
             <h1 className="h1_bold">Explore Upcoming Events and Webinars.</h1>
             <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
               Step into a world of excitement, inspiration, and connection at
-              our exclusive event - where unforgettable moments await
+              our exclusive event - where unforgettable moments await.
             </p>
             <CustomButton className="rounded-3xl px-5 py-1.5">
               <Link href="/contact-us">
@@ -39,18 +39,14 @@ export default function EventsPage() {
             <div className="flex flex-1 flex-col gap-4  px-6 py-2 sm:px-10 sm:py-14 md:px-16 lg:px-6">
               <p className="text-center font-light text-[#F2EFEF] sm:text-[17px] lg:text-start">
                 Stay at the forefront of innovation and connect with like-minded
-                individuals!
-              </p>
-
-              <p className="text-center font-light text-[#F2EFEF] sm:text-[17px] lg:text-start">
-                Our dynamic Events page is your gateway to a world of learning,
-                inspiration, and engagement. Explore upcoming workshops,
-                conferences, and webinars designed to spark your curiosity,
-                refine your skills, and fuel your professional growth.
-                Don&apos;t miss out on valuable networking opportunities and the
-                chance to interact with industry leaders. Bookmark this page and
-                check back often to discover the next event that will propel you
-                forward.
+                individuals! Our dynamic Events page is your gateway to a world
+                of learning, inspiration, and engagement. Explore upcoming
+                workshops, conferences, and webinars designed to spark your
+                curiosity, refine your skills, and fuel your professional
+                growth. Don&apos;t miss out on valuable networking opportunities
+                and the chance to interact with industry leaders. Bookmark this
+                page and check back often to discover the next event that will
+                propel you forward.
               </p>
             </div>
 
