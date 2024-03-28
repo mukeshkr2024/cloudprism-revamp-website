@@ -7,7 +7,7 @@ const PrivacyPage = () => {
       <div className="w-full ">
         <div className="text-white  py-28 sm:py-32 sm:max-w-sm md:max-w-2xl lg:max-w-5xl xl:max-w-7xl max-w-xs mx-auto flex flex-col gap-y-4">
           <div>
-            <h1 className="mb-6 text-3xl font-bold">Terms and Conditions</h1>
+            <h1 className="mb-6 text-3xl font-bold">Privacy Policy</h1>
             <p className="text-base font-light">
               Cloudprism respects the intellectual property rights of others and
               expects our users and employees to do the same. Our copyright
