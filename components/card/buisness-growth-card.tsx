@@ -43,7 +43,7 @@ export default function BuisnesGrowthCard({
       </div>
       <div className="h-[1px] w-full bg-[#5B5B5B] lg:h-full lg:w-[1px]" />
       <div className="flex flex-1 items-center justify-start">
-        <div className="flex flex-col gap-y-4 px-4 sm:px-8 md:px-10 lg:gap-y-10 lg:px-14">
+        <div className="flex flex-col gap-y-4 px-4 sm:px-8 md:px-10 lg:gap-y-8 lg:px-14">
           {buisnessPoints.map((point) => (
             <div key={point.id} className="flex  items-center gap-x-6">
               <span className="text-3xl font-normal text-white lg:text-[39px]">

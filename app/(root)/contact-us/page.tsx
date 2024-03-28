@@ -18,6 +18,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { socialLinks } from "@/constants";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
+import { submitForm } from "@/actions/form.actions";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "FirstName is required" }).max(50),
@@ -42,21 +43,24 @@ function ContactUsPage() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const data = {
+      recordName: "Cloudprism",
+      leadType: "Contact Us CTA",
+    };
+    const response = await submitForm(values, data);
   }
 
   return (
     <ScrollBarProgress>
       <div
-        className="w-full bg-right-bottom bg-no-repeat"
+        className="w-full bg-right-bottom bg-no-repeat max-w-[92rem] mx-auto"
         style={{
           backgroundImage: "url('/assets/images/contact-form-bg.svg')",
           backgroundSize: "cover",
         }}
       >
         <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center text-white lg:flex-row">
-          {/* left side  */}
           <div
             className="mx-2 my-32 flex flex-1 flex-col space-y-16 rounded-[19px] border-2 border-b-[#121212] border-l-[#252525] border-r-[#121212] border-t-[#252525] px-6 pb-8 pt-4 lg:my-0 lg:px-12"
             style={{
@@ -202,8 +206,6 @@ function ContactUsPage() {
               </div>
             </div>
           </div>
-
-          {/* right side  */}
           <div className="hidden w-full flex-1 flex-col space-y-4 px-12  lg:flex">
             <div>
               <p>Call us: +91 70045 35083</p>

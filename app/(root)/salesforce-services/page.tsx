@@ -4,7 +4,7 @@ import BuisnesGrowthCard from "@/components/card/buisness-growth-card";
 import SaleforceMainSection from "@/components/services/saleforce/main-section";
 import SalesForceServices from "@/components/services/saleforce/saleforce-services";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
-import { fullStackbuisnessData, fullstackBuisnessPoints } from "@/constants";
+import { salesforceBuisnessData, salesforceBuisnessPoints } from "@/constants";
 
 const SalesforcePage = () => {
   return (
@@ -18,8 +18,8 @@ const SalesforcePage = () => {
 
         <div className="mx-auto my-16 max-w-sm px-2 sm:max-w-md md:max-w-lg lg:max-w-7xl ">
           <BuisnesGrowthCard
-            buisnessData={fullStackbuisnessData}
-            buisnessPoints={fullstackBuisnessPoints}
+            buisnessData={salesforceBuisnessData}
+            buisnessPoints={salesforceBuisnessPoints}
           />
         </div>
       </div>

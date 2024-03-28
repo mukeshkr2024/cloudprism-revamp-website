@@ -95,7 +95,7 @@ export function MobileNav() {
             ))}
           </div>
           <button className="background_button mt-4 rounded-3xl px-3.5 py-2">
-            <Link href="/contact">
+            <Link href="/contact-us">
               <p className="text-base font-bold text-black">Contact Us</p>
             </Link>
           </button>

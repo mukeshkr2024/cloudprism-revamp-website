@@ -1,13 +1,29 @@
+"use client";
+
 import { TracingBeam } from "@/components/blog/tracing-beam";
 import EventRightSidebar from "@/components/event-sidebar";
+import CaseFormPopup from "@/components/forms/case-form";
 import ConnectToUs from "@/components/shared/connect-to-us";
+import CustomButton from "@/components/shared/custom-button";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
-import React from "react";
+import React, { useState } from "react";
 
 const CaseStudy1 = () => {
+  const [blurContent, setBlurContent] = useState(true);
+  const [showForm, setShowForm] = useState(false);
+
+  const handleMoreClick = () => {
+    setShowForm(true);
+  };
+
+  const handleClose = () => {
+    setShowForm(false);
+    setBlurContent(false);
+  };
   return (
     <ScrollBarProgress>
       <div className="mx-auto w-full max-w-[90rem]">
+        {showForm && <CaseFormPopup handleClose={handleClose} />}
         <div className="flex w-full flex-col justify-center pb-32 pt-40 lg:flex-row">
           <TracingBeam className="px-6">
             <div className="text-white ">
@@ -39,40 +55,54 @@ const CaseStudy1 = () => {
                       consultant partner, for assistance.
                     </p>
                   </div>
-                  <div className="flex flex-col gap-y-4">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl">
-                      Problems:
-                    </h2>
-                    <p className="blog_paragraph">
-                      Low lead generation due to an ineffective email marketing
-                      strategy Difficulty reaching prospects and converting them
-                      into customers Poor customer experience affecting customer
-                      loyalty
-                    </p>
+                  <div className="flex w-full items-center justify-center">
+                    {blurContent && (
+                      <CustomButton className="w-[150px] rounded-3xl px-4 py-2.5">
+                        <p onClick={handleMoreClick} className="text-black">
+                          Read More
+                        </p>
+                      </CustomButton>
+                    )}
                   </div>
-                  <div className="flex flex-col gap-y-4">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl">
-                      ProblemsSolutions provided by CloudPrism:
-                    </h2>
-                    <p className="blog_paragraph">
-                      Improve engagement and drove leads with personalized email
-                      campaigns Increased conversions by automating lead
-                      nurturing Enhanced customer loyalty through streamlined
-                      experiences
-                    </p>
-                  </div>
-                  <div className="flex flex-col gap-y-4">
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl">
-                      Results that exceeded expectations:
-                    </h2>
-                    <p className="blog_paragraph">
-                      Increased lead generation by 35% within the first 3 months
-                      of implementing the email marketing strategy. Improved
-                      conversion rate by 55% by targeting the right audience
-                      with personalized content. Simplified marketing efforts
-                      and achieved an 82% cost saving using Engagement Studio
-                      and Automation Rules.
-                    </p>
+
+                  <div
+                    className={`flex w-full flex-col gap-y-6  ${blurContent ? "blur" : ""}`}
+                  >
+                    <div className="flex flex-col gap-y-4">
+                      <h2 className="text-2xl md:text-3xl lg:text-4xl">
+                        Problems:
+                      </h2>
+                      <p className="blog_paragraph">
+                        Low lead generation due to an ineffective email
+                        marketing strategy Difficulty reaching prospects and
+                        converting them into customers Poor customer experience
+                        affecting customer loyalty
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-y-4">
+                      <h2 className="text-2xl md:text-3xl lg:text-4xl">
+                        ProblemsSolutions provided by CloudPrism:
+                      </h2>
+                      <p className="blog_paragraph">
+                        Improve engagement and drove leads with personalized
+                        email campaigns Increased conversions by automating lead
+                        nurturing Enhanced customer loyalty through streamlined
+                        experiences
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-y-4">
+                      <h2 className="text-2xl md:text-3xl lg:text-4xl">
+                        Results that exceeded expectations:
+                      </h2>
+                      <p className="blog_paragraph">
+                        Increased lead generation by 35% within the first 3
+                        months of implementing the email marketing strategy.
+                        Improved conversion rate by 55% by targeting the right
+                        audience with personalized content. Simplified marketing
+                        efforts and achieved an 82% cost saving using Engagement
+                        Studio and Automation Rules.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

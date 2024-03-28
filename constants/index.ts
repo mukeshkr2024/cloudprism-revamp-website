@@ -186,22 +186,22 @@ export const usefullLinks: FooterLinks[] = [
 
 export const socialLinks: SocialLinks[] = [
   {
-    href: "/",
+    href: "https://www.linkedin.com/company/cloudprism-solutions/mycompany/",
     title: "Linkdein",
     icon: "/assets/icons/linkdein.svg",
   },
   {
-    href: "/",
+    href: "https://twitter.com/_CloudPrism_",
     title: "Twitter",
     icon: "/assets/icons/twitter.svg",
   },
   {
-    href: "/",
-    title: "Fcaebook",
+    href: "https://www.facebook.com/Cloudprism",
+    title: "Facebook",
     icon: "/assets/icons/facebook.svg",
   },
   {
-    href: "/",
+    href: "https://www.instagram.com/cloudprism.in",
     title: "Instagram",
     icon: "/assets/icons/instagram.svg",
   },
@@ -229,72 +229,72 @@ export const technologPartners = [
 export const certifiedDevelopers = [
   {
     id: 1,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-1.svg",
     title: "Certified developer 1",
   },
   {
     id: 2,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-2.svg",
     title: "Certified developer 1",
   },
   {
     id: 3,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-3.svg",
     title: "Certified developer 1",
   },
   {
     id: 4,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-4.svg",
     title: "Certified developer 1",
   },
   {
     id: 5,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-5.svg",
     title: "Certified developer 1",
   },
   {
     id: 6,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-6.svg",
     title: "Certified developer 1",
   },
   {
     id: 7,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-7.svg",
     title: "Certified developer 1",
   },
   {
     id: 8,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-8.svg",
     title: "Certified developer 1",
   },
   {
     id: 9,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-9.svg",
     title: "Certified developer 1",
   },
   {
     id: 10,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-10.svg",
     title: "Certified developer 1",
   },
   {
     id: 11,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-11.svg",
     title: "Certified developer 1",
   },
   {
     id: 12,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-12.svg",
     title: "Certified developer 1",
   },
   {
     id: 13,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-13.svg",
     title: "Certified developer 1",
   },
   {
     id: 14,
-    imgUrl: "/assets/images/certified-devloper-1.svg",
+    imgUrl: "/assets/images/certificates/certificate-14.svg",
     title: "Certified developer 1",
   },
 ];
@@ -361,43 +361,67 @@ export const readOurBlogs = [
 export const salesForcePartners = [
   {
     id: 1,
-    imgUrl: "/assets/images/salesforce-partner.svg",
+    imgUrl: "/assets/images/partners/partner-1.svg",
   },
   {
     id: 2,
-    imgUrl: "/assets/images/salesforce-partner.svg",
+    imgUrl: "/assets/images/partners/partner-2.svg",
   },
   {
     id: 3,
-    imgUrl: "/assets/images/salesforce-partner.svg",
+    imgUrl: "/assets/images/partners/partner-3.svg",
   },
   {
     id: 4,
-    imgUrl: "/assets/images/salesforce-partner.svg",
+    imgUrl: "/assets/images/partners/partner-4.svg",
   },
   {
     id: 5,
-    imgUrl: "/assets/images/salesforce-partner.svg",
+    imgUrl: "/assets/images/partners/partner-5.svg",
   },
   {
     id: 6,
-    imgUrl: "/assets/images/salesforce-partner.svg",
+    imgUrl: "/assets/images/partners/partner-6.svg",
   },
   {
     id: 7,
-    imgUrl: "/assets/images/salesforce-partner.svg",
+    imgUrl: "/assets/images/partners/partner-7.svg",
   },
   {
     id: 8,
-    imgUrl: "/assets/images/salesforce-partner.svg",
+    imgUrl: "/assets/images/partners/partner-8.svg",
   },
   {
     id: 9,
-    imgUrl: "/assets/images/salesforce-partner.svg",
+    imgUrl: "/assets/images/partners/partner-10.svg",
   },
   {
     id: 10,
-    imgUrl: "/assets/images/salesforce-partner.svg",
+    imgUrl: "/assets/images/partners/partner-11.svg",
+  },
+  {
+    id: 11,
+    imgUrl: "/assets/images/partners/partner-12.svg",
+  },
+  {
+    id: 12,
+    imgUrl: "/assets/images/partners/partner-13.svg",
+  },
+  {
+    id: 13,
+    imgUrl: "/assets/images/partners/partner-14.svg",
+  },
+  {
+    id: 14,
+    imgUrl: "/assets/images/partners/partner-15.svg",
+  },
+  {
+    id: 15,
+    imgUrl: "/assets/images/partners/partner-16.svg",
+  },
+  {
+    id: 16,
+    imgUrl: "/assets/images/partners/partner-17.svg",
   },
 ];
 
@@ -586,7 +610,7 @@ export const historyData = [
   },
 ];
 
-export const fullstackBuisnessPoints = [
+export const salesforceBuisnessPoints = [
   {
     id: 1,
     content: "300+ Certified Salesforce Developers",
@@ -606,6 +630,44 @@ export const fullstackBuisnessPoints = [
   {
     id: 5,
     content: "Multi-Cloud Salesforce Expertise",
+  },
+];
+
+export const salesforceBuisnessData = [
+  {
+    total: "420",
+    description: "Projects Delivered",
+  },
+  {
+    total: "100",
+    description: "Salesforce-certified developers",
+  },
+  {
+    total: "20",
+    description: "Countries Served",
+  },
+];
+
+export const fullstackBuisnessPoints = [
+  {
+    id: 1,
+    content: "Integrating frontend and backend development seamlessly.",
+  },
+  {
+    id: 2,
+    content: "Offers expertise across multiple languages, frameworks",
+  },
+  {
+    id: 3,
+    content: "Clients receive support from concept to deployment.",
+  },
+  {
+    id: 4,
+    content: "Ensuring projects benefit from the latest innovations.",
+  },
+  {
+    id: 5,
+    content: "Clients gain access to top-tier talent and unlock Flexibility.",
   },
 ];
 
