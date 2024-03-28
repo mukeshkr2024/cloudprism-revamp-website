@@ -11,7 +11,6 @@ import SalesforcePartnerSlider from "@/components/home/salesforce-partner-slider
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import {
   certifiedDevelopers,
-  successStory,
   technologPartners,
   whyStandOut,
 } from "@/constants";
@@ -19,11 +18,14 @@ import Image from "next/image";
 
 import { Blog, allBlogs } from "@/.contentlayer/generated";
 import BlogCard from "@/components/card/blog-card";
+import { recentCaseStudies } from "@/constants/case-studies";
 import { sortBlogs } from "@/utils/cn";
 
 const sortedBlogs: Blog[] = sortBlogs(allBlogs);
 
 const readBlogs: Blog[] = sortedBlogs.slice(0, 4);
+
+const recentStudies = recentCaseStudies.slice(0, 4);
 
 export default function Home() {
   return (
@@ -55,14 +57,15 @@ export default function Home() {
             </h2>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-2 sm:mt-12 md:mt-16 lg:mt-20 lg:gap-6">
-              {successStory.map((item) => (
-                <SuccessCard
-                  key={item.title}
-                  imgUrl={item.imgUrl}
-                  title={item.title}
-                  description={item.description}
-                />
-              ))}
+              {recentStudies &&
+                recentStudies.map((study) => (
+                  <SuccessCard
+                    key={study.id}
+                    description={study.description}
+                    title={study.title}
+                    imgUrl={study.imageUrl}
+                  />
+                ))}
             </div>
           </section>
           <SalesforcePartnerSlider />
