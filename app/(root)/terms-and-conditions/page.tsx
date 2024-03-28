@@ -1,7 +1,7 @@
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import React from "react";
 
-const PrivacyPage = () => {
+const TermsPage = () => {
   return (
     <ScrollBarProgress>
       <div className="w-full ">
@@ -75,4 +75,4 @@ const PrivacyPage = () => {
   );
 };
 
-export default PrivacyPage;
+export default TermsPage;
