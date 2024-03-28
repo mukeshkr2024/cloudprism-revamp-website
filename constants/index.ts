@@ -171,11 +171,11 @@ export const footerLinks: FooterLinks[] = [
 
 export const usefullLinks: FooterLinks[] = [
   {
-    label: "Salesforce ",
+    label: "Salesforce Solutions",
     route: "/salesforce-services",
   },
   {
-    label: "Full Stack ",
+    label: "Software Consultation ",
     route: "/full-stack-services",
   },
   {
@@ -611,7 +611,7 @@ export const fullstackBuisnessPoints = [
 
 export const fullStackbuisnessData = [
   {
-    total: "120",
+    total: "420",
     description: "Projects Delivered",
   },
   {
@@ -621,5 +621,14 @@ export const fullStackbuisnessData = [
   {
     total: "20",
     description: "Countries Served",
+  },
+];
+
+export const jobOpenings = [
+  {
+    profileFor: "UI/UX Designer",
+    type: "Full-time employment",
+    experiences: "3+ Years",
+    location: "Pune",
   },
 ];

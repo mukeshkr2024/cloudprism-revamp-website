@@ -10,7 +10,6 @@ export const latestBlogs = () => {
   });
 
   const blogs = sortBlogs.slice(0, 2);
-
   return blogs;
 };
 

@@ -30,7 +30,6 @@ export default function Home() {
     <ScrollBarProgress>
       <div className="background_primary w-full overflow-hidden">
         <div className="w-full">
-          {/* Main section  */}
           <MainSection />
           <div className="flex-center mt-8 w-full lg:mt-12">
             <p className="mb-10 max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">

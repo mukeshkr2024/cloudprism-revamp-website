@@ -99,7 +99,7 @@ export default function Footer() {
         <div className="border border-[#2D2D2D]" />
         <div className="flex flex-wrap gap-x-16 gap-y-4 px-4 pt-1 sm:px-6 md:px-0 xl:pl-16">
           <span className="text-[#636363]">copyright@cloudprism</span>
-          <Link href="/privacy">
+          <Link href="/privacy-policy">
             <p className="text-[#636363]">Privacy Policy</p>
           </Link>
           <Link href="/privacy">
