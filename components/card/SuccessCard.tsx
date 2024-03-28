@@ -13,11 +13,13 @@ interface SuccessCardProps {
   imgUrl: string;
   title: string;
   description: string;
+  slug: string;
 }
 
 export const SuccessCard = ({
   imgUrl,
   title,
+  slug,
   description,
 }: SuccessCardProps) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -46,7 +48,7 @@ export const SuccessCard = ({
           <p className="z-10 text-xs text-[#E5E5E5] md:text-sm">
             RESEARCH REPORT
           </p>
-          <h3 className="z-10 mt-10 text-base font-medium text-[#EDEDED] md:text-xl">
+          <h3 className="z-10 mt-10 text-base font-medium text-[#EDEDED] md:text-xl line-clamp-4">
             {title}
           </h3>
         </div>
@@ -77,10 +79,7 @@ export const SuccessCard = ({
           className={`absolute bottom-7 left-0 w-full bg-opacity-90 px-5 transition-all duration-500 ${isHovered ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"}`}
         >
           <div className="flex w-full items-center justify-end bg-cover bg-no-repeat text-xl font-semibold text-[#02FFB3]">
-            <Link
-              href={`/case-study/${createSlug(title)}`}
-              className="flex items-center justify-center"
-            >
+            <Link href={slug} className="flex items-center justify-center">
               Expand
               <ChevronRight className="size-6" />
             </Link>

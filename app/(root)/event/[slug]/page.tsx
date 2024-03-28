@@ -34,13 +34,7 @@ function BlogDetailsPage({ params }: Params) {
                   <p>{result?.postDate}</p>
                 </div>
               </div>
-              <div
-                className="h-1 w-full rounded-md"
-                style={{
-                  background:
-                    "linear-gradient(90deg, #F1CA64 15.38%, #02FFB3 99.49%);",
-                }}
-              />
+              <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
               {result?.summary && (
                 <div className="flex flex-col gap-y-6 py-16">
                   {result?.summary.map((item, index) => (

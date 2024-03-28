@@ -64,6 +64,7 @@ export default function Home() {
                     description={study.description}
                     title={study.title}
                     imgUrl={study.imageUrl}
+                    slug={study.slug}
                   />
                 ))}
             </div>

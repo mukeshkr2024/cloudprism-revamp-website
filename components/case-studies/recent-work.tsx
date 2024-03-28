@@ -2,6 +2,8 @@ import React from "react";
 import { SuccessCard } from "../card/SuccessCard";
 import { recentCaseStudies } from "@/constants/case-studies";
 
+console.log(recentCaseStudies);
+
 export default function RecentWorks() {
   return (
     <section className="mx-auto mt-6 max-w-6xl  ">
@@ -14,6 +16,7 @@ export default function RecentWorks() {
               imgUrl={item.imageUrl}
               title={item.title}
               key={item.id}
+              slug={item.slug}
             />
           ))}
       </div>

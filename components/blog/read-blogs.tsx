@@ -10,8 +10,6 @@ export default function ReadBlogs({ blogs }: { blogs: Blog[] }) {
   const [loadCount, setLoadCount] = useState(8);
   const [loading, setLoading] = useState(false);
 
-  console.log(loadCount);
-
   useEffect(() => {
     setDisplayedBlogs(blogs.slice(0, loadCount));
   }, []);

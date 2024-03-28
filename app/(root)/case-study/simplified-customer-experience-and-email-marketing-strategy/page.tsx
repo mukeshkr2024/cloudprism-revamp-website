@@ -20,13 +20,8 @@ const CaseStudy1 = () => {
                     <p>Salesforce Implementation and Consultant Partner</p>
                   </div>
                 </div>
-                <div
-                  className="h-1 w-full rounded-md"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, #F1CA64 15.38%, #02FFB3 99.49%);",
-                  }}
-                />
+
+                <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
                 <div className="mt-8 flex gap-y-6 flex-col">
                   <div className="flex flex-col gap-y-4">
                     <h1 className="h2_semibold !font-semibold">

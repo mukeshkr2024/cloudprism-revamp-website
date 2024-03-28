@@ -39,13 +39,7 @@ function BlogDetailsPage({ params }: Params) {
                 <p>{formattedPublishedDate}</p>
               </div>
             </div>
-            <div
-              className="mb-4 h-1 w-full rounded-md"
-              style={{
-                background:
-                  "linear-gradient(90deg, #F1CA64 15.38%, #02FFB3 99.49%);",
-              }}
-            />
+            <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
             <RenderMdx blog={blog} />
           </article>
         </TracingBeam>
