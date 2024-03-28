@@ -102,7 +102,7 @@ export default function Footer() {
           <Link href="/privacy-policy">
             <p className="text-[#636363]">Privacy Policy</p>
           </Link>
-          <Link href="/privacy">
+          <Link href="/terms-and-conditions">
             <p className="text-[#636363]">Terms And Condition</p>
           </Link>
         </div>
