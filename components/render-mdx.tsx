@@ -8,8 +8,8 @@ const components = {
     // eslint-disable-next-line jsx-a11y/alt-text
     <Image
       className="my-6 rounded-lg"
-      width={718}
-      height={404}
+      width={985}
+      height={554}
       sizes="100vw"
       {...props}
     />
@@ -45,14 +45,21 @@ const components = {
     <li className="text-base text-[#A4A4A4] md:text-lg" {...props} />
   ),
   a: (props: React.ComponentProps<"a">) => (
-    <a {...props} target="_blank" className="text-blue-500 hover:underline" />
+    <a
+      {...props}
+      target="_blank"
+      className="text-white font-semibold  text-[20px]"
+    />
+  ),
+  strong: (props: React.ComponentProps<"strong">) => (
+    <strong {...props} className="text-white" />
   ),
 };
 export default function RenderMdx({ blog }: { blog: Blog }) {
   const MDXContent = useMDXComponent(blog.body.code);
 
   return (
-    <div>
+    <div className="mt-4">
       <MDXContent components={components} />
     </div>
   );

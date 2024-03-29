@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import React, { useState } from "react";
-import Link from "next/link";
-import CustomButton from "../shared/custom-button";
 import { ImageProps } from "@/types";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+import CustomButton from "../shared/custom-button";
 
 interface BlogProps {
   image: ImageProps;
@@ -38,7 +38,13 @@ export default function BlogCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Image height={154} alt={title} src={imgUrL} width={279} />
+      <Image
+        height={154}
+        alt={title}
+        src={imgUrL}
+        width={279}
+        className="rounded-tl-lg rounded-tr-lg"
+      />
       <div className="card_primary_background flex h-[280px] flex-col justify-between rounded-b-lg px-6 py-8 transition-colors duration-200 ease-in-out">
         <h3 className="line-clamp-2 text-xl font-bold text-white">{title}</h3>
         <p className="line-clamp-3 text-sm font-normal text-[#798882]">
