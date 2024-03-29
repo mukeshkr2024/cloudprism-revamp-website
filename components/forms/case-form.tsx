@@ -61,7 +61,7 @@ const CaseFormPopup = ({ handleClose }: Props) => {
           >
             <div
               className="absolute right-4 top-4 cursor-pointer rounded-full lg:hidden"
-              onClick={handleClose}
+              // onClick={handleClose}
             >
               <Image src="/assets/icons/x.svg" alt="x" width={15} height={15} />
             </div>
@@ -176,7 +176,7 @@ const CaseFormPopup = ({ handleClose }: Props) => {
         <div className="relative hidden rounded-md bg-cover bg-center lg:block lg:w-[40%]">
           <div
             className="absolute right-4 top-4 cursor-pointer rounded-full"
-            onClick={handleClose}
+            // onClick={handleClose}
           >
             <Image src="/assets/icons/x.svg" alt="x" width={22} height={22} />
           </div>

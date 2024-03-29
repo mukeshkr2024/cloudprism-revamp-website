@@ -34,7 +34,7 @@ const CaseStudy1 = () => {
                 <div>
                   <span className="text-base font-normal"> CASE STUDY-3</span>
                   <div className="text-lg font-medium my-2.5 w-full flex flex-col gap-y-1">
-                    <p>Client: Paypal</p>
+                    <p>Client: Hedera Dx</p>
                     <p>Partner: CloudPrism</p>
                     <p>Salesforce Implementation and Consultant Partner</p>
                   </div>
@@ -43,7 +43,8 @@ const CaseStudy1 = () => {
                 <div className="mt-8 flex gap-y-6 flex-col">
                   <div className="flex flex-col gap-y-4">
                     <h1 className="h2_semibold !font-semibold">
-                      Client Background:
+                      Efficient Communication and Data Centralization: Hedera Dx
+                      Implements Cloud Prism on Salesforce
                     </h1>
                     <p className="blog_paragraph">
                       Hedera Dx is dedicated to transforming oncology by

@@ -36,7 +36,6 @@ const CaseStudy1 = () => {
                     <p>Salesforce Implementation and Consultant Partner</p>
                   </div>
                 </div>
-
                 <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
                 <div className="mt-8 flex gap-y-6 flex-col">
                   <div className="flex flex-col gap-y-4">
