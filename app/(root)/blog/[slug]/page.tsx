@@ -33,7 +33,9 @@ function BlogDetailsPage({ params }: Params) {
           <article className="text-white">
             <div className="flex flex-col gap-y-8 py-4">
               <span className="text-base font-normal ">BLOG</span>
-              <h1 className="h2_semibold !font-semibold">{blog?.title} </h1>
+              <h1 className="h2_semibold !font-semibold lg:leading-[55px]">
+                {blog?.title}{" "}
+              </h1>
               <div className="flex gap-x-20 text-base font-semibold">
                 <p className="capitalize">{blog?.readingTime?.text}</p>
                 <p>{formattedPublishedDate}</p>

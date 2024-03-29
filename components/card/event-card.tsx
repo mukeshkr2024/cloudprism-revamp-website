@@ -4,13 +4,13 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 import CustomButton from "../shared/custom-button";
-import { createSlug } from "@/utils/cn";
 
 interface EventProps {
   imgUrl: string;
   title: string;
   description: string;
   readTime: string;
+  slug: string;
 }
 
 export default function EventCard({
@@ -18,9 +18,9 @@ export default function EventCard({
   title,
   description,
   readTime,
+  slug,
 }: EventProps) {
   const [isHovered, setIsHovered] = useState(false);
-  const slug = createSlug(title);
 
   return (
     <div
@@ -42,7 +42,7 @@ export default function EventCard({
         }}
         className="flex flex-col gap-y-8 rounded-lg px-6 py-12"
       >
-        <h3 className="text-xl font-bold text-white">{title}</h3>
+        <h3 className="text-xl font-bold text-white line-clamp-2">{title}</h3>
         <p className="line-clamp-3 text-sm font-normal text-[#798882]">
           {description}
         </p>

@@ -63,15 +63,17 @@ export default function EventsPage() {
         <section className="mx-auto  my-10 max-w-7xl ">
           <h1 className="h2_semibold text-center">News & Events</h1>
           <div className="mt-16 flex flex-wrap justify-center gap-6 sm:mt-20 lg:mt-24">
-            {events.map((event) => (
-              <EventCard
-                key={event.title}
-                description={event.description}
-                imgUrl={event.imgUrl}
-                readTime={event.read_time}
-                title={event.title}
-              />
-            ))}
+            {events &&
+              events.map((event) => (
+                <EventCard
+                  key={event.title}
+                  description={event.description}
+                  imgUrl={event.imgUrl}
+                  readTime={event.read_time}
+                  title={event.title}
+                  slug={event.slug}
+                />
+              ))}
           </div>
         </section>
       </div>

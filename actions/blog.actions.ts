@@ -1,5 +1,4 @@
 import { BlogsData } from "@/constants/blogs-data";
-import { eventsData } from "@/constants/event-data";
 import { createSlug } from "@/utils/cn";
 
 export const latestBlogs = () => {
@@ -17,19 +16,6 @@ export const findBlogBySlug = (slug: string) => {
   const targetSlug = slug.toLowerCase();
 
   for (const blog of BlogsData) {
-    const blogSlug = createSlug(blog.title);
-    if (blogSlug === targetSlug) {
-      return blog;
-    }
-  }
-
-  return null;
-};
-
-export const eventBySlug = (slug: string) => {
-  const targetSlug = slug.toLowerCase();
-
-  for (const blog of eventsData) {
     const blogSlug = createSlug(blog.title);
     if (blogSlug === targetSlug) {
       return blog;
