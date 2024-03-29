@@ -8,8 +8,6 @@ import CustomButton from "@/components/shared/custom-button";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import React, { useState } from "react";
 
-// TODO: to change the content
-
 const CaseStudy1 = () => {
   const [blurContent, setBlurContent] = useState(true);
   const [showForm, setShowForm] = useState(false);

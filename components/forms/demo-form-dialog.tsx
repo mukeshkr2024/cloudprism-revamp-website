@@ -1,7 +1,7 @@
 "use client";
 
 import { PopupFormContext } from "@/context/form-context";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {
   Form,
   FormField,
@@ -18,6 +18,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { socialLinks } from "@/constants";
 import Link from "next/link";
+import { submitForm } from "@/actions/form.actions";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "FirstName is required" }).max(50),
@@ -32,6 +33,7 @@ const formSchema = z.object({
 
 const DemoFormPopup: React.FC = () => {
   const { setShowPopup, showPopup } = useContext(PopupFormContext);
+  const [message, setMessage] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -46,8 +48,18 @@ const DemoFormPopup: React.FC = () => {
     defaultValues: {},
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const data = {
+      recordName: "Cloudprism",
+      leadType: "Contact Us CTA",
+    };
+    const response = await submitForm(values, data);
+    setMessage(true);
+
+    setTimeout(() => {
+      setMessage(false);
+    }, 6000);
+    form.reset();
   }
 
   if (!showPopup) return null;
@@ -74,6 +86,11 @@ const DemoFormPopup: React.FC = () => {
             </div>
 
             <div className="mt-4 flex w-full flex-col text-white">
+              {message && (
+                <p className="text-green-500 text-sm ">
+                  Thanks for your submission! We'll be in touch shortly.
+                </p>
+              )}
               <h2 className="text-3xl font-bold">
                 Ready to bring your ideas to life?
               </h2>

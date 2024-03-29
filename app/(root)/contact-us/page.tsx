@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
@@ -32,6 +32,7 @@ const formSchema = z.object({
 });
 
 function ContactUsPage() {
+  const [message, setMessage] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -49,6 +50,12 @@ function ContactUsPage() {
       leadType: "Contact Us CTA",
     };
     const response = await submitForm(values, data);
+    setMessage(true);
+
+    setTimeout(() => {
+      setMessage(false);
+    }, 6000);
+    form.reset();
   }
 
   return (
@@ -98,6 +105,11 @@ function ContactUsPage() {
             </div>
 
             <div className="flex w-full flex-col space-y-4 ">
+              {message && (
+                <p className="text-green-500 text-sm ">
+                  Thanks for your submission! We'll be in touch shortly.
+                </p>
+              )}
               <h2 className="text-3xl font-bold md:text-4xl">
                 Get in touch with us!
               </h2>
@@ -197,10 +209,13 @@ function ContactUsPage() {
                         </FormItem>
                       )}
                     />
-
-                    <CustomButton className=" rounded-3xl px-6 py-1.5 ">
-                      <p className="text-lg font-semibold text-black">Submit</p>
-                    </CustomButton>
+                    <div className="flex items-center gap-x-4">
+                      <CustomButton className=" rounded-3xl px-6 py-1.5 ">
+                        <p className="text-lg font-semibold text-black">
+                          Submit
+                        </p>
+                      </CustomButton>
+                    </div>
                   </form>
                 </Form>
               </div>

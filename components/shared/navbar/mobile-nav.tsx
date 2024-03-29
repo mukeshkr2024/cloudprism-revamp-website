@@ -45,18 +45,21 @@ export function MobileNav() {
           </SheetClose>
         </SheetHeader>
         <div className="flex flex-col items-start justify-start">
-          <Link href="/" className="flex items-center">
-            <Image
-              src="/assets/icons/company-logo.svg"
-              alt="Cloudprism"
-              width={90}
-              height={90}
-            />
-            <div className=" flex flex-col">
-              <p className="text-sm text-white">CloudPrism</p>
-              <p className="text-sm text-white">Solutions</p>
-            </div>
-          </Link>
+          <SheetClose asChild>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/assets/icons/company-logo.svg"
+                alt="Cloudprism"
+                width={90}
+                height={90}
+              />
+              <div className=" flex flex-col">
+                <p className="text-sm text-white">CloudPrism</p>
+                <p className="text-sm text-white">Solutions</p>
+              </div>
+            </Link>
+          </SheetClose>
+
           <div className="mt-12 flex flex-col ">
             {navbarLinks.map((item) => (
               <div key={item.route} className="mb-3">
@@ -75,9 +78,11 @@ export function MobileNav() {
                               key={menuItem.label}
                               className="text-base font-normal"
                             >
-                              <Link href={menuItem.route}>
-                                {menuItem.label}
-                              </Link>
+                              <SheetClose asChild>
+                                <Link href={menuItem.route}>
+                                  {menuItem.label}
+                                </Link>
+                              </SheetClose>
                             </li>
                           ))}
                         </ul>
@@ -85,11 +90,13 @@ export function MobileNav() {
                     </AccordionItem>
                   </Accordion>
                 ) : (
-                  <Link href={item?.route}>
-                    <p className="p-1.5 text-lg font-medium text-[#EBEBEB]">
-                      {item?.label}
-                    </p>
-                  </Link>
+                  <SheetClose asChild>
+                    <Link href={item?.route}>
+                      <p className="p-1.5 text-lg font-medium text-[#EBEBEB]">
+                        {item?.label}
+                      </p>
+                    </Link>
+                  </SheetClose>
                 )}
               </div>
             ))}

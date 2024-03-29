@@ -4,7 +4,7 @@ import { socialLinks } from "@/constants";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import CustomButton from "../shared/custom-button";
@@ -17,6 +17,7 @@ import {
 } from "../ui/form";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
+import { submitForm } from "@/actions/form.actions";
 
 interface Props {
   handleClose: () => void;
@@ -31,13 +32,25 @@ const formSchema = z.object({
 });
 
 const CaseFormPopup = ({ handleClose }: Props) => {
+  const [message, setMessage] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {},
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const data = {
+      recordName: "Cloudprism",
+      leadType: "Contact Us CTA",
+    };
+    const response = await submitForm(values, data);
+    setMessage(true);
+
+    setTimeout(() => {
+      setMessage(false);
+    }, 6000);
+    form.reset();
+    handleClose();
   }
 
   return (
@@ -66,6 +79,11 @@ const CaseFormPopup = ({ handleClose }: Props) => {
               <Image src="/assets/icons/x.svg" alt="x" width={15} height={15} />
             </div>
             <div className="mt-4 flex w-full flex-col text-white">
+              {message && (
+                <p className="text-green-500 text-sm ">
+                  Thanks for your submission! We'll be in touch shortly.
+                </p>
+              )}
               <h2 className="text-3xl font-bold">
                 Practical Tips, Real Results{" "}
               </h2>
