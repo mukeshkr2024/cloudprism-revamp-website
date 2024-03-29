@@ -65,6 +65,7 @@ const BlogFormPopup: React.FC = () => {
       setMessage(false);
     }, 6000);
     form.reset();
+    setShowPopup(false);
   }
 
   if (!showPopup) return null;

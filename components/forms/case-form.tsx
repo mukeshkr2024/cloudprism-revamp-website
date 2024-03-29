@@ -72,12 +72,12 @@ const CaseFormPopup = ({ handleClose }: Props) => {
               backdropFilter: "blur(23px)",
             }}
           >
-            <div
+            {/* <div
               className="absolute right-4 top-4 cursor-pointer rounded-full lg:hidden"
               // onClick={handleClose}
             >
               <Image src="/assets/icons/x.svg" alt="x" width={15} height={15} />
-            </div>
+            </div> */}
             <div className="mt-4 flex w-full flex-col text-white">
               {message && (
                 <p className="text-green-500 text-sm ">
@@ -192,12 +192,12 @@ const CaseFormPopup = ({ handleClose }: Props) => {
           </div>
         </div>
         <div className="relative hidden rounded-md bg-cover bg-center lg:block lg:w-[40%]">
-          <div
+          {/* <div
             className="absolute right-4 top-4 cursor-pointer rounded-full"
             // onClick={handleClose}
           >
             <Image src="/assets/icons/x.svg" alt="x" width={22} height={22} />
-          </div>
+          </div> */}
 
           <div
             className="flex size-full items-end  py-8 text-white

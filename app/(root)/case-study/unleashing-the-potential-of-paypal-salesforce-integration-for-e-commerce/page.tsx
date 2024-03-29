@@ -25,7 +25,7 @@ const CaseStudy1 = () => {
     <ScrollBarProgress>
       <div className="mx-auto w-full max-w-[90rem]">
         {showForm && <CaseFormPopup handleClose={handleClose} />}
-        <div className="flex w-full flex-col justify-center pb-32 pt-40 lg:flex-row">
+        <div className="flex w-full flex-col justify-center pb-32 pt-24 lg:flex-row">
           <TracingBeam className="px-6">
             <div className="text-white">
               <div className="max-w-7xl mx-auto pt-8">

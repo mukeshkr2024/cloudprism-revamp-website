@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className=" mx-auto max-w-7xl lg:mt-12 ">
       <div className="flex w-full flex-col gap-y-12 p-4 xl:pl-16">
-        <div className=" flex max-w-5xl justify-between">
+        <div className=" flex max-w-6xl justify-between">
           <div className=" flex flex-col ">
             <div className="flex flex-col gap-y-4">
               <Link href="/" className="sm:flex ">
@@ -65,7 +65,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-between gap-y-4 p-2 md:flex-row">
+        <div className="flex flex-col justify-between gap-y-4 p-2 md:flex-row max-w-6xl ">
           <div className="  ">
             <p className="text-sm font-normal text-white sm:text-base">
               Office no: 917, <br /> Gera Imperium Alpha,

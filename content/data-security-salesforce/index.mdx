@@ -17,11 +17,16 @@ Data security defines the visibility of records and fields within Salesforce. It
 
 ### 1) Org-Level Data Security:
 
-- **User Authentication**: Implement strong user authentication mechanisms, including password policies, multi-factor authentication (MFA), and Salesforce integration with identity providers to verify user identities before granting access to the Salesforce org.
+- **User Authentication**: Implement strong user authentication mechanisms, including password policies, multi-factor authentication (MFA), and [Salesforce integration](http://www.cloudprism.in) with identity providers to verify user identities before granting access to the Salesforce org.
+
 - **Login and Session Security**: Enforce secure login settings, such as IP restrictions, session timeouts, and trusted IP ranges, to control access to the org and prevent unauthorized logins.
+
 - **Org-Wide Sharing Settings**: Define default sharing settings that determine the default access level for records across the org, such as public read/write, public read-only, or private.
+
 - **Role Hierarchy**: Establish a role hierarchy to control data visibility and access privileges based on the organizational structure. Higher-level roles can access records owned by users in lower-level roles.
+
 - **Sharing Rules**: Define sharing rules to extend access to specific records based on criteria, such as record ownership, user attributes, or record characteristics.
+
 - **Data Classification and Security Policies**: Establish policies to classify data based on its sensitivity and define security controls accordingly. This includes determining which data is considered public, confidential, or highly sensitive, and implementing appropriate security measures.
 
 ### 2) Field-Level Data Security:
@@ -33,16 +38,20 @@ Data security defines the visibility of records and fields within Salesforce. It
 ### 3) Object-Level Data Security:
 
 - **Object Permissions**: Define object-level permissions to control user access to entire Salesforce objects, including read, create, edit, and delete operations.
+
 - **Object Sharing Settings**: Configure object sharing settings to determine the default record access levels, such as public read/write, public read-only, or private.
+
 - **Manual Sharing**: Allow users with appropriate privileges to manually share individual records with specific users or groups, providing selective access to data.
+
 - **Criteria-Based Sharing**: Define sharing rules based on specified criteria, such as record ownership, record attributes, or user attributes, to automatically extend access to specific records.
+
 - **Ownership and Role Hierarchy**: Establish record ownership rules based on user roles, ensuring that users can access and modify records owned by individuals in lower-level roles.
 
 ### 4) Object-Level Data Security:
 
-Record-Level Security: Record-level security allows for granular control over access to individual records within Salesforce implementation. It is primarily based on the role hierarchy, sharing rules, manual sharing, criteria-based sharing, and ownership. With these mechanisms, administrators can define who can view, edit, transfer, or delete specific records, ensuring data privacy and integrity.
+Record-Level Security: Record-level security allows for granular control over access to individual records within [Salesforce implementation](http://www.cloudprism.in). It is primarily based on the role hierarchy, sharing rules, manual sharing, criteria-based sharing, and ownership. With these mechanisms, administrators can define who can view, edit, transfer, or delete specific records, ensuring data privacy and integrity.
 
-In Salesforce, sharing settings refer to the configuration options that control the visibility and access of records and data within the organization. These settings determine how data is shared among users and define the default access levels for records. Salesforce provides several mechanisms for managing sharing settings:-
+In [Salesforce](https://www.salesforce.com.in), sharing settings refer to the configuration options that control the visibility and access of records and data within the organization. These settings determine how data is shared among users and define the default access levels for records. Salesforce provides several mechanisms for managing sharing settings:-
 
 ## OWD (Organization- Wide-Area) And Security Model in Salesforce
 
@@ -58,15 +67,21 @@ It defines the default sharing settings for objects and determines the access le
   3.Public Read/Write: Provides read and edit access to all users in the organization, allowing them to view and modify records they do not own.
 
   - **Role Hierarchy**: The role hierarchy in Salesforce defines the organizational structure and determines data visibility based on roles. Higher-level roles have access to records owned by users in lower-level roles. This ensures that managers and supervisors can view and access records owned by their subordinates.
+
   - **Sharing Rules**: Sharing rules extend record access beyond the organization-wide defaults based on specified criteria. Sharing rules can be based on record ownership, record attributes, or user attributes. By defining criteria, organizations can automatically grant access to records for specific users or groups.
+
   - **Manual Sharing**: Manual sharing allows users with appropriate privileges to manually share individual records with other users or groups. This provides selective access to specific records, even if it goes against the organization-wide sharing defaults.
+
   - **Criteria-Based Sharing**: Criteria-based sharing allows for automatic sharing of records based on predefined criteria. Administrators can set up criteria-based sharing rules to grant access to records that meet specific conditions or attributes.
+
   - **Apex Managed Sharing**: Apex Managed Sharing is a programmatic way to define and manage record-level sharing using Apex code. It allows for custom logic to determine record access and sharing based on specific business requirements.
 
 ## Permission Sets In Salesforce (Object Level Security)
 
-Permission sets in Salesforce are also a collection of settings and permissions that determine users’ access to various tools and functions on the platform.
+Permission sets in [Salesforce](https://www.salesforce.com.in) are also a collection of settings and permissions that determine users’ access to various tools and functions on the platform.
+
 Settings and permissions available in permission sets are also found in profiles but permission sets extend the functionality of users without changing their profiles.
+
 Use permission set to grant additional access to specific users on top of their existing profile permissions, without having to modify an existing profile, create new profiles, or grant an administrator profile where it’s not necessary.
 
 ## Permission Set Control
@@ -85,9 +100,11 @@ Use permission set to grant additional access to specific users on top of their 
     2.To grant permissions-temporarily or long term-to specific fields
 
 Permissions are additive which means we can’t remove a user’s existing permissions by assigning a permission set we can only add permissions.
+
 To limit access for a user or group of users, ensure that their base profile as well as any of their permission set limits this type of access.
+
 It is not mandatory to give the license to the permission sets while creating it, but once the license is assigned it cannot be changed.
 
 ### Conclusion:
 
-In conclusion, data security is a critical aspect of Salesforce administration . By configuring data visibility and access controls at various levels, organizations can ensure that sensitive data remains protected and accessible only to authorized users. Implementing strong authentication mechanisms, defining role hierarchies, leveraging sharing rules, and utilizing permission sets are key strategies for managing data security in Salesforce. By adhering to these best practices, organizations can maintain data integrity, protect against unauthorized access, and ensure compliance with privacy regulations.
+In conclusion, data security is a critical aspect of [Salesforce administration](http://www.cloudprism.in) . By configuring data visibility and access controls at various levels, organizations can ensure that sensitive data remains protected and accessible only to authorized users. Implementing strong authentication mechanisms, defining role hierarchies, leveraging sharing rules, and utilizing permission sets are key strategies for managing data security in Salesforce. By adhering to these best practices, organizations can maintain data integrity, protect against unauthorized access, and ensure compliance with privacy regulations.
