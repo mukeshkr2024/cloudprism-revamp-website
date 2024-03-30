@@ -10,6 +10,12 @@ const hankenGrotesk = HankenGrotesk({
 export const metadata: Metadata = {
   title: "Cloudprism",
   description: "Cloudprism website",
+  icons: {
+    icon: ["/favicon.ico?v=1"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["/apple-touch-icon.png"],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
