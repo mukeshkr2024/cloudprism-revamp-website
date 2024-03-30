@@ -15,7 +15,7 @@ export default function TeamCard({
   const [hovered, setHovered] = useState(false);
   return (
     <div
-      className={`card_primary_background relative h-[200px] w-[170px] rounded-lg p-4 transition-colors duration-300 ease-in-out sm:h-[250px] sm:w-[220px]`}
+      className={`card_primary_background relative h-[200px] w-[170px] rounded-lg p-4 transition-colors duration-300 ease-in-out sm:h-[230px] sm:w-[220px]`}
       style={{
         borderBottom: "1.5px solid",
         borderImage: hovered
@@ -35,10 +35,8 @@ export default function TeamCard({
       </Link>
       <div className="flex size-full flex-col items-center justify-center gap-1.5">
         <Image src={profilePic} alt={name} width={103} height={103} />
-        <div className="flex flex-col gap-1">
-          <h4 className="text-lg font-semibold text-white sm:text-xl">
-            {name}
-          </h4>
+        <div className="flex flex-col gap-[2px] text-center">
+          <h4 className="text-lg font-semibold text-white ">{name}</h4>
           <p className="text-sm font-light text-[#C6C6C6] sm:text-base">
             {description}
           </p>
