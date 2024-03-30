@@ -689,9 +689,63 @@ export const fullStackbuisnessData = [
 
 export const jobOpenings = [
   {
-    profileFor: "UI/UX Designer",
-    type: "Full-time employment",
-    experiences: "3+ Years",
+    id: 1,
+    title: "Frontend Developer",
+    employmentType: "Full-time",
+    experience: "Pune",
+    location: "San Francisco, CA",
+    description:
+      "Join our team as a frontend developer and work on cutting-edge projects.",
+    linkdeinUrl: "https://www.linkedin.com/",
+  },
+  {
+    id: 2,
+    title: "Data Scientist",
+    employmentType: "Remote",
+    experience: "5+ Years",
     location: "Pune",
+    description:
+      "We're looking for an experienced data scientist to join our data analytics team.",
+    linkdeinUrl: "https://www.linkedin.com/",
+  },
+  {
+    id: 3,
+    title: "Product Manager",
+    employmentType: "Contract",
+    experience: "3+ Years",
+    location: "Patna",
+    description:
+      "Seeking a talented product manager to lead our product development efforts.",
+    linkdeinUrl: "https://www.linkedin.com/",
+  },
+  {
+    id: 4,
+    title: "Backend Developer",
+    employmentType: "Full-time",
+    experience: "3+ Years",
+    location: "Pune",
+    description:
+      "Join our backend development team to build scalable and efficient server-side systems.",
+    linkdeinUrl: "https://www.linkedin.com/",
+  },
+  {
+    id: 5,
+    title: "UX Designer",
+    employmentType: "Part-time",
+    experience: "2+ Years",
+    location: "Pune",
+    description:
+      "Looking for a creative UX designer to enhance user experience across our platforms.",
+    linkdeinUrl: "https://www.linkedin.com/",
+  },
+  {
+    id: 6,
+    title: "Software Engineer",
+    employmentType: "Full-time",
+    experience: "4+ Years",
+    location: "Patna",
+    description:
+      "Join our engineering team to develop innovative software solutions for our clients.",
+    linkdeinUrl: "https://www.linkedin.com/",
   },
 ];

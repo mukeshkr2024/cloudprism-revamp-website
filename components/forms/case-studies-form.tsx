@@ -63,7 +63,7 @@ const CaseStudiesFormPopup: React.FC = () => {
   if (!showPopup) return null;
 
   return (
-    <div className="fixed left-0 top-0 z-50 flex size-full items-center justify-center">
+    <div className="fixed backdrop-blur-sm bg-opacity-50 bg-gray-950  left-0 top-0 z-50 flex size-full items-center justify-center">
       <div
         className="background_primary flex w-[1100px] rounded-md bg-contain bg-right-bottom bg-no-repeat"
         style={{

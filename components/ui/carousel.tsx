@@ -4,9 +4,9 @@ import * as React from "react";
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react";
-import { ChevronRight, ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/utils/cn";
+import Image from "next/image";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -196,7 +196,7 @@ CarouselItem.displayName = "CarouselItem";
 const CarouselPrevious = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
->(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+>(({ className, variant = "default", size = "icon", ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev } = useCarousel();
 
   return (
@@ -205,7 +205,7 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute ml-3 sm:ml-0 sm:h-8 size-6 sm:w-8 rounded-full",
+        "absolute ml-3 sm:ml-0 sm:h-8 size-6 sm:w-8 ",
         orientation === "horizontal"
           ? "-left-12 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -215,7 +215,13 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ChevronLeft className="size-4" />
+      <Image
+        src="/assets/icons/left-icon.svg"
+        width={20}
+        height={20}
+        alt="Left"
+        className="size-9"
+      />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -225,7 +231,7 @@ CarouselPrevious.displayName = "CarouselPrevious";
 const CarouselNext = React.forwardRef<
   HTMLButtonElement,
   React.ComponentProps<typeof Button>
->(({ className, variant = "outline", size = "icon", ...props }, ref) => {
+>(({ className, variant = "default", size = "icon", ...props }, ref) => {
   const { orientation, scrollNext, canScrollNext } = useCarousel();
 
   return (
@@ -234,7 +240,7 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute mr-3 sm:mr-0 size-6 sm:h-8 sm:w-8 rounded-full",
+        "absolute mr-3 sm:mr-0 size-6 sm:h-8 sm:w-8 ",
         orientation === "horizontal"
           ? "-right-12 top-1/2 -translate-y-1/2"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -244,7 +250,13 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <ChevronRight className="size-3 sm:size-4" />
+      <Image
+        src="/assets/icons/right-icon.svg"
+        width={20}
+        height={20}
+        alt="Left"
+        className="size-9"
+      />
       <span className="sr-only">Next slide</span>
     </Button>
   );

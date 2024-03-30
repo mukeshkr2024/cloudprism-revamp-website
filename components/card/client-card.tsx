@@ -14,7 +14,7 @@ export default function ClientCard({ description, name, profilePic }: Props) {
 
   return (
     <div
-      className="flex h-[210px] w-[310px] cursor-pointer flex-col gap-3 rounded-lg border border-[#2E2E2EC9]  p-5 shadow-md transition-colors duration-300 ease-in-out hover:border-[#02FFB3] md:w-[330px] lg:h-[223px] lg:w-[390px]"
+      className="flex h-[210px] w-[310px] cursor-pointer flex-col gap-3 rounded-lg border md:border-[#2E2E2EC9]  p-5 shadow-md transition-colors duration-300 ease-in-out md:hover:border-[#02FFB3] md:w-[330px] lg:h-[223px] lg:w-[390px] border-[#02FFB3]"
       style={{
         background:
           "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)",

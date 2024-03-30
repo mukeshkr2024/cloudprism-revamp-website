@@ -38,7 +38,7 @@ export default function OurClientSay() {
             ))}
           </CarouselContent>
 
-          <CarouselPrevious />
+          <CarouselPrevious variant={"default"} />
           <CarouselNext />
         </Carousel>
       </div>

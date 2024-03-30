@@ -12,19 +12,6 @@ export const latestBlogs = () => {
   return blogs;
 };
 
-export const findBlogBySlug = (slug: string) => {
-  const targetSlug = slug.toLowerCase();
-
-  for (const blog of BlogsData) {
-    const blogSlug = createSlug(blog.title);
-    if (blogSlug === targetSlug) {
-      return blog;
-    }
-  }
-
-  return null;
-};
-
 export const readBlogs = () => {
   const data = BlogsData.slice(0, 4);
 

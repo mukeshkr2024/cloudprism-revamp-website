@@ -59,7 +59,7 @@ export default function SalesForceServices() {
         imgUrl="/assets/images/salesforce-consulting.png" // TODO: add later svg
       />
       <SectionCard
-        title="Salesforce Consulting"
+        title="Salesforce Integration"
         description1=" CloudPrism is dedicated to modifying your business process through
             smart Salesforce deployment and consulting services. Our goal is to
             enhance efficiency, boost productivity,of all sizes and industries

@@ -1,9 +1,17 @@
+"use client";
+
 import JobOpeningCard from "@/components/card/opening-card";
 import CustomButton from "@/components/shared/custom-button";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
-import Link from "next/link";
+import { jobOpenings } from "@/constants";
+import { useRef } from "react";
 
 function CarrierPage() {
+  const hrRef = useRef<HTMLDivElement | null>(null);
+
+  const handleApplyNowClick = () => {
+    hrRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <ScrollBarProgress>
       <div className="mx-auto max-w-[90rem]">
@@ -26,7 +34,7 @@ function CarrierPage() {
           </div>
         </div>
         <div className="mx-4 mt-[-50px]  flex max-w-7xl flex-col gap-y-12 text-center lg:mx-auto  lg:flex-row lg:px-8 lg:text-start xl:px-0">
-          <h2 className="h2_semibold flex-1">
+          <h2 className="h2_semibold flex-1" onClick={handleApplyNowClick}>
             We Are <br className="hidden lg:block" />
             Cloudprism{" "}
           </h2>
@@ -67,12 +75,18 @@ function CarrierPage() {
           </p>
 
           <div className="mt-14 flex flex-wrap  items-center justify-center gap-8">
-            <JobOpeningCard />
-            <JobOpeningCard />
-            <JobOpeningCard />
-            <JobOpeningCard />
-            <JobOpeningCard />
-            <JobOpeningCard />
+            {jobOpenings &&
+              jobOpenings.map((openings) => (
+                <JobOpeningCard
+                  linkdeinUrl={openings.linkdeinUrl}
+                  description={openings.description}
+                  employmentType={openings.employmentType}
+                  experience={openings.experience}
+                  location={openings.location}
+                  title={openings.title}
+                  handleApply={handleApplyNowClick}
+                />
+              ))}
           </div>
         </section>
         <section
@@ -81,15 +95,16 @@ function CarrierPage() {
             backgroundImage: "url('/assets/images/connect-to-us.svg')",
           }}
         >
-          <div className="flex flex-col items-center justify-center gap-y-5 px-6 pt-20 md:gap-y-6 md:pt-24 xl:px-24">
+          <div
+            className="flex flex-col items-center justify-center gap-y-5 px-6 pt-20 md:gap-y-6 md:pt-24 xl:px-24"
+            ref={hrRef}
+          >
             <h2 className="h2_semibold">Send us your resume at</h2>
 
             <CustomButton className="rounded-3xl px-5 py-1.5">
-              <Link href="/contact-us">
-                <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-                  hr@cloudprism.in{" "}
-                </p>
-              </Link>
+              <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+                hr@cloudprism.in{" "}
+              </p>
             </CustomButton>
           </div>
         </section>{" "}

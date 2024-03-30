@@ -3,7 +3,7 @@
 import { ImageProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CustomButton from "../shared/custom-button";
 
 interface BlogProps {
@@ -25,6 +25,22 @@ export default function BlogCard({
 }: BlogProps) {
   const imgUrL = image?.filePath.replace("../public", "");
   const [isHovered, setIsHovered] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 600px)");
+
+    const handleMediaQueryChange = (event: MediaQueryListEvent) => {
+      setIsHovered(event.matches);
+    };
+
+    setIsHovered(mediaQuery.matches);
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
 
   return (
     <div

@@ -4,11 +4,29 @@ import { Home, MapPin, MessageSquareText } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function JobOpeningCard() {
+interface JobProps {
+  title: string;
+  employmentType: string;
+  experience: string;
+  location: string;
+  description: string;
+  linkdeinUrl: string;
+  handleApply: () => void;
+}
+
+export default function JobOpeningCard({
+  description,
+  employmentType,
+  experience,
+  location,
+  title,
+  handleApply,
+  linkdeinUrl,
+}: JobProps) {
   return (
-    <div className="job_opening_card flex h-[390px] w-[374px] flex-col justify-between rounded-lg border border-[#2E2E2E] p-6 text-white shadow-md transition duration-300 ease-in-out hover:scale-105  hover:border-[#02FFB3]">
+    <div className="job_opening_card w-[330px] h-[380px] flex sm:h-[390px] sm:w-[374px] flex-col justify-between rounded-lg border border-[#2E2E2E] p-6 text-white shadow-md transition duration-300 ease-in-out hover:scale-105  hover:border-[#02FFB3]">
       <div className="flex w-full items-center justify-between">
-        <p className="text-[27px] text-white">UI/UX Designer</p>
+        <p className="text-[27px] text-white">{title}</p>
         <Link href={`/`}>
           <Image
             src="/assets/icons/linkdein-dark.svg"
@@ -24,7 +42,7 @@ export default function JobOpeningCard() {
 px-4 py-1 text-base text-[#757575]"
         >
           <Home className="size-5" />
-          <p className="">Full-time employment</p>
+          <p className="">{employmentType}</p>
         </div>
         <div className="flex gap-x-3">
           <div
@@ -32,24 +50,23 @@ px-4 py-1 text-base text-[#757575]"
 px-4 py-1 text-base text-[#757575]"
           >
             <MessageSquareText />
-            <p className="">3+ Years</p>
+            <p className="">{experience}</p>
           </div>
           <div
             className="flex items-center gap-x-2  rounded-3xl bg-[#D9D9D90A]
 px-4 py-1 text-base text-[#757575]"
           >
             <MapPin />
-            <p className="">Jaipur</p>
+            <p className="">{location}</p>
           </div>
         </div>
       </div>
-      <p className="text-[#929292]">
-        Uncover the perfect role that aligns with your unique abilities and grab
-        countless opportunities to take your career to new heights.
-      </p>
+      <p className="text-[#929292]">{description}</p>
       <div>
         <CustomButton className="rounded-3xl px-4 py-1.5">
-          <p className=" font-semibold text-black">Apply Now</p>
+          <p className=" font-semibold text-black" onClick={handleApply}>
+            Apply Now
+          </p>
         </CustomButton>
       </div>
     </div>

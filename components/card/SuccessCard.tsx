@@ -1,7 +1,6 @@
 /* eslint-disable tailwindcss/migration-from-tailwind-2 */
 "use client";
 
-import { createSlug } from "@/utils/cn";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -88,37 +87,48 @@ export const SuccessCard = ({
       </div>
 
       <div
-        className="flex h-[300px] w-[175px] flex-col justify-between overflow-hidden rounded-[15px] border border-[#2E2E2EC9] bg-cover  bg-center bg-no-repeat p-4 md:hidden"
-        style={{
-          backgroundImage: `url(${imgUrl})`,
-        }}
+        className="flex h-[300px] relative w-[175px] flex-col justify-between overflow-hidden rounded-[15px] border border-[#2E2E2EC9] bg-cover  bg-center bg-no-repeat p-4 md:hidden"
+        // style={{
+        //   boxShadow:
+        //     "0px 3px 7px 0px #42FF9E1F, 0px 13px 13px 0px #42FF9E1C, 0px 30px 18px 0px #42FF9E0F, 0px 53px 21px 0px #42FF9E05, 0px 83px 23px 0px #42FF9E00",
+        // }}
       >
-        <div>
-          <p className="text-xs text-[#E5E5E5]"> RESEARCH REPORT</p>
-          <h3 className="mt-4 line-clamp-2 text-base font-medium text-[#EDEDED]">
-            {title}
-          </h3>
-          <p className="mt-5 line-clamp-6 text-xs  text-[#A4A4A4]">
-            {description}
-          </p>
-        </div>
-
-        <div className="relative flex w-full justify-end">
+        <div
+          className="absolute inset-0 rounded-[15px] bg-cover bg-no-repeat"
+          style={{
+            backgroundImage: `url(${imgUrl})`,
+            filter: "blur(25px)",
+            transition: "filter 0.5s ease-in-out",
+          }}
+        />
+        <div className="w-full z-10">
           <div>
-            <Link
-              href={`/case-study/${createSlug(title)}`}
-              className="absolute bottom-0 flex items-center justify-center pl-2 text-lg font-semibold text-[#02FFB3]"
-            >
-              Expand
-              <ChevronRight className="size-6" />
-            </Link>
-            <Image
-              src="/assets/icons/arrow-up.svg"
-              alt="Arrow up"
-              width={90}
-              height={90}
-              className="mb-[-50px]"
-            />{" "}
+            <p className="text-xs text-[#E5E5E5]"> RESEARCH REPORT</p>
+            <h3 className="mt-4 line-clamp-2 text-base font-medium text-[#EDEDED]">
+              {title}
+            </h3>
+            <p className="mt-5 line-clamp-6 text-xs  text-[#A4A4A4]">
+              {description}
+            </p>
+          </div>
+
+          <div className="relative flex w-full justify-end">
+            <div>
+              <Link
+                href={slug}
+                className="absolute bottom-0 flex items-center justify-center pl-2 text-lg font-semibold text-[#02FFB3]"
+              >
+                Expand
+                <ChevronRight className="size-6" />
+              </Link>
+              <Image
+                src="/assets/icons/arrow-up.svg"
+                alt="Arrow up"
+                width={90}
+                height={90}
+                className="mb-[-50px]"
+              />{" "}
+            </div>
           </div>
         </div>
       </div>
