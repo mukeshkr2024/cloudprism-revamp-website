@@ -90,7 +90,7 @@ function CarrierPage() {
           </div>
         </section>
         <section
-          className="mx-auto h-[500px] w-full max-w-[90rem]   bg-cover bg-center bg-no-repeat md:h-[650px]  "
+          className="mx-auto h-[400px] w-full max-w-[95rem] bg-cover bg-center bg-no-repeat md:h-[500px]  "
           style={{
             backgroundImage: "url('/assets/images/connect-to-us.svg')",
           }}
@@ -102,9 +102,12 @@ function CarrierPage() {
             <h2 className="h2_semibold">Send us your resume at</h2>
 
             <CustomButton className="rounded-3xl px-5 py-1.5">
-              <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+              <a
+                href="mailto:pragati.anjani@cloudprism.in"
+                className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl"
+              >
                 hr@cloudprism.in{" "}
-              </p>
+              </a>
             </CustomButton>
           </div>
         </section>{" "}

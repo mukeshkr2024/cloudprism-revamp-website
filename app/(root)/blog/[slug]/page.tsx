@@ -36,12 +36,12 @@ function BlogDetailsPage({ params }: Params) {
               <h1 className="h2_semibold !font-semibold lg:leading-[55px]">
                 {blog?.title}{" "}
               </h1>
-              <div className="flex gap-x-20 text-base font-semibold">
+              <div className="flex gap-x-24 text-base font-semibold">
                 <p className="capitalize">{blog?.readingTime?.text}</p>
                 <p>{formattedPublishedDate}</p>
               </div>
             </div>
-            <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
+            <div className="h-1 w-full   rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
             <RenderMdx blog={blog} />
           </article>
         </TracingBeam>

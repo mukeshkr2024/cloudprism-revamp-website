@@ -65,7 +65,7 @@ export default function AboutPage() {
             title="Mission"
             description1="CloudPrism is dedicated to modifying  your business process through smart Salesforce deployment and consulting services. Our goal is to enhance efficiency, boost productivity,of all sizes and industries and drive your organization to remarkable success by preferring Salesforce, the global leader in customer relationship management (CRM) platforms. With a focus on quality and client satisfaction, we are committed to guiding your company to its fullest potential in the digital realm."
             description2="Our partnership extends beyond mere transactions, as we share a commitment to social responsibility and ethical practices. At CloudPrism, empathy guides our approach to ethical resource management and fair treatment of all individuals involved. Partnering with us not only aligns with your values but also demonstrates a shared commitment to making a positive impact."
-            imgUrl="/assets/images/mission-svg.svg"
+            imgUrl="/assets/images/mission-svg.png"
             className="flex-col-reverse  lg:flex-row"
             imagSize="w-[710px] ml-[-50px]"
           />

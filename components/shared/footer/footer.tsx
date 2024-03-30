@@ -52,8 +52,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex w-full text-sm font-normal sm:text-base">
-          <div className="flex-1">
+        <div className="flex items-center text-center gap-y-6  md:items-start md:text-start flex-col md:flex-row w-full text-sm font-normal sm:text-base">
+          <div className="md:flex-1">
             <p className="max-w-xs">
               Shivpuri Rd, South Shivpuri, Shivpuri, Rajbansi Nagar, Patna,
               Bihar
@@ -61,7 +61,7 @@ export default function Footer() {
             800029
           </div>
 
-          <div className="flex-1">
+          <div className="md:flex-1">
             <p className="max-w-xs">
               Office no: 917, <br className="sm:hidden" />
               Gera Imperium Alpha, Rajaram Patil Nagar, Vitthal Nagar, Kharadi,
@@ -69,21 +69,21 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex-1">
+          <div className="md:flex-1">
             <p className="max-w-xs">
               701 Tillery St, Austin, TX 78702, United States
             </p>
           </div>
         </div>
 
-        <div className="flex w-full flex-col mb-2 sm:mb-4">
+        <div className="flex w-full flex-col mb-2 pl-2 sm:mb-4">
           <div className="border border-[#2D2D2D]" />
           <div className="flex flex-wrap gap-x-4  md:gap-x-6 text-[#636363] gap-y-2 mt-2 sm:mt-3">
             <span>copyright@cloudprism</span>
             <Link href="/privacy-policy">
               <p>Privacy Policy</p>
             </Link>
-            <Link href="/term-and-conditions">
+            <Link href="/terms-and-conditions">
               <p>Terms And Condition</p>
             </Link>
           </div>

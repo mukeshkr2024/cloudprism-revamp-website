@@ -65,10 +65,10 @@
 </linearGradient>
 <linearGradient id="paint3_linear_1696_2754" x1="826.051" y1="553.444" x2="1156" y2="604.822" gradientUnits="userSpaceOnUse">
 <stop offset="0.29" stop-color="#040404" stop-opacity="0"/>
-<stop offset="1" stop-color="#040404"/>
+<stop offset="0.901543"/>
 </linearGradient>
 <linearGradient id="paint4_linear_1696_2754" x1="-94" y1="553.444" x2="424.259" y2="685.2" gradientUnits="userSpaceOnUse">
-<stop stop-color="#040404"/>
+<stop offset="0.0674705"/>
 <stop offset="0.555" stop-color="#040404" stop-opacity="0"/>
 </linearGradient>
 <linearGradient id="paint5_linear_1696_2754" x1="nan" y1="nan" x2="nan" y2="nan" gradientUnits="userSpaceOnUse">

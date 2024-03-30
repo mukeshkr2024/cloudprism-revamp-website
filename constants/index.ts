@@ -692,8 +692,8 @@ export const jobOpenings = [
     id: 1,
     title: "Frontend Developer",
     employmentType: "Full-time",
-    experience: "Pune",
-    location: "San Francisco, CA",
+    experience: "2+ Years",
+    location: "Pune",
     description:
       "Join our team as a frontend developer and work on cutting-edge projects.",
     linkdeinUrl: "https://www.linkedin.com/",

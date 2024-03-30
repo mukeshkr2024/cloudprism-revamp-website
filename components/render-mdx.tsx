@@ -7,7 +7,7 @@ const components = {
   Image: (props: any) => (
     // eslint-disable-next-line jsx-a11y/alt-text
     <Image
-      className="my-6 rounded-lg"
+      className="my-8 rounded-lg"
       width={985}
       height={554}
       sizes="100vw"
@@ -16,7 +16,7 @@ const components = {
   ),
   p: (props: React.ComponentProps<"p">) => (
     <p
-      className="mb-4 text-base font-medium text-[#A4A4A4] md:text-lg"
+      className="mt-4 text-base font-medium text-[#A4A4A4] md:text-lg"
       {...props}
     />
   ),
@@ -28,13 +28,13 @@ const components = {
   ),
   h2: (props: React.ComponentProps<"h2">) => (
     <h2
-      className="mb-4 text-2xl font-normal md:text-3xl lg:text-4xl"
+      className="mt-12 text-2xl font-normal md:text-3xl lg:text-4xl"
       {...props}
     />
   ),
   h3: (props: React.ComponentProps<"h3">) => (
     <h3
-      className="mb-4 text-xl font-light md:text-2xl lg:text-3xl"
+      className="mb-4 mt-8 text-xl font-light md:text-2xl lg:text-3xl"
       {...props}
     />
   ),
@@ -59,7 +59,7 @@ export default function RenderMdx({ blog }: { blog: Blog }) {
   const MDXContent = useMDXComponent(blog.body.code);
 
   return (
-    <div className="mt-4">
+    <div className="mt-14">
       <MDXContent components={components} />
     </div>
   );
