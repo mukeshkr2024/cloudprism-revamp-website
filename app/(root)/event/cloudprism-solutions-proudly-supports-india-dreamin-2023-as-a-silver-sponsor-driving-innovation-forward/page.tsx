@@ -10,23 +10,23 @@ const EventDetailsPage = () => {
       <div className="flex w-full justify-center pb-32 pt-24 lg:flex-row">
         <TracingBeam className="px-6">
           <div className="text-[#A4A4A4]">
-            <div className="max-w-7xl mx-auto pt-8">
+            <div className="mx-auto max-w-7xl pt-8">
               <div>
                 <span className="text-base font-normal text-white">
                   India Dream in 2023
                 </span>
-                <div className="text-lg font-medium my-2.5 gap-x-12 w-full  flex gap-y-1 text-white">
+                <div className="my-2.5 flex w-full gap-x-12 gap-y-1  text-lg font-medium text-white">
                   <p>Ahmedabad</p>
                   <p>Date: 20th May 2023</p>
                 </div>
               </div>
               <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
 
-              <div className="mt-8 flex gap-y-6 flex-col">
+              <div className="mt-8 flex flex-col gap-y-6">
                 <div className="flex flex-col gap-y-4">
                   <h1 className="h2_semibold !font-semibold lg:!text-4xl">
-                    CloudPrism Solutions Proudly Supports India Dreamin' 2023 as
-                    a Silver Sponsor, Driving Innovation Forward
+                    CloudPrism Solutions Proudly Supports India Dreamin&apos;
+                    2023 as a Silver Sponsor, Driving Innovation Forward
                   </h1>
                   <p className="blog_paragraph">
                     As proud silver sponsors of{" "}
@@ -35,7 +35,7 @@ const EventDetailsPage = () => {
                       href="https://indiadreamin.in/2023/02/19/india-dreamin-23-announcement/#:~:text=Get%20ready%20to%20be%20a,the%20Salesforce%20ecosystem%20in%20India."
                       className="text-xl font-semibold text-white"
                     >
-                      India Dreamin '23
+                      India Dreamin&apos;23
                     </Link>
                     ,
                     <Link
@@ -54,12 +54,12 @@ const EventDetailsPage = () => {
                 </div>
 
                 <div className="flex flex-col gap-y-4">
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl text-white">
+                  <h2 className="text-2xl text-white md:text-3xl lg:text-4xl">
                     Event Highlights:
                   </h2>
-                  <span className="font-bold text-lg">Date: 20th May 2023</span>
+                  <span className="text-lg font-bold">Date: 20th May 2023</span>
 
-                  <p className="font-bold text-lg">
+                  <p className="text-lg font-bold">
                     Location: The Forum - Celebration & Convention Center, Club
                     O7 Road, Ahmedabad, Gujarat - 380059
                   </p>
@@ -72,14 +72,14 @@ const EventDetailsPage = () => {
                       className="text-xl font-semibold text-white"
                     >
                       {" "}
-                      Dreamin '23
+                      Dreamin &apos;23
                     </Link>{" "}
                     epitomized the resurgence of in-person Salesforce gatherings
                     in India, offering a bustling hub for professionals across
                     the ecosystem. As silver sponsors, we were thrilled to play
                     a pivotal role in bringing this electrifying experience to
-                    fruition. India Dreamin '23 epitomized the resurgence of
-                    in-person Salesforce gatherings in India, offering a
+                    fruition. India Dreamin &apos;23 epitomized the resurgence
+                    of in-person Salesforce gatherings in India, offering a
                     bustling hub for professionals across the ecosystem. As
                     silver sponsors, we were thrilled to play a pivotal role in
                     bringing this electrifying experience to fruition.
@@ -103,14 +103,15 @@ const EventDetailsPage = () => {
 
                   <p className="blog_paragraph">
                     Beyond networking and learning, our sponsorship also enabled
-                    us to contribute to the event's philanthropic initiatives,
-                    embodying our commitment to giving back to the community.
+                    us to contribute to the event&apos;s philanthropic
+                    initiatives, embodying our commitment to giving back to the
+                    community.
                   </p>
                   <p className="blog_paragraph">
-                    For more updates on CloudPrism's involvement in Salesforce
-                    community events and our ongoing initiatives, stay connected
-                    with us. Thank you for joining us on this inspiring journey
-                    at India Dreamin '23!"
+                    For more updates on CloudPrism&apos;s involvement in
+                    Salesforce community events and our ongoing initiatives,
+                    stay connected with us. Thank you for joining us on this
+                    inspiring journey at India Dreamin &apos;23!&quot;
                   </p>
                 </div>
               </div>

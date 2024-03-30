@@ -44,6 +44,8 @@ const CaseFormPopup = ({ handleClose }: Props) => {
       leadType: "Contact Us CTA",
     };
     const response = await submitForm(values, data);
+    console.log(response);
+
     setMessage(true);
 
     setTimeout(() => {
@@ -54,7 +56,8 @@ const CaseFormPopup = ({ handleClose }: Props) => {
   }
 
   return (
-    <div className="fixed backdrop-blur-sm bg-opacity-50 bg-gray-950  left-0 top-0 z-50 flex size-full items-center justify-center">
+    // eslint-disable-next-line tailwindcss/migration-from-tailwind-2
+    <div className="fixed left-0 top-0 z-50  flex size-full items-center justify-center bg-gray-950 bg-opacity-50 backdrop-blur-sm">
       <div
         className="background_primary flex w-[1100px] rounded-md bg-contain bg-right-bottom bg-no-repeat"
         style={{
@@ -80,8 +83,8 @@ const CaseFormPopup = ({ handleClose }: Props) => {
             </div> */}
             <div className="mt-4 flex w-full flex-col text-white">
               {message && (
-                <p className="text-green-500 text-sm ">
-                  Thanks for your submission! We'll be in touch shortly.
+                <p className="text-sm text-green-500 ">
+                  Thanks for your submission! We&apos;ll be in touch shortly.
                 </p>
               )}
               <h2 className="text-3xl font-bold">

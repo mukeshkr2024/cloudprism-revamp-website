@@ -11,7 +11,7 @@ import React from "react";
 export default function AboutPage() {
   return (
     <ScrollBarProgress>
-      <div className="mx-auto w-full max-w-[90rem] overflow-hidden">
+      <div className="mx-auto w-full max-w-[95rem] overflow-hidden">
         <section
           className="flex h-[600px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat md:h-[800px] "
           style={{

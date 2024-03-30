@@ -9,7 +9,7 @@ import React from "react";
 export default function CaseStudies() {
   return (
     <ScrollBarProgress>
-      <div className="mx-auto w-full max-w-[90rem]">
+      <div className="mx-auto w-full max-w-[95rem]">
         <CaseStudiesFormPopup />
         <section
           className="flex h-[70vh] w-full flex-col justify-center bg-cover bg-center"

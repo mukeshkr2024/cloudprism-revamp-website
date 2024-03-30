@@ -10,7 +10,7 @@ const latestBlogs: Blog[] = sortedBlogs?.slice(0, 2);
 
 export default function BlogPage() {
   return (
-    <div className="mx-auto w-full max-w-[92rem]">
+    <div className="mx-auto w-full max-w-[95rem]">
       <BlogFormPopup />
       <section
         className="flex h-[80vh] w-full flex-col justify-center bg-cover bg-center"

@@ -14,7 +14,7 @@ function CarrierPage() {
   };
   return (
     <ScrollBarProgress>
-      <div className="mx-auto max-w-[90rem]">
+      <div className="mx-auto max-w-[95rem]">
         <div
           className="flex h-[600px] w-full items-center bg-cover bg-center bg-no-repeat px-8 md:h-[800px] md:px-12 lg:px-12 "
           style={{
@@ -78,6 +78,7 @@ function CarrierPage() {
             {jobOpenings &&
               jobOpenings.map((openings) => (
                 <JobOpeningCard
+                  key={openings.id}
                   linkdeinUrl={openings.linkdeinUrl}
                   description={openings.description}
                   employmentType={openings.employmentType}

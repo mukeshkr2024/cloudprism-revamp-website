@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { TracingBeam } from "@/components/blog/tracing-beam";
@@ -22,22 +23,22 @@ const CaseStudy1 = () => {
   };
   return (
     <ScrollBarProgress>
-      <div className="mx-auto w-full max-w-[90rem]">
+      <div className="mx-auto w-full max-w-[95rem]">
         {showForm && <CaseFormPopup handleClose={handleClose} />}
         <div className="flex w-full flex-col justify-center pb-32 pt-24 lg:flex-row">
           <TracingBeam className="px-6">
             <div className="text-white">
-              <div className="max-w-7xl mx-auto pt-8">
+              <div className="mx-auto max-w-7xl pt-8">
                 <div>
                   <span className="text-base font-normal"> CASE STUDY-4</span>
-                  <div className="text-lg font-medium my-2.5 w-full flex flex-col gap-y-1">
+                  <div className="my-2.5 flex w-full flex-col gap-y-1 text-lg font-medium">
                     <p>Client: Stellenwerk</p>
                     <p>Partner: CloudPrism & Selise</p>
                     <p>Salesforce Implementation and Consultant Partner</p>
                   </div>
                 </div>
                 <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
-                <div className="mt-8 flex gap-y-6 flex-col">
+                <div className="mt-8 flex flex-col gap-y-6">
                   <div className="flex flex-col gap-y-4">
                     <h1 className="h2_semibold !font-semibold">
                       CloudPrism & Selise

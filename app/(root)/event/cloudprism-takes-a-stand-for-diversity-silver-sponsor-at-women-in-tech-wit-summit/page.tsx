@@ -10,26 +10,26 @@ const EventDetailsPage = () => {
       <div className="flex w-full justify-center pb-32 pt-24 lg:flex-row">
         <TracingBeam className="px-6">
           <div className="text-[#A4A4A4]">
-            <div className="max-w-7xl mx-auto pt-8">
+            <div className="mx-auto max-w-7xl pt-8">
               <div>
                 <span className="text-base font-normal text-white">
                   WIT Jaipur 2023
                 </span>
-                <div className="text-lg font-medium my-2.5 gap-x-12 w-full  flex gap-y-1 text-white">
+                <div className="my-2.5 flex w-full gap-x-12 gap-y-1  text-lg font-medium text-white">
                   <p>Jaipur</p>
                   <p>Date- 14th October </p>
                 </div>
               </div>
               <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
 
-              <div className="mt-8 flex gap-y-6 flex-col">
+              <div className="mt-8 flex flex-col gap-y-6">
                 <div className="flex flex-col gap-y-4">
                   <h1 className="h2_semibold !font-semibold lg:!text-4xl">
                     CloudPrism Takes a Stand for Diversity: Silver Sponsor at
                     Women in Tech (WIT) Summit
                   </h1>
 
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl text-white">
+                  <h2 className="text-2xl text-white md:text-3xl lg:text-4xl">
                     About the Event:
                   </h2>
                   <p className="blog_paragraph">
@@ -59,7 +59,7 @@ const EventDetailsPage = () => {
                 </div>
 
                 <div className="flex flex-col gap-y-4">
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl text-white">
+                  <h2 className="text-2xl text-white md:text-3xl lg:text-4xl">
                     Event Highlights:
                   </h2>
 
@@ -112,7 +112,7 @@ const EventDetailsPage = () => {
                     </li>
                   </ol>
 
-                  <h2 className="text-2xl md:text-3xl lg:text-4xl text-white">
+                  <h2 className="text-2xl text-white md:text-3xl lg:text-4xl">
                     Date & Location:
                   </h2>
 

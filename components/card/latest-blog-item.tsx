@@ -29,7 +29,7 @@ export const LatestBlogItem = ({ title, slug, description, image }: Props) => {
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="flex  bg-cover  bg-center  max-w-sm flex-col gap-2.5 overflow-hidden rounded-lg bg-no-repeat p-4 text-white transition-all duration-500 hover:backdrop-blur-xl sm:p-6 md:p-12  lg:max-w-xl"
+      className="flex  max-w-sm  flex-col  gap-2.5 overflow-hidden rounded-lg bg-cover bg-center bg-no-repeat p-4 text-white transition-all duration-500 hover:backdrop-blur-xl sm:p-6 md:p-12  lg:max-w-xl"
       style={{
         backgroundImage: `url(${imgUrL})`,
       }}

@@ -22,22 +22,22 @@ const CaseStudy1 = () => {
   };
   return (
     <ScrollBarProgress>
-      <div className="mx-auto w-full max-w-[90rem]">
+      <div className="mx-auto w-full max-w-[95rem]">
         {showForm && <CaseFormPopup handleClose={handleClose} />}
         <div className="flex w-full flex-col justify-center pb-32 pt-24 lg:flex-row">
           <TracingBeam className="px-6">
             <div className="text-white ">
-              <div className="lg:max-w-7xl  mx-auto pt-8">
+              <div className="mx-auto  pt-8 lg:max-w-7xl">
                 <div>
                   <span className="text-base font-normal"> CASE STUDY-1</span>
-                  <div className="text-lg font-medium my-2.5 w-full flex flex-col gap-y-1">
+                  <div className="my-2.5 flex w-full flex-col gap-y-1 text-lg font-medium">
                     <p>Client: Cambria</p>
                     <p>Partner: CloudPrism</p>
                     <p>Salesforce Implementation and Consultant Partner</p>
                   </div>
                 </div>
                 <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
-                <div className="mt-8 flex gap-y-6 flex-col">
+                <div className="mt-8 flex flex-col gap-y-6">
                   <div className="flex flex-col gap-y-4">
                     <h1 className="h2_semibold !font-semibold">
                       Simplified Customer Experience and Email Marketing
@@ -49,9 +49,9 @@ const CaseStudy1 = () => {
                       obstacles in merging cutting-edge designs with enduring
                       durability to ensure sophistication and functionality.
                       They aimed to simplify their marketing efforts and create
-                      a seamless customer experience. That's when they turned to
-                      CloudPrism, a trusted Salesforce implementation and
-                      consultant partner, for assistance.
+                      a seamless customer experience. That&apos;s when they
+                      turned to CloudPrism, a trusted Salesforce implementation
+                      and consultant partner, for assistance.
                     </p>
                   </div>
                   <div className="flex w-full items-center justify-center">

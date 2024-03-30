@@ -16,7 +16,7 @@ const components = {
   ),
   p: (props: React.ComponentProps<"p">) => (
     <p
-      className="mt-4 text-base font-medium text-[#A4A4A4] md:text-lg"
+      className="mt-4 text-base font-normal text-[#A4A4A4] md:text-lg"
       {...props}
     />
   ),
@@ -48,7 +48,7 @@ const components = {
     <a
       {...props}
       target="_blank"
-      className="text-white font-semibold  text-[20px]"
+      className="text-[20px] font-semibold  text-white"
     />
   ),
   strong: (props: React.ComponentProps<"strong">) => (

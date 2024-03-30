@@ -23,15 +23,15 @@ const CaseStudy1 = () => {
 
   return (
     <ScrollBarProgress>
-      <div className="mx-auto w-full max-w-[90rem]">
+      <div className="mx-auto w-full max-w-[95rem]">
         {showForm && <CaseFormPopup handleClose={handleClose} />}
         <div className="flex w-full flex-col justify-center pb-32 pt-24 lg:flex-row">
           <TracingBeam className="px-6">
             <div className="text-white">
-              <div className="max-w-7xl mx-auto pt-8">
+              <div className="mx-auto max-w-7xl pt-8">
                 <div>
                   <span className="text-base font-normal"> CASE STUDY-2</span>
-                  <div className="text-lg font-medium my-2.5 w-full flex flex-col gap-y-1">
+                  <div className="my-2.5 flex w-full flex-col gap-y-1 text-lg font-medium">
                     <p>Client: Paypal</p>
                     <p>Partner: CloudPrism</p>
                     <p>Salesforce Implementation and Consultant Partner</p>
@@ -39,7 +39,7 @@ const CaseStudy1 = () => {
                 </div>
 
                 <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
-                <div className="mt-8 flex gap-y-6 flex-col">
+                <div className="mt-8 flex flex-col gap-y-6">
                   <div className="flex flex-col gap-y-4">
                     <h1 className="h2_semibold !font-semibold">
                       Unleashing the Potential of PayPal-Salesforce Integration
@@ -59,21 +59,21 @@ const CaseStudy1 = () => {
 
                     <ul className="flex flex-col gap-y-2 pl-16">
                       <li className="blog_paragraph">
-                        <span className="font-bold text-lg">
+                        <span className="text-lg font-bold">
                           Salesforce-PayPal integration gaps:
                         </span>{" "}
                         One of the major challenges is the gap in salesforce
                         integration which created efficiencies in process.
                       </li>
                       <li className="blog_paragraph">
-                        <span className="font-bold text-lg">
+                        <span className="text-lg font-bold">
                           Payment Choices:
                         </span>{" "}
                         there were restrictions in payment choices for customers
                         due to which customers were disatisfied.
                       </li>
                       <li className="blog_paragraph">
-                        <span className="font-bold text-lg">
+                        <span className="text-lg font-bold">
                           Payment tracking challenges:
                         </span>{" "}
                         Real time payment tracking was not getting solved due
@@ -105,21 +105,21 @@ const CaseStudy1 = () => {
 
                       <ul className="flex flex-col gap-y-2 pl-16">
                         <li className="blog_paragraph">
-                          <span className="font-bold text-lg">
+                          <span className="text-lg font-bold">
                             Revolutionized sales process:
                           </span>{" "}
                           We corrected the mistake which was made and integrated
                           proper salesforce solutions.
                         </li>
                         <li className="blog_paragraph">
-                          <span className="font-bold text-lg">
+                          <span className="text-lg font-bold">
                             Payment options:{" "}
                           </span>{" "}
                           Expanded payments option so that customers can be
                           satisfied.
                         </li>
                         <li className="blog_paragraph">
-                          <span className="font-bold text-lg">
+                          <span className="text-lg font-bold">
                             Realtime tracking:
                           </span>{" "}
                           realtime tracking of payments were improved so the
@@ -135,7 +135,7 @@ const CaseStudy1 = () => {
                         By delivery proper solution to our client we given
                         benchmark result and that are
                       </p>
-                      <div className="blog_paragraph flex gap-1.5 flex-col">
+                      <div className="blog_paragraph flex flex-col gap-1.5">
                         <p>45% Improvement in Order fulfillment</p>
                         <p>32% Boosted sales & revenue growth</p>
                         <p>30% Increase in customer satisfaction.</p>

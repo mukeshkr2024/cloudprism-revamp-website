@@ -1,5 +1,4 @@
 import { BlogsData } from "@/constants/blogs-data";
-import { createSlug } from "@/utils/cn";
 
 export const latestBlogs = () => {
   const sortBlogs = BlogsData.sort((a, b) => {

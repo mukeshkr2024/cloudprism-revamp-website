@@ -23,16 +23,16 @@ const CaseStudy1 = () => {
 
   return (
     <ScrollBarProgress>
-      <div className="mx-auto w-full max-w-[90rem]">
+      <div className="mx-auto w-full max-w-[95rem]">
         {showForm && <CaseFormPopup handleClose={handleClose} />}
 
         <div className="flex w-full flex-col justify-center pb-32 pt-24 lg:flex-row">
           <TracingBeam className="px-6">
             <div className="text-white">
-              <div className="max-w-7xl mx-auto pt-8">
+              <div className="mx-auto max-w-7xl pt-8">
                 <div>
                   <span className="text-base font-normal"> CASE STUDY-5</span>
-                  <div className="text-lg font-medium my-2.5 w-full flex flex-col gap-y-1">
+                  <div className="my-2.5 flex w-full flex-col gap-y-1 text-lg font-medium">
                     <p>Client: Janie and Jack</p>
                     <p>Partner: CloudPrism & Concord</p>
                     <p>Salesforce Implementation and Consultant Partner</p>
@@ -45,7 +45,7 @@ const CaseStudy1 = () => {
                       "linear-gradient(90deg, #F1CA64 15.38%, #02FFB3 99.49%);",
                   }}
                 />
-                <div className="mt-8 flex gap-y-6 flex-col">
+                <div className="mt-8 flex flex-col gap-y-6">
                   <div className="flex flex-col gap-y-4">
                     <h1 className="h2_semibold !font-semibold">
                       Efficient Deployment and Seamless Maintenance: Handling
@@ -73,8 +73,8 @@ const CaseStudy1 = () => {
                       </li>
                       <li className="blog_paragraph">
                         Limited Scalability: The manual approach hindered the
-                        company's ability to handle increasing order volumes and
-                        scale operations effectively.
+                        company&apos;s ability to handle increasing order
+                        volumes and scale operations effectively.
                       </li>
                     </ul>
                   </div>

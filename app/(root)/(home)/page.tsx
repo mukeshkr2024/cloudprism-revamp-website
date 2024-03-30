@@ -33,7 +33,7 @@ export default function Home() {
       <div className="background_primary w-full overflow-hidden">
         <div className="w-full">
           <MainSection />
-          <div className="flex-center mt-8 md:mt-12 w-full lg:mt-12">
+          <div className="flex-center mt-8 w-full md:mt-12 lg:mt-16 ">
             <p className="mb-10 max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
               Cloudprism is your Certified IT Solution Partner, promoting
               business development with complete IT Consultation and solutions.
@@ -45,7 +45,7 @@ export default function Home() {
               business through unique IT techniques.
             </p>
           </div>
-          <div className="mx-auto mt-14 max-w-7xl  ">
+          <div className="mx-auto mt-16 max-w-7xl  ">
             <OurServices />
           </div>
           <div className="flex-center ">
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
           </section>
           <section
-            className="mx-auto flex size-full max-w-[90rem] flex-col bg-cover bg-center md:px-12  lg:h-[600px] lg:flex-row lg:px-16"
+            className="mx-auto flex size-full max-w-[95rem] flex-col bg-cover bg-center md:px-12  lg:h-[600px] lg:flex-row lg:px-16"
             style={{
               backgroundImage: "url('/assets/images/connect-to-us.svg')",
             }}

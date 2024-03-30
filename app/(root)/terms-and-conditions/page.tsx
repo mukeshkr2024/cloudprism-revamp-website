@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import Link from "next/link";
 import React from "react";
@@ -6,14 +7,14 @@ const TermsPage = () => {
   return (
     <ScrollBarProgress>
       <div className="w-full ">
-        <div className="text-white  py-28 sm:py-32 sm:max-w-sm md:max-w-2xl lg:max-w-5xl xl:max-w-7xl max-w-xs mx-auto flex flex-col gap-y-4">
+        <div className="mx-auto  flex max-w-xs flex-col gap-y-4 py-28 text-white sm:max-w-sm sm:py-32 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl">
           <div>
             <h1 className="mb-6 text-3xl font-bold">Terms of Service</h1>
-            <p className="text-base md:text-lg font-light">
+            <p className="text-base font-light md:text-lg">
               Terms of Service The website{" "}
               <Link
                 href="https://cloudprism.in/"
-                className="text-white font-semibold text-lg"
+                className="text-lg font-semibold text-white"
               >
                 www.cloudprism.in
               </Link>{" "}
@@ -28,7 +29,7 @@ const TermsPage = () => {
               the website{" "}
               <Link
                 href="https://cloudprism.in/"
-                className="text-white font-semibold text-lg"
+                className="text-lg font-semibold text-white"
               >
                 www.cloudprism.in
               </Link>{" "}
@@ -38,7 +39,7 @@ const TermsPage = () => {
           <div className="flex flex-col gap-y-2">
             <h2 className="text-2xl font-semibold">Terms and Conditions </h2>
 
-            <ul className="md:text-lg text-base font-light list-disc  pl-8 md:pl-12 flex flex-col gap-y-3">
+            <ul className="flex list-disc flex-col gap-y-3  pl-8 text-base font-light md:pl-12 md:text-lg">
               <li className="mt-2">
                 The term "Cloudprism" shall mean Cloudprism Solutions.
               </li>

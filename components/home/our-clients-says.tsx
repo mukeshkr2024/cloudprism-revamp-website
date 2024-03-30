@@ -12,7 +12,7 @@ import {
 export default function OurClientSay() {
   return (
     <div
-      className="mx-auto flex h-[520px] w-full max-w-[90rem] flex-col  justify-center bg-cover bg-center text-white sm:h-[600px] md:h-[700px]  lg:h-[800px] xl:h-[950px]"
+      className="mx-auto flex h-[520px] w-full max-w-[95rem] flex-col  justify-center bg-cover bg-center text-white sm:h-[600px] md:h-[700px]  lg:h-[800px] xl:h-[950px]"
       style={{
         backgroundImage: "url('/assets/gradients/client-say-gradient.svg')",
       }}

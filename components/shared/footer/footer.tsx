@@ -5,11 +5,11 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="max-w-[95rem] w-full mx-auto">
-      <div className="flex flex-col max-w-7xl gap-y-10 lg:mx-auto  text-white mx-2 sm:mx-4 md:mx-6 py-6">
+    <footer className="mx-auto w-full max-w-[95rem]">
+      <div className="mx-2 flex max-w-7xl flex-col gap-y-10  py-6 text-white sm:mx-4 md:mx-6 lg:mx-auto">
         <div className="flex w-full">
-          <div className="flex-1 flex gap-y-1 md:gap-y-2 flex-col">
-            <div className="md:flex items-center">
+          <div className="flex flex-1 flex-col gap-y-1 md:gap-y-2">
+            <div className="items-center md:flex">
               <Image
                 src="/assets/icons/company-logo.svg"
                 width={80}
@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
             <div className="flex gap-x-2">
               {socialLinks.map((item) => (
-                <Link href={item.href}>
+                <Link href={item.href} key={item.href}>
                   <Image
                     src={item.icon}
                     alt={item.title || "Social icons"}
@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex-1 gap-y-1.5 flex flex-col">
+          <div className="flex flex-1 flex-col gap-y-1.5">
             {footerLinks.map((item) => (
               <Link href={item.route} key={item.route}>
                 <p className="text-sm font-normal sm:text-base">{item.label}</p>
@@ -43,7 +43,7 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="flex-1 flex flex-col gap-y-1.5">
+          <div className="flex flex-1 flex-col gap-y-1.5">
             {usefullLinks.map((item) => (
               <Link href={item.route} key={item.route}>
                 <p className="text-sm sm:text-base">{item.label}</p>
@@ -52,13 +52,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex items-center text-center gap-y-6  md:items-start md:text-start flex-col md:flex-row w-full text-sm font-normal sm:text-base">
+        <div className="flex w-full flex-col items-start  gap-y-6 text-start text-sm font-normal sm:text-base md:flex-row md:items-start md:text-start">
           <div className="md:flex-1">
             <p className="max-w-xs">
               Shivpuri Rd, South Shivpuri, Shivpuri, Rajbansi Nagar, Patna,
-              Bihar
+              Bihar 800029
             </p>
-            800029
           </div>
 
           <div className="md:flex-1">
@@ -76,9 +75,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex w-full flex-col mb-2 pl-2 sm:mb-4">
+        <div className="mb-2 flex w-full flex-col pl-2 sm:mb-4">
           <div className="border border-[#2D2D2D]" />
-          <div className="flex flex-wrap gap-x-4  md:gap-x-6 text-[#636363] gap-y-2 mt-2 sm:mt-3">
+          <div className="mt-2 flex flex-wrap  gap-x-4 gap-y-2 text-[#636363] sm:mt-3 md:gap-x-6">
             <span>copyright@cloudprism</span>
             <Link href="/privacy-policy">
               <p>Privacy Policy</p>

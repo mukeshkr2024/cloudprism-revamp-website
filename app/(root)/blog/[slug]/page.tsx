@@ -27,7 +27,7 @@ function BlogDetailsPage({ params }: Params) {
 
   return (
     <>
-      <div className="mx-auto flex w-full max-w-[90rem] flex-col justify-center  pb-32 pt-24 lg:flex-row lg:justify-between">
+      <div className="mx-auto flex w-full max-w-[95rem] flex-col justify-center  pb-32 pt-24 lg:flex-row lg:justify-between">
         <TracingBeam className="px-6">
           <BlogFormPopup />
           <article className="text-white">

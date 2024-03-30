@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { TracingBeam } from "@/components/blog/tracing-beam";
@@ -23,22 +24,22 @@ const CaseStudy1 = () => {
 
   return (
     <ScrollBarProgress>
-      <div className="mx-auto w-full max-w-[90rem]">
+      <div className="mx-auto w-full max-w-[95rem]">
         {showForm && <CaseFormPopup handleClose={handleClose} />}
         <div className="flex w-full flex-col justify-center pb-32 pt-24 lg:flex-row">
           <TracingBeam className="px-6">
             <div className="text-white">
-              <div className="max-w-7xl mx-auto pt-8">
+              <div className="mx-auto max-w-7xl pt-8">
                 <div>
                   <span className="text-base font-normal"> CASE STUDY-3</span>
-                  <div className="text-lg font-medium my-2.5 w-full flex flex-col gap-y-1">
+                  <div className="my-2.5 flex w-full flex-col gap-y-1 text-lg font-medium">
                     <p>Client: Hedera Dx</p>
                     <p>Partner: CloudPrism</p>
                     <p>Salesforce Implementation and Consultant Partner</p>
                   </div>
                 </div>
                 <div className="h-1 w-full rounded-md bg-gradient-to-r from-yellow-400 via-green-300 to-green-400" />
-                <div className="mt-8 flex gap-y-6 flex-col">
+                <div className="mt-8 flex flex-col gap-y-6">
                   <div className="flex flex-col gap-y-4">
                     <h1 className="h2_semibold !font-semibold">
                       Efficient Communication and Data Centralization: Hedera Dx
@@ -60,7 +61,7 @@ const CaseStudy1 = () => {
 
                     <ul className="flex flex-col gap-y-2 pl-16">
                       <li className="blog_paragraph">
-                        <span className="font-bold text-lg">
+                        <span className="text-lg font-bold">
                           Automated Communication:
                         </span>{" "}
                         Hedera Dx wants to automatically send emails to specific
@@ -70,7 +71,7 @@ const CaseStudy1 = () => {
                         shipping updates, etc.
                       </li>
                       <li className="blog_paragraph">
-                        <span className="font-bold text-lg">
+                        <span className="text-lg font-bold">
                           Easy Case Creation:{" "}
                         </span>{" "}
                         They also want a user-friendly way to create cases
@@ -103,7 +104,7 @@ const CaseStudy1 = () => {
 
                       <ul className="flex flex-col gap-y-2 pl-16">
                         <li className="blog_paragraph">
-                          <span className="font-bold text-lg">
+                          <span className="text-lg font-bold">
                             1. Email Templates and Alerts:
                           </span>{" "}
                           They created pre-designed email templates containing
@@ -113,7 +114,7 @@ const CaseStudy1 = () => {
                           is created with the corresponding reason.
                         </li>
                         <li className="blog_paragraph">
-                          <span className="font-bold text-lg">
+                          <span className="text-lg font-bold">
                             Record Trigger Flow:
                           </span>{" "}
                           A record trigger flow is a specific type of automation
@@ -123,7 +124,7 @@ const CaseStudy1 = () => {
                           appropriate email template.
                         </li>
                         <li className="blog_paragraph">
-                          <span className="font-bold text-lg">
+                          <span className="text-lg font-bold">
                             Web-to-Case:
                           </span>{" "}
                           This is a Salesforce feature that allows users to
@@ -144,7 +145,7 @@ const CaseStudy1 = () => {
                       </p>
                       <ul className="flex flex-col gap-y-2 pl-16">
                         <li className="blog_paragraph">
-                          <span className="font-bold text-lg">
+                          <span className="text-lg font-bold">
                             Centralized Data Management:
                           </span>{" "}
                           All case information, including the case reason, is
@@ -152,7 +153,7 @@ const CaseStudy1 = () => {
                           single source of truth for customer interactions.
                         </li>
                         <li className="blog_paragraph">
-                          <span className="font-bold text-lg">
+                          <span className="text-lg font-bold">
                             Automation Capabilities:
                           </span>{" "}
                           Salesforce allows for creating automated workflows
@@ -161,7 +162,7 @@ const CaseStudy1 = () => {
                           case reason.
                         </li>
                         <li className="blog_paragraph">
-                          <span className="font-bold text-lg">
+                          <span className="text-lg font-bold">
                             Web-to-Case Functionality:{" "}
                           </span>{" "}
                           This built-in feature provides a convenient way for
@@ -182,7 +183,7 @@ const CaseStudy1 = () => {
                         <h2 className="text-2xl md:text-3xl lg:text-4xl">
                           Results
                         </h2>
-                        <div className="blog_paragraph flex gap-1.5 flex-col">
+                        <div className="blog_paragraph flex flex-col gap-1.5">
                           <p>42% Improved Lead Conversion Rates</p>
                           <p>59% Enhanced Sales Process Visibility</p>
                           <p>56% Strengthened Customer Relationships</p>

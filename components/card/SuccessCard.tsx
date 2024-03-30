@@ -47,7 +47,7 @@ export const SuccessCard = ({
           <p className="z-10 text-xs text-[#E5E5E5] md:text-sm">
             RESEARCH REPORT
           </p>
-          <h3 className="z-10 mt-10 text-base font-medium text-[#EDEDED] md:text-xl line-clamp-4">
+          <h3 className="z-10 mt-10 line-clamp-4 text-base font-medium text-[#EDEDED] md:text-xl">
             {title}
           </h3>
         </div>
@@ -87,7 +87,7 @@ export const SuccessCard = ({
       </div>
 
       <div
-        className="flex h-[300px] relative w-[175px] flex-col justify-between overflow-hidden rounded-[15px] border border-[#2E2E2EC9] bg-cover  bg-center bg-no-repeat p-4 md:hidden"
+        className="relative flex h-[300px] w-[175px] flex-col justify-between overflow-hidden rounded-[15px] border border-[#2E2E2EC9] bg-cover  bg-center bg-no-repeat p-4 md:hidden"
         // style={{
         //   boxShadow:
         //     "0px 3px 7px 0px #42FF9E1F, 0px 13px 13px 0px #42FF9E1C, 0px 30px 18px 0px #42FF9E0F, 0px 53px 21px 0px #42FF9E05, 0px 83px 23px 0px #42FF9E00",
@@ -101,7 +101,7 @@ export const SuccessCard = ({
             transition: "filter 0.5s ease-in-out",
           }}
         />
-        <div className="w-full z-10">
+        <div className="z-10 w-full">
           <div>
             <p className="text-xs text-[#E5E5E5]"> RESEARCH REPORT</p>
             <h3 className="mt-4 line-clamp-2 text-base font-medium text-[#EDEDED]">

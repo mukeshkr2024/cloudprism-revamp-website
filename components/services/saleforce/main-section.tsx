@@ -8,7 +8,7 @@ import React from "react";
 
 export default function SaleforceMainSection() {
   return (
-    <section className="relative mx-auto flex h-[600px] w-full max-w-[90rem] flex-col md:h-[800px]">
+    <section className="relative mx-auto flex h-[600px] w-full max-w-[95rem] flex-col md:h-[800px]">
       <div className="absolute top-[160px] z-50 w-full">
         <div className="flex w-full flex-col items-center justify-center gap-y-6">
           <h1 className="h1_bold lg:!leading-[98.46px] xl:!text-7xl">

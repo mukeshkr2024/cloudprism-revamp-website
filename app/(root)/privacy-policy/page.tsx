@@ -5,7 +5,7 @@ const PrivacyPage = () => {
   return (
     <ScrollBarProgress>
       <div className="w-full ">
-        <div className="text-white  py-28 sm:py-32 sm:max-w-sm md:max-w-2xl lg:max-w-5xl xl:max-w-7xl max-w-xs mx-auto flex flex-col gap-y-4">
+        <div className="mx-auto  flex max-w-xs flex-col gap-y-4 py-28 text-white sm:max-w-sm sm:py-32 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl">
           <div>
             <h1 className="mb-6 text-3xl font-bold">Privacy Policy</h1>
             <p className="text-base font-light">

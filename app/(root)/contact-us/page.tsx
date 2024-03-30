@@ -50,6 +50,7 @@ function ContactUsPage() {
       leadType: "Contact Us CTA",
     };
     const response = await submitForm(values, data);
+    console.log(response);
     setMessage(true);
 
     setTimeout(() => {
@@ -61,7 +62,7 @@ function ContactUsPage() {
   return (
     <ScrollBarProgress>
       <div
-        className="w-full bg-right-bottom bg-no-repeat max-w-[92rem] mx-auto"
+        className="mx-auto w-full max-w-[95rem] bg-right-bottom bg-no-repeat"
         style={{
           backgroundImage: "url('/assets/images/contact-form-bg.svg')",
           backgroundSize: "cover",
@@ -106,8 +107,8 @@ function ContactUsPage() {
 
             <div className="flex w-full flex-col space-y-4 ">
               {message && (
-                <p className="text-green-500 text-sm ">
-                  Thanks for your submission! We'll be in touch shortly.
+                <p className="text-sm text-green-500 ">
+                  Thanks for your submission! We&apos;ll be in touch shortly.
                 </p>
               )}
               <h2 className="text-3xl font-bold md:text-4xl">

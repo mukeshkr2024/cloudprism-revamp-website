@@ -12,7 +12,7 @@ export default function ReadBlogs({ blogs }: { blogs: Blog[] }) {
 
   useEffect(() => {
     setDisplayedBlogs(blogs.slice(0, loadCount));
-  }, []);
+  }, [blogs, loadCount]);
 
   const loadMoreBlogs = () => {
     setLoading(true);
