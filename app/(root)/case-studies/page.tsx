@@ -38,11 +38,13 @@ export default function CaseStudies() {
             items={salesForcePartners}
             direction="left"
             speed="normal"
+            pauseOnHover={false}
           />
           <InfiniteMovingCards
             items={salesForcePartners}
             direction="right"
             speed="normal"
+            pauseOnHover={false}
           />
         </section>
 

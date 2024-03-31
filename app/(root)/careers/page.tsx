@@ -23,13 +23,10 @@ function CarrierPage() {
         >
           <div className="max-w-7xl">
             <h1 className="text-start text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-              Where Talent Meets Opportunity. Explore Careers at Cloudprism
-              Solutions.
+              Where Talent Meets <br /> Opportunity.
             </h1>
             <h3 className="mt-4 max-w-5xl text-base text-[#C0C0C0] sm:text-lg md:text-xl">
-              Join a team where you&apos;re not just an employee, but the
-              protagonist of your career tale – let&#39;s create your success
-              story together
+              Explore Careers at Cloudprism Solutions
             </h3>
           </div>
         </div>

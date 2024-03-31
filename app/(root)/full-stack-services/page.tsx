@@ -18,12 +18,11 @@ function FullStackPage() {
         >
           <div className="mb-16 flex max-w-7xl flex-col items-center justify-center gap-y-6">
             <h1 className="h1_bold xl:!text-[90px]">
-              Level Up Your Digital. <br /> with our Software Solutions
+              Level Up Your Digital <br /> Presence
             </h1>
 
             <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
-              Build your digital journey with our seamless full-stack solutions
-              - from frontend finesse to backend brilliance, weve got you
+              from frontend finesse to backend brilliance, we&apos;ve got you
               covered!
             </p>
 

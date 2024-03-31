@@ -12,11 +12,13 @@ export default function SalesforcePartnerSlider() {
         items={salesForcePartners}
         direction="left"
         speed="normal"
+        pauseOnHover={false}
       />
       <InfiniteMovingCards
         items={salesForcePartners}
         direction="right"
         speed="normal"
+        pauseOnHover={false}
       />
     </section>
   );
