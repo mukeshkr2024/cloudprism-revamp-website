@@ -15,7 +15,8 @@ function MainSection() {
     <div className="relative flex h-screen max-h-[1000px] w-full items-center justify-center ">
       <div className="size-full">
         {/* <Spline scene="https://prod.spline.design/xboa1Cf0xqy0IBde/scene.splinecode" /> */}
-        <Spline scene="https://prod.spline.design/2vZlQQ5DGv5WqORt/scene.splinecode" />
+        {/* <Spline scene="https://prod.spline.design/2vZlQQ5DGv5WqORt/scene.splinecode" /> */}
+        <Spline scene="https://prod.spline.design/wP5JM0Ppw0yvu-2A/scene.splinecode" />
       </div>
 
       <div className="absolute flex max-w-4xl flex-col items-center justify-center gap-6  text-white">
