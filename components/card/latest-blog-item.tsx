@@ -3,18 +3,15 @@ import React, { useState } from "react";
 import Link from "next/link";
 import CustomButton from "../shared/custom-button";
 import Image from "next/image";
-import { ImageProps } from "@/types";
 
 type Props = {
-  image: ImageProps;
+  image: string;
   title: string;
   description: string;
   slug: string;
 };
 
 export const LatestBlogItem = ({ title, slug, description, image }: Props) => {
-  const imgUrL = image?.filePath.replace("../public", "");
-
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -37,7 +34,7 @@ export const LatestBlogItem = ({ title, slug, description, image }: Props) => {
       <div
         className="absolute inset-0 rounded-lg bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${imgUrL})`,
+          backgroundImage: `url(${image})`,
           filter: isHovered ? "blur(20px)" : "none",
           transition: "filter 0.5s ease-in-out",
         }}

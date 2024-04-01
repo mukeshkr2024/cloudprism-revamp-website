@@ -20,7 +20,7 @@ export default function ServiceCard({
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className="relative w-full rounded-[19px] border border-[#2E2E2E] px-6 py-8 shadow-md transition-colors duration-300 ease-in-out hover:border-[#02FFB3] sm:px-8 sm:py-12 md:px-10 md:pb-12 lg:px-12 lg:pb-16  xl:px-14 xl:pb-20 "
+      className="relative w-full rounded-[19px] border border-[#2E2E2E] px-6 py-8 shadow-md transition-colors duration-300 ease-in-out sm:px-8 sm:py-12 md:px-10 md:pb-12 md:hover:border-[#02FFB3] lg:px-12 lg:pb-16  xl:px-14 xl:pb-20 "
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{

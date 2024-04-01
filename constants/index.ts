@@ -614,23 +614,23 @@ export const historyData = [
 export const salesforceBuisnessPoints = [
   {
     id: 1,
-    content: "300+ Certified Salesforce Developers",
+    content: "Customized Salesforce Solutions ",
   },
   {
     id: 2,
-    content: "Intutive User Experience",
+    content: "Experts Just for You.",
   },
   {
     id: 3,
-    content: "Open To Sign Non-Disclosure Agreement",
+    content: " Proven Tracked Record of Success.",
   },
   {
     id: 4,
-    content: "Dedicated Team Of Salesforce Experts",
+    content: "Comprehensive Support and Service  ",
   },
   {
     id: 5,
-    content: "Multi-Cloud Salesforce Expertise",
+    content: "Our Clients Love Us",
   },
 ];
 

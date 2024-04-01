@@ -22,7 +22,7 @@ function FullStackPage() {
             </h1>
 
             <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
-              from frontend finesse to backend brilliance, we&apos;ve got you
+              From frontend finesse to backend brilliance, We&apos;ve got you
               covered!
             </p>
 

@@ -51,6 +51,7 @@ function ContactUsPage() {
     };
     const response = await submitForm(values, data);
     console.log(response);
+
     setMessage(true);
 
     setTimeout(() => {

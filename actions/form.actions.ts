@@ -34,8 +34,6 @@ export async function submitForm(
       throw new Error("Failed to submit form to Salesforce");
     }
 
-    console.log("Form submitted successfully");
-
     return {
       message: "Submitted successfully",
     };

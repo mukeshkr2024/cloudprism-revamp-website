@@ -1,13 +1,12 @@
 "use client";
 
-import { ImageProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import CustomButton from "../shared/custom-button";
 
 interface BlogProps {
-  image: ImageProps;
+  image: string;
   title: string;
   description: string;
   readTime: {
@@ -23,7 +22,6 @@ export default function BlogCard({
   readTime,
   slug,
 }: BlogProps) {
-  const imgUrL = image?.filePath.replace("../public", "");
   const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
@@ -57,7 +55,7 @@ export default function BlogCard({
       <Image
         height={154}
         alt={title}
-        src={imgUrL}
+        src={image}
         width={279}
         className="rounded-t-lg"
       />
