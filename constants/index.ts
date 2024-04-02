@@ -103,7 +103,7 @@ export const ourTeams: OurTeamProps[] = [
   {
     name: "Hrushikesh Kshirsagar",
     description: "Digital Marketing Expert",
-    profilePic: "/assets/images/team-1.svg",
+    profilePic: "/assets/images/team/hrushikesh.svg",
     linkdein: "https",
     linkdeinUrl: "https://www.linkedin.com/in/hrushikesh-kshirsagar007/",
   },
@@ -116,7 +116,7 @@ export const ourTeams: OurTeamProps[] = [
   },
   {
     name: "Shalinee Kumari",
-    description: "UI/UX Designer",
+    description: "Public Relation",
     profilePic: "/assets/images/team/shalinee.svg",
     linkdein: "https",
     linkdeinUrl:
@@ -428,102 +428,70 @@ export const salesForcePartners = [
 
 export const clientSays = [
   {
-    name: "Akash Umang",
+    name: "Michel",
     description: [
       {
         content:
-          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+          "Pleasure to work with Prateek and CloudPrism team, will continue working with his team in future. ",
       },
       {
         content:
-          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+          "Excellent service, great attention to detail and quick efficient turnaround time.",
       },
     ],
-    profilePic: "/assets/images/client-1.svg",
+    profilePic: "/assets/icons/client-1.svg",
   },
   {
-    name: "Akash Umang",
+    name: "Paul fedar",
     description: [
       {
         content:
-          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+          "Cloudprism team is very easy to work with and understood our requirements and expectations quickly and accurately. Team work was excellent and timely. They are always willing to go above and beyond and are able to pivot seamlessly on changes to the project.",
       },
       {
         content:
-          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+          "I would highly recommend Cloudprism Solutions not only for their technical skills and guidance, but also for their work ethic, communication skills and ease of working with them. Great job!!",
       },
     ],
-    profilePic: "/assets/images/client-1.svg",
+    profilePic: "/assets/icons/client-2.svg",
   },
   {
-    name: "Akash Umang",
+    name: "Saul fernandez",
     description: [
       {
         content:
-          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+          "CloudPrism solutions knowledge of salesforce helped guide our decision making and streamlined the processes we were building out.",
       },
       {
-        content:
-          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+        content: "Team attention to detail made the job quicker than expected.",
       },
     ],
-    profilePic: "/assets/images/client-1.svg",
+    profilePic: "/assets/images/client-3.svg",
   },
   {
-    name: "Akash Umang",
+    name: "Max gates",
     description: [
       {
         content:
-          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+          "Cloud Prism solutions delivered excellent quality work with a very quick turnaround time.",
       },
       {
-        content:
-          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+        content: "It was a pleasure working with CloudPrism Solution.",
       },
     ],
-    profilePic: "/assets/images/client-1.svg",
+    profilePic: "/assets/images/client-4.svg",
   },
   {
-    name: "Akash Umang",
+    name: "Kshitij Chawla",
     description: [
       {
-        content:
-          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
+        content: "Great quality work, delivered on time and on budget.",
       },
       {
-        content:
-          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
+        content: "Will reach out again for future projects.",
       },
     ],
-    profilePic: "/assets/images/client-1.svg",
-  },
-  {
-    name: "Akash Umang",
-    description: [
-      {
-        content:
-          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
-      },
-      {
-        content:
-          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
-      },
-    ],
-    profilePic: "/assets/images/client-1.svg",
-  },
-  {
-    name: "Akash Umang",
-    description: [
-      {
-        content:
-          "CRM software, systems, or applications is the new trend. Salesforce is that one platform where everything comes together to get one result.",
-      },
-      {
-        content:
-          "CloudPrism's Salesforce Integration offers a one-stop shop for all the things you need in a Business process.",
-      },
-    ],
-    profilePic: "/assets/images/client-1.svg",
+    profilePic: "/assets/images/client-5.svg",
   },
 ];
 

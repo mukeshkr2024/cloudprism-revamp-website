@@ -69,7 +69,7 @@ function ContactUsPage() {
           backgroundSize: "cover",
         }}
       >
-        <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center text-white lg:flex-row">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center text-white md:min-h-screen lg:flex-row">
           <div
             className="mx-2 my-32 flex flex-1 flex-col space-y-16 rounded-[19px] border-2 border-b-[#121212] border-l-[#252525] border-r-[#121212] border-t-[#252525] px-6 pb-8 pt-4 lg:my-0 lg:px-12"
             style={{
@@ -80,39 +80,13 @@ function ContactUsPage() {
               backdropFilter: "blur(23px)",
             }}
           >
-            <div className="flex items-center space-x-3 lg:space-x-6">
-              <div className="flex flex-col items-center justify-center">
-                <Image
-                  src="/assets/icons/company-logo.svg"
-                  width={87}
-                  height={55}
-                  alt="Logo icon"
-                />
-                <p className="text-xs">CloudPrism Solutions</p>
-              </div>
-
-              <div className="h-[55px] w-[2px] bg-white" />
-
-              <div className="flex items-center gap-2 lg:gap-4">
-                <Image
-                  src="/assets/icons/saleforce.svg"
-                  alt="Saleforce"
-                  width={64}
-                  height={48}
-                />
-                <p className="text-[13px]">
-                  Ridge Consulting <br /> Partner
-                </p>
-              </div>
-            </div>
-
             <div className="flex w-full flex-col space-y-4 ">
               {message && (
                 <p className="text-sm text-green-500 ">
                   Thanks for your submission! We&apos;ll be in touch shortly.
                 </p>
               )}
-              <h2 className="text-3xl font-bold md:text-4xl">
+              <h2 className="mt-10 text-3xl font-bold md:mt-14 md:text-4xl">
                 Get in touch with us!
               </h2>
               <p className="text-[19px] text-[#949494]">

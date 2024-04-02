@@ -6,13 +6,16 @@ import CustomButton from "../shared/custom-button";
 import { Blog } from "@/.contentlayer/generated";
 
 export default function ReadBlogs({ blogs }: { blogs: Blog[] }) {
+  const allBlogs = blogs.slice(0, 10);
+
   const [displayedBlogs, setDisplayedBlogs] = useState<Blog[]>([]);
   const [loadCount, setLoadCount] = useState(8);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setDisplayedBlogs(blogs.slice(0, loadCount));
-  }, [blogs, loadCount]);
+    setDisplayedBlogs(allBlogs.slice(0, loadCount));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [loadCount]);
 
   const loadMoreBlogs = () => {
     setLoading(true);
@@ -25,7 +28,7 @@ export default function ReadBlogs({ blogs }: { blogs: Blog[] }) {
     }, 1000);
   };
 
-  const sortedBlogs = blogs;
+  const sortedBlogs = allBlogs;
   return (
     <section className="mx-auto  mt-4 max-w-7xl lg:mt-8 ">
       <h2 className="h2_semibold text-center">Read Our Blogs</h2>
