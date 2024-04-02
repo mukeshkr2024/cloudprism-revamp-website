@@ -7,7 +7,7 @@ import React from "react";
 const EventDetailsPage = () => {
   return (
     <div className="mx-auto h-full max-w-[95rem]">
-      <div className="flex w-full justify-center pb-32 pt-24 lg:flex-row">
+      <div className="flex w-full flex-col justify-center pb-32 pt-24 lg:flex-row">
         <TracingBeam className="px-6">
           <div className="text-[#A4A4A4]">
             <div className="mx-auto max-w-7xl pt-8">
@@ -32,7 +32,7 @@ const EventDetailsPage = () => {
                     The{" "}
                     <Link
                       target="_blank"
-                      href="http://www.cloudprism.in"
+                      href="https://www.cloudprism.in"
                       className="text-xl font-semibold text-white"
                     >
                       CloudPrism{" "}

@@ -1,13 +1,48 @@
+"use client";
+
 import { TracingBeam } from "@/components/blog/tracing-beam";
-import EventRightSidebar from "@/components/event-sidebar";
+// import EventRightSidebar from "@/components/event-sidebar"; // TODO:
 import ConnectToUs from "@/components/shared/connect-to-us";
+import Gallery from "react-photo-gallery";
 import Link from "next/link";
-import React from "react";
+
+const images = [
+  {
+    src: "/assets/images/events/img-2.jpg",
+    width: 2,
+    height: 2,
+  },
+  {
+    src: "/assets/images/events/img-3.jpg",
+    width: 3.5,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/img-4.jpg",
+    width: 2,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/img-5.jpg",
+    width: 4,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/img-6.jpg",
+    width: 4,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/img-7.jpg",
+    width: 4,
+    height: 3,
+  },
+];
 
 const EventDetailsPage = () => {
   return (
     <div className="mx-auto h-full max-w-[95rem]">
-      <div className="flex w-full justify-center pb-32 pt-24 lg:flex-row">
+      <div className="flex w-full flex-col justify-center pb-32 pt-24 lg:flex-row">
         <TracingBeam className="px-6">
           <div className="text-[#A4A4A4]">
             <div className="mx-auto max-w-7xl pt-8">
@@ -31,7 +66,7 @@ const EventDetailsPage = () => {
                   <p className="blog_paragraph">
                     <Link
                       target="_blank"
-                      href="http://www.cloudprism.in"
+                      href="https://www.cloudprism.in"
                       className="text-xl font-semibold text-white"
                     >
                       CloudPrism{" "}
@@ -50,6 +85,9 @@ const EventDetailsPage = () => {
                     investor communities, all converging to catalyze change and
                     fuel India&apos;s transformation.
                   </p>
+                  <div className="mx-auto max-w-7xl py-8">
+                    <Gallery photos={images} />
+                  </div>
                 </div>
 
                 <div className="flex flex-col gap-y-4">
@@ -129,7 +167,7 @@ const EventDetailsPage = () => {
             </div>
           </div>
         </TracingBeam>
-        <EventRightSidebar />
+        {/* <EventRightSidebar /> */}
       </div>
       <ConnectToUs />
     </div>

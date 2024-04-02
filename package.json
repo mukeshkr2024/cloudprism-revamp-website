@@ -29,6 +29,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.51.2",
+    "react-photo-gallery": "^8.0.0",
     "reading-time": "^1.5.0",
     "sharp": "^0.33.3",
     "slugify": "^1.6.6",

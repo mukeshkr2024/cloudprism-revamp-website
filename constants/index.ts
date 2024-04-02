@@ -103,7 +103,7 @@ export const ourTeams: OurTeamProps[] = [
   {
     name: "Hrushikesh Kshirsagar",
     description: "Digital Marketing Expert",
-    profilePic: "/assets/images/team/hrushikesh.svg",
+    profilePic: "/assets/images/team/Hrushkesh.svg",
     linkdein: "https",
     linkdeinUrl: "https://www.linkedin.com/in/hrushikesh-kshirsagar007/",
   },

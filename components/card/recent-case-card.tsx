@@ -13,10 +13,11 @@ export default function RecentCaseStudy({ image, slug, title }: Props) {
       <div
         style={{
           backgroundImage: `url('${image}')`,
+          backgroundSize: "cover", // Add this line
         }}
-        className="relative h-44 w-[320px] rounded-[9px] bg-cover bg-no-repeat lg:h-40 lg:w-64"
+        className="relative h-44 w-[320px] rounded-[9px] lg:h-40 lg:w-64"
       >
-        <p className="absolute bottom-8 left-4 line-clamp-2 text-base font-normal">
+        <p className="absolute bottom-8 left-4 line-clamp-2 text-base font-normal text-white">
           {title}
         </p>
       </div>

@@ -1,13 +1,49 @@
+"use client";
+
 import { TracingBeam } from "@/components/blog/tracing-beam";
-import EventRightSidebar from "@/components/event-sidebar";
+// import EventRightSidebar from "@/components/event-sidebar";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import Link from "next/link";
 import React from "react";
+import Gallery from "react-photo-gallery";
+
+const images = [
+  {
+    src: "/assets/images/events/img-8.jpg",
+    width: 2,
+    height: 2,
+  },
+  {
+    src: "/assets/images/events/img-9.jpg",
+    width: 3,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/img-10.jpg",
+    width: 2,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/img-11.jpg",
+    width: 4,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/img-12.jpg",
+    width: 4,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/img-13.jpg",
+    width: 4,
+    height: 3,
+  },
+];
 
 const EventDetailsPage = () => {
   return (
     <div className="mx-auto h-full max-w-[95rem]">
-      <div className="flex w-full justify-center pb-32 pt-24 lg:flex-row">
+      <div className="flex w-full flex-col justify-center pb-32 pt-24 lg:flex-row">
         <TracingBeam className="px-6">
           <div className="text-[#A4A4A4]">
             <div className="mx-auto max-w-7xl pt-8">
@@ -56,6 +92,9 @@ const EventDetailsPage = () => {
                     Mehta, this summit provided a platform for networking,
                     learning, and growth.
                   </p>
+                  <div className="mx-auto max-w-7xl py-8">
+                    <Gallery photos={images} />
+                  </div>
                 </div>
 
                 <div className="flex flex-col gap-y-4">
@@ -88,7 +127,7 @@ const EventDetailsPage = () => {
                         {" "}
                         3.Promotion of
                         <Link
-                          href={"http://www.cloudprism.in"}
+                          href={"https://www.cloudprism.in"}
                           className="text-xl font-semibold text-white"
                         >
                           {" "}
@@ -140,7 +179,7 @@ const EventDetailsPage = () => {
             </div>
           </div>
         </TracingBeam>
-        <EventRightSidebar />
+        {/* <EventRightSidebar /> */}
       </div>
       <ConnectToUs />
     </div>

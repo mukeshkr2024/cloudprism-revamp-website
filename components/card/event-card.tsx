@@ -34,7 +34,17 @@ export default function EventCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Image height={154} width={279} alt={title} src={imgUrl} />
+      <div className="relative h-[164px] rounded-lg">
+        <Image
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+          alt={title}
+          src={imgUrl}
+          className="rounded-lg"
+        />
+      </div>
+
       <div
         style={{
           background:

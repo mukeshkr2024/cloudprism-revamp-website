@@ -31,7 +31,7 @@ const EventDetailsPage = () => {
                   <p className="blog_paragraph">
                     <Link
                       target="_blank"
-                      href="http://www.cloudprism.in"
+                      href="https://www.cloudprism.in"
                       className="text-xl font-semibold text-white"
                     >
                       CloudPrism{" "}

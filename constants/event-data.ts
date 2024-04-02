@@ -89,13 +89,23 @@ export const events = [
   },
   {
     id: 3,
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/events/feature-01.jpg",
     title:
       "MC2 - Hyderabad Edition: CloudPrism Sets the Stage as Silver Sponsor!",
     description:
       " CloudPrism had the privilege of attending the MC2 - Hyderabad Edition event, where we proudly served as a silver sponsor. This event was a beacon for knowledge, synergy, and social impact within the marketing cloud sphere.",
     read_time: "2-Minute ",
     slug: "mc2-hyderabad-edition-cloudprism-sets-the-stage-as-silver-sponsor",
+  },
+  {
+    id: 5,
+    imgUrl: "/assets/images/events/feature-02.jpg",
+    title:
+      "CloudPrism Takes a Stand for Diversity: Silver Sponsor at Women in Tech (WIT) Summit",
+    description:
+      "CloudPrism was proud to be a Silver Sponsor at the Women in Tech (WIT) Summit, an inspiring event dedicated to celebrating the achievements of women in technology and fostering gender diversity in the industry. Founded by Neetu Bansal and Kyati Mehta, this summit provided a platform for networking, learning, and growth.",
+    read_time: "2-Minute ",
+    slug: "cloudprism-takes-a-stand-for-diversity-silver-sponsor-at-women-in-tech-wit-summit",
   },
   {
     id: 4,
@@ -106,15 +116,5 @@ export const events = [
       "The CloudPrism team had the privilege of attending the Mule Dreamin event in Delhi, where we proudly served as the silver sponsor. This event was a beacon for knowledge, collaboration, and community engagement within the MuleSoft and Salesforce ecosystem.",
     read_time: "2-Minute ",
     slug: "glimpses-of-glory-cloudprisms-silver-sponsorship-triumphs-at-mule-dreamin-delhi",
-  },
-  {
-    id: 5,
-    imgUrl: "/assets/images/blog-1.svg",
-    title:
-      "CloudPrism Takes a Stand for Diversity: Silver Sponsor at Women in Tech (WIT) Summit",
-    description:
-      "CloudPrism was proud to be a Silver Sponsor at the Women in Tech (WIT) Summit, an inspiring event dedicated to celebrating the achievements of women in technology and fostering gender diversity in the industry. Founded by Neetu Bansal and Kyati Mehta, this summit provided a platform for networking, learning, and growth.",
-    read_time: "2-Minute ",
-    slug: "cloudprism-takes-a-stand-for-diversity-silver-sponsor-at-women-in-tech-wit-summit",
   },
 ];

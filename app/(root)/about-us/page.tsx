@@ -63,16 +63,15 @@ export default function AboutPage() {
         <div className="flex flex-col space-y-12  lg:space-y-4">
           <SectionCard
             title="Mission"
-            description1="CloudPrism is dedicated to modifying  your business process through smart Salesforce deployment and consulting services. Our goal is to enhance efficiency, boost productivity,of all sizes and industries and drive your organization to remarkable success by preferring Salesforce, the global leader in customer relationship management (CRM) platforms. With a focus on quality and client satisfaction, we are committed to guiding your company to its fullest potential in the digital realm."
-            description2="Our partnership extends beyond mere transactions, as we share a commitment to social responsibility and ethical practices. At CloudPrism, empathy guides our approach to ethical resource management and fair treatment of all individuals involved. Partnering with us not only aligns with your values but also demonstrates a shared commitment to making a positive impact."
+            description1="At CloudPrism, we are on a mission to transform your business by leveraging the unparalleled potential of Software Solutions and IT Consultation. With extensive experience providing IT solutions, CloudPrism is your trusted partner every step of the way."
+            description2="We pride ourselves on our collaborative approach, working closely with you to understand your unique challenges and goals, and then crafting customized IT solutions that exceed expectations. With CloudPrism, Maximize the power of technology to unlock your business's full potential."
             imgUrl="/assets/images/mission-svg.png"
             className="flex-col-reverse  lg:flex-row"
             imagSize="w-[710px] ml-[-50px]"
           />
           <SectionCard
             title="Vision"
-            description1="CloudPrism strives to be a platinum partner of Salesforce, that will enable us to convert industry of all sizes to cloud by providing them the best SAAS Tools of salesforce deployment and consulting. We aspire to improve consumer experiences, optimize company operations by bringing firm data into the cloud, and reach development prospects by constantly pushing the frontiers of technology and honoring innovations. Together with our clients, we hope to modify sectors and impact the future of business using Salesforce's revolutionary power.
-            "
+            description1="In our vision at CloudPrism Solutions,we imagine a future where businesses do really well because of new ideas. We make things better for customers, make work easier, and help businesses grow with our IT Consultation and solutions. We work closely with our clients to give them the best advice and solutions for their Business needs. Our goal is to help businesses change for the better and succeed in the modern world."
             imgUrl="/assets/images/vision-svg.svg"
             className="flex-col-reverse lg:flex-row-reverse"
             imagSize="w-[710px] mr-[-50px]"
