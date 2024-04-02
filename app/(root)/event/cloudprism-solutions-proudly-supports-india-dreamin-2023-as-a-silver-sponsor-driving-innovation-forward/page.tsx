@@ -1,5 +1,5 @@
 import { TracingBeam } from "@/components/blog/tracing-beam";
-import EventRightSidebar from "@/components/event-sidebar";
+// import EventRightSidebar from "@/components/event-sidebar";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import Link from "next/link";
 import React from "react";
@@ -118,7 +118,7 @@ const EventDetailsPage = () => {
             </div>
           </div>
         </TracingBeam>
-        <EventRightSidebar />
+        {/* <EventRightSidebar /> */}
       </div>
       <ConnectToUs />
     </div>
