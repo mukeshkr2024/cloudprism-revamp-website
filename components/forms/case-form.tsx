@@ -1,10 +1,11 @@
 "use client";
 
+import { submitCtaForm } from "@/actions/form.actions";
 import { socialLinks } from "@/constants";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import CustomButton from "../shared/custom-button";
@@ -17,7 +18,6 @@ import {
 } from "../ui/form";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
-import { submitForm } from "@/actions/form.actions";
 
 interface Props {
   handleClose: () => void;
@@ -51,11 +51,11 @@ const CaseFormPopup = ({ handleClose }: Props) => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const data = {
-      recordName: "Cloudprism",
-      leadType: "Contact Us CTA",
-    };
-    const response = await submitForm(values, data);
+    const response = await submitCtaForm(values, {
+      leadType: "Case studies CTA",
+      recordTypeName: "Cloudprism",
+    });
+
     console.log(response);
 
     setMessage(true);

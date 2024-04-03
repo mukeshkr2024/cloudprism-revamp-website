@@ -1,24 +1,24 @@
 "use client";
 
+import { submitCtaForm } from "@/actions/form.actions";
+import { socialLinks } from "@/constants";
 import { PopupFormContext } from "@/context/form-context";
+import { zodResolver } from "@hookform/resolvers/zod";
+import Image from "next/image";
+import Link from "next/link";
 import React, { useContext, useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import CustomButton from "../shared/custom-button";
 import {
   Form,
-  FormField,
   FormControl,
+  FormField,
   FormItem,
   FormMessage,
 } from "../ui/form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import Image from "next/image";
-import CustomButton from "../shared/custom-button";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
-import { socialLinks } from "@/constants";
-import Link from "next/link";
-import { submitForm } from "@/actions/form.actions";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "FirstName is required" }).max(50),
@@ -58,11 +58,11 @@ const DemoFormPopup: React.FC = () => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const data = {
-      recordName: "Cloudprism",
-      leadType: "Contact Us CTA",
-    };
-    const response = await submitForm(values, data);
+    const response = await submitCtaForm(values, {
+      leadType: "Demo call CTA",
+      recordTypeName: "Cloudprism",
+    });
+
     console.log(response);
 
     setMessage(true);

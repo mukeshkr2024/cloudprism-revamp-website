@@ -1,8 +1,11 @@
 "use client";
 
+import { submitCtaForm } from "@/actions/form.actions";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import CustomButton from "../shared/custom-button";
 import {
   Form,
   FormControl,
@@ -11,9 +14,6 @@ import {
   FormMessage,
 } from "../ui/form";
 import { Input } from "../ui/input";
-import CustomButton from "../shared/custom-button";
-import { submitForm } from "@/actions/form.actions";
-import { useState } from "react";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is requires" }).max(50),
@@ -47,11 +47,10 @@ function ContactForm() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const data = {
-      recordName: "Cloudprism",
-      leadType: "Demo call",
-    };
-    const response = await submitForm(values, data);
+    const response = await submitCtaForm(values, {
+      leadType: "Demo call CTA",
+      recordTypeName: "Cloudprism",
+    });
 
     console.log(response);
 

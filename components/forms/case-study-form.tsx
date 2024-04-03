@@ -1,5 +1,6 @@
 "use client";
 
+import { submitCtaForm } from "@/actions/form.actions";
 import { socialLinks } from "@/constants";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Image from "next/image";
@@ -17,7 +18,6 @@ import {
 } from "../ui/form";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
-import { submitForm } from "@/actions/form.actions";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is required" }).max(50),
@@ -47,11 +47,11 @@ const CaseStudyForm: React.FC = () => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const data = {
-      recordName: "Cloudprism",
-      leadType: "Contact Us CTA",
-    };
-    const response = await submitForm(values, data);
+    const response = await submitCtaForm(values, {
+      leadType: "Case studies CTA",
+      recordTypeName: "Cloudprism",
+    });
+
     console.log(response);
 
     setMessage(true);

@@ -18,7 +18,7 @@ import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 import { socialLinks } from "@/constants";
 import Link from "next/link";
-import { submitForm } from "@/actions/form.actions";
+import { submitCtaForm } from "@/actions/form.actions";
 
 // TODO:  to implement the form coming every 20 sec
 
@@ -66,11 +66,11 @@ const BlogFormPopup: React.FC = () => {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const data = {
-      recordName: "Cloudprism",
-      leadType: "Contact Us CTA",
-    };
-    const response = await submitForm(values, data);
+    const response = await submitCtaForm(values, {
+      leadType: "Blog CTA",
+      recordTypeName: "Cloudprism",
+    });
+
     console.log(response);
 
     setMessage(true);
