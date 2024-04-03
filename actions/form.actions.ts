@@ -36,7 +36,7 @@ export async function submitCtaForm(
     if (!response.ok) {
       throw new Error("Network response is not ok ");
     }
-    console.log("Successfully created", response);
+
     const result = await response.json();
 
     return result;
