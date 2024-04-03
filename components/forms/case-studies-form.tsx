@@ -24,8 +24,20 @@ const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is required" }).max(50),
   lastName: z.string().min(1, { message: "Last Name is required" }).max(50),
   email: z.string().email({ message: "Email is invalid" }),
-  phone: z.string().min(1, { message: "Phone No is invalid" }).max(12),
-  message: z.string().optional(),
+  phone: z
+    .string()
+    .min(10, { message: "Invalid phone number" })
+    .max(12, { message: "Invalid Phone number" })
+    .refine((value) => /^\d{10}$/.test(value), {
+      message: "Invalid Phone Number",
+    }),
+  message: z
+    .string()
+    .min(1, { message: "Message is required" })
+    .max(250, {
+      message: "Message can be up to 250 characters",
+    })
+    .optional(),
 });
 
 const CaseStudiesFormPopup: React.FC = () => {
@@ -54,11 +66,11 @@ const CaseStudiesFormPopup: React.FC = () => {
     console.log(response);
     setMessage(true);
 
+    form.reset();
     setTimeout(() => {
       setMessage(false);
+      setShowPopup(false);
     }, 6000);
-    form.reset();
-    setShowPopup(false);
   }
 
   if (!showPopup) return null;

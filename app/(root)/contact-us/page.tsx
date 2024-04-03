@@ -26,9 +26,14 @@ const formSchema = z.object({
   email: z.string().email({ message: "Invalid Email" }),
   phone: z
     .string()
-    .min(1, { message: "Phone is required" })
-    .max(12, { message: "Invalid phone number" }),
-  message: z.string().min(1, { message: "Message is required" }).optional(),
+    .min(10, { message: "Invalid phone number" })
+    .max(12, { message: "Invalid Phone number" })
+    .refine((value) => /^\d{10}$/.test(value), {
+      message: "Invalid Phone Number",
+    }),
+  message: z.string().min(1, { message: "Message is required" }).max(250, {
+    message: "Message can be up to 250 characters",
+  }),
 });
 
 function ContactUsPage() {

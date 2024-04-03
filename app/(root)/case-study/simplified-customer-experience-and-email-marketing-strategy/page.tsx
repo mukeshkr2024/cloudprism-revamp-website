@@ -1,7 +1,7 @@
 "use client";
 
 import { TracingBeam } from "@/components/blog/tracing-beam";
-import EventRightSidebar from "@/components/event-sidebar";
+// import EventRightSidebar from "@/components/event-sidebar";
 import CaseFormPopup from "@/components/forms/case-form";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import CustomButton from "@/components/shared/custom-button";
@@ -25,11 +25,11 @@ const CaseStudy1 = () => {
       <div className="mx-auto w-full max-w-[95rem]">
         {showForm && <CaseFormPopup handleClose={handleClose} />}
         <div className="flex w-full flex-col justify-center pb-32 pt-24 lg:flex-row">
-          <TracingBeam className="px-6">
+          <TracingBeam className="max-w-6xl px-6">
             <div className="text-white ">
               <div className="mx-auto  pt-8 lg:max-w-7xl">
                 <div>
-                  <span className="text-base font-normal"> CASE STUDY-1</span>
+                  <span className="text-base font-normal"> CASE STUDY</span>
                   <div className="my-2.5 flex w-full flex-col gap-y-1 text-lg font-medium">
                     <p>Client: Cambria</p>
                     <p>Partner: CloudPrism</p>
@@ -107,7 +107,7 @@ const CaseStudy1 = () => {
               </div>
             </div>
           </TracingBeam>
-          <EventRightSidebar />
+          {/* <EventRightSidebar /> */}
         </div>
         <ConnectToUs />
       </div>

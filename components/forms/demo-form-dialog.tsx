@@ -26,9 +26,18 @@ const formSchema = z.object({
   email: z.string().email({ message: "Invalid Email" }),
   phone: z
     .string()
-    .min(1, { message: "Phone is required" })
-    .max(12, { message: "Invalid phone number" }),
-  message: z.string().min(1, { message: "Message is required" }).optional(),
+    .min(10, { message: "Invalid phone number" })
+    .max(12, { message: "Invalid Phone number" })
+    .refine((value) => /^\d{10}$/.test(value), {
+      message: "Invalid Phone Number",
+    }),
+  message: z
+    .string()
+    .min(1, { message: "Message is required" })
+    .max(250, {
+      message: "Message can be up to 250 characters",
+    })
+    .optional(),
 });
 
 const DemoFormPopup: React.FC = () => {
@@ -58,11 +67,11 @@ const DemoFormPopup: React.FC = () => {
 
     setMessage(true);
 
+    form.reset();
     setTimeout(() => {
       setMessage(false);
+      setShowPopup(false);
     }, 6000);
-    form.reset();
-    setShowPopup(false);
   }
 
   if (!showPopup) return null;
@@ -91,7 +100,7 @@ const DemoFormPopup: React.FC = () => {
 
             <div className="mt-4 flex w-full flex-col text-white">
               {message && (
-                <p className="text-sm text-green-500 ">
+                <p className="text-center text-sm text-green-500 ">
                   Thanks for your submission! We&apos;ll be in touch shortly.
                 </p>
               )}
@@ -191,7 +200,10 @@ const DemoFormPopup: React.FC = () => {
                       )}
                     />
                     <div className="pt-1">
-                      <CustomButton className="rounded-3xl px-4 py-1.5">
+                      <CustomButton
+                        disabled={form.formState.isSubmitting}
+                        className="rounded-3xl px-4 py-1.5"
+                      >
                         <p className="text-[19px] font-semibold text-black">
                           Submit
                         </p>

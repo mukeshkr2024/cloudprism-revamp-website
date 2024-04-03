@@ -12,26 +12,56 @@ import {
 } from "../ui/form";
 import { Input } from "../ui/input";
 import CustomButton from "../shared/custom-button";
+import { submitForm } from "@/actions/form.actions";
+import { useState } from "react";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is requires" }).max(50),
   lastName: z.string().min(1, { message: "Last Name is required" }).max(50),
   email: z.string().email({ message: "Email is invalid" }),
   countryCode: z.string().min(1, { message: "Invalid country code" }).max(3),
-  phone: z.string().min(1, { message: "Phone No is invalid" }).max(12),
+  phone: z
+    .string()
+    .min(10, { message: "Invalid phone number" })
+    .max(12, { message: "Invalid Phone number" })
+    .refine((value) => /^\d{10}$/.test(value), {
+      message: "Invalid Phone Number",
+    }),
   message: z.string().min(1, { message: "Message is required" }).max(250),
   lookingFor: z.string().optional(),
 });
 
 function ContactForm() {
+  const [message, setMessage] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {},
+    defaultValues: {
+      countryCode: "",
+      email: "",
+      firstName: "",
+      lastName: "",
+      lookingFor: "",
+      message: "",
+      phone: "",
+    },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const data = {
+      recordName: "Cloudprism",
+      leadType: "Demo call",
+    };
+    const response = await submitForm(values, data);
+
+    console.log(response);
+
+    form.reset();
+    setMessage(true);
+    setTimeout(() => {
+      setMessage(false);
+    }, 5000);
   }
+
   return (
     <div className="w-full max-w-2xl">
       <Form {...form}>
@@ -175,8 +205,16 @@ function ContactForm() {
               </FormItem>
             )}
           />
+          {message && (
+            <p className="text-center text-sm text-green-500">
+              Thanks for your submission! W&apos;ll be in touch shortly.
+            </p>
+          )}
           <div className="flex w-full items-center justify-center pt-4 lg:pt-6">
-            <CustomButton className="rounded-3xl px-4 py-1.5">
+            <CustomButton
+              disabled={form.formState.isSubmitting}
+              className="rounded-3xl px-4 py-1.5"
+            >
               <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
                 Let&apos;s grow together
               </p>{" "}

@@ -8,7 +8,7 @@ const EventDetailsPage = () => {
   return (
     <div className="mx-auto h-full max-w-[95rem]">
       <div className="flex w-full justify-center pb-32 pt-24 lg:flex-row">
-        <TracingBeam className="px-6">
+        <TracingBeam className="max-w-6xl px-6">
           <div className="text-[#A4A4A4]">
             <div className="mx-auto max-w-7xl pt-8">
               <div>

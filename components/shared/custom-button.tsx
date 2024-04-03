@@ -5,9 +5,14 @@ import React, { useState } from "react";
 interface ButtonProps {
   className?: string;
   children: React.ReactNode;
+  disabled?: boolean;
 }
 
-export default function CustomButton({ children, className }: ButtonProps) {
+export default function CustomButton({
+  children,
+  className,
+  disabled,
+}: ButtonProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -15,6 +20,7 @@ export default function CustomButton({ children, className }: ButtonProps) {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       className={`background_button   ${className}`}
+      disabled={disabled}
       style={{
         boxShadow: isHovered
           ? "0px 1px 2px 0px #3BE88E61,0px 4px 4px 0px #3BE88E54 "

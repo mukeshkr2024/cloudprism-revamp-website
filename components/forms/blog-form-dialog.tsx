@@ -26,8 +26,20 @@ const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is required" }).max(50),
   lastName: z.string().min(1, { message: "Last Name is required" }).max(50),
   email: z.string().email({ message: "Email is invalid" }),
-  phone: z.string().min(1, { message: "Phone No is invalid" }).max(12),
-  message: z.string().optional(),
+  phone: z
+    .string()
+    .min(10, { message: "Invalid phone number" })
+    .max(12, { message: "Invalid Phone number" })
+    .refine((value) => /^\d{10}$/.test(value), {
+      message: "Invalid Phone Number",
+    }),
+  message: z
+    .string()
+    .min(1, { message: "Message is required" })
+    .max(250, {
+      message: "Message can be up to 250 characters",
+    })
+    .optional(),
 });
 
 const BlogFormPopup: React.FC = () => {
@@ -49,7 +61,7 @@ const BlogFormPopup: React.FC = () => {
       firstName: "",
       lastName: "",
       message: "",
-      phone: "",
+      phone: undefined,
     },
   });
 
@@ -63,11 +75,11 @@ const BlogFormPopup: React.FC = () => {
 
     setMessage(true);
 
+    form.reset();
     setTimeout(() => {
       setMessage(false);
+      setShowPopup(false);
     }, 6000);
-    form.reset();
-    setShowPopup(false);
   }
 
   if (!showPopup) return null;
@@ -101,7 +113,7 @@ const BlogFormPopup: React.FC = () => {
 
             <div className="mt-4 flex w-full flex-col text-white">
               {message && (
-                <p className="text-sm text-green-500 ">
+                <p className="text-center text-sm text-green-500 ">
                   Thanks for your submission! We&apos;ll be in touch shortly.
                 </p>
               )}
@@ -176,6 +188,7 @@ const BlogFormPopup: React.FC = () => {
                             <Input
                               placeholder="Phone No"
                               {...field}
+                              title="Inavlid Phone Number"
                               className="input-background_secondary rounded-[6px] border-none px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
                             />
                           </FormControl>
@@ -200,7 +213,10 @@ const BlogFormPopup: React.FC = () => {
                       )}
                     />
                     <div className="pt-1">
-                      <CustomButton className="rounded-3xl px-4 py-1.5">
+                      <CustomButton
+                        disabled={form.formState.isSubmitting}
+                        className="rounded-3xl px-4 py-1.5"
+                      >
                         <p className="text-[19px] font-semibold text-black">
                           Submit
                         </p>
