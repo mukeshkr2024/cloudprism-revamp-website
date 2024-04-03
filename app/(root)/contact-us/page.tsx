@@ -18,7 +18,7 @@ import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import { socialLinks } from "@/constants";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
-import { submitForm } from "@/actions/form.actions";
+import { submitCtaForm } from "@/actions/form.actions";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "FirstName is required" }).max(50),
@@ -50,12 +50,12 @@ function ContactUsPage() {
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    const data = {
-      recordName: "Cloudprism",
+    const response = await submitCtaForm(values, {
       leadType: "Contact Us CTA",
-    };
-    const response = await submitForm(values, data);
-    console.log(response);
+      recordTypeName: "Cloudprism",
+    });
+
+    console.log("response", response);
 
     setMessage(true);
 
