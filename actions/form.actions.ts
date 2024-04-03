@@ -7,7 +7,9 @@ export async function submitForm(
     leadType: string;
   }
 ) {
-  const webHookUrl = process.env.WEB_HOOK_URL!;
+  const webHookUrl =
+    process.env.WEB_HOOK_URL! ||
+    "https://cloudprismsolutionpvtltd.my.salesforce-sites.com/services/apexrest/createLeadCP";
 
   try {
     const response = await fetch(webHookUrl, {
