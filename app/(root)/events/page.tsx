@@ -51,7 +51,7 @@ export default function EventsPage() {
             </div>
 
             <Image
-              src="/assets/images/event-svg.svg"
+              src="/assets/images/events-img.png"
               alt="Image"
               width={650}
               height={620}
