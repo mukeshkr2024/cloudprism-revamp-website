@@ -69,7 +69,7 @@
 export const events = [
   {
     id: 1,
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/events/india-7.jpg",
     title:
       "CloudPrism Solutions Proudly Supports India Dreamin' 2023 as a Silver Sponsor, Driving Innovation Forward",
     description:
@@ -79,7 +79,7 @@ export const events = [
   },
   {
     id: 2,
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/events/techspark-5.jpg",
     title:
       "Techspark 2024: CloudPrism Stands Out in Mumbai with Innovation and Collaboration!",
     description:
@@ -109,7 +109,7 @@ export const events = [
   },
   {
     id: 4,
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/events/mule-3.jpg",
     title:
       "Glimpses of Glory: CloudPrism's Silver Sponsorship Triumphs at Mule Dreamin, Delhi!",
     description:

@@ -1,8 +1,44 @@
+"use client";
+
 import { TracingBeam } from "@/components/blog/tracing-beam";
 // import EventRightSidebar from "@/components/event-sidebar";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import Link from "next/link";
 import React from "react";
+import Gallery from "react-photo-gallery";
+const images = [
+  {
+    src: "/assets/images/events/india-7.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/assets/images/events/india-2.jpg",
+    width: 3.5,
+    height: 3,
+  },
+
+  {
+    src: "/assets/images/events/india-4.jpg",
+    width: 3.3,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/india-5.jpg",
+    width: 4,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/india-6.jpg",
+    width: 4,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/india-1.jpg",
+    width: 4,
+    height: 3,
+  },
+];
 
 const EventDetailsPage = () => {
   return (
@@ -51,6 +87,9 @@ const EventDetailsPage = () => {
                     community and our dedication to fostering innovation and
                     collaboration within it.
                   </p>
+                  <div className="mx-auto max-w-7xl py-8">
+                    <Gallery photos={images} />
+                  </div>
                 </div>
 
                 <div className="flex flex-col gap-y-4">

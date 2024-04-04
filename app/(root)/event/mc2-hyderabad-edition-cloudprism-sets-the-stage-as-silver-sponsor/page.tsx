@@ -5,6 +5,7 @@ import { TracingBeam } from "@/components/blog/tracing-beam";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import Gallery from "react-photo-gallery";
 import Link from "next/link";
+// import { Slideshow } from "@/components/slide-show";
 
 const images = [
   {
@@ -89,6 +90,8 @@ const EventDetailsPage = () => {
                     <Gallery photos={images} />
                   </div>
                 </div>
+
+                {/* <Slideshow images={images} length={3} /> */}
 
                 <div className="flex flex-col gap-y-4">
                   <h2 className="text-2xl text-white md:text-3xl lg:text-4xl">

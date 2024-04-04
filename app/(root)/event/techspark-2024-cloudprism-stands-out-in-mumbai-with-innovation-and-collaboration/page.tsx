@@ -1,8 +1,40 @@
+"use client";
+
 import { TracingBeam } from "@/components/blog/tracing-beam";
 // import EventRightSidebar from "@/components/event-sidebar";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import Link from "next/link";
 import React from "react";
+import Gallery from "react-photo-gallery";
+
+const images = [
+  {
+    src: "/assets/images/events/techspark-1.jpg",
+    width: 3,
+    height: 2,
+  },
+  {
+    src: "/assets/images/events/techspark-2.jpg",
+    width: 3.5,
+    height: 3,
+  },
+
+  {
+    src: "/assets/images/events/techspark-3.jpg",
+    width: 3,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/techspark-4.jpeg",
+    width: 4,
+    height: 3,
+  },
+  {
+    src: "/assets/images/events/techspark-5.jpg",
+    width: 4,
+    height: 3,
+  },
+];
 
 const EventDetailsPage = () => {
   return (
@@ -50,6 +82,9 @@ const EventDetailsPage = () => {
                     investor communities, all converging to catalyze change and
                     fuel India&apos;s transformation.
                   </p>
+                  <div className="mx-auto max-w-7xl py-8">
+                    <Gallery photos={images} />
+                  </div>
                 </div>
 
                 <div className="flex flex-col gap-y-4">
