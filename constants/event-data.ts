@@ -117,4 +117,13 @@ export const events = [
     read_time: "2-Minute ",
     slug: "glimpses-of-glory-cloudprisms-silver-sponsorship-triumphs-at-mule-dreamin-delhi",
   },
+  {
+    id: 5,
+    imgUrl: "/assets/images/events/youth-1.jpg",
+    title: "Youth DreamIn - Salesforce Meet-up Celebration",
+    description:
+      "Team CloudPrism Solutions proudly organized a vibrant Salesforce Meet-up on the auspicious occasion of Youth Day in Patna, Bihar. Our aim was to celebrate the youthful spirit and harness the enthusiasm of the young minds towards the realm of technology.",
+    read_time: "1-Minute ",
+    slug: "youth-dreamin-salesforce-meetup-celebration",
+  },
 ];
