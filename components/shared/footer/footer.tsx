@@ -1,4 +1,5 @@
 import { footerLinks, socialLinks, usefullLinks } from "@/constants";
+import { Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -58,6 +59,9 @@ export default function Footer() {
               Shivpuri Rd, South Shivpuri, Shivpuri, Rajbansi Nagar, Patna,
               Bihar 800029
             </p>
+            <div className="flex items-center gap-2">
+              <Phone className="size-4" /> <p> +91 83295 53438</p>
+            </div>
           </div>
 
           <div className="md:flex-1">
@@ -66,6 +70,9 @@ export default function Footer() {
               Gera Imperium Alpha, Rajaram Patil Nagar, Vitthal Nagar, Kharadi,
               Pune, Maharashtra 411014
             </p>
+            <div className="flex items-center gap-2">
+              <Phone className="size-4" /> <p> +91 83295 53438</p>
+            </div>
           </div>
 
           <div className="md:flex-1">
