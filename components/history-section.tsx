@@ -42,40 +42,40 @@ export default function HistorySection() {
               className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] border-2 border-[#191919C4] shadow-md sm:w-24 md:h-14 md:w-[120px]"
               style={{
                 background:
-                  "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
+                  "linear-gradient(149.64deg, rgba(255, 255, 255, 0.2) 21.24%, rgba(255, 255, 255, 0.2) 105.43%), linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)",
                 transition: "background-color 0.3s",
               }}
               onClick={handlePrev}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor =
-                  "rgba(25, 25, 25, 0.90)";
+                e.currentTarget.style.background =
+                  "linear-gradient(149.64deg, rgba(255, 255, 255, 0.3) 21.24%, rgba(255, 255, 255, 0.3) 105.43%), linear-gradient(149.64deg, rgba(25, 25, 25, 0.90) 21.24%, rgba(14, 14, 14, 0.90) 105.43%)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor =
-                  "rgba(25, 25, 25, 0.77)";
+                e.currentTarget.style.background =
+                  "linear-gradient(149.64deg, rgba(255, 255, 255, 0.2) 21.24%, rgba(255, 255, 255, 0.2) 105.43%), linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)";
               }}
             >
-              <ChevronLeft className="text-[#5C5B5B] hover:font-bold hover:text-[#7d7b7b]" />
+              <ChevronLeft className="text-[#d4cbcb] hover:font-bold hover:text-[#e3d9d9]" />
             </div>
 
             <div
-              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] border-2 border-[#191919C4] shadow-md sm:w-24 md:h-14  md:w-[120px]"
+              className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] border-2 border-[#191919C4] shadow-md sm:w-24 md:h-14 md:w-[120px]"
               style={{
                 background:
-                  "linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%);",
+                  "linear-gradient(149.64deg, rgba(255, 255, 255, 0.2) 21.24%, rgba(255, 255, 255, 0.2) 105.43%), linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)",
                 transition: "background-color 0.3s",
               }}
               onClick={handleNext}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor =
-                  "rgba(25, 25, 25, 0.90)";
+                e.currentTarget.style.background =
+                  "linear-gradient(149.64deg, rgba(255, 255, 255, 0.3) 21.24%, rgba(255, 255, 255, 0.3) 105.43%), linear-gradient(149.64deg, rgba(25, 25, 25, 0.90) 21.24%, rgba(14, 14, 14, 0.90) 105.43%)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor =
-                  "rgba(25, 25, 25, 0.77)";
+                e.currentTarget.style.background =
+                  "linear-gradient(149.64deg, rgba(255, 255, 255, 0.2) 21.24%, rgba(255, 255, 255, 0.2) 105.43%), linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)";
               }}
             >
-              <ChevronRight className="text-[#5C5B5B] hover:font-bold hover:text-[#7d7b7b] " />
+              <ChevronRight className="text-[#d4cbcb] hover:font-bold hover:text-[#e3d9d9]" />
             </div>
           </div>
         </div>
