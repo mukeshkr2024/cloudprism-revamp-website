@@ -26,7 +26,7 @@ const images = [
   },
   {
     src: "/assets/images/events/techspark-4.jpeg",
-    width: 4,
+    width: 3,
     height: 3,
   },
   {

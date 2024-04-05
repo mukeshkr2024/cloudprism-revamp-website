@@ -204,7 +204,7 @@ function ContactUsPage() {
           </div>
           <div className="hidden w-full flex-1 flex-col space-y-4 px-12  lg:flex">
             <div>
-              <p>Call us: +91 70045 35083</p>
+              <p>Call us: +91 83295 53438</p>
               <p>Mail us: hello@cloudprism.in</p>
               <p>Website: www.cloudprism.in</p>
             </div>

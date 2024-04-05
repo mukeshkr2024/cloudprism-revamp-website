@@ -219,7 +219,7 @@ const CaseFormPopup = ({ handleClose }: Props) => {
           "
           >
             <div className="flex w-full max-w-xs flex-col gap-y-1.5  text-[17px] font-normal">
-              <p>Call us: +91 70045 35083</p>
+              <p>Call us: +91 83295 53438</p>
               <p>Mail us: hello@cloudprism.in</p>
               <p>Website: www.cloudprism.in</p>
               <p className="mt-6">
