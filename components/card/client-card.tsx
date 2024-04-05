@@ -32,7 +32,7 @@ export default function ClientCard({ description, name, profilePic }: Props) {
           <h4 className="text-base font-medium text-white md:text-lg">
             {name}
           </h4>
-          <p className="text-sm text-[#747373] md:text-base"> @cloudprism</p>
+          {/* <p className="text-sm text-[#747373] md:text-base"> @cloudprism</p> */}
         </div>
       </div>
       <div className="flex flex-col gap-2">

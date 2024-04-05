@@ -27,7 +27,7 @@ export default function ProjectsDelivered() {
           />
         </div>
         <div className="flex w-full justify-between">
-          <ProjectItem projects={500} description="Happy customer" />
+          <ProjectItem projects={300} description="Happy customer" />
           <ProjectItem projects={20} description="Countries Served" />
         </div>
       </div>
