@@ -79,6 +79,9 @@ export default function Footer() {
             <p className="max-w-xs">
               701 Tillery St, Austin, TX 78702, United States
             </p>
+            <div className="flex items-center gap-2">
+              <Phone className="size-4" /> <p>+1 3015639221</p>
+            </div>
           </div>
         </div>
 
