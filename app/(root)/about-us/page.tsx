@@ -36,27 +36,21 @@ export default function AboutPage() {
           <h2 className="h2_semibold text-center">About us</h2>
           <div className="flex flex-col gap-5">
             <p className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
-              CloudPrism, a IT Consultation and IT Solutions Partner,we provide
+              CloudPrism, a IT Consultation and IT Solutions Partner, provides
               premium one-stop Salesforce solutions and full-stack development
-              services. Based in a tier 2 city in India, our unique origin in
-              Patna City has proven to be a boon for both our startup and the
-              local community. We prioritize creating value within the
-              community, distinguishing ourselves without relying on
-              conventional means of establishing presence.
+              services. Based in Patna, Pune, and Austin, our startup&apos;s
+              unique origins have proven to be advantageous. With three offices
+              worldwide, we embrace diversity and inclusive growth.We prioritize
+              creating value within the community, distinguishing ourselves
+              without relying on conventional means of establishing presence.
             </p>
             <p className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
-              With a team of over 50 certified developers, CloudPrism excels in
-              Salesforce-certified consultancy and serves as a Salesforce ISV
-              Partner, boasting proficient full-stack expertise. Our technical
-              skill outshines that of other small and medium Salesforce
-              companies, as we specialize in providing Custom-built solutions
-              designed to meet your specific timeline and requirements, ensuring
-              optimal outcomes for your business success.
-            </p>
-            <p className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
-              With CloudPrism by your side, you can trust that your IT Solutions
-              journey will be guided by industry best practices and unparalleled
-              expertise.
+              WWith a team of over 100+ certified developers, CloudPrism excels
+              in Salesforce complete solutions and software consultation and
+              development. Our technical skill outshines that of other small,
+              medium and big companies, as we specialize in providing
+              Custom-built solutions designed to meet your specific timeline and
+              requirements, ensuring optimal outcomes for your business success.
             </p>
           </div>
         </div>
