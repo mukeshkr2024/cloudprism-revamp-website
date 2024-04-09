@@ -22,12 +22,12 @@ function CarrierPage() {
           }}
         >
           <div className="max-w-7xl">
-            <h1 className="text-start text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            <h4 className="text-start text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               Where Talent Meets <br /> Opportunity.
-            </h1>
-            <h3 className="mt-4 max-w-5xl text-base text-[#C0C0C0] sm:text-lg md:text-xl">
+            </h4>
+            <h1 className="mt-4 max-w-5xl text-base text-[#C0C0C0] sm:text-lg md:text-xl">
               Explore Careers at Cloudprism Solutions
-            </h3>
+            </h1>
           </div>
         </div>
         <div className="mx-4 mt-[-50px]  flex max-w-7xl flex-col gap-y-12 text-center lg:mx-auto  lg:flex-row lg:px-8 lg:text-start xl:px-0">
@@ -65,7 +65,7 @@ function CarrierPage() {
           </div>
         </div>
         <section className="mx-auto mt-20 max-w-sm sm:max-w-lg md:max-w-2xl lg:mt-32 lg:max-w-5xl xl:max-w-7xl ">
-          <h2 className="h2_semibold text-center">Job Openings</h2>
+          <h3 className="h2_semibold text-center">Job Openings</h3>
           <p className="mt-10 text-center text-xl font-light text-[#F2EFEF]">
             Uncover the perfect role that aligns with your unique abilities and
             grab countless opportunities to take your career to new heights.
@@ -97,7 +97,7 @@ function CarrierPage() {
             className="flex flex-col items-center justify-center gap-y-5 px-6 pt-20 md:gap-y-6 md:pt-24 xl:px-24"
             ref={hrRef}
           >
-            <h2 className="h2_semibold">Send us your resume at</h2>
+            <h4 className="h2_semibold">Send us your resume at</h4>
 
             <CustomButton className="rounded-3xl px-5 py-1.5">
               <a

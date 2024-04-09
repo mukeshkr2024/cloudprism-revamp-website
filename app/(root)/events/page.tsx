@@ -17,11 +17,11 @@ export default function EventsPage() {
           }}
         >
           <div className="flex max-w-6xl flex-col items-center justify-center gap-y-4 sm:gap-y-6 md:pb-24">
-            <h1 className="h1_bold">Explore Upcoming Events and Webinars.</h1>
-            <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
+            <h4 className="h1_bold">Explore Upcoming Events and Webinars.</h4>
+            <h1 className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
               Step into a world of excitement, inspiration, and connection at
               our exclusive event - where unforgettable moments await.
-            </p>
+            </h1>
             <CustomButton className="rounded-3xl px-5 py-1.5">
               <Link href="/contact-us">
                 <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
@@ -61,7 +61,7 @@ export default function EventsPage() {
         </section>
 
         <section className="mx-auto  my-10 max-w-7xl ">
-          <h1 className="h2_semibold text-center">News & Events</h1>
+          <h3 className="h2_semibold text-center">News & Events</h3>
           <div className="mt-16 flex flex-wrap justify-center gap-6 sm:mt-20 lg:mt-24">
             {events &&
               events.map((event) => (

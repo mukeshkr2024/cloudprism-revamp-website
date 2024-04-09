@@ -91,9 +91,9 @@ function ContactUsPage() {
                   Thanks for your submission! We&apos;ll be in touch shortly.
                 </p>
               )}
-              <h2 className="mt-10 text-3xl font-bold md:mt-14 md:text-4xl">
+              <h3 className="mt-10 text-3xl font-bold md:mt-14 md:text-4xl">
                 Get in touch with us!
-              </h2>
+              </h3>
               <p className="text-[19px] text-[#949494]">
                 Let us know more about you.
               </p>

@@ -104,9 +104,9 @@ const DemoFormPopup: React.FC = () => {
                   Thanks for your submission! We&apos;ll be in touch shortly.
                 </p>
               )}
-              <h2 className="text-3xl font-bold">
+              <h4 className="text-3xl font-bold">
                 Ready to bring your ideas to life?
-              </h2>
+              </h4>
               <p className="mt-1 text-base text-[#949494]">
                 Schedule a call with our consultants for personalized guidance
                 and <br /> realization.

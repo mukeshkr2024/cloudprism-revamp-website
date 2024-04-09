@@ -52,7 +52,7 @@ export default function EventCard({
         }}
         className="flex flex-col gap-y-8 rounded-lg px-6 py-12"
       >
-        <h3 className="line-clamp-2 text-xl font-bold text-white">{title}</h3>
+        <h4 className="line-clamp-2 text-xl font-bold text-white">{title}</h4>
         <p className="line-clamp-3 text-sm font-normal text-[#798882]">
           {description}
         </p>

@@ -40,5 +40,3 @@ export default function ScrollBarProgress({
     </>
   );
 }
-
-// bg-gradient-to-r from-transparent via-yellow-400 to-teal-400

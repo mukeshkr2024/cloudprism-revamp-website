@@ -26,17 +26,17 @@ export default function HistorySection() {
 
   return (
     <section className="mx-auto max-w-7xl ">
-      <h2 className="h2_semibold pt-8 text-center sm:pt-10 md:pt-12 lg:pt-16">
+      <h3 className="h2_semibold pt-8 text-center sm:pt-10 md:pt-12 lg:pt-16">
         History
-      </h2>
+      </h3>
       <div
         className="mt-8 flex w-full flex-col gap-y-8   px-4 sm:mt-12 sm:gap-y-10 sm:px-12 md:mt-16 md:gap-y-12 md:px-20
      lg:px-0 "
       >
         <div className="flex size-full items-center justify-between ">
-          <h2 key={animationKey} className="h2_semibold year-animation  ">
+          <h4 key={animationKey} className="h2_semibold year-animation  ">
             {data.year}
-          </h2>
+          </h4>
           <div className="flex gap-x-2 sm:gap-x-4">
             <div
               className="flex h-10 w-20 cursor-pointer items-center justify-center rounded-[35px] border-2 border-[#191919C4] shadow-md sm:w-24 md:h-14 md:w-[120px]"

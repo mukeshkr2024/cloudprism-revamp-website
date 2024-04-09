@@ -36,7 +36,7 @@ export default function TeamCard({
       <div className="flex size-full flex-col items-center justify-center gap-1.5">
         <Image src={profilePic} alt={name} width={103} height={103} />
         <div className="flex flex-col gap-[2px] text-center">
-          <h4 className="text-lg font-semibold text-white ">{name}</h4>
+          <span className="text-lg font-semibold text-white ">{name}</span>
           <p className="text-sm font-light text-[#C6C6C6] sm:text-base">
             {description}
           </p>

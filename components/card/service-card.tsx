@@ -41,7 +41,7 @@ export default function ServiceCard({
           </div>
           <Image src={imgUrl} alt={title} width={50} height={50} />
         </div>
-        <h3 className="text-[19px] font-bold text-white">{title}</h3>
+        <h4 className="text-[19px] font-bold text-white">{title}</h4>
         <p className="text-[14px] text-[#777777]">{description}</p>
       </div>
     </div>

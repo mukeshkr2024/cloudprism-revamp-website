@@ -26,7 +26,7 @@ export default function JobOpeningCard({
   return (
     <div className="job_opening_card flex h-[380px] w-[330px] flex-col justify-between rounded-lg border border-[#2E2E2E] p-6 text-white shadow-md transition duration-300 ease-in-out hover:scale-105 hover:border-[#02FFB3] sm:h-[390px]  sm:w-[374px]">
       <div className="flex w-full items-center justify-between">
-        <p className="text-[27px] text-white">{title}</p>
+        <h4 className="text-[27px] text-white">{title}</h4>
         <Link href={`/`}>
           <Image
             src="/assets/icons/linkdein-dark.svg"

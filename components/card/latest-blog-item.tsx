@@ -40,8 +40,8 @@ export const LatestBlogItem = ({ title, slug, description, image }: Props) => {
         }}
       />
       <div className="z-10 pb-2 md:pb-10">
-        <h3 className="sm:text-base">Latest Blog</h3>
-        <h2
+        <span className="sm:text-base">Latest Blog</span>
+        <h4
           className={`mt-4 line-clamp-2 text-lg font-bold lg:mt-8 lg:text-xl xl:text-2xl ${
             isHovered
               ? "md:scale-105 md:transition-all md:duration-500"
@@ -49,7 +49,7 @@ export const LatestBlogItem = ({ title, slug, description, image }: Props) => {
           }`}
         >
           {title}
-        </h2>
+        </h4>
         <p
           className={`mt-2 line-clamp-2 text-sm md:mt-4 lg:text-[15px]  ${
             isHovered

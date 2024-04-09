@@ -52,9 +52,9 @@ export default function Home() {
             <ProjectsDelivered />
           </div>
           <section className="mx-auto mt-6 max-w-6xl sm:mt-10 md:mt-12 lg:mt-16 xl:mt-24 ">
-            <h2 className="h2_semibold text-center">
+            <h3 className="h2_semibold text-center">
               Our Customer Success <br className="sm:hidden" /> Story
-            </h2>
+            </h3>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-2 sm:mt-12 md:mt-16 lg:mt-20 lg:gap-6">
               {recentStudies &&
@@ -72,9 +72,9 @@ export default function Home() {
           <SalesforcePartnerSlider />
           <OurClientSay />
           <section className="mx-auto my-8 sm:max-w-xl  lg:mt-16  lg:max-w-2xl">
-            <h2 className="h2_semibold text-center">
+            <h3 className="h2_semibold text-center">
               Our Technological <br className="sm:hidden" /> Partners{" "}
-            </h2>
+            </h3>
             <div className="my-12 flex justify-between px-6 sm:px-10 lg:my-20 lg:px-14 ">
               {technologPartners.map((item) => (
                 <div
@@ -96,9 +96,9 @@ export default function Home() {
             </div>
           </section>
           <section className="mx-auto max-w-6xl ">
-            <h2 className="h2_semibold text-center">
+            <h3 className="h2_semibold text-center">
               Our Certified <br className="sm:hidden" /> Developers{" "}
-            </h2>
+            </h3>
             <div className="mt-12 flex flex-wrap items-center justify-center gap-6 px-4 sm:mt-14 md:mt-16 lg:mt-20 xl:mt-24">
               {certifiedDevelopers.map((item) => (
                 <div key={item.id}>
@@ -114,9 +114,9 @@ export default function Home() {
             </div>
           </section>
           <section className="mx-auto mt-24 max-w-6xl ">
-            <h2 className="h2_semibold text-center">
+            <h3 className="h2_semibold text-center">
               Why Cloud Prism Stands <br className="sm:hidden" /> Out
-            </h2>
+            </h3>
             <div className="mt-12 flex flex-col gap-4 px-4 sm:mt-16 md:mt-20">
               {whyStandOut.map((item) => (
                 <div key={item.title} className="size-full">
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
           </section>
           <section className="mx-auto mt-20 max-w-sm sm:mt-28 sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl ">
-            <h2 className="h2_semibold text-center">Read Our Blogs</h2>
+            <h3 className="h2_semibold text-center">Read Our Blogs</h3>
             <div className="mt-24 flex flex-wrap  justify-center gap-y-6 px-6  sm:justify-between">
               {readBlogs &&
                 readBlogs.map((blog) => (
@@ -160,7 +160,7 @@ export default function Home() {
             }}
           >
             <div className="flex flex-1 flex-col gap-y-6   px-10 lg:gap-y-10">
-              <h2 className="h2_semibold mt-[90px]">Connect with us</h2>
+              <h3 className="h2_semibold mt-[90px]">Connect with us</h3>
               <p className="mb-2 max-w-md text-base font-light text-[#A4A4A4] sm:text-lg md:text-xl">
                 Our experienced support team will respond to your message within
                 24 hours.

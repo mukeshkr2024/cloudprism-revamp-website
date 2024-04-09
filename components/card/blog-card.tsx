@@ -60,7 +60,7 @@ export default function BlogCard({
         className="rounded-t-lg"
       />
       <div className="card_primary_background flex h-[280px] flex-col justify-between rounded-b-lg px-6 py-8 transition-colors duration-200 ease-in-out">
-        <h3 className="line-clamp-2 text-xl font-bold text-white">{title}</h3>
+        <h4 className="line-clamp-2 text-xl font-bold text-white">{title}</h4>
         <p className="line-clamp-3 text-sm font-normal text-[#798882]">
           {description}
         </p>

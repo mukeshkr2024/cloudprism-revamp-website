@@ -23,9 +23,9 @@ export default function OurServices() {
   return (
     <section className="flex w-full flex-col gap-y-12 py-4 lg:flex-row">
       <div className="mx-2.5 flex w-full items-start gap-6 px-4 sm:mx-4 md:mx-8 lg:w-1/3">
-        <h2 className="h2_semibold">
+        <h3 className="h2_semibold">
           Our <br /> Services
-        </h2>
+        </h3>
         <Image
           src="/assets/icons/arrow-down.png"
           alt="Arrow-down"

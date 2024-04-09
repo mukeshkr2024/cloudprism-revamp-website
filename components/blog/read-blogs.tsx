@@ -31,7 +31,7 @@ export default function ReadBlogs({ blogs }: { blogs: Blog[] }) {
   const sortedBlogs = allBlogs;
   return (
     <section className="mx-auto  mt-4 max-w-7xl lg:mt-8 ">
-      <h2 className="h2_semibold text-center">Read Our Blogs</h2>
+      <h3 className="h2_semibold text-center">Read Our Blogs</h3>
       <div className="mt-16 flex flex-wrap justify-center gap-6 sm:mt-20 lg:mt-24">
         {displayedBlogs &&
           displayedBlogs.map((blog: Blog) => (

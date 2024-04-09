@@ -44,12 +44,12 @@ export const SuccessCard = ({
           }}
         />
         <div className="relative">
-          <p className="z-10 text-xs text-[#E5E5E5] md:text-sm">
+          <span className="z-10 text-xs text-[#E5E5E5] md:text-sm">
             RESEARCH REPORT
-          </p>
-          <h3 className="z-10 mt-10 line-clamp-4 text-base font-medium text-[#EDEDED] md:text-xl">
+          </span>
+          <h4 className="z-10 mt-10 line-clamp-4 text-base font-medium text-[#EDEDED] md:text-xl">
             {title}
-          </h3>
+          </h4>
         </div>
         <div
           className={`absolute bottom-0 right-0 h-2/3 w-full bg-opacity-90 px-6 transition-all duration-500 ${isHovered ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
@@ -86,13 +86,7 @@ export const SuccessCard = ({
         </div>
       </div>
 
-      <div
-        className="relative flex h-[300px] w-[175px] flex-col justify-between overflow-hidden rounded-[15px] border border-[#2E2E2EC9] bg-cover  bg-center bg-no-repeat p-4 md:hidden"
-        // style={{
-        //   boxShadow:
-        //     "0px 3px 7px 0px #42FF9E1F, 0px 13px 13px 0px #42FF9E1C, 0px 30px 18px 0px #42FF9E0F, 0px 53px 21px 0px #42FF9E05, 0px 83px 23px 0px #42FF9E00",
-        // }}
-      >
+      <div className="relative flex h-[300px] w-[175px] flex-col justify-between overflow-hidden rounded-[15px] border border-[#2E2E2EC9] bg-cover  bg-center bg-no-repeat p-4 md:hidden">
         <div
           className="absolute inset-0 rounded-[15px] bg-cover bg-no-repeat"
           style={{
@@ -103,10 +97,10 @@ export const SuccessCard = ({
         />
         <div className="z-10 w-full">
           <div>
-            <p className="text-xs text-[#E5E5E5]"> RESEARCH REPORT</p>
-            <h3 className="mt-4 line-clamp-2 text-base font-medium text-[#EDEDED]">
+            <span className="text-xs text-[#E5E5E5]"> RESEARCH REPORT</span>
+            <h4 className="mt-4 line-clamp-2 text-base font-medium text-[#EDEDED]">
               {title}
-            </h3>
+            </h4>
             <p className="mt-5 line-clamp-6 text-xs  text-[#A4A4A4]">
               {description}
             </p>

@@ -9,7 +9,7 @@ interface Props {
 export default function LatestBlog({ latestblogs }: Props) {
   return (
     <section className="mx-auto max-w-7xl ">
-      <h2 className="h2_semibold text-center">Latest Blogs</h2>
+      <h3 className="h2_semibold text-center">Latest Blogs</h3>
       <div className="mx-2 my-16 flex flex-wrap justify-center gap-6 md:gap-4  lg:gap-6">
         {latestblogs &&
           latestblogs.length > 0 &&

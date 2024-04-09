@@ -19,10 +19,10 @@ export default function AboutPage() {
           }}
         >
           <div className="mb-16 flex max-w-5xl flex-col items-center justify-center gap-y-6">
-            <h1 className="h1_bold">Accelerate Your Vision with CloudPrism</h1>
-            <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
+            <h4 className="h1_bold">Accelerate Your Vision with CloudPrism</h4>
+            <h1 className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
               Your IT Consultant and Solutions Partner{" "}
-            </p>
+            </h1>
             <CustomButton className="rounded-3xl px-5 py-1.5">
               <Link href="/contact-us">
                 <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">
@@ -33,7 +33,7 @@ export default function AboutPage() {
           </div>
         </section>
         <div className="mx-auto mb-28 flex max-w-7xl flex-col gap-y-20  ">
-          <h2 className="h2_semibold text-center">About us</h2>
+          <h3 className="h2_semibold text-center">About us</h3>
           <div className="flex flex-col gap-5">
             <p className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
               CloudPrism, a IT Consultation and IT Solutions Partner, provides
@@ -45,7 +45,7 @@ export default function AboutPage() {
               without relying on conventional means of establishing presence.
             </p>
             <p className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
-              WWith a team of over 100+ certified developers, CloudPrism excels
+              With a team of over 100+ certified developers, CloudPrism excels
               in Salesforce complete solutions and software consultation and
               development. Our technical skill outshines that of other small,
               medium and big companies, as we specialize in providing
@@ -81,7 +81,7 @@ export default function AboutPage() {
           />
         </div>
         <section className="mx-auto mb-36 flex max-w-7xl flex-col gap-y-16 sm:gap-y-20 md:gap-y-24 lg:gap-y-28 ">
-          <h2 className="h2_semibold text-center">Our Team</h2>
+          <h3 className="h2_semibold text-center">Our Team</h3>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-6">
             {ourTeams.map((team) => (
               <TeamCard
