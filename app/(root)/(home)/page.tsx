@@ -20,12 +20,19 @@ import { Blog, allBlogs } from "@/.contentlayer/generated";
 import BlogCard from "@/components/card/blog-card";
 import { recentCaseStudies } from "@/constants/case-studies";
 import { sortBlogs } from "@/utils/cn";
+import { Metadata } from "next";
 
 const sortedBlogs: Blog[] = sortBlogs(allBlogs);
 
 const readBlogs: Blog[] = sortedBlogs.slice(0, 4);
 
 const recentStudies = recentCaseStudies.slice(0, 4);
+
+export const metadata: Metadata = {
+  title: "CloudPrism: IT Consultation & Solutions for Business Growth",
+  description:
+    "Explore tailored IT consultation & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
+};
 
 export default function Home() {
   return (

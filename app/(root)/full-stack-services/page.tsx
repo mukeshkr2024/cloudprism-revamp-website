@@ -3,8 +3,16 @@ import FullStackServices from "@/components/services/full-stack/full-stack-servi
 import CustomButton from "@/components/shared/custom-button";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import { fullStackbuisnessData, fullstackBuisnessPoints } from "@/constants";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title:
+    "CloudPrism Solutions: Comprehensive Software Development & Consultation",
+  description:
+    "CloudPrism Solutions: Your top choice for expert software development and consultation services.Transform your projects with our innovative solutions",
+};
 
 function FullStackPage() {
   return (
