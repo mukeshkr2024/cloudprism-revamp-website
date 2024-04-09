@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Hanken_Grotesk as HankenGrotesk } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 
 const hankenGrotesk = HankenGrotesk({
   subsets: ["latin"],
@@ -25,7 +26,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={hankenGrotesk.className}>{children}</body>
+      <body className={hankenGrotesk.className}>
+        <GoogleAnalytics />
+        <noscript>
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-NC7PNMT9"
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            ></iframe>
+          </noscript>
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }
