@@ -26,7 +26,7 @@ export default function OurClientSay() {
             align: "start",
           }}
         >
-          <CarouselContent>
+          <CarouselContent className="">
             {clientSays.map(({ name, description, profilePic }, index) => (
               <CarouselItem key={name} className="md:basis-1/2 ">
                 <ClientCard
