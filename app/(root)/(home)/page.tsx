@@ -41,7 +41,7 @@ export default function Home() {
         <div className="w-full">
           <MainSection />
           <div className="flex-center mt-8 w-full md:mt-12 lg:mt-16 ">
-            <p className="mb-10 max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
+            <h2 className="mb-10 max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
               Cloudprism is your Certified IT Solution Partner, promoting
               business development with complete IT Consultation and solutions.
               With 100+ qualified developers, we&apos;ve completed 420+
@@ -50,7 +50,7 @@ export default function Home() {
               solutions, cost reductions, and quick deployment of IT solutions.
               Choose Cloudprism for experienced advice on expanding your
               business through unique IT techniques.
-            </p>
+            </h2>
           </div>
           <div className="mx-auto mt-16 max-w-7xl  ">
             <OurServices />
@@ -59,9 +59,9 @@ export default function Home() {
             <ProjectsDelivered />
           </div>
           <section className="mx-auto mt-6 max-w-6xl sm:mt-10 md:mt-12 lg:mt-16 xl:mt-24 ">
-            <h3 className="h2_semibold text-center">
+            <h2 className="h2_semibold text-center">
               Our Customer Success <br className="sm:hidden" /> Story
-            </h3>
+            </h2>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-2 sm:mt-12 md:mt-16 lg:mt-20 lg:gap-6">
               {recentStudies &&

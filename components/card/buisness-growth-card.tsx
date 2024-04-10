@@ -18,13 +18,13 @@ export default function BuisnesGrowthCard({
   return (
     <section className="growth_background flex h-[720px] flex-col rounded-lg  border-2 border-[#191919C4] shadow-md lg:h-[443px] lg:flex-row">
       <div className="flex flex-1 flex-col items-start justify-center px-4 sm:px-8 md:px-10 lg:px-12">
-        <h3 className="text-2xl font-extralight text-white lg:text-[36px]">
+        <h4 className="text-2xl font-extralight text-white lg:text-[36px]">
           Why Choose CloudPrism
-        </h3>
-        <h2 className="text-4xl font-semibold text-white lg:text-[45px] lg:leading-[58.63px]">
+        </h4>
+        <h3 className="text-4xl font-semibold text-white lg:text-[45px] lg:leading-[58.63px]">
           For Your Business <br />
           Growth
-        </h2>
+        </h3>
         <div className="mt-12 flex w-full justify-between lg:mt-20 lg:pr-14">
           {buisnessData.map((data) => (
             <div

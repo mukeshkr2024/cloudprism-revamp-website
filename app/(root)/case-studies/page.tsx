@@ -21,9 +21,9 @@ export default function CaseStudies() {
             <span className="text-sm sm:text-base lg:text-xl ">
               Case Studies
             </span>
-            <h4 className="h2_semibold leading-[40px] sm:leading-[50px] lg:leading-[65px]">
+            <h2 className="h2_semibold leading-[40px] sm:leading-[50px] lg:leading-[65px]">
               Learn Real-World <br /> Success Stories{" "}
-            </h4>
+            </h2>
             <h1 className="max-w-2xl text-sm sm:text-base md:text-xl">
               Dive into real-world success stories: Explore our compelling case
               studies

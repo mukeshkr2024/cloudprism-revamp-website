@@ -10,10 +10,14 @@ export default function SaleforceMainSection() {
   return (
     <section className="relative mx-auto flex h-[600px] w-full max-w-[95rem] flex-col md:h-[800px]">
       <div className="absolute top-[160px] z-50 w-full">
-        <div className="flex w-full flex-col items-center justify-center gap-y-6">
-          <h1 className="h1_bold lg:!leading-[98.46px] xl:!text-7xl">
+        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-y-6 lg:mt-8 xl:mt-10">
+          <h4 className="h1_bold lg:!leading-[98.46px] xl:!text-7xl">
             Simplify Your Operations,
             <br /> Breathe Easier with Salesforce.
+          </h4>
+          <h1 className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+            Stay Ahead of the Curve with Our Innovative Salesforce Consultation
+            and Implementation Strategies
           </h1>
 
           <CustomButton className="rounded-3xl px-5 py-1.5">

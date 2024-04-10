@@ -93,9 +93,9 @@ const EventDetailsPage = () => {
                 </div>
 
                 <div className="flex flex-col gap-y-4">
-                  <h2 className="text-2xl text-white md:text-3xl lg:text-4xl">
+                  <h3 className="text-2xl text-white md:text-3xl lg:text-4xl">
                     Event Highlights:
-                  </h2>
+                  </h3>
                   <span className="text-lg font-bold">Date: 20th May 2023</span>
 
                   <p className="text-lg font-bold">

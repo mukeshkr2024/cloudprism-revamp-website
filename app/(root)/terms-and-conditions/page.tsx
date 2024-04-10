@@ -9,7 +9,7 @@ const TermsPage = () => {
       <div className="w-full ">
         <div className="mx-auto  flex max-w-xs flex-col gap-y-4 py-28 text-white sm:max-w-sm sm:py-32 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl">
           <div>
-            <h1 className="mb-6 text-3xl font-bold">Terms of Service</h1>
+            <h3 className="mb-6 text-3xl font-bold">Terms of Service</h3>
             <p className="text-base font-light md:text-lg">
               Terms of Service The website{" "}
               <Link
@@ -37,7 +37,7 @@ const TermsPage = () => {
           </div>
 
           <div className="flex flex-col gap-y-2">
-            <h2 className="text-2xl font-semibold">Terms and Conditions </h2>
+            <h4 className="text-2xl font-semibold">Terms and Conditions </h4>
 
             <ul className="flex list-disc flex-col gap-y-3  pl-8 text-base font-light md:pl-12 md:text-lg">
               <li className="mt-2">

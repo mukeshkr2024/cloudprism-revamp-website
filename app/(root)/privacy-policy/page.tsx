@@ -7,7 +7,7 @@ const PrivacyPage = () => {
       <div className="w-full ">
         <div className="mx-auto  flex max-w-xs flex-col gap-y-4 py-28 text-white sm:max-w-sm sm:py-32 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl">
           <div>
-            <h1 className="mb-6 text-3xl font-bold">Privacy Policy</h1>
+            <h3 className="mb-6 text-3xl font-bold">Privacy Policy</h3>
             <p className="text-base font-light">
               Cloudprism respects the intellectual property rights of others and
               expects our users and employees to do the same. Our copyright
@@ -18,9 +18,9 @@ const PrivacyPage = () => {
           </div>
 
           <div className="flex flex-col gap-y-2">
-            <h2 className="text-2xl font-semibold">
+            <h4 className="text-2xl font-semibold">
               Use of Copyrighted Material
-            </h2>
+            </h4>
             <p className="text-base font-light">
               We do not allow the use of copyrighted material on our website or
               in any of our materials without proper permission or licensing. If
@@ -30,9 +30,9 @@ const PrivacyPage = () => {
           </div>
 
           <div className="flex flex-col gap-y-2">
-            <h2 className="text-2xl font-semibold">
+            <h4 className="text-2xl font-semibold">
               Protection of Original Content
-            </h2>
+            </h4>
             <p className="text-base font-light">
               All original content created by{" "}
               <span className="text-blue-400">
@@ -46,7 +46,7 @@ const PrivacyPage = () => {
             </p>
           </div>
           <div className="flex flex-col gap-y-2">
-            <h2 className="text-2xl font-semibold">Permissions</h2>
+            <h4 className="text-2xl font-semibold">Permissions</h4>
             <p className="text-base font-light">
               If you would like to use any of our copyrighted material, please
               contact us to request permission. We may require a licensing fee

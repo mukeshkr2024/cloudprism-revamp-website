@@ -4,9 +4,17 @@ import HistorySection from "@/components/history-section";
 import CustomButton from "@/components/shared/custom-button";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import { ourTeams } from "@/constants";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title:
+    "CloudPrism Solutions: Your Trusted Partner for IT Consultation and Solutions",
+  description:
+    "Discover CloudPrism Solutions, your trusted partner for IT consultation & solutions. Expertise crafted for your business success",
+};
 
 export default function AboutPage() {
   return (
@@ -19,7 +27,7 @@ export default function AboutPage() {
           }}
         >
           <div className="mb-16 flex max-w-5xl flex-col items-center justify-center gap-y-6">
-            <h4 className="h1_bold">Accelerate Your Vision with CloudPrism</h4>
+            <h2 className="h1_bold">Accelerate Your Vision with CloudPrism</h2>
             <h1 className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
               Your IT Consultant and Solutions Partner{" "}
             </h1>
@@ -35,7 +43,7 @@ export default function AboutPage() {
         <div className="mx-auto mb-28 flex max-w-7xl flex-col gap-y-20  ">
           <h3 className="h2_semibold text-center">About us</h3>
           <div className="flex flex-col gap-5">
-            <p className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
+            <h4 className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
               CloudPrism, a IT Consultation and IT Solutions Partner, provides
               premium one-stop Salesforce solutions and full-stack development
               services. Based in Patna, Pune, and Austin, our startup&apos;s
@@ -43,7 +51,7 @@ export default function AboutPage() {
               worldwide, we embrace diversity and inclusive growth.We prioritize
               creating value within the community, distinguishing ourselves
               without relying on conventional means of establishing presence.
-            </p>
+            </h4>
             <p className="mx-auto max-w-sm  px-6 text-center text-base font-light text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-7xl xl:text-3xl xl:leading-9">
               With a team of over 100+ certified developers, CloudPrism excels
               in Salesforce complete solutions and software consultation and

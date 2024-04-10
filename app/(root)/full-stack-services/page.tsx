@@ -25,14 +25,14 @@ function FullStackPage() {
           }}
         >
           <div className="mb-16 flex max-w-7xl flex-col items-center justify-center gap-y-6">
-            <h1 className="h1_bold xl:!text-[90px]">
+            <h4 className="h1_bold xl:!text-[90px]">
               Level Up Your Digital <br /> Presence
-            </h1>
+            </h4>
 
-            <p className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
-              From frontend finesse to backend brilliance, We&apos;ve got you
-              covered!
-            </p>
+            <h1 className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
+              Frontend Finesse to Backend Brilliance, with Expertise in Software
+              Consultation and Development - We&apos;ve Got You Covered!
+            </h1>
 
             <CustomButton className="rounded-3xl px-5 py-1.5">
               <Link href="/contact-us">

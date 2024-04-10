@@ -22,9 +22,9 @@ function CarrierPage() {
           }}
         >
           <div className="max-w-7xl">
-            <h4 className="text-start text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            <h2 className="text-start text-3xl font-bold text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
               Where Talent Meets <br /> Opportunity.
-            </h4>
+            </h2>
             <h1 className="mt-4 max-w-5xl text-base text-[#C0C0C0] sm:text-lg md:text-xl">
               Explore Careers at Cloudprism Solutions
             </h1>
@@ -104,7 +104,7 @@ function CarrierPage() {
                 href="mailto:pragati.anjani@cloudprism.in"
                 className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl"
               >
-                hr@cloudprism.in{" "}
+                pragati.anjani@cloudprism.in{" "}
               </a>
             </CustomButton>
           </div>

@@ -79,9 +79,9 @@ const EventDetailsPage = () => {
                 </div>
 
                 <div className="flex flex-col gap-y-4">
-                  <h2 className="text-2xl text-white md:text-3xl lg:text-4xl">
+                  <h3 className="text-2xl text-white md:text-3xl lg:text-4xl">
                     Highlights:{" "}
-                  </h2>
+                  </h3>
 
                   <ol className="blog_paragraph flex flex-col gap-y-4 pl-12">
                     <li>

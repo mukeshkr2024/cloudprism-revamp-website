@@ -47,16 +47,16 @@ export const SuccessCard = ({
           <span className="z-10 text-xs text-[#E5E5E5] md:text-sm">
             RESEARCH REPORT
           </span>
-          <h4 className="z-10 mt-10 line-clamp-4 text-base font-medium text-[#EDEDED] md:text-xl">
+          <h3 className="z-10 mt-10 line-clamp-4 text-base font-medium text-[#EDEDED] md:text-xl">
             {title}
-          </h4>
+          </h3>
         </div>
         <div
           className={`absolute bottom-0 right-0 h-2/3 w-full bg-opacity-90 px-6 transition-all duration-500 ${isHovered ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}`}
         >
-          <p className="mt-10 line-clamp-2 pt-8 text-sm text-[#A4A4A4] md:line-clamp-5">
+          <h4 className="mt-10 line-clamp-2 pt-8 text-sm text-[#A4A4A4] md:line-clamp-5">
             {description}
-          </p>
+          </h4>
         </div>
 
         <div
