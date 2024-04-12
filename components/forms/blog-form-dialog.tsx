@@ -90,7 +90,7 @@ const BlogFormPopup: React.FC = () => {
       <div
         className="background_primary mx-2 flex w-[1100px] rounded-md bg-cover bg-center lg:mx-0 "
         style={{
-          backgroundImage: "url('/assets/images/blog-form-svg.svg')",
+          backgroundImage: "url('/assets/images/blog-form-png.png')",
         }}
       >
         <div className="relative flex-1 lg:px-6 lg:py-8">

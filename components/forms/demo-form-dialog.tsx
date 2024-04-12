@@ -28,9 +28,7 @@ const formSchema = z.object({
     .string()
     .min(10, { message: "Invalid phone number" })
     .max(12, { message: "Invalid Phone number" })
-    .refine((value) => /^\d{10}$/.test(value), {
-      message: "Invalid Phone Number",
-    }),
+    .refine((value) => /^\d{10}$/.test(value), {}),
   message: z
     .string()
     .min(1, { message: "Message is required" })

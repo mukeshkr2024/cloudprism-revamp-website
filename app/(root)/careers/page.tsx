@@ -90,7 +90,7 @@ function CarrierPage() {
         <section
           className="mx-auto h-[400px] w-full max-w-[95rem] bg-cover bg-center bg-no-repeat md:h-[500px]  "
           style={{
-            backgroundImage: "url('/assets/images/connect-to-us.svg')",
+            backgroundImage: "url('/assets/images/connect-to-us.png')",
           }}
         >
           <div

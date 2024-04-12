@@ -21,7 +21,7 @@ function FullStackPage() {
         <section
           className="flex h-[600px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat md:h-[800px] "
           style={{
-            backgroundImage: "url('/assets/images/full-stack-bg.svg')",
+            backgroundImage: "url('/assets/images/full-stack-bg.png')",
           }}
         >
           <div className="mb-16 flex max-w-7xl flex-col items-center justify-center gap-y-6">

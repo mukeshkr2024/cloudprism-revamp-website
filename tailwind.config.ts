@@ -27,7 +27,7 @@ const config: Config = {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
       backgroundImage: {
-        "connect-to-us": "url('/assets/images/connect-to-us.svg')",
+        "connect-to-us": "url('/assets/images/connect-to-us.png')",
       },
       colors: {
         border: "hsl(var(--border))",

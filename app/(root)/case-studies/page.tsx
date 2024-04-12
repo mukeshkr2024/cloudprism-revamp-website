@@ -14,7 +14,7 @@ export default function CaseStudies() {
         <section
           className="flex h-[70vh] w-full flex-col justify-center bg-cover bg-center"
           style={{
-            backgroundImage: "url('/assets/images/case-studies-bg.svg')",
+            backgroundImage: "url('/assets/images/case-studies-bg.png')",
           }}
         >
           <div className=" flex flex-col gap-y-4 px-6 text-white lg:px-20">

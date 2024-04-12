@@ -42,7 +42,7 @@ export default function FullStackServices() {
       <div className="flex flex-col space-y-12">
         <SectionCard
           title="Software Consultation"
-          imgUrl="/assets/images/software-consultation.svg"
+          imgUrl="/assets/images/software-consultation.png"
           description1="Feeling lost in the digital jungle? Our software consultations are your map to success. We pair experienced professionals with your business goals to craft a winning technology strategy. From concept to launch, we optimize your development process, ensuring smooth sailing every step of the way. Partner with us and conquer your digital frontier.
           "
           imagSize="w-[730px] mt-[-60px] flex items-center justify-center  mr-[-60px]"
@@ -51,7 +51,7 @@ export default function FullStackServices() {
 
         <SectionCard
           title="Web Development"
-          imgUrl="/assets/images/full-stack-service.svg"
+          imgUrl="/assets/images/full-stack-service.png"
           description1="In today's digital age, your website is your storefront to the world. Our web development expertise helps you craft a captivating online presence that reflects your brand's unique identity. We go beyond just aesthetics, building user-friendly interfaces that guide visitors effortlessly through your offerings.
           "
           imagSize="w-[770px] mt-[-60px] flex items-center justify-center  mr-[-40px]"
@@ -60,7 +60,7 @@ export default function FullStackServices() {
 
         <SectionCard
           title="Mobile App Development"
-          imgUrl="/assets/images/mobile-app-devlopement.svg"
+          imgUrl="/assets/images/mobile-app-devlopement.png"
           description1="Want your business in every pocket? Our mobile app development team creates intuitive and engaging apps that put your brand at your customers' fingertips. We handle everything from concept to launch, ensuring a seamless user experience that drives engagement and loyalty. Let's build your mobile app success story today.
           .
       "

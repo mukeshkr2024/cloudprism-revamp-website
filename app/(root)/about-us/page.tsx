@@ -23,7 +23,7 @@ export default function AboutPage() {
         <section
           className="flex h-[600px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat md:h-[800px] "
           style={{
-            backgroundImage: "url('/assets/images/about-us-bg.svg')",
+            backgroundImage: "url('/assets/images/about-us-bg.png')",
           }}
         >
           <div className="mb-16 flex max-w-5xl flex-col items-center justify-center gap-y-6">
@@ -74,7 +74,7 @@ export default function AboutPage() {
           <SectionCard
             title="Vision"
             description1="In our vision at CloudPrism Solutions,we imagine a future where businesses do really well because of new ideas. We make things better for customers, make work easier, and help businesses grow with our IT Consultation and solutions. We work closely with our clients to give them the best advice and solutions for their Business needs. Our goal is to help businesses change for the better and succeed in the modern world."
-            imgUrl="/assets/images/vision-svg.svg"
+            imgUrl="/assets/images/vision-svg.png"
             className="flex-col-reverse lg:flex-row-reverse"
             imagSize="w-[710px] mr-[-50px]"
           />

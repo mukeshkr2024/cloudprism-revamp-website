@@ -7,7 +7,7 @@ export default function ConnectToUs() {
     <section
       className="mx-auto h-[500px] w-full max-w-[95rem]   bg-cover bg-center bg-no-repeat md:h-[650px]  "
       style={{
-        backgroundImage: "url('/assets/images/connect-to-us.svg')",
+        backgroundImage: "url('/assets/images/connect-to-us.png')",
       }}
     >
       <div className="flex flex-col items-start justify-start gap-y-5 px-6 pt-20 md:gap-y-6 md:pt-24 xl:px-24">

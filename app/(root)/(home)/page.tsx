@@ -163,7 +163,7 @@ export default function Home() {
           <section
             className="mx-auto flex size-full max-w-[95rem] flex-col bg-cover bg-center md:px-12  lg:h-[600px] lg:flex-row lg:px-16"
             style={{
-              backgroundImage: "url('/assets/images/connect-to-us.svg')",
+              backgroundImage: "url('/assets/images/connect-to-us.png')",
             }}
           >
             <div className="flex flex-1 flex-col gap-y-6   px-10 lg:gap-y-10">

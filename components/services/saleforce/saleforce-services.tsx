@@ -76,7 +76,7 @@ export default function SalesForceServices() {
         demonstrates a shared commitment to making a positive imp"
         className=" flex-col-reverse lg:flex-row-reverse"
         imagSize="w-[730px] flex items-center justify-center mr-[-50px]"
-        imgUrl="/assets/images/salesforce-integration.svg"
+        imgUrl="/assets/images/salesforce-integration.png"
       />
       <SectionCard
         title="Salesforce Implementation"
@@ -84,7 +84,7 @@ export default function SalesForceServices() {
         description2="Our partnership extends beyond mere transactions, as we share a commitment to social responsibility and ethical practices. At CloudPrism, empathy guides our approach to ethical resource management and fair treatment of all individuals involved. Partnering with us not only aligns with your values but also demonstrates a shared commitment to making a positive imp"
         imagSize="w-[730px] lg:mt-[-60px] flex items-center justify-center  ml-[-20px]"
         className="flex-col-reverse lg:flex-row"
-        imgUrl="/assets/images/salesforce-implementation.svg"
+        imgUrl="/assets/images/salesforce-implementation.png"
       />
     </div>
   );

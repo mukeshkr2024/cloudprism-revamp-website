@@ -1,6 +1,6 @@
 // export const events = [
 //   {
-//     imgUrl: "/assets/images/blog-1.svg",
+//     imgUrl: "/assets/images/blog-1.png",
 //     title: "Is Salesforce Outdated",
 //     description:
 //       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -8,7 +8,7 @@
 //     createdAt: "10 march 2024",
 //   },
 //   {
-//     imgUrl: "/assets/images/blog-1.svg",
+//     imgUrl: "/assets/images/blog-1.png",
 //     title: "Is Salesforce Outdated",
 //     description:
 //       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -16,7 +16,7 @@
 //     createdAt: "1 march 2024",
 //   },
 //   {
-//     imgUrl: "/assets/images/blog-1.svg",
+//     imgUrl: "/assets/images/blog-1.png",
 //     title: "Is Salesforce Outdated",
 //     description:
 //       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -24,7 +24,7 @@
 //     createdAt: "4 march 2024",
 //   },
 //   {
-//     imgUrl: "/assets/images/blog-1.svg",
+//     imgUrl: "/assets/images/blog-1.png",
 //     title: "Is Salesforce Outdated",
 //     description:
 //       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -33,7 +33,7 @@
 //   },
 
 //   {
-//     imgUrl: "/assets/images/blog-1.svg",
+//     imgUrl: "/assets/images/blog-1.png",
 //     title: "Is Salesforce Outdated",
 //     description:
 //       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -41,7 +41,7 @@
 //     createdAt: "6 march 2024",
 //   },
 //   {
-//     imgUrl: "/assets/images/blog-1.svg",
+//     imgUrl: "/assets/images/blog-1.png",
 //     title: "Is Salesforce Outdated",
 //     description:
 //       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -49,7 +49,7 @@
 //     createdAt: "8 march 2024",
 //   },
 //   {
-//     imgUrl: "/assets/images/blog-1.svg",
+//     imgUrl: "/assets/images/blog-1.png",
 //     title: "Is Salesforce Outdated",
 //     description:
 //       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -57,7 +57,7 @@
 //     createdAt: "11 march 2024",
 //   },
 //   {
-//     imgUrl: "/assets/images/blog-1.svg",
+//     imgUrl: "/assets/images/blog-1.png",
 //     title: "Is Salesforce Outdated",
 //     description:
 //       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",

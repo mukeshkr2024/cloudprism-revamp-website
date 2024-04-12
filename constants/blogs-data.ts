@@ -1,6 +1,6 @@
 export const readBlogs = [
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -8,7 +8,7 @@ export const readBlogs = [
     createdAt: "10 march 2024",
   },
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -16,7 +16,7 @@ export const readBlogs = [
     createdAt: "1 march 2024",
   },
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -24,7 +24,7 @@ export const readBlogs = [
     createdAt: "4 march 2024",
   },
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -33,7 +33,7 @@ export const readBlogs = [
   },
 
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -41,7 +41,7 @@ export const readBlogs = [
     createdAt: "6 march 2024",
   },
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -49,7 +49,7 @@ export const readBlogs = [
     createdAt: "8 march 2024",
   },
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -57,7 +57,7 @@ export const readBlogs = [
     createdAt: "11 march 2024",
   },
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
@@ -97,7 +97,7 @@ export const BlogsData: BlogData[] = [
     title: "How talent leaders can help capitalize on generative AI ",
     readTime: "5-MINUTE READ",
     postDate: "10 MARCH",
-    featuredImage: "/assets/images/blog-1.svg",
+    featuredImage: "/assets/images/blog-1.png",
     imgUrl: "/assets/images/blog-1-picture-1.svg",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
@@ -147,7 +147,7 @@ export const BlogsData: BlogData[] = [
     postDate: "20 FEBRUARY",
     imgUrl: "/assets/images/blog-1-picture-1.svg",
 
-    featuredImage: "/assets/images/blog-1.svg",
+    featuredImage: "/assets/images/blog-1.png",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
     summary: [
@@ -183,7 +183,7 @@ export const BlogsData: BlogData[] = [
     postDate: "25 FEBRUARY",
     imgUrl: "/assets/images/blog-1-picture-1.svg",
 
-    featuredImage: "/assets/images/blog-1.svg",
+    featuredImage: "/assets/images/blog-1.png",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
     summary: [
@@ -217,7 +217,7 @@ export const BlogsData: BlogData[] = [
     readTime: "6-MINUTE READ",
     imgUrl: "/assets/images/blog-1-picture-1.svg",
     postDate: "28 FEBRUARY",
-    featuredImage: "/assets/images/blog-1.svg",
+    featuredImage: "/assets/images/blog-1.png",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
     summary: [
@@ -252,7 +252,7 @@ export const BlogsData: BlogData[] = [
     readTime: "7-MINUTE READ",
     postDate: "5 MARCH",
     imgUrl: "/assets/images/blog-1-picture-1.svg",
-    featuredImage: "/assets/images/blog-1.svg",
+    featuredImage: "/assets/images/blog-1.png",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
     summary: [
@@ -285,7 +285,7 @@ export const BlogsData: BlogData[] = [
     title: "How talent leaders can help capitalize on generative AI ",
     readTime: "5-MINUTE READ",
     postDate: "10 MARCH",
-    featuredImage: "/assets/images/blog-1.svg",
+    featuredImage: "/assets/images/blog-1.png",
     imgUrl: "/assets/images/blog-1-picture-1.svg",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
@@ -333,7 +333,7 @@ export const BlogsData: BlogData[] = [
     title: "How talent leaders can help capitalize on generative AI ",
     readTime: "5-MINUTE READ",
     postDate: "10 MARCH",
-    featuredImage: "/assets/images/blog-1.svg",
+    featuredImage: "/assets/images/blog-1.png",
     imgUrl: "/assets/images/blog-1-picture-1.svg",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",
@@ -381,7 +381,7 @@ export const BlogsData: BlogData[] = [
     title: "How talent leaders can help capitalize on generative AI ",
     readTime: "5-MINUTE READ",
     postDate: "10 MARCH",
-    featuredImage: "/assets/images/blog-1.svg",
+    featuredImage: "/assets/images/blog-1.png",
     imgUrl: "/assets/images/blog-1-picture-1.svg",
     intro:
       "Sustainability is top of mind for today’s travelers. And yet, travel companies face several “say-do” gaps. Here are six ways to close them.",

@@ -15,7 +15,7 @@ export default function BlogPage() {
       <section
         className="flex h-[80vh] w-full flex-col justify-center bg-cover bg-center"
         style={{
-          backgroundImage: "url('/assets/images/blog-bg-svg.svg')",
+          backgroundImage: "url('/assets/images/blog-bg-png.png')",
         }}
       >
         <div className=" flex flex-col gap-y-4 px-6 text-white lg:px-20">

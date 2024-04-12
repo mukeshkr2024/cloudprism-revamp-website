@@ -16,10 +16,16 @@ import {
 import { Input } from "../ui/input";
 
 const formSchema = z.object({
-  firstName: z.string().min(1, { message: "First Name is requires" }).max(50),
+  firstName: z.string().min(1, { message: "First Name is required" }).max(50),
   lastName: z.string().min(1, { message: "Last Name is required" }).max(50),
-  email: z.string().email({ message: "Email is invalid" }),
-  countryCode: z.string().min(1, { message: "Invalid country code" }).max(3),
+  email: z
+    .string()
+    .min(1, { message: "Email is required" })
+    .email({ message: "Email is invalid" }),
+  countryCode: z
+    .string()
+    .min(1, { message: "Country code is required" })
+    .max(3, { message: "Invalid country code" }),
   phone: z
     .string()
     .min(10, { message: "Invalid phone number" })
@@ -83,7 +89,7 @@ function ContactForm() {
                     px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>
-                  <FormMessage className="text-xs text-red-500" />
+                  <FormMessage className="pl-4 text-xs text-red-500 md:pl-6" />
                 </FormItem>
               )}
             />
@@ -102,7 +108,7 @@ function ContactForm() {
                       px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>
-                  <FormMessage className="text-xs text-red-500" />
+                  <FormMessage className="pl-4 text-xs text-red-500 md:pl-6" />
                 </FormItem>
               )}
             />
@@ -122,7 +128,7 @@ function ContactForm() {
                     px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                   />
                 </FormControl>
-                <FormMessage className="text-xs text-red-500" />
+                <FormMessage className="pl-4 text-xs text-red-500 md:pl-6" />
               </FormItem>
             )}
           />
@@ -142,7 +148,7 @@ function ContactForm() {
                     px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>
-                  <FormMessage className="text-xs text-red-500" />
+                  <FormMessage className="pl-4 text-xs text-red-500 md:pl-6" />
                 </FormItem>
               )}
             />
@@ -161,7 +167,7 @@ function ContactForm() {
                       px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                     />
                   </FormControl>{" "}
-                  <FormMessage className="text-xs text-red-500" />
+                  <FormMessage className="pl-4 text-xs text-red-500 md:pl-6" />
                 </FormItem>
               )}
             />
@@ -181,7 +187,7 @@ function ContactForm() {
                     px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                   />
                 </FormControl>
-                <FormMessage className="text-xs text-red-500" />
+                <FormMessage className="pl-4 text-xs text-red-500 md:pl-6" />
               </FormItem>
             )}
           />
@@ -200,7 +206,7 @@ function ContactForm() {
                     px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
                   />
                 </FormControl>
-                <FormMessage className="text-xs text-red-500" />
+                <FormMessage className="pl-4 text-xs text-red-500 md:pl-6" />
               </FormItem>
             )}
           />

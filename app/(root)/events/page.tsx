@@ -13,7 +13,7 @@ export default function EventsPage() {
         <section
           className="flex h-[600px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat md:h-[800px] "
           style={{
-            backgroundImage: "url('/assets/images/about-us-bg.svg')",
+            backgroundImage: "url('/assets/images/about-us-bg.png')",
           }}
         >
           <div className="flex max-w-6xl flex-col items-center justify-center gap-y-4 sm:gap-y-6 md:pb-24">

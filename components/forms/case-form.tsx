@@ -73,7 +73,7 @@ const CaseFormPopup = ({ handleClose }: Props) => {
       <div
         className="background_primary flex w-[1100px] rounded-md bg-contain bg-right-bottom bg-no-repeat"
         style={{
-          backgroundImage: "url('/assets/images/case-studies-form-bg.svg')",
+          backgroundImage: "url('/assets/images/case-studies-form-bg.png')",
         }}
       >
         <div className="relative flex-1 px-6 py-8">

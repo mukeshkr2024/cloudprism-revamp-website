@@ -9,7 +9,7 @@ import React from "react";
 export default function SaleforceMainSection() {
   return (
     <section className="relative mx-auto flex h-[600px] w-full max-w-[95rem] flex-col md:h-[800px]">
-      <div className="absolute top-[160px] z-50 w-full">
+      <div className="absolute top-[160px] z-10 w-full">
         <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-y-6 lg:mt-8 xl:mt-10">
           <h4 className="h1_bold lg:!leading-[98.46px] xl:!text-7xl">
             Simplify Your Operations,
@@ -35,7 +35,7 @@ export default function SaleforceMainSection() {
           alt="Salesforce page"
           width={900}
           height={400}
-          className="w-full"
+          className="w-full" // TODO:  add png
         />
       </div>
     </section>

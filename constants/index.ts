@@ -330,28 +330,28 @@ export const whyStandOut = [
 
 export const readOurBlogs = [
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
   },
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
   },
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
     read_time: "2-Minute ",
   },
   {
-    imgUrl: "/assets/images/blog-1.svg",
+    imgUrl: "/assets/images/blog-1.png",
     title: "Is Salesforce Outdated",
     description:
       "SalesForce Implementation- Don't get lost in the sea of CRM, get your business onboard with Salesforce ",
