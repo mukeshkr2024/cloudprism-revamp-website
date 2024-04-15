@@ -23,7 +23,7 @@ export default function ClientCard({ description, name, profilePic }: Props) {
       <div className="flex items-center gap-4">
         <Image
           src={profilePic}
-          alt={name}
+          alt={"IT Consultancy & Solutions"}
           width={60}
           height={60}
           className="size-[50px] rounded-full"

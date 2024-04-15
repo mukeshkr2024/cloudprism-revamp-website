@@ -4,7 +4,14 @@ import JobOpeningCard from "@/components/card/opening-card";
 import CustomButton from "@/components/shared/custom-button";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import { jobOpenings } from "@/constants";
+import { Metadata } from "next";
 import { useRef } from "react";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://cloudprism.in/careers",
+  },
+};
 
 function CarrierPage() {
   const hrRef = useRef<HTMLDivElement | null>(null);

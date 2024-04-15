@@ -8,6 +8,7 @@ interface Props {
   imgUrl: string;
   className: string;
   imagSize?: string;
+  alt?: string;
 }
 
 export default function SectionCard({
@@ -16,6 +17,7 @@ export default function SectionCard({
   description2,
   imgUrl,
   className,
+  alt,
   imagSize,
 }: Props) {
   return (
@@ -39,7 +41,7 @@ export default function SectionCard({
 
         <Image
           src={imgUrl}
-          alt={title}
+          alt={alt || "IT Consultancy & Solutions"}
           width={570}
           height={620}
           className={imagSize}

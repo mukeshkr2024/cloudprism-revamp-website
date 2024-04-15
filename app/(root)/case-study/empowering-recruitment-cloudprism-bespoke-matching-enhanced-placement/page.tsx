@@ -44,11 +44,11 @@ const CaseStudy1 = () => {
                       CloudPrism & Selise
                     </h1>
                     <p className="blog_paragraph">
-                      Selise is a global consulting company providing
-                      consultation to various companies in the world related to
-                      digital transformation.The company’s wide range of
-                      services include strategic consulting,process engineering,
-                      platform development.
+                      Selise is an international consulting firm that offers
+                      advice on digital transformation to several businesses
+                      worldwide.The firm offers a wide range of services, such
+                      as platform development,process engineering, and strategic
+                      consulting.
                     </p>
                   </div>
                   <div className="flex flex-col gap-y-4">

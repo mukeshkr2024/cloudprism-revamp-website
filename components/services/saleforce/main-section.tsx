@@ -32,7 +32,7 @@ export default function SaleforceMainSection() {
       <div className="absolute bottom-0 right-0">
         <Image
           src="/assets/images/salesforce-bg.svg"
-          alt="Salesforce page"
+          alt="Salesforce Consultation and Implementation Partner"
           width={900}
           height={400}
           className="w-full" // TODO:  add png

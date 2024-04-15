@@ -4,9 +4,16 @@ import ReadBlogs from "@/components/blog/read-blogs";
 import BlogFormPopup from "@/components/forms/blog-form-dialog";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import { sortBlogs } from "@/utils/cn";
+import { Metadata } from "next";
 
 const sortedBlogs: Blog[] = sortBlogs(allBlogs);
 const latestBlogs: Blog[] = sortedBlogs?.slice(0, 2);
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://cloudprism.in/blogs",
+  },
+};
 
 export default function BlogPage() {
   return (

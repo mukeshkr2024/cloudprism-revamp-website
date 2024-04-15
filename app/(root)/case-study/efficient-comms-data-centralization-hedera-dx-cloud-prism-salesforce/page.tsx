@@ -46,12 +46,12 @@ const CaseStudy1 = () => {
                       Implements Cloud Prism on Salesforce
                     </h1>
                     <p className="blog_paragraph">
-                      Hedera Dx is dedicated to transforming oncology by
-                      providing cutting-edge liquid biopsy solutions that
-                      improve patient experiences, outcomes and journeys, as
-                      well as healthcare professional experiences, while
-                      facilitating the prescription, discovery and development
-                      of the next breakthrough precision oncology therapies
+                      In addition to offering state-of-the-art liquid biopsy
+                      solutions that enhance patient experiences, outcomes, and
+                      journeys as well as those of healthcare professionals,
+                      Hedera Dx is committed to revolutionizing oncology by
+                      making it easier to prescribe, discover, and develop the
+                      next revolutionary precision oncology therapies.
                     </p>
                   </div>
                   <div className="flex flex-col gap-y-4">

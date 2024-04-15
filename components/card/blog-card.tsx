@@ -54,7 +54,7 @@ export default function BlogCard({
     >
       <Image
         height={154}
-        alt={title}
+        alt={"IT Consultancy & Solutions"}
         src={image}
         width={279}
         className="rounded-t-lg"

@@ -2,9 +2,16 @@ import EventCard from "@/components/card/event-card";
 import CustomButton from "@/components/shared/custom-button";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import { events } from "@/constants/event-data";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://cloudprism.in/events",
+  },
+};
 
 export default function EventsPage() {
   return (

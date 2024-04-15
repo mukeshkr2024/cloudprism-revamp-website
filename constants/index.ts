@@ -302,7 +302,7 @@ export const certifiedDevelopers = [
 
 export const whyStandOut = [
   {
-    title: "Discover Unmatched Talent",
+    title: "Explore our skilled teams",
     description:
       "Our pride lies in assembling a top-notch team of skilled professionals committed to delivering exceptional results.",
   },

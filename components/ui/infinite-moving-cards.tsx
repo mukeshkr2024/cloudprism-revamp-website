@@ -87,7 +87,7 @@ export const InfiniteMovingCards = ({
           <li className="w-full" key={item.id}>
             <Image
               src={item.imgUrl}
-              alt="Salesforce Partner"
+              alt="IT Consultancy & Solutions"
               height={130}
               width={120}
               className="size-24 md:size-28 xl:size-32"

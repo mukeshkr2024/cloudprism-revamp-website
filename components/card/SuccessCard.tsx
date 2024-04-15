@@ -68,7 +68,7 @@ export const SuccessCard = ({
         >
           <Image
             src="/assets/icons/arrow-up.svg"
-            alt="Arrow up"
+            alt="IT Consultancy & Solutions"
             width={110}
             height={110}
           />
@@ -117,7 +117,7 @@ export const SuccessCard = ({
               </Link>
               <Image
                 src="/assets/icons/arrow-up.svg"
-                alt="Arrow up"
+                alt="IT Consultancy & Solutions"
                 width={90}
                 height={90}
                 className="mb-[-50px]"

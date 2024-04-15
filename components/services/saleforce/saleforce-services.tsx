@@ -28,7 +28,7 @@ export default function SalesForceServices() {
         </h3>
         <Image
           src="/assets/icons/arrow-down.png"
-          alt="Arrow-down"
+          alt="Salesforce Consultation and Implementation Partner"
           height={80}
           width={80}
           style={{

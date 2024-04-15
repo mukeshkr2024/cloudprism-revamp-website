@@ -6,10 +6,9 @@ import { salesforceBuisnessData, salesforceBuisnessPoints } from "@/constants";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "CloudPrism Solutions: Your Salesforce Consultation & Implementation Expert",
-  description:
-    "Explore growth potential with CloudPrism Solutions. Expert Salesforce consultation & implementation services empower your business for success.",
+  alternates: {
+    canonical: "https://cloudprism.in/salesforce-services",
+  },
 };
 
 const SalesforcePage = () => {

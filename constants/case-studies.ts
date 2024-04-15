@@ -3,7 +3,7 @@ export const recentCaseStudies = [
     id: 1,
     title: "Simplified Customer Experience and Email Marketing Strategy",
     description:
-      "Cambria, a prominent manufacturer in the American natural quartz countertops and surface industry, encountered obstacles in merging cutting-edge designs with enduring durability to ensure sophistication and functionality. They aimed to simplify their marketing efforts and create a seamless customer experience. That's when they turned to CloudPrism, a trusted Salesforce implementation and consultant partner, for assistance.",
+      "Cambria, a well-known producer in the natural quartz countertop and surface industries in the United States, faced challenges when attempting to combine innovative designs with long-lasting durability in order to guarantee elegance and usefulness. Their goals were to reduce their marketing initiatives and provide a flawless client journey. At that point, they looked for help from CloudPrism, a reputable Salesforce implementation and consulting partner.",
     imageUrl: "/assets/images/success-story-1.png",
     slug: "/case-study/simplified-customer-experience-and-email-marketing-strategy",
   },
@@ -12,7 +12,7 @@ export const recentCaseStudies = [
     title:
       "Unleashing the Potential of PayPal-Salesforce Integration for E-commerce",
     description:
-      "The company operates as a payment processor for online vendors,auction sites and many other commercial users, for which it charges a fee.they want salesforce integration for e-commerce business.",
+      "The business charges a fee for its services as a payment processor to several commercial users, including auction sites and online retailers.They want e-commerce businesses to integrate with Salesforce.",
     imageUrl: "/assets/images/success-story-2.png",
     slug: "/case-study/unleashing-the-potential-of-paypal-salesforce-integration-for-e-commerce",
   },
@@ -21,7 +21,7 @@ export const recentCaseStudies = [
     title:
       "Efficient Communication and Data Centralization: Hedera Dx Implements Cloud Prism on Salesforce      ",
     description:
-      "Hedera Dx is dedicated to transforming oncology by providing cutting-edge liquid biopsy solutions that improve patient experiences, outcomes and journeys, as well as healthcare professional experiences, while facilitating the prescription, discovery and development of the next breakthrough precision oncology therapies",
+      "In addition to offering state-of-the-art liquid biopsy solutions that enhance patient experiences, outcomes, and journeys as well as those of healthcare professionals, Hedera Dx is committed to revolutionizing oncology by making it easier to prescribe, discover, and develop the next revolutionary precision oncology therapies.",
     imageUrl: "/assets/images/success-story-3.png",
     slug: "/case-study/efficient-comms-data-centralization-hedera-dx-cloud-prism-salesforce",
   },
@@ -30,7 +30,7 @@ export const recentCaseStudies = [
     title:
       "Empowering Recruitment: Cloudprism Introduces Bespoke Matching Tool for Enhanced Candidate Placement    ",
     description:
-      "Selise is a global consulting company providing consultation to various companies in the world related to digital transformation.The company’s wide range of services include strategic consulting,process engineering, platform development.",
+      "Selise is an international consulting firm that offers advice on digital transformation to several businesses worldwide.The firm offers a wide range of services, such as platform development,process engineering, and strategic consulting.",
     imageUrl: "/assets/images/success-story-4.png",
     slug: "/case-study/empowering-recruitment-cloudprism-bespoke-matching-enhanced-placement",
   },

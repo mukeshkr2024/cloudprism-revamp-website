@@ -25,7 +25,10 @@ const formSchema = z.object({
   countryCode: z
     .string()
     .min(1, { message: "Country code is required" })
-    .max(3, { message: "Invalid country code" }),
+    .max(3, { message: "Invalid country code" })
+    .refine((value) => /^\d+$/.test(value), {
+      message: "Invalid country code",
+    }),
   phone: z
     .string()
     .min(10, { message: "Invalid phone number" })

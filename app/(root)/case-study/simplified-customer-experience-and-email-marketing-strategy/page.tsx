@@ -44,14 +44,15 @@ const CaseStudy1 = () => {
                       Strategy
                     </h1>
                     <p className="blog_paragraph">
-                      Cambria, a prominent manufacturer in the American natural
-                      quartz countertops and surface industry, encountered
-                      obstacles in merging cutting-edge designs with enduring
-                      durability to ensure sophistication and functionality.
-                      They aimed to simplify their marketing efforts and create
-                      a seamless customer experience. That&apos;s when they
-                      turned to CloudPrism, a trusted Salesforce implementation
-                      and consultant partner, for assistance.
+                      Cambria, a well-known producer in the natural quartz
+                      countertop and surface industries in the United States,
+                      faced challenges when attempting to combine innovative
+                      designs with long-lasting durability in order to guarantee
+                      elegance and usefulness. Their goals were to reduce their
+                      marketing initiatives and provide a flawless client
+                      journey. At that point, they looked for help from
+                      CloudPrism, a reputable Salesforce implementation and
+                      consulting partner.
                     </p>
                   </div>
                   <div className="flex w-full items-center justify-center">

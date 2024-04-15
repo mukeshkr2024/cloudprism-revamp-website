@@ -1,7 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "CloudPrism Solutions Company Terms and Conditions",
+  description:
+    "Maximizing the Power of Complete IT Consultation and Solutions for Your Success",
+  alternates: {
+    canonical: "https://cloudprism.in/terms-and-conditions",
+  },
+};
 
 const TermsPage = () => {
   return (

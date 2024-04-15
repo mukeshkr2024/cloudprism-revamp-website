@@ -32,14 +32,19 @@ export default function ServiceCard({
         <div className="h-24 w-32 rounded-[19px]">
           <div className="absolute left-0 top-0  ">
             <Image
-              alt="svg"
+              alt="IT Consultancy & Solutions"
               src={svgUrl}
               width={194}
               height={53}
               className={cn(isHovered ? "opacity-100" : "opacity-70")}
             />
           </div>
-          <Image src={imgUrl} alt={title} width={50} height={50} />
+          <Image
+            src={imgUrl}
+            alt={"IT Consultancy & Solutions"}
+            width={50}
+            height={50}
+          />
         </div>
         <h4 className="text-[19px] font-bold text-white">{title}</h4>
         <p className="text-[14px] text-[#777777]">{description}</p>

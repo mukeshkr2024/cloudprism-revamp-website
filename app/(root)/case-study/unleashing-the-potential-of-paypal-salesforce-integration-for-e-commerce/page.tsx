@@ -46,10 +46,10 @@ const CaseStudy1 = () => {
                       for E-commerce
                     </h1>
                     <p className="blog_paragraph">
-                      The company operates as a payment processor for online
-                      vendors,auction sites and many other commercial users, for
-                      which it charges a fee.they want salesforce integration
-                      for e-commerce business.
+                      The business charges a fee for its services as a payment
+                      processor to several commercial users, including auction
+                      sites and online retailers.They want e-commerce businesses
+                      to integrate with Salesforce.
                     </p>
                   </div>
                   <div className="flex flex-col gap-y-4">

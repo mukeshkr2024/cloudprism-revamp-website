@@ -30,11 +30,16 @@ export default function TeamCard({
           src="/assets/icons/linkdein-dark.svg"
           width={20}
           height={20}
-          alt="linkdein"
+          alt=" IT Consultancy & Solutions"
         />
       </Link>
       <div className="flex size-full flex-col items-center justify-center gap-1.5">
-        <Image src={profilePic} alt={name} width={103} height={103} />
+        <Image
+          src={profilePic}
+          alt={" IT Consultancy & Solutions"}
+          width={103}
+          height={103}
+        />
         <div className="flex flex-col gap-[2px] text-center">
           <span className="text-lg font-semibold text-white ">{name}</span>
           <p className="text-sm font-light text-[#C6C6C6] sm:text-base">

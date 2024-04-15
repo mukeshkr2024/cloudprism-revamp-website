@@ -10,10 +10,12 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title:
-    "CloudPrism Solutions: Your Trusted Partner for IT Consultation and Solutions",
+  title: "CloudPrism Solutions: Trusted IT Consultation & Solutions Partner",
   description:
     "Discover CloudPrism Solutions, your trusted partner for IT consultation & solutions. Expertise crafted for your business success",
+  alternates: {
+    canonical: "https://cloudprism.in/about-us",
+  },
 };
 
 export default function AboutPage() {

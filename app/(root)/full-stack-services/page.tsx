@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     "CloudPrism Solutions: Comprehensive Software Development & Consultation",
   description:
     "CloudPrism Solutions: Your top choice for expert software development and consultation services.Transform your projects with our innovative solutions",
+  alternates: {
+    canonical: "https://cloudprism.in/full-stack-services",
+  },
 };
 
 function FullStackPage() {

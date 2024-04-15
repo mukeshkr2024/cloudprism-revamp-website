@@ -1,5 +1,12 @@
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://cloudprism.in/privacy-policy",
+  },
+};
 
 const PrivacyPage = () => {
   return (

@@ -93,7 +93,12 @@ const DemoFormPopup: React.FC = () => {
               className="absolute right-4 top-4 cursor-pointer rounded-full lg:hidden"
               onClick={() => setShowPopup(false)}
             >
-              <Image src="/assets/icons/x.svg" alt="x" width={15} height={15} />
+              <Image
+                src="/assets/icons/x.svg"
+                alt="IT Consultancy & Solutions"
+                width={15}
+                height={15}
+              />
             </div>
 
             <div className="mt-4 flex w-full flex-col text-white">
@@ -223,7 +228,12 @@ const DemoFormPopup: React.FC = () => {
             className="absolute right-4 top-4 cursor-pointer rounded-full"
             onClick={() => setShowPopup(false)}
           >
-            <Image src="/assets/icons/x.svg" alt="x" width={22} height={22} />
+            <Image
+              src="/assets/icons/x.svg"
+              alt="IT Consultancy & Solutions"
+              width={22}
+              height={22}
+            />
           </div>
 
           <div

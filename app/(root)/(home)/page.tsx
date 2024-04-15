@@ -29,9 +29,13 @@ const readBlogs: Blog[] = sortedBlogs.slice(0, 4);
 const recentStudies = recentCaseStudies.slice(0, 4);
 
 export const metadata: Metadata = {
-  title: "CloudPrism: IT Consultation & Solutions for Business Growth",
+  title:
+    "CloudPrism:  Expert in IT Consulting and Solutions for Business Growth.",
   description:
     "Explore tailored IT consultation & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
+  alternates: {
+    canonical: "https://cloudprism.in/",
+  },
 };
 
 export default function Home() {
@@ -90,7 +94,7 @@ export default function Home() {
                 >
                   <Image
                     src={item.imgUrl}
-                    alt={item.title}
+                    alt={"IT Consultancy & Solutions"}
                     width={70}
                     height={70}
                     className=" sm:size-[85px] lg:size-24"
@@ -111,7 +115,7 @@ export default function Home() {
                 <div key={item.id}>
                   <Image
                     src={item.imgUrl}
-                    alt={item.imgUrl}
+                    alt={"IT Consultancy & Solutions"}
                     width={120}
                     height={120}
                     className="size-20 sm:size-24 md:size-28 xl:size-[120px]"

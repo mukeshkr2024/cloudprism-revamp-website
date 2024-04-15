@@ -4,7 +4,14 @@ import ConnectToUs from "@/components/shared/connect-to-us";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
 import { salesForcePartners } from "@/constants";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://cloudprism.in/case-studies",
+  },
+};
 
 export default function CaseStudies() {
   return (

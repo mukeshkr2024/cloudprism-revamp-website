@@ -5,11 +5,23 @@ import BlogFormPopup from "@/components/forms/blog-form-dialog";
 import RenderMdx from "@/components/render-mdx";
 import ConnectToUs from "@/components/shared/connect-to-us";
 import { format } from "date-fns";
+import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
 interface Params {
   params: {
     slug: string;
+  };
+}
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
+  return {
+    title: blog?.title,
+    description: blog?.desc,
+    alternates: {
+      canonical: `https://cloudprism.in/blog/${params.slug}`,
+    },
   };
 }
 

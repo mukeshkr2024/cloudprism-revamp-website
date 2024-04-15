@@ -28,7 +28,7 @@ export default function OurServices() {
         </h3>
         <Image
           src="/assets/icons/arrow-down.png"
-          alt="Arrow-down"
+          alt="IT Consultancy & Solutions"
           height={80}
           width={80}
           style={{ transform: `rotate(${scrollRotation}deg)` }}

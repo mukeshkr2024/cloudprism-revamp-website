@@ -19,6 +19,13 @@ import Link from "next/link";
 import { socialLinks } from "@/constants";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import { submitCtaForm } from "@/actions/form.actions";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://cloudprism.in/contact-us",
+  },
+};
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is required" }).max(50),

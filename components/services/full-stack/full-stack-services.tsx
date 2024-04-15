@@ -29,7 +29,7 @@ export default function FullStackServices() {
         </h3>
         <Image
           src="/assets/icons/arrow-down.png"
-          alt="Arrow-down"
+          alt="Software Development and Solutions"
           height={60}
           width={60}
           style={{
@@ -47,6 +47,7 @@ export default function FullStackServices() {
           "
           imagSize="w-[730px] mt-[-60px] flex items-center justify-center  mr-[-60px]"
           className="flex-col-reverse lg:flex-row-reverse"
+          alt="Software Development and Solutions"
         />
 
         <SectionCard
@@ -56,6 +57,7 @@ export default function FullStackServices() {
           "
           imagSize="w-[770px] mt-[-60px] flex items-center justify-center  mr-[-40px]"
           className="flex-col-reverse lg:flex-row"
+          alt="Software Development and Solutions"
         />
 
         <SectionCard
@@ -66,6 +68,7 @@ export default function FullStackServices() {
       "
           imagSize="w-[730px] mt-[-60px] flex items-center justify-center  mr-[-60px]"
           className="flex-col-reverse lg:flex-row-reverse"
+          alt="Software Development and Solutions"
         />
       </div>
     </div>
