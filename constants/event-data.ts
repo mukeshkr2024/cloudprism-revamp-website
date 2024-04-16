@@ -75,7 +75,7 @@ export const events = [
     description:
       "As proud silver sponsors of India Dreamin '23, CloudPrism had the honor of being part of this landmark event, which took place in Ahmedabad on May 20th, 2023. Our sponsorship underscored our unwavering commitment to the Salesforce community and our dedication to fostering innovation and collaboration within it.",
     read_time: "2-Minute ",
-    slug: "cloudprism-solutions-india-dreamin-2023",
+    slug: "india-dreamin-2023",
   },
   {
     id: 2,
@@ -85,7 +85,7 @@ export const events = [
     description:
       "CloudPrism had the privilege of participating in Techspark 2024, hosted by YourStory,held in the vibrant city of Mumbai. At the heart of this event lay an extraordinary confluence of brilliant minds from the startup, corporate, government, and investor communities, all converging to catalyze change and fuel India's transformation.",
     read_time: "2-Minute ",
-    slug: "techspark-2024-cloudprism-stands-out-in-mumbai-with-innovation-and-collaboration",
+    slug: "techsparks-2024",
   },
   {
     id: 3,
@@ -95,35 +95,35 @@ export const events = [
     description:
       " CloudPrism had the privilege of attending the MC2 - Hyderabad Edition event, where we proudly served as a silver sponsor. This event was a beacon for knowledge, synergy, and social impact within the marketing cloud sphere.",
     read_time: "2-Minute ",
-    slug: "mc2-hyderabad-edition-cloudprism-sets-the-stage-as-silver-sponsor",
+    slug: "mc-square-2023",
   },
   {
-    id: 5,
+    id: 4,
     imgUrl: "/assets/images/events/feature-02.jpg",
     title:
       "CloudPrism Takes a Stand for Diversity: Silver Sponsor at Women in Tech (WIT) Summit",
     description:
       "CloudPrism was proud to be a Silver Sponsor at the Women in Tech (WIT) Summit, an inspiring event dedicated to celebrating the achievements of women in technology and fostering gender diversity in the industry. Founded by Neetu Bansal and Kyati Mehta, this summit provided a platform for networking, learning, and growth.",
     read_time: "2-Minute ",
-    slug: "cloudprism-takes-a-stand-for-diversity-silver-sponsor-at-women-in-tech-wit-summit",
+    slug: "wit-summit-jaipur",
   },
   {
-    id: 4,
+    id: 5,
     imgUrl: "/assets/images/events/mule-3.jpg",
     title:
       "Glimpses of Glory: CloudPrism's Silver Sponsorship Triumphs at Mule Dreamin, Delhi!",
     description:
       "The CloudPrism team had the privilege of attending the Mule Dreamin event in Delhi, where we proudly served as the silver sponsor. This event was a beacon for knowledge, collaboration, and community engagement within the MuleSoft and Salesforce ecosystem.",
     read_time: "2-Minute ",
-    slug: "glimpses-of-glory-cloudprisms-silver-sponsorship-triumphs-at-mule-dreamin-delhi",
+    slug: "mule-dreamin-2023",
   },
   {
-    id: 5,
+    id: 6,
     imgUrl: "/assets/images/events/youth-1.jpg",
     title: "Youth DreamIn - Salesforce Meet-up Celebration",
     description:
       "Team CloudPrism Solutions proudly organized a vibrant Salesforce Meet-up on the auspicious occasion of Youth Day in Patna, Bihar. Our aim was to celebrate the youthful spirit and harness the enthusiasm of the young minds towards the realm of technology.",
     read_time: "1-Minute ",
-    slug: "youth-dreamin-salesforce-meetup-celebration",
+    slug: "youth-dreamin-bihar-2024",
   },
 ];

@@ -9,7 +9,7 @@ const hankenGrotesk = HankenGrotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Cloudprism",
+  title: "IT Consulting & Solutions for Business - CloudPrism Solutions.",
   description:
     "Explore tailored IT consultation & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
   icons: {

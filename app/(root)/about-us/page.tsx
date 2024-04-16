@@ -10,14 +10,14 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "CloudPrism Solutions: Trusted IT Consultation & Solutions Partner",
+  title: "IT Consulting & Solutions Partner- CloudPrism Solutions.",
   description:
     "Discover CloudPrism Solutions, your trusted partner for IT consultation & solutions. Expertise crafted for your business success",
   alternates: {
     canonical: "https://cloudprism.in/about-us",
   },
   openGraph: {
-    title: "CloudPrism Solutions: Trusted IT Consultation & Solutions Partner",
+    title: "IT Consulting & Solutions Partner- CloudPrism Solutions.",
     siteName: "Cloudprism",
     description:
       "Discover CloudPrism Solutions, your trusted partner for IT consultation & solutions. Expertise crafted for your business success",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CloudPrism Solutions: Trusted IT Consultation & Solutions Partner",
+    title: "IT Consulting & Solutions Partner- CloudPrism Solutions.",
     description:
       "Discover CloudPrism Solutions, your trusted partner for IT consultation & solutions. Expertise crafted for your business success",
     site: "@_CloudPrism_",
