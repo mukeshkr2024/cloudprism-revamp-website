@@ -30,11 +30,29 @@ const recentStudies = recentCaseStudies.slice(0, 4);
 
 export const metadata: Metadata = {
   title:
-    "CloudPrism:  Expert in IT Consulting and Solutions for Business Growth.",
+    "CloudPrism: Expert in IT Consulting and Solutions for Business Growth.",
   description:
     "Explore tailored IT consultation & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
   alternates: {
-    canonical: "https://cloudprism.in/",
+    canonical: "https://cloudprism.in",
+  },
+  openGraph: {
+    title:
+      "CloudPrism: Expert in IT Consulting and Solutions for Business Growth.",
+    description:
+      "Explore tailored IT consultation & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
+    url: `https://cloudprism.in`,
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "website",
+    images: "https://cloudprism.in/favicon.ico",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "CloudPrism: Expert in IT Consulting and Solutions for Business Growth.",
+    description:
+      "Explore tailored IT consultation & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
   },
 };
 

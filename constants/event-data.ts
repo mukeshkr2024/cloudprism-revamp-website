@@ -75,7 +75,7 @@ export const events = [
     description:
       "As proud silver sponsors of India Dreamin '23, CloudPrism had the honor of being part of this landmark event, which took place in Ahmedabad on May 20th, 2023. Our sponsorship underscored our unwavering commitment to the Salesforce community and our dedication to fostering innovation and collaboration within it.",
     read_time: "2-Minute ",
-    slug: "cloudprism-solutions-proudly-supports-india-dreamin-2023-as-a-silver-sponsor-driving-innovation-forward",
+    slug: "cloudprism-solutions-india-dreamin-2023",
   },
   {
     id: 2,

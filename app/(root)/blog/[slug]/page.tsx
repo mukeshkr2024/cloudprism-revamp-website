@@ -22,6 +22,24 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
     alternates: {
       canonical: `https://cloudprism.in/blog/${params.slug}`,
     },
+    openGraph: {
+      title: blog?.title,
+      description: blog?.description,
+      url: `https://cloudprism.in/blog/${params.slug}`,
+      siteName: "Cloudprism",
+      locale: "en_US",
+      type: "article",
+      images: blog?.image,
+      publishedTime: blog?.publishedAt,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: blog?.title,
+      description: blog?.description,
+      images: blog?.image,
+      site: "@_CloudPrism_",
+    },
+    robots: "index, follow",
   };
 }
 

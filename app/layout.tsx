@@ -10,7 +10,8 @@ const hankenGrotesk = HankenGrotesk({
 
 export const metadata: Metadata = {
   title: "Cloudprism",
-  description: "Cloudprism website",
+  description:
+    "Explore tailored IT consultation & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
   icons: {
     icon: ["/favicon.ico?v=1"],
     apple: ["/apple-touch-icon.png?v=4"],

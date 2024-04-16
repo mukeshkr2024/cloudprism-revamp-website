@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://cloudprism.in/blogs",
   },
+  openGraph: {},
+  twitter: {
+    site: "@_CloudPrism_",
+  },
 };
 
 export default function BlogPage() {

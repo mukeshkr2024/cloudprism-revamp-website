@@ -16,6 +16,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://cloudprism.in/about-us",
   },
+  openGraph: {
+    title: "CloudPrism Solutions: Trusted IT Consultation & Solutions Partner",
+    siteName: "Cloudprism",
+    description:
+      "Discover CloudPrism Solutions, your trusted partner for IT consultation & solutions. Expertise crafted for your business success",
+    url: "https://cloudprism.in/about-us",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CloudPrism Solutions: Trusted IT Consultation & Solutions Partner",
+    description:
+      "Discover CloudPrism Solutions, your trusted partner for IT consultation & solutions. Expertise crafted for your business success",
+    site: "@_CloudPrism_",
+  },
 };
 
 export default function AboutPage() {

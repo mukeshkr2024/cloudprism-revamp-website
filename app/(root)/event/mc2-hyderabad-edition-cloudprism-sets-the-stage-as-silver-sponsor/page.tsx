@@ -61,8 +61,8 @@ const EventDetailsPage = () => {
               <div className="mt-8 flex flex-col gap-y-6">
                 <div className="flex flex-col gap-y-4">
                   <h1 className="h2_semibold !font-semibold lg:!text-4xl">
-                    Techspark 2024: CloudPrism Stands Out in Mumbai with
-                    Innovation and Collaboration!
+                    MC2 - Hyderabad Edition: CloudPrism Sets the Stage as Silver
+                    Sponsor!
                   </h1>
                   <p className="blog_paragraph">
                     <Link
@@ -72,23 +72,21 @@ const EventDetailsPage = () => {
                     >
                       CloudPrism{" "}
                     </Link>
-                    had the privilege of participating in{" "}
-                    <Link
-                      target="_blank"
-                      href="https://yourstory.com/techsparks2024"
-                      className="text-xl font-semibold text-white"
-                    >
-                      Techspark 2024{" "}
-                    </Link>
-                    , hosted by YourStory,held in the vibrant city of Mumbai. At
-                    the heart of this event lay an extraordinary confluence of
-                    brilliant minds from the startup, corporate, government, and
-                    investor communities, all converging to catalyze change and
-                    fuel India&apos;s transformation.
+                    had the privilege of attending the MC2 - Hyderabad Edition
+                    event, where we proudly served as a silver sponsor. This
+                    event was a beacon for knowledge, synergy, and social impact
+                    within the marketing cloud sphere.
                   </p>
                   <div className="mx-auto max-w-7xl py-8">
                     <Gallery photos={images} />
                   </div>
+
+                  <p className="blog_paragraph">
+                    had the privilege of attending the MC2 - Hyderabad Edition
+                    event, where we proudly served as a silver sponsor. This
+                    event was a beacon for knowledge, synergy, and social impact
+                    within the marketing cloud sphere.
+                  </p>
                 </div>
 
                 {/* <Slideshow images={images} length={3} /> */}
@@ -100,46 +98,33 @@ const EventDetailsPage = () => {
 
                   <ol className="blog_paragraph flex flex-col gap-y-4 pl-12">
                     <li>
-                      <span className="text-xl font-semibold text-white">
-                        {" "}
-                        1. Inspiring Speakers:
-                      </span>{" "}
-                      Engaged with inspiring speakers and thought leaders who
-                      shared invaluable insights and experiences about startups
-                      and entrepreneurship.
+                      1. Gaining comprehensive insights into the nature and
+                      functionality of Salesforce Marketing Cloud.
                     </li>
                     <li>
-                      <span className="text-xl font-semibold text-white">
-                        {" "}
-                        2. Networking Opportunities:
-                      </span>{" "}
-                      Seized the chance to connect with a diverse range of
-                      individuals, including founders and co-founders, building
-                      a robust network of contacts within the industry.
+                      2.Discovering effective techniques for leveraging
+                      Salesforce Marketing Cloud capabilities.
                     </li>
                     <li>
-                      <span className="text-xl font-semibold text-white">
-                        {" "}
-                        3. Learning and Growth:
-                      </span>{" "}
-                      Techspark provided a platform for learning and growth,
-                      allowing us to discover new ideas, technologies, and
-                      perspectives.
+                      3.Exploring how these technologies can assist businesses
+                      in overcoming marketing challenges.
                     </li>
                     <li>
-                      <span className="text-xl font-semibold text-white">
-                        {" "}
-                        4. Discussion on Salesforce Empowerment:{" "}
-                      </span>{" "}
-                      Had insightful discussions about how Salesforce can
-                      empower businesses to grow and thrive in today&apos;s
-                      competitive landscape.
+                      4.Uncovering strategies for building successful careers in
+                      marketing technology.
                     </li>
                   </ol>
 
                   <p className="blog_paragraph">
-                    As proud sponsors, CloudPrism achieved significant
-                    milestones during the event:
+                    As proud sponsors,{" "}
+                    <Link
+                      target="_blank"
+                      href="https://www.cloudprism.in"
+                      className="text-xl font-semibold text-white"
+                    >
+                      CloudPrism{" "}
+                    </Link>{" "}
+                    achieved significant milestones during the event:
                   </p>
 
                   <ol className="blog_paragraph flex flex-col gap-y-4 pl-12">

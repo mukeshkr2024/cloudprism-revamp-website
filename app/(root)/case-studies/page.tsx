@@ -11,6 +11,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://cloudprism.in/case-studies",
   },
+  openGraph: {
+    url: `https://cloudprism.in/blog/case-studies`,
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@_CloudPrism_",
+  },
 };
 
 export default function CaseStudies() {
