@@ -664,7 +664,7 @@ export const jobOpenings = [
     location: "Pune",
     description:
       "Join our team as a frontend developer and work on cutting-edge projects.",
-    linkdeinUrl: "https://www.linkedin.com/",
+    linkdeinUrl: "https://www.linkedin.com/company/cloudprism-solutions/jobs/",
   },
   {
     id: 2,
@@ -674,7 +674,7 @@ export const jobOpenings = [
     location: "Pune",
     description:
       "We're looking for an experienced data scientist to join our data analytics team.",
-    linkdeinUrl: "https://www.linkedin.com/",
+    linkdeinUrl: "https://www.linkedin.com/company/cloudprism-solutions/jobs/",
   },
   {
     id: 3,
@@ -684,7 +684,7 @@ export const jobOpenings = [
     location: "Patna",
     description:
       "Seeking a talented product manager to lead our product development efforts.",
-    linkdeinUrl: "https://www.linkedin.com/",
+    linkdeinUrl: "https://www.linkedin.com/company/cloudprism-solutions/jobs/",
   },
   {
     id: 4,
@@ -694,7 +694,7 @@ export const jobOpenings = [
     location: "Pune",
     description:
       "Join our backend development team to build scalable and efficient server-side systems.",
-    linkdeinUrl: "https://www.linkedin.com/",
+    linkdeinUrl: "https://www.linkedin.com/company/cloudprism-solutions/jobs/",
   },
   {
     id: 5,
@@ -704,7 +704,7 @@ export const jobOpenings = [
     location: "Pune",
     description:
       "Looking for a creative UX designer to enhance user experience across our platforms.",
-    linkdeinUrl: "https://www.linkedin.com/",
+    linkdeinUrl: "https://www.linkedin.com/company/cloudprism-solutions/jobs/",
   },
   {
     id: 6,
@@ -714,6 +714,6 @@ export const jobOpenings = [
     location: "Patna",
     description:
       "Join our engineering team to develop innovative software solutions for our clients.",
-    linkdeinUrl: "https://www.linkedin.com/",
+    linkdeinUrl: "https://www.linkedin.com/company/cloudprism-solutions/jobs/",
   },
 ];

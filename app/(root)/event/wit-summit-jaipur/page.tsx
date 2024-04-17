@@ -1,11 +1,10 @@
-"use client";
-
+import { GalleryView } from "@/components/Gallery";
 import { TracingBeam } from "@/components/blog/tracing-beam";
 // import EventRightSidebar from "@/components/event-sidebar";
 import ConnectToUs from "@/components/shared/connect-to-us";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
-import Gallery from "react-photo-gallery";
 
 const images = [
   {
@@ -39,6 +38,31 @@ const images = [
     height: 3,
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Women in Tech (WIT) Summit 2023",
+  description:
+    "CloudPrism was proud to be a Silver Sponsor at the Women in Tech (WIT) Summit organized at Jaipur.",
+  alternates: {
+    canonical: "https://cloudprism.in/event/wit-summit-jaipur",
+  },
+  openGraph: {
+    title: "Women in Tech (WIT) Summit 2023",
+    description:
+      "CloudPrism was proud to be a Silver Sponsor at the Women in Tech (WIT) Summit organized at Jaipur.",
+    url: "https://cloudprism.in/event/wit-summit-jaipur",
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    title: "Women in Tech (WIT) Summit 2023",
+    card: "summary_large_image",
+    site: "@_CloudPrism_",
+    description:
+      "CloudPrism was proud to be a Silver Sponsor at the Women in Tech (WIT) Summit organized at Jaipur.",
+  },
+};
 
 const EventDetailsPage = () => {
   return (
@@ -93,7 +117,7 @@ const EventDetailsPage = () => {
                     learning, and growth.
                   </p>
                   <div className="mx-auto max-w-7xl py-8">
-                    <Gallery photos={images} />
+                    <GalleryView images={images} />
                   </div>
                 </div>
 
@@ -102,7 +126,7 @@ const EventDetailsPage = () => {
                     Event Highlights:
                   </h3>
 
-                  <ol className="blog_paragraph flex flex-col gap-y-4 pl-12">
+                  <ol className="blog_paragraph flex flex-col gap-y-4 ">
                     <li>
                       <span className="text-xl font-semibold text-white">
                         {" "}

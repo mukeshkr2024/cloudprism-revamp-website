@@ -92,7 +92,7 @@ const EventDetailsPage = () => {
                     Highlights of the Event:
                   </h3>
 
-                  <ol className="blog_paragraph flex flex-col gap-y-4 pl-12">
+                  <ol className="blog_paragraph flex flex-col gap-y-4 ">
                     <li>
                       <span className="text-xl font-semibold text-white">
                         {" "}

@@ -96,7 +96,7 @@ const EventDetailsPage = () => {
                     Highlights of the Event:
                   </h3>
 
-                  <ol className="blog_paragraph flex flex-col gap-y-4 pl-12">
+                  <ol className="blog_paragraph flex flex-col gap-y-4 ">
                     <li>
                       1. Gaining comprehensive insights into the nature and
                       functionality of Salesforce Marketing Cloud.
@@ -127,7 +127,7 @@ const EventDetailsPage = () => {
                     achieved significant milestones during the event:
                   </p>
 
-                  <ol className="blog_paragraph flex flex-col gap-y-4 pl-12">
+                  <ol className="blog_paragraph flex flex-col gap-y-4">
                     <li>
                       1. Establishing valuable connections with industry leaders
                       and potential clients.

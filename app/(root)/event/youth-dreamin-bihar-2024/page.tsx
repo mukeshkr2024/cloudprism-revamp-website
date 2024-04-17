@@ -1,11 +1,9 @@
-"use client";
-
+import { GalleryView } from "@/components/Gallery";
 import { TracingBeam } from "@/components/blog/tracing-beam";
-// import EventRightSidebar from "@/components/event-sidebar";
 import ConnectToUs from "@/components/shared/connect-to-us";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
-import Gallery from "react-photo-gallery";
 
 const images = [
   {
@@ -35,6 +33,31 @@ const images = [
     height: 3,
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Youth DreamIn - Salesforce Meet-up Celebration",
+  description:
+    " Youth Dreamin organized by CloudPrism Solutions for developing Salesforce Community in bihar. Increasing Awareness about Salesforce in bihar.",
+  alternates: {
+    canonical: "https://cloudprism.in/event/youth-dreamin-bihar-2024",
+  },
+  openGraph: {
+    title: "Youth DreamIn - Salesforce Meet-up Celebration",
+    description:
+      " Youth Dreamin organized by CloudPrism Solutions for developing Salesforce Community in bihar. Increasing Awareness about Salesforce in bihar.",
+    url: "https://cloudprism.in/event/youth-dreamin-bihar-2024",
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    title: "Youth DreamIn - Salesforce Meet-up Celebration",
+    card: "summary_large_image",
+    site: "@_CloudPrism_",
+    description:
+      " Youth Dreamin organized by CloudPrism Solutions for developing Salesforce Community in bihar. Increasing Awareness about Salesforce in bihar.",
+  },
+};
 
 const EventDetailsPage = () => {
   return (
@@ -74,7 +97,7 @@ const EventDetailsPage = () => {
                     the young minds towards the realm of technology.
                   </p>
                   <div className="mx-auto max-w-7xl py-8">
-                    <Gallery photos={images} />
+                    <GalleryView images={images} />
                   </div>
                 </div>
 
@@ -83,7 +106,7 @@ const EventDetailsPage = () => {
                     Highlights:{" "}
                   </h3>
 
-                  <ol className="blog_paragraph flex flex-col gap-y-4 pl-12">
+                  <ol className="blog_paragraph flex flex-col gap-y-4 ">
                     <li>
                       <span className="text-xl font-semibold text-white">
                         {" "}
