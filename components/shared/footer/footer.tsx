@@ -7,7 +7,7 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="mx-auto w-full max-w-[95rem]">
-      <div className="mx-2 flex max-w-7xl flex-col gap-y-10  py-6 text-white sm:mx-4 md:mx-6 lg:mx-auto">
+      <div className="mx-2 flex max-w-7xl flex-col gap-y-10  py-6 text-white sm:mx-4 md:mx-6 lg:ml-32">
         <div className="flex w-full">
           <div className="flex flex-1 flex-col gap-y-1 md:gap-y-2">
             <div className="items-center md:flex">

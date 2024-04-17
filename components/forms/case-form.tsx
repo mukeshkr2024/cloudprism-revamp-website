@@ -47,7 +47,13 @@ const CaseFormPopup = ({ handleClose }: Props) => {
   const [message, setMessage] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
-    defaultValues: {},
+    defaultValues: {
+      email: "",
+      firstName: "",
+      lastName: "",
+      message: "",
+      phone: "",
+    },
   });
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
@@ -63,8 +69,8 @@ const CaseFormPopup = ({ handleClose }: Props) => {
     form.reset();
     setTimeout(() => {
       setMessage(false);
+      handleClose();
     }, 6000);
-    handleClose();
   }
 
   return (
@@ -95,7 +101,7 @@ const CaseFormPopup = ({ handleClose }: Props) => {
             </div> */}
             <div className="mt-4 flex w-full flex-col text-white">
               {message && (
-                <p className="text-sm text-green-500 ">
+                <p className="text-sm text-green-500 md:mb-2  md:text-base">
                   Thanks for your submission! We&apos;ll be in touch shortly.
                 </p>
               )}

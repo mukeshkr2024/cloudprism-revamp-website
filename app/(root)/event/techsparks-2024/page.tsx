@@ -1,11 +1,9 @@
-"use client";
-
+import { GalleryView } from "@/components/Gallery";
 import { TracingBeam } from "@/components/blog/tracing-beam";
-// import EventRightSidebar from "@/components/event-sidebar";
 import ConnectToUs from "@/components/shared/connect-to-us";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
-import Gallery from "react-photo-gallery";
 
 const images = [
   {
@@ -35,6 +33,31 @@ const images = [
     height: 3,
   },
 ];
+
+export const metadata: Metadata = {
+  title: " Techspark 2024: CloudPrism Stands Out in Mumbai.",
+  description:
+    "Explore CloudPrism's innovative showcase at Techspark 2024 in Mumbai. Join us for a glimpse into cutting-edge technology and collaborative opportunities.",
+  alternates: {
+    canonical: "https://cloudprism.in/event/techsparks-2024",
+  },
+  openGraph: {
+    title: " Techspark 2024: CloudPrism Stands Out in Mumbai.",
+    description:
+      "Explore CloudPrism's innovative showcase at Techspark 2024 in Mumbai. Join us for a glimpse into cutting-edge technology and collaborative opportunities.",
+    url: "https://cloudprism.in/event/techsparks-2024",
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    title: " Techspark 2024: CloudPrism Stands Out in Mumbai.",
+    card: "summary_large_image",
+    site: "@_CloudPrism_",
+    description:
+      "Explore CloudPrism's innovative showcase at Techspark 2024 in Mumbai. Join us for a glimpse into cutting-edge technology and collaborative opportunities.",
+  },
+};
 
 const EventDetailsPage = () => {
   return (
@@ -83,7 +106,7 @@ const EventDetailsPage = () => {
                     fuel India&apos;s transformation.
                   </p>
                   <div className="mx-auto max-w-7xl py-8">
-                    <Gallery photos={images} />
+                    <GalleryView images={images} />
                   </div>
                 </div>
 

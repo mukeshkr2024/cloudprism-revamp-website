@@ -1,11 +1,8 @@
-"use client";
-
 import { TracingBeam } from "@/components/blog/tracing-beam";
-// import EventRightSidebar from "@/components/event-sidebar"; // TODO:
 import ConnectToUs from "@/components/shared/connect-to-us";
-import Gallery from "react-photo-gallery";
 import Link from "next/link";
-// import { Slideshow } from "@/components/slide-show";
+import { GalleryView } from "@/components/Gallery";
+import { Metadata } from "next";
 
 const images = [
   {
@@ -39,6 +36,31 @@ const images = [
     height: 3,
   },
 ];
+
+export const metadata: Metadata = {
+  title: "MC square Hyderabad CloudPrism Shines as Silver Sponsor",
+  description:
+    "Discover the spotlight on MC square event in Hyderabad as CloudPrism takes center stage as Silver Sponsor.",
+  alternates: {
+    canonical: "https://cloudprism.in/event/mc-square-2023",
+  },
+  openGraph: {
+    title: "MC square Hyderabad CloudPrism Shines as Silver Sponsor",
+    description:
+      "Discover the spotlight on MC square event in Hyderabad as CloudPrism takes center stage as Silver Sponsor.",
+    url: "https://cloudprism.in/event/mc-square-2023",
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    title: "MC square Hyderabad CloudPrism Shines as Silver Sponsor",
+    card: "summary_large_image",
+    site: "@_CloudPrism_",
+    description:
+      "Discover the spotlight on MC square event in Hyderabad as CloudPrism takes center stage as Silver Sponsor.",
+  },
+};
 
 const EventDetailsPage = () => {
   return (
@@ -78,7 +100,7 @@ const EventDetailsPage = () => {
                     within the marketing cloud sphere.
                   </p>
                   <div className="mx-auto max-w-7xl py-8">
-                    <Gallery photos={images} />
+                    <GalleryView images={images} />
                   </div>
 
                   <p className="blog_paragraph">

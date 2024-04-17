@@ -1,11 +1,10 @@
-"use client";
-
+import { GalleryView } from "@/components/Gallery";
 import { TracingBeam } from "@/components/blog/tracing-beam";
-// import EventRightSidebar from "@/components/event-sidebar";
 import ConnectToUs from "@/components/shared/connect-to-us";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
-import Gallery from "react-photo-gallery";
+
 const images = [
   {
     src: "/assets/images/events/india-7.jpg",
@@ -39,6 +38,31 @@ const images = [
     height: 3,
   },
 ];
+
+export const metadata: Metadata = {
+  title: "CloudPrism Supports India Dreamin' 2023 as a Silver Sponsor",
+  description:
+    "CloudPrism supports India Dreamin' 2023 as a Silver Sponsor, championing innovation and collaboration in the Salesforce community.",
+  alternates: {
+    canonical: "https://cloudprism.in/event/india-dreamin-2023",
+  },
+  openGraph: {
+    title: "CloudPrism Supports India Dreamin' 2023 as a Silver Sponsor",
+    description:
+      "CloudPrism supports India Dreamin' 2023 as a Silver Sponsor, championing innovation and collaboration in the Salesforce community.",
+    url: "https://cloudprism.in/event/india-dreamin-2023",
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    title: "CloudPrism Supports India Dreamin' 2023 as a Silver Sponsor",
+    card: "summary_large_image",
+    site: "@_CloudPrism_",
+    description:
+      "CloudPrism supports India Dreamin' 2023 as a Silver Sponsor, championing innovation and collaboration in the Salesforce community.",
+  },
+};
 
 const EventDetailsPage = () => {
   return (
@@ -88,7 +112,7 @@ const EventDetailsPage = () => {
                     collaboration within it.
                   </p>
                   <div className="mx-auto max-w-7xl py-8">
-                    <Gallery photos={images} />
+                    <GalleryView images={images} />
                   </div>
                 </div>
 

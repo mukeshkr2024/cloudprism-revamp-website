@@ -8,8 +8,27 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
+  title: "Updates & Events - Cloud Prism Solution",
+  description:
+    "Stay informed with the latest news and upcoming events from Cloud Prism Solutions. Explore our comprehensive events and updates.",
   alternates: {
     canonical: "https://cloudprism.in/events",
+  },
+  openGraph: {
+    title: "Updates & Events - Cloud Prism Solution",
+    description:
+      "Stay informed with the latest news and upcoming events from Cloud Prism Solutions. Explore our comprehensive events and updates.",
+    url: "https://cloudprism.in/events",
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    title: "Updates & Events - Cloud Prism Solution",
+    card: "summary_large_image",
+    site: "@_CloudPrism_",
+    description:
+      "Stay informed with the latest news and upcoming events from Cloud Prism Solutions. Explore our comprehensive events and updates.",
   },
 };
 

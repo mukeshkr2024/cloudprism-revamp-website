@@ -10,12 +10,29 @@ const sortedBlogs: Blog[] = sortBlogs(allBlogs);
 const latestBlogs: Blog[] = sortedBlogs?.slice(0, 2);
 
 export const metadata: Metadata = {
+  title: " Cloud Prism Solutions: Salesforce Blogs & Software Development Blog",
+  description:
+    "Explore Cloud Prism Solutions' insightful Salesforce blogs and stay updated on software development trends. Dive into expertise.",
   alternates: {
     canonical: "https://cloudprism.in/blogs",
   },
-  openGraph: {},
+  openGraph: {
+    title:
+      " Cloud Prism Solutions: Salesforce Blogs & Software Development Blog",
+    description:
+      "Explore Cloud Prism Solutions' insightful Salesforce blogs and stay updated on software development trends. Dive into expertise.",
+    url: "https://cloudprism.in/blogs",
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "article",
+  },
   twitter: {
+    title:
+      " Cloud Prism Solutions: Salesforce Blogs & Software Development Blog",
+    card: "summary_large_image",
     site: "@_CloudPrism_",
+    description:
+      "Explore Cloud Prism Solutions' insightful Salesforce blogs and stay updated on software development trends. Dive into expertise.",
   },
 };
 
