@@ -21,6 +21,7 @@ import BlogCard from "@/components/card/blog-card";
 import { recentCaseStudies } from "@/constants/case-studies";
 import { sortBlogs } from "@/utils/cn";
 import { Metadata } from "next";
+// import Script from "next/script";
 
 const sortedBlogs: Blog[] = sortBlogs(allBlogs);
 
@@ -53,9 +54,51 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  name: "CloudPrism Solutions",
+  alternateName: "CloudPrism",
+  url: "https://cloudprism.in/",
+  logo: "https://cloudprism.in/assets/icons/company-logo.svg",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "83295 53438",
+    contactType: "customer service",
+    areaServed: ["US", "GB", "AE", "IN", "SG"],
+    availableLanguage: "en",
+  },
+  sameAs: [
+    "https://www.facebook.com/Cloudprism",
+    "https://www.instagram.com/cloudprism.in",
+    "https://twitter.com/_CloudPrism_",
+    "https://www.linkedin.com/company/cloudprism-solutions/mycompany/",
+  ],
+};
+
 export default function Home() {
   return (
     <ScrollBarProgress>
+      {/* <Script
+        id="structured-data"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          (function() {
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.innerHTML = ${JSON.stringify(jsonLd)};
+            document.head.appendChild(script);
+          })();
+        `,
+        }}
+      /> */}
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <div className="background_primary w-full overflow-hidden">
         <div className="w-full">
           <MainSection />

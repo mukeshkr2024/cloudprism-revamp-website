@@ -7,6 +7,7 @@ import { ourTeams } from "@/constants";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+// import Script from "next/script";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -35,8 +36,48 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Corporation",
+    name: "CloudPrism Solutions",
+    alternateName: "CloudPrism",
+    url: "https://cloudprism.in/about-us",
+    logo: "https://cloudprism.in/assets/icons/company-logo.svg",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "83295 53438",
+      contactType: "customer service",
+      areaServed: ["US", "GB", "AE", "IN", "SG"],
+      availableLanguage: "en",
+    },
+    sameAs: [
+      "https://www.facebook.com/Cloudprism",
+      "https://www.instagram.com/cloudprism.in",
+      "https://twitter.com/_CloudPrism_",
+      "https://www.linkedin.com/company/cloudprism-solutions/mycompany/",
+    ],
+  };
   return (
     <ScrollBarProgress>
+      {/* <Script
+        id="structured-data"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          (function() {
+            const script = document.createElement('script');
+            script.type = 'application/ld+json';
+            script.innerHTML = ${JSON.stringify(structuredData)};
+            document.head.appendChild(script);
+          })();
+        `,
+        }}
+      /> */}
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="mx-auto w-full max-w-[95rem] overflow-hidden">
         <section
           className="flex h-[600px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat md:h-[800px] "

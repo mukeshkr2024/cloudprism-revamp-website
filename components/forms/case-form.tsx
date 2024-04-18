@@ -30,7 +30,7 @@ const formSchema = z.object({
   phone: z
     .string()
     .min(10, { message: "Invalid phone number" })
-    .max(12, { message: "Invalid Phone number" })
+    .max(13, { message: "Invalid Phone number" })
     .refine((value) => /^\d{10}$/.test(value), {
       message: "Invalid Phone Number",
     }),
