@@ -7,9 +7,10 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="mx-auto w-full max-w-[95rem]">
-      <div className="mx-2 flex max-w-7xl flex-col gap-y-10  py-6 text-white sm:mx-4 md:mx-6 lg:ml-32">
-        <div className="flex w-full">
-          <div className="flex flex-1 flex-col gap-y-1 md:gap-y-2">
+      <div className="mx-2 flex max-w-6xl flex-col gap-y-10  py-6 text-white sm:mx-4 md:mx-6 lg:mx-auto">
+        {" "}
+        <div className="flex w-full ">
+          <div className="flex flex-1 flex-col gap-y-1  md:gap-y-2">
             <div className="items-center md:flex">
               <Image
                 src="/assets/icons/company-logo.svg"
@@ -21,7 +22,7 @@ export default function Footer() {
                 Cloudprism <br /> Solutions
               </span>
             </div>
-            <div className="flex gap-x-2">
+            <div className="flex gap-x-2 ">
               {socialLinks.map((item) => (
                 <Link href={item.href} key={item.href}>
                   <Image
@@ -36,7 +37,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-1 flex-col gap-y-1.5">
+          <div className="flex flex-1 flex-col gap-y-1.5 ">
             {footerLinks.map((item) => (
               <Link href={item.route} key={item.route}>
                 <p className="text-sm font-normal sm:text-base">{item.label}</p>
@@ -44,7 +45,7 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="flex flex-1 flex-col gap-y-1.5">
+          <div className="flex flex-1 flex-col gap-y-1.5 ">
             {usefullLinks.map((item) => (
               <Link href={item.route} key={item.route}>
                 <p className="text-sm sm:text-base">{item.label}</p>
@@ -52,7 +53,6 @@ export default function Footer() {
             ))}
           </div>
         </div>
-
         <div className="flex w-full flex-col items-start  gap-y-6 text-start text-sm font-normal sm:text-base md:flex-row md:items-start md:text-start">
           <div className="md:flex-1">
             <p className="max-w-xs">
@@ -84,7 +84,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
         <div className="mb-2 flex w-full flex-col pl-2 sm:mb-4">
           <div className="border border-[#2D2D2D]" />
           <div className="mt-2 flex flex-wrap  gap-x-4 gap-y-2 text-[#636363] sm:mt-3 md:gap-x-6">

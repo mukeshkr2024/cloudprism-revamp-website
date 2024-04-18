@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 export default function ProjectsDelivered() {
   return (
     <section
-      className="mx-1.5 -mt-24 w-full rounded-2xl bg-no-repeat pt-40 sm:rounded-none lg:-mt-6 xl:pt-56"
+      className="mx-1.5 w-full rounded-2xl bg-no-repeat pt-40 sm:rounded-none xl:pt-56"
       style={{
         backgroundImage: "url('/assets/gradients/project-gradient.svg')",
         backgroundPosition: "top center",

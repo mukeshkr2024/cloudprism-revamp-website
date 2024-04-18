@@ -7,7 +7,8 @@ import { salesForcePartners } from "@/constants";
 
 export default function SalesforcePartnerSlider() {
   return (
-    <section className="mx-auto mt-14 flex max-w-[95rem] flex-col gap-y-6 sm:mt-20  ">
+    <section className="mx-auto mt-14 flex max-w-[95rem] flex-col gap-y-6 sm:mt-20 md:mt-24 lg:mt-28 xl:mt-32">
+      {" "}
       <InfiniteMovingCards
         items={salesForcePartners}
         direction="left"

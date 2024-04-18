@@ -71,18 +71,18 @@ export default function Home() {
               business through unique IT techniques.
             </h2>
           </div>
-          <div className="mx-auto max-w-7xl sm:mt-8  ">
+          <div className="mx-auto mt-16 max-w-7xl  ">
             <OurServices />
           </div>
           <div className="flex-center ">
             <ProjectsDelivered />
           </div>
-          <section className="mx-auto mt-6 max-w-6xl sm:mt-10 md:mt-12 lg:mt-14 ">
+          <section className="mx-auto mt-6 max-w-6xl sm:mt-10 md:mt-12 lg:mt-16 xl:mt-24 ">
             <h2 className="h2_semibold text-center">
               Our Customer Success <br className="sm:hidden" /> Story
             </h2>
-
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-2 sm:mt-12 md:mt-16 lg:gap-6">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-2 sm:mt-12 md:mt-16 lg:mt-20 lg:gap-6">
+              {" "}
               {recentStudies &&
                 recentStudies.map((study) => (
                   <SuccessCard
@@ -97,7 +97,8 @@ export default function Home() {
           </section>
           <SalesforcePartnerSlider />
           <OurClientSay />
-          <section className="mx-auto my-8 sm:max-w-xl  md:-mt-32 lg:max-w-2xl">
+          <section className="mx-auto my-8 sm:max-w-xl lg:mt-16 lg:max-w-2xl">
+            {" "}
             <h3 className="h2_semibold text-center">
               Our Technological <br className="sm:hidden" /> Partners{" "}
             </h3>
@@ -121,11 +122,11 @@ export default function Home() {
               ))}
             </div>
           </section>
-          <section className="mx-auto max-w-6xl  md:-mt-6 ">
+          <section className="mx-auto max-w-6xl ">
             <h3 className="h2_semibold text-center">
               Our Certified <br className="sm:hidden" /> Developers{" "}
             </h3>
-            <div className="mt-12 flex flex-wrap items-center justify-center gap-6 px-4 sm:mt-14">
+            <div className="mt-12 flex flex-wrap items-center justify-center gap-6 px-4 sm:mt-14 md:mt-16 lg:mt-20 xl:mt-24">
               {certifiedDevelopers.map((item) => (
                 <div key={item.id}>
                   <Image
@@ -139,11 +140,11 @@ export default function Home() {
               ))}
             </div>
           </section>
-          <section className="mx-auto  mt-14 max-w-6xl  ">
+          <section className="mx-auto mt-24 max-w-6xl ">
             <h3 className="h2_semibold text-center">
               Why Cloud Prism Stands <br className="sm:hidden" /> Out
             </h3>
-            <div className="mt-12 flex flex-col gap-4 px-4 sm:mt-10 ">
+            <div className="mt-12 flex flex-col gap-4 px-4 sm:mt-16 md:mt-20">
               {whyStandOut.map((item) => (
                 <div key={item.title} className="size-full">
                   <div className=" size-full lg:hidden">
@@ -163,9 +164,9 @@ export default function Home() {
               ))}
             </div>
           </section>
-          <section className="mx-auto mt-12 max-w-sm  sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl ">
+          <section className="mx-auto mt-20 max-w-sm sm:mt-16 sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl ">
             <h3 className="h2_semibold text-center">Read Our Blogs</h3>
-            <div className="mt-12 flex flex-wrap  justify-center gap-y-6 px-6  sm:justify-between">
+            <div className="mt-24 flex flex-wrap justify-center gap-y-6 px-6 sm:justify-between">
               {readBlogs &&
                 readBlogs.map((blog) => (
                   <BlogCard

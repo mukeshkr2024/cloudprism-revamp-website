@@ -5,15 +5,29 @@ import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import { fullStackbuisnessData, fullstackBuisnessPoints } from "@/constants";
 import { Metadata } from "next";
 import Link from "next/link";
-import React from "react";
 
 export const metadata: Metadata = {
-  title:
-    "CloudPrism Solutions: Comprehensive Software Development & Consultation",
+  title: "Software Development & Consultation: CloudPrism Solutions",
   description:
-    "CloudPrism Solutions: Your top choice for expert software development and consultation services.Transform your projects with our innovative solutions",
+    "Get expert software development and consultation services. Develop your projects with us: CloudPrism Solutions.",
   alternates: {
     canonical: "https://cloudprism.in/full-stack-services",
+  },
+  openGraph: {
+    title: "Software Development & Consultation: CloudPrism Solutions",
+    description:
+      "Get expert software development and consultation services. Develop your projects with us: CloudPrism Solutions.",
+    url: "https://cloudprism.in/full-stack-services",
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    title: "Software Development & Consultation: CloudPrism Solutions",
+    description:
+      "Get expert software development and consultation services. Develop your projects with us: CloudPrism Solutions.",
+    card: "summary_large_image",
+    site: "@_CloudPrism_",
   },
 };
 

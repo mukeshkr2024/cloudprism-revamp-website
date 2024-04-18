@@ -6,8 +6,27 @@ import { salesforceBuisnessData, salesforceBuisnessPoints } from "@/constants";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: "Salesforce Consultation & Implementation Partner-CloudPrism.",
+  description:
+    "Expert Salesforce consultation & implementation services boost your business for success. Explore growth potential with CloudPrism Solutions.",
   alternates: {
     canonical: "https://cloudprism.in/salesforce-services",
+  },
+  openGraph: {
+    title: "Salesforce Consultation & Implementation Partner-CloudPrism.",
+    description:
+      "Expert Salesforce consultation & implementation services boost your business for success. Explore growth potential with CloudPrism Solutions.",
+    url: "https://cloudprism.in/salesforce-services",
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "article",
+  },
+  twitter: {
+    title: "Salesforce Consultation & Implementation Partner-CloudPrism.",
+    description:
+      "Expert Salesforce consultation & implementation services boost your business for success. Explore growth potential with CloudPrism Solutions.",
+    card: "summary_large_image",
+    site: "@_CloudPrism_",
   },
 };
 
