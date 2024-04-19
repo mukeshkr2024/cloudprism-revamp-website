@@ -8,14 +8,13 @@ export const metadata: Metadata = {
   description:
     " With the partnership with Selise Cloudprism Solutions Implemented Salesforce integration to enhance the customer satisfaction.",
   alternates: {
-    canonical:
-      "https://cloudprism.in/case-study/cloudprism-teams-outstanding-performance",
+    canonical: "https://cloudprism.in/case-study/cloudprism-teams",
   },
   openGraph: {
     title: "Salesforce Implemented by Cloudprism Solutions & Selise",
     description:
       " With the partnership with Selise Cloudprism Solutions Implemented Salesforce integration to enhance the customer satisfaction.",
-    url: "https://cloudprism.in/case-study/cloudprism-teams-outstanding-performance",
+    url: "https://cloudprism.in/case-study/cloudprism-teams",
     siteName: "Cloudprism",
     locale: "en_US",
     type: "article",
