@@ -37,7 +37,7 @@ const formSchema = z.object({
   //   }),
   phone: z
     .string()
-    .min(12, "Invalid phone number")
+    .min(2, "Invalid phone number")
     .max(15, "Invalid phone number"),
   message: z
     .string()

@@ -19,6 +19,7 @@ import {
 } from "../ui/form";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
+import InputPhone from "../ui/phone-input";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "FirstName is required" }).max(50),
@@ -26,9 +27,8 @@ const formSchema = z.object({
   email: z.string().email({ message: "Invalid Email" }),
   phone: z
     .string()
-    .min(10, { message: "Invalid phone number" })
-    .max(12, { message: "Invalid Phone number" })
-    .refine((value) => /^\d{10}$/.test(value), {}),
+    .min(2, "Invalid phone number")
+    .max(15, "Invalid phone number"),
   message: z
     .string()
     .min(1, { message: "Message is required" })
@@ -176,10 +176,13 @@ const DemoFormPopup: React.FC = () => {
                       render={({ field }) => (
                         <FormItem className="flex-1">
                           <FormControl>
-                            <Input
-                              placeholder="Phone No"
-                              {...field}
-                              className="input-background_secondary rounded-[6px] border-none px-5 text-white placeholder:text-[#C3C3C3] lg:py-1.5"
+                            <InputPhone
+                              value={field.value}
+                              onChange={field.onChange}
+                              ref={field.ref}
+                              name={field.name}
+                              disabled={field.disabled}
+                              onBlur={field.onBlur}
                             />
                           </FormControl>
                           <FormMessage className="text-xs text-red-500" />

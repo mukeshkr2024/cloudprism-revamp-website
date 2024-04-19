@@ -14,6 +14,8 @@ import {
   FormMessage,
 } from "../ui/form";
 import { Input } from "../ui/input";
+import { PhoneInput } from "react-international-phone";
+import "react-international-phone/style.css";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is required" }).max(50),
@@ -22,20 +24,10 @@ const formSchema = z.object({
     .string()
     .min(1, { message: "Email is required" })
     .email({ message: "Email is invalid" }),
-  countryCode: z
-    .string()
-    .min(1, { message: "Country code is required" })
-    .max(3, { message: "Invalid country code" })
-    .refine((value) => /^\d+$/.test(value), {
-      message: "Invalid country code",
-    }),
   phone: z
     .string()
-    .min(10, { message: "Invalid phone number" })
-    .max(12, { message: "Invalid Phone number" })
-    .refine((value) => /^\d{10}$/.test(value), {
-      message: "Invalid Phone Number",
-    }),
+    .min(2, "Invalid phone number")
+    .max(15, "Invalid phone number"),
   message: z.string().min(1, { message: "Message is required" }).max(250),
   lookingFor: z.string().optional(),
 });
@@ -45,7 +37,6 @@ function ContactForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      countryCode: "",
       email: "",
       firstName: "",
       lastName: "",
@@ -139,37 +130,40 @@ function ContactForm() {
           <div className="flex gap-4">
             <FormField
               control={form.control}
-              name="countryCode"
-              render={({ field }) => (
-                <FormItem className="flex-1">
-                  <FormControl>
-                    <Input
-                      placeholder="Country code"
-                      {...field}
-                      className="input-background_secondary 
-                    rounded-[57px] border-[#767575]
-                    px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
-                    />
-                  </FormControl>
-                  <FormMessage className="pl-4 text-xs text-red-500 md:pl-6" />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
               name="phone"
               render={({ field }) => (
                 <FormItem className="flex-1">
                   <FormControl>
-                    <Input
-                      placeholder="Phone No"
-                      {...field}
-                      className="input-background_secondary 
-                      rounded-[57px] border-[#767575]
-                      px-5 text-white placeholder:text-[#C3C3C3] lg:py-6"
-                    />
-                  </FormControl>{" "}
+                    <div>
+                      <PhoneInput
+                        {...field}
+                        className=""
+                        inputClassName="input-background_primary "
+                        inputStyle={{
+                          width: "100%",
+                          background:
+                            "linear-gradient(97.49deg, #FFFFFF30 -18.1%, #1D1C1C30 109.71%)",
+                          color: "white",
+                          borderTopRightRadius: "57px",
+                          borderBottomRightRadius: "57px",
+                          padding: "20px 0",
+                          borderColor: "#767575",
+                          borderLeft: "none",
+                        }}
+                        countrySelectorStyleProps={{
+                          buttonStyle: {
+                            background:
+                              "linear-gradient(97.49deg, #FFFFFF30 -18.1%, #1D1C1C30 109.71%)",
+                            borderTopLeftRadius: "57px",
+                            borderBottomLeftRadius: "57px",
+                            padding: "20px 10px",
+                            borderColor: "#767575",
+                            borderRight: "none",
+                          },
+                        }}
+                      />
+                    </div>
+                  </FormControl>
                   <FormMessage className="pl-4 text-xs text-red-500 md:pl-6" />
                 </FormItem>
               )}
