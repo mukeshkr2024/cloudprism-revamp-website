@@ -2,6 +2,10 @@
 
 import { withContentlayer } from "next-contentlayer";
 
-const nextConfig = {};
+const nextConfig = {
+  images: {
+    domains: ["flagcdn.com"],
+  },
+};
 
 export default withContentlayer({ ...nextConfig });

@@ -41,8 +41,10 @@ export default function TeamCard({
           height={103}
         />
         <div className="flex flex-col gap-[2px] text-center">
-          <span className="text-lg font-semibold text-white ">{name}</span>
-          <p className="text-sm font-light text-[#C6C6C6] sm:text-base">
+          <span className="line-clamp-1 text-lg font-semibold text-white">
+            {name}
+          </span>
+          <p className="line-clamp-1 text-sm font-light text-[#C6C6C6] sm:text-base">
             {description}
           </p>
         </div>

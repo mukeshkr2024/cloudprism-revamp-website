@@ -53,11 +53,17 @@ body {
 }
 
 .input-background_secondary {
-  background: linear-gradient(
+  background: linear-gradient(97.49deg, #ffffff30 -18.1%, #1d1c1c30 109.71%);
+  /* background: linear-gradient(
     149.64deg,
     rgba(25, 25, 25, 0.56) 21.24%,
     rgba(14, 14, 14, 0.56) 105.43%
-  );
+  ); */
+  backdrop-filter: blur(9px);
+}
+
+.input-background_secondary_2 {
+  background: linear-gradient(97.49deg, #504f4f30 -18.1%, #1d1c1c30 109.71%);
   backdrop-filter: blur(9px);
 }
 

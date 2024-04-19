@@ -4073,10 +4073,10 @@ react-hook-form@^7.0.0, react-hook-form@^7.51.2:
   resolved "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.51.2.tgz"
   integrity sha512-y++lwaWjtzDt/XNnyGDQy6goHskFualmDlf+jzEZvjvz6KWDf7EboL7pUvRCzPTJd0EOPpdekYaQLEvvG6m6HA==
 
-react-international-phone@^4.2.6:
-  version "4.2.6"
-  resolved "https://registry.npmjs.org/react-international-phone/-/react-international-phone-4.2.6.tgz"
-  integrity sha512-El/ZVYmov5uGuk07nrfxe7M3/4Y8HhA9c3aCpAwilbPU8DekISwNSZMplqxzvxS+TIavIh28ZMDDx1u/4GqULg==
+react-international-phone@^4.2.7:
+  version "4.2.7"
+  resolved "https://registry.npmjs.org/react-international-phone/-/react-international-phone-4.2.7.tgz"
+  integrity sha512-42PMFKIf4EugAM3y8AVi1U76wEmE3qFKfhyL5AJCsCft1P/N9NLj73avp8D6e3oGNWHlph98olmBeLkWfiRvLQ==
 
 react-is@^16.13.1, react-is@^16.8.1:
   version "16.13.1"

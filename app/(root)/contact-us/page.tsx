@@ -19,6 +19,7 @@ import Link from "next/link";
 import { socialLinks } from "@/constants";
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import { submitCtaForm } from "@/actions/form.actions";
+import InputPhone from "@/components/ui/phone-input";
 
 const formSchema = z.object({
   firstName: z.string().min(1, { message: "First Name is required" }).max(50),
@@ -27,13 +28,17 @@ const formSchema = z.object({
     .string()
     .min(1, { message: "Email is required" })
     .email({ message: "Invalid email format" }),
+  // phone: z
+  //   .string()
+  //   .min(10, { message: "Invalid phone number" })
+  //   .max(12, { message: "Invalid Phone number" })
+  //   .refine((value) => /^\d{10}$/.test(value), {
+  //     message: "Invalid Phone Number format",
+  //   }),
   phone: z
     .string()
-    .min(10, { message: "Invalid phone number" })
-    .max(12, { message: "Invalid Phone number" })
-    .refine((value) => /^\d{10}$/.test(value), {
-      message: "Invalid Phone Number format",
-    }),
+    .min(12, "Invalid phone number")
+    .max(15, "Invalid phone number"),
   message: z.string().min(1, { message: "Message is required" }).max(250, {
     message: "Message can be up to 250 characters",
   }),
@@ -165,11 +170,13 @@ function ContactUsPage() {
                       render={({ field }) => (
                         <FormItem>
                           <FormControl>
-                            <Input
-                              placeholder="Phone"
-                              {...field}
-                              className="input-background_primary rounded-md
-                            border-[#1D1C1C] placeholder:text-[#C3C3C3]"
+                            <InputPhone
+                              value={field.value}
+                              onChange={field.onChange}
+                              ref={field.ref}
+                              name={field.name}
+                              disabled={field.disabled}
+                              onBlur={field.onBlur}
                             />
                           </FormControl>
                           <FormMessage className="pl-4 text-[13px] text-red-500 " />

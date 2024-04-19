@@ -59,21 +59,6 @@ export default function AboutPage() {
   };
   return (
     <ScrollBarProgress>
-      {/* <Script
-        id="structured-data"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          (function() {
-            const script = document.createElement('script');
-            script.type = 'application/ld+json';
-            script.innerHTML = ${JSON.stringify(structuredData)};
-            document.head.appendChild(script);
-          })();
-        `,
-        }}
-      /> */}
-
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
