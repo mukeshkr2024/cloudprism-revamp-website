@@ -17,7 +17,7 @@ interface Params {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const blog = allBlogs.find((blog) => blog._raw.flattenedPath === params.slug);
   return {
-    title: blog?.title,
+    title: blog?.meta || blog?.title,
     description: blog?.desc,
     alternates: {
       canonical: `https://cloudprism.in/blog/${params.slug}`,

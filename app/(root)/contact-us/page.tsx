@@ -130,7 +130,7 @@ function ContactUsPage() {
                           <FormItem className="flex-1">
                             <FormControl>
                               <Input
-                                placeholder="LastName"
+                                placeholder="Last Name"
                                 {...field}
                                 className="input-background_primary rounded-md border-[#1D1C1C] placeholder:text-[#C3C3C3]"
                               />

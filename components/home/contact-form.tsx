@@ -138,6 +138,7 @@ function ContactForm() {
                       <PhoneInput
                         {...field}
                         className=""
+                        defaultCountry="in"
                         inputClassName="input-background_primary "
                         inputStyle={{
                           width: "100%",
