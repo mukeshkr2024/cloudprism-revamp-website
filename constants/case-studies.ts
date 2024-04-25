@@ -23,7 +23,7 @@ export const recentCaseStudies = [
     description:
       "In addition to offering state-of-the-art liquid biopsy solutions that enhance patient experiences, outcomes, and journeys as well as those of healthcare professionals, Hedera Dx is committed to revolutionizing oncology by making it easier to prescribe, discover, and develop the next revolutionary precision oncology therapies.",
     imageUrl: "/assets/images/success-story-3.png",
-    slug: "/case-study/efficient-comms-data-centralization-hedera-dx-cloud-prism-salesforce",
+    slug: "/case-study/efficient-comms-data",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ export const recentCaseStudies = [
     description:
       "Selise is an international consulting firm that offers advice on digital transformation to several businesses worldwide.The firm offers a wide range of services, such as platform development,process engineering, and strategic consulting.",
     imageUrl: "/assets/images/success-story-4.png",
-    slug: "/case-study/cloudprism-teams-outstanding-performance",
+    slug: "/case-study/cloudprism-teams",
   },
   {
     id: 5,

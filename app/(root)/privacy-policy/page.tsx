@@ -3,8 +3,30 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
+  title:
+    "Your Data Security is Our Priority: CloudPrism Solutions Privacy Policy.",
+  description:
+    "Learn how CloudPrism Solutions prioritizes your privacy with our comprehensive Privacy Policy. Your data security is our top concern.",
   alternates: {
     canonical: "https://cloudprism.in/privacy-policy",
+  },
+  openGraph: {
+    title:
+      "Your Data Security is Our Priority: CloudPrism Solutions Privacy Policy.",
+    description:
+      "Learn how CloudPrism Solutions prioritizes your privacy with our comprehensive Privacy Policy. Your data security is our top concern.",
+    url: `https://cloudprism.in/privacy-policy`,
+    siteName: "Cloudprism",
+    locale: "en_US",
+    type: "website",
+    images: "https://cloudprism.in/favicon.ico",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Your Data Security is Our Priority: CloudPrism Solutions Privacy Policy.",
+    description:
+      "Learn how CloudPrism Solutions prioritizes your privacy with our comprehensive Privacy Policy. Your data security is our top concern.",
   },
 };
 

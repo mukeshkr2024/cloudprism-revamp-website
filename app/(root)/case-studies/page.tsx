@@ -8,18 +8,27 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
+  title: " Explore Success Stories: CloudPrism Solutions.",
+  description:
+    " Case studies showcasing our success in Salesforce solutions & software development: CloudPrism Solutions.",
   alternates: {
     canonical: "https://cloudprism.in/case-studies",
   },
   openGraph: {
-    url: `https://cloudprism.in/blog/case-studies`,
+    title: "Explore Success Stories: CloudPrism Solutions.",
+    description:
+      " Case studies showcasing our success in Salesforce solutions & software development: CloudPrism Solutions.",
+    url: `https://cloudprism.in/case-studies`,
     siteName: "Cloudprism",
     locale: "en_US",
-    type: "article",
+    type: "website",
+    images: "https://cloudprism.in/favicon.ico",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@_CloudPrism_",
+    title: " Explore Success Stories: CloudPrism Solutions.",
+    description:
+      " Case studies showcasing our success in Salesforce solutions & software development: CloudPrism Solutions.",
   },
 };
 
