@@ -20,12 +20,12 @@ export const navbarLinks: NavbarLinks[] = [
     label: "Services",
     subItems: [
       {
-        route: "/salesforce-services",
-        label: "Complete Salesforce Solutions",
+        route: "/salesforce-consultation",
+        label: "Salesforce Consultation & Implementation",
       },
       {
-        route: "/full-stack-services",
-        label: "Software Consultation and Developement",
+        route: "/software-development",
+        label: "Software Development & Solutions",
       },
     ],
   },
@@ -172,12 +172,12 @@ export const footerLinks: FooterLinks[] = [
 
 export const usefullLinks: FooterLinks[] = [
   {
-    label: "Salesforce Solutions",
-    route: "/salesforce-services",
+    label: "Salesforce Consultation & Implementation",
+    route: "/salesforce-consultation",
   },
   {
-    label: "Software Consultation ",
-    route: "/full-stack-services",
+    label: "Software Development & Solutions",
+    route: "/software-development",
   },
   {
     label: "Case Studies",

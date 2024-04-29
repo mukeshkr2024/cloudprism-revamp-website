@@ -15,11 +15,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
-      url: `${process.env.BASE_URL}/salesforce-services`,
+      url: `${process.env.BASE_URL}/salesforce-consultation`,
       lastModified: new Date(),
     },
     {
-      url: `${process.env.BASE_URL}/full-stack-services`,
+      url: `${process.env.BASE_URL}/software-development`,
       lastModified: new Date(),
     },
     {

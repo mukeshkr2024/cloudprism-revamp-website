@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     "Get expert software development and consultation services. Develop your projects with us: CloudPrism Solutions.",
   alternates: {
-    canonical: "https://cloudprism.in/full-stack-services",
+    canonical: "https://cloudprism.in/software-development",
   },
   openGraph: {
     title: "Software Development & Consultation: CloudPrism Solutions",
     description:
       "Get expert software development and consultation services. Develop your projects with us: CloudPrism Solutions.",
-    url: "https://cloudprism.in/full-stack-services",
+    url: "https://cloudprism.in/software-development",
     siteName: "Cloudprism",
     locale: "en_US",
     type: "article",

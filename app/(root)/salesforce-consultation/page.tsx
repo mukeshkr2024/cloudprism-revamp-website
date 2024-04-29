@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   description:
     "Expert Salesforce consultation & implementation services boost your business for success. Explore growth potential with CloudPrism Solutions.",
   alternates: {
-    canonical: "https://cloudprism.in/salesforce-services",
+    canonical: "https://cloudprism.in/salesforce-consultation",
   },
   openGraph: {
     title: "Salesforce Consultation & Implementation Partner-CloudPrism.",
     description:
       "Expert Salesforce consultation & implementation services boost your business for success. Explore growth potential with CloudPrism Solutions.",
-    url: "https://cloudprism.in/salesforce-services",
+    url: "https://cloudprism.in/salesforce-consultation",
     siteName: "Cloudprism",
     locale: "en_US",
     type: "article",
