@@ -101,10 +101,10 @@ export default function Careers() {
 
             <CustomButton className="rounded-3xl px-5 py-1.5">
               <a
-                href="mailto:pragati.anjani@cloudprism.in"
+                href="mailto:careers@cloudprism.in"
                 className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl"
               >
-                pragati.anjani@cloudprism.in{" "}
+                careers@cloudprism.in
               </a>
             </CustomButton>
           </div>
