@@ -69,6 +69,15 @@
 export const events = [
   {
     id: 1,
+    imgUrl: "/assets/images/events/april-1.jpg",
+    title: "April Salesforce Meet-Up in Patna, Bihar ",
+    description:
+      "We're thrilled to announce the successful completion of the April Salesforce Meet-Up in Patna, Bihar, organised by CloudPrism Solutions! The event was nothing short of eventful, bringing together bright minds, industry experts, and aspiring professionals under one roof.",
+    read_time: "1-Minute ",
+    slug: "april-salesforce-meet",
+  },
+  {
+    id: 2,
     imgUrl: "/assets/images/events/india-7.jpg",
     title:
       "CloudPrism Solutions Proudly Supports India Dreamin' 2023 as a Silver Sponsor, Driving Innovation Forward",
@@ -78,7 +87,7 @@ export const events = [
     slug: "india-dreamin-2023",
   },
   {
-    id: 2,
+    id: 3,
     imgUrl: "/assets/images/events/techspark-5.jpg",
     title:
       "Techspark 2024: CloudPrism Stands Out in Mumbai with Innovation and Collaboration!",
@@ -88,7 +97,7 @@ export const events = [
     slug: "techsparks-2024",
   },
   {
-    id: 3,
+    id: 4,
     imgUrl: "/assets/images/events/feature-01.jpg",
     title:
       "MC2 - Hyderabad Edition: CloudPrism Sets the Stage as Silver Sponsor!",
@@ -98,7 +107,7 @@ export const events = [
     slug: "mc-square-2023",
   },
   {
-    id: 4,
+    id: 5,
     imgUrl: "/assets/images/events/feature-02.jpg",
     title:
       "CloudPrism Takes a Stand for Diversity: Silver Sponsor at Women in Tech (WIT) Summit",
@@ -108,7 +117,7 @@ export const events = [
     slug: "wit-summit-jaipur",
   },
   {
-    id: 5,
+    id: 6,
     imgUrl: "/assets/images/events/mule-3.jpg",
     title:
       "Glimpses of Glory: CloudPrism's Silver Sponsorship Triumphs at Mule Dreamin, Delhi!",
@@ -118,21 +127,12 @@ export const events = [
     slug: "mule-dreamin-2023",
   },
   {
-    id: 6,
+    id: 7,
     imgUrl: "/assets/images/events/youth-1.jpg",
     title: "Youth DreamIn - Salesforce Meet-up Celebration",
     description:
       "Team CloudPrism Solutions proudly organized a vibrant Salesforce Meet-up on the auspicious occasion of Youth Day in Patna, Bihar. Our aim was to celebrate the youthful spirit and harness the enthusiasm of the young minds towards the realm of technology.",
     read_time: "1-Minute ",
     slug: "youth-dreamin-bihar-2024",
-  },
-  {
-    id: 7,
-    imgUrl: "/assets/images/events/april-1.jpg",
-    title: "April Salesforce Meet-Up in Patna, Bihar ",
-    description:
-      "We're thrilled to announce the successful completion of the April Salesforce Meet-Up in Patna, Bihar, organised by CloudPrism Solutions! The event was nothing short of eventful, bringing together bright minds, industry experts, and aspiring professionals under one roof.",
-    read_time: "1-Minute ",
-    slug: "april-salesforce-meet",
   },
 ];
