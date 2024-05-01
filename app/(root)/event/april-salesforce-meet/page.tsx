@@ -6,60 +6,55 @@ import React from "react";
 
 const images = [
   {
-    src: "/assets/images/events/india-7.jpg",
+    src: "/assets/images/events/april-1.jpg",
     width: 3,
     height: 2,
   },
   {
-    src: "/assets/images/events/india-2.jpg",
+    src: "/assets/images/events/april-2.jpg",
     width: 3.5,
     height: 3,
   },
 
   {
-    src: "/assets/images/events/india-4.jpg",
-    width: 3.3,
+    src: "/assets/images/events/april-3.jpg",
+    width: 4.5,
     height: 3,
   },
   {
-    src: "/assets/images/events/india-5.jpg",
-    width: 4,
+    src: "/assets/images/events/april-5.jpg",
+    width: 3,
     height: 3,
   },
   {
-    src: "/assets/images/events/india-6.jpg",
-    width: 4,
-    height: 3,
-  },
-  {
-    src: "/assets/images/events/india-1.jpg",
-    width: 4,
+    src: "/assets/images/events/april-4.jpg",
+    width: 3.5,
     height: 3,
   },
 ];
 
 export const metadata: Metadata = {
-  title: "CloudPrism Supports India Dreamin' 2023 as a Silver Sponsor",
+  title: "April Salesforce Meet-Up in Patna, Bihar",
   description:
-    "CloudPrism supports India Dreamin' 2023 as a Silver Sponsor, championing innovation and collaboration in the Salesforce community.",
+    "Salesforce Meet-Up in Patna, Bihar, organised by CloudPrism Solutions! The event was nothing short of eventful, bringing together bright minds, industry experts, and aspiring professionals under one roof.",
   alternates: {
-    canonical: "https://cloudprism.in/event/india-dreamin-2023",
+    canonical: "https://cloudprism.in/event/april-salesforce-meet",
   },
   openGraph: {
-    title: "CloudPrism Supports India Dreamin' 2023 as a Silver Sponsor",
+    title: "April Salesforce Meet-Up in Patna, Bihar",
     description:
-      "CloudPrism supports India Dreamin' 2023 as a Silver Sponsor, championing innovation and collaboration in the Salesforce community.",
-    url: "https://cloudprism.in/event/india-dreamin-2023",
+      "Salesforce Meet-Up in Patna, Bihar, organised by CloudPrism Solutions! The event was nothing short of eventful, bringing together bright minds, industry experts, and aspiring professionals under one roof.",
+    url: "https://cloudprism.in/event/april-salesforce-meet",
     siteName: "Cloudprism",
     locale: "en_US",
     type: "article",
   },
   twitter: {
-    title: "CloudPrism Supports India Dreamin' 2023 as a Silver Sponsor",
+    title: "April Salesforce Meet-Up in Patna, Bihar",
     card: "summary_large_image",
     site: "@_CloudPrism_",
     description:
-      "CloudPrism supports India Dreamin' 2023 as a Silver Sponsor, championing innovation and collaboration in the Salesforce community.",
+      "Salesforce Meet-Up in Patna, Bihar, organised by CloudPrism Solutions! The event was nothing short of eventful, bringing together bright minds, industry experts, and aspiring professionals under one roof.",
   },
 };
 
