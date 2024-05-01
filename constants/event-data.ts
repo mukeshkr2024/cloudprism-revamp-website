@@ -126,4 +126,13 @@ export const events = [
     read_time: "1-Minute ",
     slug: "youth-dreamin-bihar-2024",
   },
+  {
+    id: 7,
+    imgUrl: "/assets/images/events/april-1.jpg",
+    title: "April Salesforce Meet-Up in Patna, Bihar ",
+    description:
+      "We're thrilled to announce the successful completion of the April Salesforce Meet-Up in Patna, Bihar, organised by CloudPrism Solutions! The event was nothing short of eventful, bringing together bright minds, industry experts, and aspiring professionals under one roof.",
+    read_time: "1-Minute ",
+    slug: "april-salesforce-meet",
+  },
 ];
