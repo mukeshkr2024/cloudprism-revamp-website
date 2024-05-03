@@ -22,17 +22,18 @@ export default function OurServices() {
 
   return (
     <section className="flex w-full flex-col gap-y-12 py-4 lg:flex-row">
-      <div className="mx-2.5 flex w-full items-start gap-6 px-4 sm:mx-4 md:mx-8 lg:w-1/3">
-        <h3 className="h2_semibold">
-          Our <br /> Services
-        </h3>
+      <div className="mx-2.5 flex w-full items-end gap-6 px-4 sm:mx-4 md:mx-8 md:items-start lg:w-1/3">
+        <h2 className="h2_semibold">
+          {/* Our <br /> Services */}
+          Our IT Consultation & Solutions Services
+        </h2>
         <Image
           src="/assets/icons/arrow-down.png"
           alt="IT Consultancy & Solutions"
           height={80}
           width={80}
           style={{ transform: `rotate(${scrollRotation}deg)` }}
-          className="size-16 lg:size-[75px]"
+          className="size-14 lg:size-[75px]"
         />
       </div>
 
