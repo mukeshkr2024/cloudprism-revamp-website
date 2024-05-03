@@ -53,7 +53,7 @@ export default function FullStackServices() {
         <SectionCard
           title="Web Development"
           imgUrl="/assets/images/full-stack-service.png"
-          description1="In today's digital age, your website is your storefront to the world. Our web development expertise helps you craft a captivating online presence that reflects your brand's unique identity. We go beyond just aesthetics, building user-friendly interfaces that guide visitors effortlessly through your offerings.
+          description1="In today's digital age, your website is your storefront to the world. Our web and software development expertise helps you craft a captivating online presence that reflects your brand's unique identity. We go beyond just aesthetics, building user-friendly interfaces that guide visitors effortlessly through your offerings.
           "
           imagSize="w-[770px] mt-[-60px] flex items-center justify-center  mr-[-40px]"
           className="flex-col-reverse lg:flex-row"

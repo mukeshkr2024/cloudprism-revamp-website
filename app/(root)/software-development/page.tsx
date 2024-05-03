@@ -47,8 +47,9 @@ function FullStackPage() {
             </h4>
 
             <h1 className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
-              Frontend Finesse to Backend Brilliance, with Expertise in Software
-              Consultation and Development - We&apos;ve Got You Covered!
+              {/* Frontend Finesse to Backend Brilliance, with Expertise in Software
+              Consultation and Development - We&apos;ve Got You Covered! */}
+              Software Development and solutions
             </h1>
 
             <CustomButton className="rounded-3xl px-5 py-1.5">

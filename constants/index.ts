@@ -302,9 +302,9 @@ export const certifiedDevelopers = [
 
 export const whyStandOut = [
   {
-    title: "Explore our skilled teams",
+    title: "Explore Our IT Consultation & Solutions Team",
     description:
-      "Our pride lies in assembling a top-notch team of skilled professionals committed to delivering exceptional results.",
+      "Our pride lies in assembling a top-notch team of skilled IT Consultants committed to delivering exceptional results.",
   },
   {
     title: "Experience our Swift Turnaround Time",
@@ -314,17 +314,17 @@ export const whyStandOut = [
   {
     title: "Dedicated teams who are ready to tackle any challenge",
     description:
-      " Your project deserves undivided attention. CloudPrism provides a committed team that works exclusively on your requirements, ensuring personalized service.",
+      "Your project deserves undivided attention. CloudPrism provides a committed team that works exclusively on your requirements, ensuring personalized service.",
   },
   {
     title: "Experience Smooth Communication",
     description:
-      " Communication is key. CloudPrism ensures flawless and transparent communication throughout the project lifecycle, keeping you informed every step of the way.",
+      "Communication is key. CloudPrism ensures flawless and transparent communication throughout the project lifecycle, keeping you informed every step of the way.",
   },
   {
-    title: "We Provide Free Expert Consultation",
+    title: "We Provide Free Expert IT Consultation & Solutions",
     description:
-      " Explore the possibilities with CloudPrism through our complimentary expert consultation, helping you make informed decisions for your IT projects.",
+      "Explore the possibilities with CloudPrism through our complimentary Expert IT consultation & Solutions helping you make informed decisions for your IT projects.",
   },
 ];
 
@@ -624,7 +624,8 @@ export const fullstackBuisnessPoints = [
   },
   {
     id: 2,
-    content: "Offers expertise across multiple languages, frameworks",
+    content:
+      "Offers Software Development expertise across multiple languages, frameworks",
   },
   {
     id: 3,
