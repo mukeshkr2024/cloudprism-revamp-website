@@ -35,10 +35,12 @@ export const LatestBlogItem = ({ title, slug, description, image }: Props) => {
         className="absolute inset-0 rounded-lg bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${image})`,
-          filter: isHovered ? "blur(20px)" : "none",
+          filter: isHovered ? "blur(20px)" : "blur(3px)",
           transition: "filter 0.5s ease-in-out",
         }}
-      />
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-95"></div>
+      </div>
       <div className="z-10 pb-2 md:pb-10">
         <span className="sm:text-base">Latest Blog</span>
         <h4
