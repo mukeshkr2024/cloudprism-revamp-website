@@ -1,5 +1,5 @@
-import { allBlogs } from "@/.contentlayer/generated";
-import RightSideBar from "@/components/blog/right-sidebar";
+import { allNews } from "@/.contentlayer/generated";
+// import RightSideBar from "@/components/blog/right-sidebar";
 import { TracingBeam } from "@/components/blog/tracing-beam";
 import BlogFormPopup from "@/components/forms/blog-form-dialog";
 import RenderMdx from "@/components/render-mdx";
@@ -15,9 +15,9 @@ interface Params {
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const blog = allBlogs.find((blog) => {
+  const blog = allNews.find((blog) => {
     // Remove 'blogs/' from the flattened path before matching
-    const normalizedPath = blog._raw.flattenedPath.replace("blogs/", "");
+    const normalizedPath = blog._raw.flattenedPath.replace("news/", "");
     return normalizedPath === params.slug;
   });
 
@@ -47,14 +47,14 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 function BlogDetailsPage({ params }: Params) {
-  const blog = allBlogs.find((blog) => {
+  const blog = allNews.find((blog) => {
     // Remove 'blogs/' from the flattened path before matching
-    const normalizedPath = blog._raw.flattenedPath.replace("blogs/", "");
+    const normalizedPath = blog._raw.flattenedPath.replace("news/", "");
     return normalizedPath === params.slug;
   });
 
   if (!blog) {
-    return redirect("/blogs");
+    return redirect("/news");
   }
 
   const formattedPublishedDate = format(
@@ -82,12 +82,12 @@ function BlogDetailsPage({ params }: Params) {
             <RenderMdx blog={blog} />
           </article>
         </TracingBeam>
-        <RightSideBar
+        {/* <RightSideBar
           author={blog.author}
           role={
             "Managing Director – Health & Public Service, Social Services and Workforce & Talent Transformation"
           }
-        />
+        /> */}
       </div>
       <ConnectToUs />
     </>

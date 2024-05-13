@@ -1,4 +1,4 @@
-import { Blog } from "@/.contentlayer/generated";
+import { Blog, News } from "@/.contentlayer/generated";
 import React from "react";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import Image from "next/image";
@@ -55,7 +55,7 @@ const components = {
     <strong {...props} className="text-white" />
   ),
 };
-export default function RenderMdx({ blog }: { blog: Blog }) {
+export default function RenderMdx({ blog }: { blog: Blog | News }) {
   const MDXContent = useMDXComponent(blog.body.code);
 
   return (

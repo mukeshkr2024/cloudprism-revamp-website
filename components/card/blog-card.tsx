@@ -52,13 +52,17 @@ export default function BlogCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Image
-        height={154}
-        alt={"IT Consultancy & Solutions"}
-        src={image}
-        width={279}
-        className="rounded-t-lg"
-      />
+      {image ? (
+        <Image
+          height={154}
+          alt={"IT Consultancy & Solutions"}
+          src={image}
+          width={279}
+          className="rounded-t-lg"
+        />
+      ) : (
+        <div className="h-[154px] w-[279px] rounded-t-lg"></div>
+      )}
       <div className="card_primary_background flex h-[280px] flex-col justify-between rounded-b-lg px-6 py-8 transition-colors duration-200 ease-in-out">
         <h4 className="line-clamp-2 text-xl font-bold text-white">{title}</h4>
         <p className="line-clamp-3 text-sm font-normal text-[#798882]">
