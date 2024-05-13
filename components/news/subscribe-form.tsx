@@ -23,7 +23,7 @@ const formSchema = z.object({
 });
 
 export const SubscribeForm = () => {
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
