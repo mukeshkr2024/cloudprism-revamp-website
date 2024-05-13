@@ -1,11 +1,8 @@
-import React from "react";
-import { Blog, allBlogs } from "@/.contentlayer/generated";
-import BlogCard from "../card/blog-card";
+import { News, allNews } from "@/.contentlayer/generated";
 import { sortBlogs } from "@/utils/cn";
+import BlogCard from "../card/blog-card";
 
-const sortedBlogs: Blog[] = sortBlogs(allBlogs);
-
-const news = sortedBlogs.slice(0, 8);
+const news: News[] = sortBlogs(allNews);
 
 export default function Spotlight() {
   return (

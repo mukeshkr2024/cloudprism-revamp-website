@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import {
   Form,
   FormControl,
@@ -13,6 +13,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Input } from "../ui/input";
 import CustomButton from "../shared/custom-button";
+import { submitCtaForm } from "@/actions/form.actions";
 
 const formSchema = z.object({
   email: z
@@ -22,6 +23,7 @@ const formSchema = z.object({
 });
 
 export const SubscribeForm = () => {
+  const [success, setSuccess] = useState(true);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -29,7 +31,23 @@ export const SubscribeForm = () => {
     },
   });
 
-  const onSubmit = () => {};
+  const onSubmit = async (values: z.infer<typeof formSchema>) => {
+    const response = await submitCtaForm(
+      { lastName: "Subscribe", ...values },
+      {
+        leadType: "Subscribe",
+        recordTypeName: "Cloudprism",
+      }
+    );
+
+    console.log(response);
+    setSuccess(true);
+
+    form.reset();
+    setTimeout(() => {
+      setSuccess(false);
+    }, 5000);
+  };
 
   return (
     <div className="flex h-[500px] items-center justify-center  md:h-[650px]">
@@ -61,7 +79,7 @@ export const SubscribeForm = () => {
                         <Input
                           placeholder="yourmail@gmail.com"
                           {...field}
-                          className="h-[42px] w-[220px] rounded-e-none rounded-s-3xl border-[#555555] px-3 placeholder:text-lg placeholder:font-normal placeholder:text-[#4A4A4A] md:h-[48px] md:w-[440px]"
+                          className="h-[42px] w-[220px] rounded-e-none rounded-s-3xl border-[#555555] px-3 text-base text-white placeholder:text-lg placeholder:font-normal placeholder:text-[#4A4A4A] sm:text-lg md:h-[48px] md:w-[440px]"
                           style={{
                             background:
                               "linear-gradient(149.64deg, rgba(25, 25, 25, 0.56) 21.24%, rgba(14, 14, 14, 0.56) 105.43%);",
@@ -72,6 +90,7 @@ export const SubscribeForm = () => {
                     </FormItem>
                   )}
                 />
+
                 <CustomButton
                   disabled={form.formState.isSubmitting}
                   className="h-[42px] rounded-e-3xl px-6 py-1.5 md:h-[48px]"
@@ -81,6 +100,11 @@ export const SubscribeForm = () => {
                   </p>{" "}
                 </CustomButton>
               </div>
+              {success && (
+                <p className="mt-2.5 text-center text-sm text-green-500 sm:text-[15px]">
+                  Thank you for subscribing to our newsletter.
+                </p>
+              )}
             </form>
           </Form>
         </div>
