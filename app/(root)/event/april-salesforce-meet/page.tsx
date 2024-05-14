@@ -78,10 +78,9 @@ const EventDetailsPage = () => {
 
               <div className="mt-8 flex flex-col gap-y-6">
                 <div className="flex flex-col gap-y-4">
-                  {/* <h1 className="h2_semibold !font-semibold lg:!text-4xl">
-                    CloudPrism Solutions Proudly Supports India Dreamin&apos;
-                    2023 as a Silver Sponsor, Driving Innovation Forward
-                  </h1> */}
+                  <h1 className="h2_semibold !font-semibold lg:!text-4xl">
+                    April Salesforce Meet-Up
+                  </h1>
                   <p className="blog_paragraph">
                     We&apos;re thrilled to announce the successful completion of
                     the April Salesforce Meet-Up in Patna, Bihar, organized by
