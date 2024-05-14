@@ -2,7 +2,6 @@
 import ScrollBarProgress from "@/components/shared/scroll-bar-progress";
 import { Metadata } from "next";
 import Link from "next/link";
-import React from "react";
 
 export const metadata: Metadata = {
   title: "CloudPrism Solutions Company Terms and Conditions",
@@ -47,7 +46,7 @@ const TermsPage = () => {
           </div>
 
           <div className="flex flex-col gap-y-2">
-            <h4 className="text-2xl font-semibold">Terms and Conditions </h4>
+            <h1 className="text-2xl font-semibold">Terms and Conditions </h1>
 
             <ul className="flex list-disc flex-col gap-y-3  pl-8 text-base font-light md:pl-12 md:text-lg">
               <li className="mt-2">
