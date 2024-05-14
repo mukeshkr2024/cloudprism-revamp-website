@@ -41,6 +41,10 @@ export const navbarLinks: NavbarLinks[] = [
         route: "/case-studies",
         label: "Case Studies",
       },
+      {
+        route: "/newsletter",
+        label: "Newsletter",
+      },
     ],
   },
   {
