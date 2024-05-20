@@ -2,6 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 
 interface ServiceProps {
@@ -9,6 +10,7 @@ interface ServiceProps {
   title: string;
   description: string;
   svgUrl: string;
+  href: string;
 }
 
 export default function ServiceCard({
@@ -16,6 +18,7 @@ export default function ServiceCard({
   imgUrl,
   title,
   svgUrl,
+  href,
 }: ServiceProps) {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -46,9 +49,18 @@ export default function ServiceCard({
             height={50}
           />
         </div>
-        <h4 className="text-[19px] font-bold text-white md:text-2xl">
-          {title}
-        </h4>
+        {href ? (
+          <Link href={href}>
+            <h4 className="text-[19px] font-bold text-white md:text-2xl">
+              {title}
+            </h4>
+          </Link>
+        ) : (
+          <h4 className="text-[19px] font-bold text-white md:text-2xl">
+            {title}
+          </h4>
+        )}
+
         <p className="text-[14px] text-[#adacac] md:text-lg">{description}</p>
       </div>
     </div>

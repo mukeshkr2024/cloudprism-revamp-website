@@ -103,7 +103,7 @@ export default function Home() {
         <div className="w-full">
           <MainSection />
           <div className="flex-center mt-8 w-full md:mt-12 lg:mt-16 ">
-            <h2 className="mb-10 max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
+            <p className="mb-10 max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
               Cloudprism is your Certified IT Solution Partner, promoting
               business development with complete IT Consultation and solutions.
               With 100+ qualified developers, we&apos;ve completed 420+
@@ -112,7 +112,7 @@ export default function Home() {
               solutions, cost reductions, and quick deployment of IT solutions.
               Choose Cloudprism for experienced advice on expanding your
               business through unique IT techniques.
-            </h2>
+            </p>
           </div>
           <div className="mx-auto mt-16 max-w-7xl  ">
             <OurServices />

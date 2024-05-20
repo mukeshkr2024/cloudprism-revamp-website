@@ -23,10 +23,10 @@ export default function FullStackServices() {
   return (
     <div className="flex w-full flex-col items-center justify-center space-y-8 overflow-hidden">
       <div className="mb-12 mt-4 flex gap-6 lg:mb-24">
-        <h3 className="h2_semibold">
+        <h2 className="h2_semibold">
           Our <br />
           Services
-        </h3>
+        </h2>
         <Image
           src="/assets/icons/arrow-down.png"
           alt="Software Development and Solutions"

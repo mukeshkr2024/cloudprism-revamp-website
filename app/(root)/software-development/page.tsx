@@ -42,9 +42,9 @@ function FullStackPage() {
           }}
         >
           <div className="mb-16 flex max-w-7xl flex-col items-center justify-center gap-y-6">
-            <h4 className="h1_bold xl:!text-[90px]">
+            <h3 className="h1_bold xl:!text-[90px]">
               Level Up Your Digital <br /> Presence
-            </h4>
+            </h3>
 
             <h1 className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
               Frontend Finesse to Backend Brilliance, with Expertise in Software

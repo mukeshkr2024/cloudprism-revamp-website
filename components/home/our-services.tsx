@@ -42,12 +42,14 @@ export default function OurServices() {
           svgUrl="/assets/gradients/one-stop-vector.svg"
           imgUrl="/assets/icons/one-stop.svg"
           title="One stop salesforce solutions"
+          href="/salesforce-consultation"
           description="Refined workflows, Increase customer experiences, and boost efficiency with our integrated Salesforce and IT solutions. From initial implementation to advanced customization, along with expert Salesforce consultation, we offer end-to-end services modified to your business needs. Seamlessly streamline your service delivery and IT solutions, making progress happen all in one step."
         />
         <ServiceCard
           svgUrl="/assets/gradients/full-stack-gradient.svg"
           imgUrl="/assets/icons/full-stack.svg"
           title="Software Development & Solutions"
+          href="/software-development"
           description="Improve your online projects with CloudPrism's experts in Software Development. We specialize in crafting user-friendly websites and robust behind-the-scenes systems. Our services encompass data management, connecting various software components, and providing customized solutions tailored to your needs. Whether you're initiating a project or ensuring its seamless operation, our Inclusive Software Solutions are here for you."
         />
       </div>

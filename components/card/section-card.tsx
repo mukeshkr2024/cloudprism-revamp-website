@@ -22,7 +22,7 @@ export default function SectionCard({
 }: Props) {
   return (
     <section className="mx-auto flex max-w-7xl flex-col  ">
-      <h4 className="h2_semibold text-center">{title}</h4>
+      <h3 className="h2_semibold text-center">{title}</h3>
       <div
         className={`${className} flex w-full  items-center justify-center  `}
       >

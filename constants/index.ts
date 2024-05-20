@@ -443,7 +443,7 @@ export const clientSays = [
           "Excellent service, great attention to detail and quick efficient turnaround time.",
       },
     ],
-    profilePic: "/assets/icons/client-1.svg",
+    profilePic: "/assets/icons/client-1.png",
   },
   {
     name: "Paul fedar",
@@ -457,7 +457,7 @@ export const clientSays = [
           "I would highly recommend Cloudprism Solutions not only for their technical skills and guidance, but also for their work ethic, communication skills and ease of working with them. Great job!!",
       },
     ],
-    profilePic: "/assets/icons/client-2.svg",
+    profilePic: "/assets/icons/client-2.png",
   },
   {
     name: "Saul fernandez",
@@ -470,7 +470,7 @@ export const clientSays = [
         content: "Team attention to detail made the job quicker than expected.",
       },
     ],
-    profilePic: "/assets/images/client-3.svg",
+    profilePic: "/assets/icons/client-3.png",
   },
   {
     name: "Max gates",
@@ -483,7 +483,7 @@ export const clientSays = [
         content: "It was a pleasure working with CloudPrism Solution.",
       },
     ],
-    profilePic: "/assets/images/client-4.svg",
+    profilePic: "/assets/icons/client-4.png",
   },
   {
     name: "Kshitij Chawla",
@@ -495,7 +495,7 @@ export const clientSays = [
         content: "Will reach out again for future projects.",
       },
     ],
-    profilePic: "/assets/images/client-5.svg",
+    profilePic: "/assets/icons/client-5.png",
   },
 ];
 
