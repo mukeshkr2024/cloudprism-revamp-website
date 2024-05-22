@@ -306,7 +306,7 @@ export const certifiedDevelopers = [
 
 export const whyStandOut = [
   {
-    title: "Explore Our IT Consultation & Solutions Team",
+    title: "Explore Our IT Consulting & Solutions Team",
     description:
       "Our pride lies in assembling a top-notch team of skilled IT Consultants committed to delivering exceptional results.",
   },
@@ -326,9 +326,9 @@ export const whyStandOut = [
       "Communication is key. CloudPrism ensures flawless and transparent communication throughout the project lifecycle, keeping you informed every step of the way.",
   },
   {
-    title: "We Provide Free Expert IT Consultation & Solutions",
+    title: "We Provide Free Expert IT Consulting & Solutions",
     description:
-      "Explore the possibilities with CloudPrism through our complimentary Expert IT consultation & Solutions helping you make informed decisions for your IT projects.",
+      "Explore the possibilities with CloudPrism through our complimentary Expert IT consulting & Solutions helping you make informed decisions for your IT projects.",
   },
 ];
 

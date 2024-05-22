@@ -32,14 +32,14 @@ const recentStudies = recentCaseStudies.slice(0, 4);
 export const metadata: Metadata = {
   title: "IT Consulting & Solutions for Business - CloudPrism Solutions.",
   description:
-    "Explore tailored IT consultation & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
+    "Explore tailored IT consulting & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
   alternates: {
     canonical: "https://cloudprism.in",
   },
   openGraph: {
     title: "IT Consulting & Solutions for Business - CloudPrism Solutions.",
     description:
-      "Explore tailored IT consultation & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
+      "Explore tailored IT consulting & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
     url: `https://cloudprism.in`,
     siteName: "Cloudprism",
     locale: "en_US",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "IT Consulting & Solutions for Business - CloudPrism Solutions.",
     description:
-      "Explore tailored IT consultation & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
+      "Explore tailored IT consulting & solutions at CloudPrism. Transform your business with expert guidance & innovative technology strategies",
   },
 };
 
@@ -105,7 +105,7 @@ export default function Home() {
           <div className="flex-center mt-8 w-full md:mt-12 lg:mt-16 ">
             <p className="mb-10 max-w-sm px-6 text-center text-base text-[#F5F5F5] sm:max-w-md sm:text-lg md:max-w-2xl md:text-xl lg:max-w-4xl lg:text-2xl xl:max-w-6xl xl:text-3xl xl:leading-9">
               Cloudprism is your Certified IT Solution Partner, promoting
-              business development with complete IT Consultation and solutions.
+              business development with complete IT Consulting and solutions.
               With 100+ qualified developers, we&apos;ve completed 420+
               successful projects in 20+ countries. Our Agile technique,
               Customized by our expert IT consultants, provides specific

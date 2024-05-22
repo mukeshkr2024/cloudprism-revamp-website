@@ -25,7 +25,7 @@ export default function OurServices() {
       <div className="mx-2.5 flex w-full items-end gap-6 px-4 sm:mx-4 md:mx-8 md:items-start lg:w-1/3">
         <h2 className="h2_semibold">
           {/* Our <br /> Services */}
-          Our IT Consultation & Solutions Services
+          Our IT Consulting & Solutions Services
         </h2>
         <Image
           src="/assets/icons/arrow-down.png"
