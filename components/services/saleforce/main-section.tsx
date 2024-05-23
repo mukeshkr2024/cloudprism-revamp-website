@@ -7,7 +7,7 @@ import React from "react";
 export default function SaleforceMainSection() {
   return (
     <section
-      className="relative bg-no-repeat bg-bottom bg-contain mx-auto flex h-[600px] w-full max-w-[95rem] flex-col md:h-[800px]"
+      className="relative mx-auto flex h-[600px] w-full max-w-[95rem] flex-col bg-contain bg-bottom bg-no-repeat md:h-[800px]"
       style={{
         backgroundImage: "url('/assets/images/salesforce-bg.png')",
       }}
