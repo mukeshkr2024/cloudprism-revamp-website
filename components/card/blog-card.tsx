@@ -55,7 +55,7 @@ export default function BlogCard({
       {image ? (
         <Image
           height={154}
-          alt={"IT Consultancy & Solutions"}
+          alt="salesforce consultation and Implementation partner"
           src={image}
           width={279}
           className="rounded-t-lg"

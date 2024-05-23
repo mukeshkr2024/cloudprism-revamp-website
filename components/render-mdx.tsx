@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const components = {
   Image: (props: any) => (
-    // eslint-disable-next-line jsx-a11y/alt-text
     <Image
       className="my-8 rounded-lg"
       width={985}
       height={554}
       sizes="100vw"
+      alt="salesforce consultation and Implementation partner"
       {...props}
     />
   ),

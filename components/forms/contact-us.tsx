@@ -84,16 +84,16 @@ export const ContactUsForm = () => {
         >
           <div className="flex w-full flex-col space-y-4 ">
             {message && (
-              <p className="text-sm text-green-500 ">
+              <h3 className="text-sm text-green-500 ">
                 Thanks for your submission! We&apos;ll be in touch shortly.
-              </p>
+              </h3>
             )}
-            <h3 className="mt-10 text-3xl font-bold md:mt-14 md:text-4xl">
+            <h1 className="mt-10 text-3xl font-bold md:mt-14 md:text-4xl">
               Get in touch with us!
-            </h3>
-            <p className="text-[19px] text-[#949494]">
+            </h1>
+            <h2 className="text-[19px] text-[#949494]">
               Let us know more about you.
-            </p>
+            </h2>
 
             <div className="mt-6 w-full ">
               <Form {...form}>

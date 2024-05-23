@@ -73,9 +73,9 @@ const EventDetailsPage = () => {
           <div className="text-[#A4A4A4]">
             <div className="mx-auto max-w-7xl pt-8">
               <div>
-                <span className="text-base font-normal text-white">
+                <h2 className="text-base font-normal text-white">
                   Mule Dreamin 2023
-                </span>
+                </h2>
                 <div className="my-2.5 flex w-full gap-x-12 gap-y-1  text-lg font-medium text-white">
                   <p>Delhi</p>
                   <p>Date- 23rd september</p>

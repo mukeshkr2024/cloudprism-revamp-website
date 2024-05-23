@@ -47,9 +47,9 @@ const PrivacyPage = () => {
           </div>
 
           <div className="flex flex-col gap-y-2">
-            <h4 className="text-2xl font-semibold">
+            <h1 className="text-2xl font-semibold">
               Use of Copyrighted Material
-            </h4>
+            </h1>
             <p className="text-base font-light">
               We do not allow the use of copyrighted material on our website or
               in any of our materials without proper permission or licensing. If

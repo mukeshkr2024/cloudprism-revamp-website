@@ -72,9 +72,9 @@ const EventDetailsPage = () => {
           <div className="text-[#A4A4A4]">
             <div className="mx-auto max-w-7xl pt-8">
               <div>
-                <span className="text-base font-normal text-white">
+                <h1 className="text-base font-normal text-white">
                   India Dream in 2023
-                </span>
+                </h1>
                 <div className="my-2.5 flex w-full gap-x-12 gap-y-1  text-lg font-medium text-white">
                   <p>Ahmedabad</p>
                   <p>Date: 20th May 2023</p>
@@ -84,10 +84,10 @@ const EventDetailsPage = () => {
 
               <div className="mt-8 flex flex-col gap-y-6">
                 <div className="flex flex-col gap-y-4">
-                  <h1 className="h2_semibold !font-semibold lg:!text-4xl">
+                  <h2 className="h2_semibold !font-semibold lg:!text-4xl">
                     CloudPrism Solutions Proudly Supports India Dreamin&apos;
                     2023 as a Silver Sponsor, Driving Innovation Forward
-                  </h1>
+                  </h2>
                   <p className="blog_paragraph">
                     As proud silver sponsors of{" "}
                     <Link

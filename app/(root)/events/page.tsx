@@ -43,11 +43,11 @@ export default function EventsPage() {
           }}
         >
           <div className="flex max-w-6xl flex-col items-center justify-center gap-y-4 sm:gap-y-6 md:pb-24">
-            <h4 className="h1_bold">Explore Upcoming Events and Webinars.</h4>
-            <h1 className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
+            <h1 className="h1_bold">Explore Upcoming Events and Webinars.</h1>
+            <h2 className="px-6 text-center text-base text-[#C0C0C0] sm:text-lg md:text-xl lg:text-2xl xl:text-3xl ">
               Step into a world of excitement, inspiration, and connection at
               our exclusive event - where unforgettable moments await.
-            </h1>
+            </h2>
             <CustomButton className="rounded-3xl px-5 py-1.5">
               <Link href="/contact-us">
                 <p className="text-sm font-semibold text-black  sm:text-base md:text-lg lg:text-xl xl:text-2xl">

@@ -67,9 +67,9 @@ const EventDetailsPage = () => {
           <div className="text-[#A4A4A4]">
             <div className="mx-auto max-w-7xl pt-8">
               <div>
-                <span className="text-base font-normal text-white">
+                <h1 className="text-base font-normal text-white">
                   Youth dreamin 2024
-                </span>
+                </h1>
                 <div className="my-2.5 flex w-full gap-x-12 gap-y-1  text-lg font-medium text-white">
                   <p>Bihar</p>
                   {/* <p> On February 29th to March 1st, 2024,</p> */}
@@ -79,9 +79,9 @@ const EventDetailsPage = () => {
 
               <div className="mt-8 flex flex-col gap-y-6">
                 <div className="flex flex-col gap-y-4">
-                  <h1 className="h2_semibold !font-semibold lg:!text-4xl">
+                  <h2 className="h2_semibold !font-semibold lg:!text-4xl">
                     Youth DreamIn - Salesforce Meet-up Celebration
-                  </h1>
+                  </h2>
                   <p className="blog_paragraph">
                     Team proudly{" "}
                     <Link

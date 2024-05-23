@@ -18,8 +18,8 @@ const TermsPage = () => {
       <div className="w-full ">
         <div className="mx-auto  flex max-w-xs flex-col gap-y-4 py-28 text-white sm:max-w-sm sm:py-32 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl">
           <div>
-            <h3 className="mb-6 text-3xl font-bold">Terms of Service</h3>
-            <p className="text-base font-light md:text-lg">
+            <h2 className="mb-6 text-3xl font-bold">Terms of Service</h2>
+            <h3 className="text-base font-light md:text-lg">
               Terms of Service The website{" "}
               <Link
                 href="https://cloudprism.in/"
@@ -42,7 +42,7 @@ const TermsPage = () => {
               >
                 www.cloudprism.in
               </Link>{" "}
-            </p>
+            </h3>
           </div>
 
           <div className="flex flex-col gap-y-2">
