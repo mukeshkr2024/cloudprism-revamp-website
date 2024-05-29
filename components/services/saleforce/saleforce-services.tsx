@@ -22,9 +22,10 @@ export default function SalesForceServices() {
 
   return (
     <div className="mt-6 flex w-full flex-col items-center justify-center space-y-8 md:mt-10">
-      <div className="mb-12 flex gap-4 lg:mb-16">
+      <div className="mb-12 flex items-center justify-center gap-2 px-6 md:gap-4 lg:mb-16">
         <h2 className="h2_semibold">
-          Our <br /> Services
+          Our Salesforce consultation <br />
+          and implementation services
         </h2>
         <Image
           src="/assets/icons/arrow-down.png"
