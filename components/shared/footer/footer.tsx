@@ -63,7 +63,6 @@ export default function Footer() {
               <Phone className="size-4" /> <p> +91 83295 53438</p>
             </div>
           </div>
-
           <div className="md:flex-1">
             <p className="max-w-xs">
               Office no: 917, <br className="sm:hidden" />
@@ -71,10 +70,9 @@ export default function Footer() {
               Pune, Maharashtra 411014
             </p>
             <div className="flex items-center gap-2">
-              <Phone className="size-4" /> <p> +91 7906582439</p>
+              <Phone className="size-4" /> <p> +91 8527704702</p>
             </div>
           </div>
-
           <div className="md:flex-1">
             <p className="max-w-xs">
               701 Tillery St, Austin, TX 78702, United States
