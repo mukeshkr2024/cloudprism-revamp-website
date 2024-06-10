@@ -113,6 +113,11 @@ export default function AboutPage() {
             imgUrl="/assets/images/mission-svg.png"
             className="flex-col-reverse  lg:flex-row"
             imagSize="w-[710px] ml-[-50px]"
+            otherdetails={{
+              name: "Prateek Prasoon",
+              desgination: "CEO",
+              portfolio: "https://prateekprasoon.com/",
+            }}
           />
           <SectionCard
             title="Vision"
@@ -142,6 +147,7 @@ export default function AboutPage() {
                 linkdeinUrl={team.linkdeinUrl}
                 name={team.name}
                 profilePic={team.profilePic}
+                portfolio={team.portfolio}
               />
             ))}
           </div>

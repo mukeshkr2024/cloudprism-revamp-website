@@ -68,6 +68,7 @@ export const ourTeams: OurTeamProps[] = [
     profilePic: "/assets/images/team/prateek.png",
     linkdein: "https",
     linkdeinUrl: "https://www.linkedin.com/in/mrprateek/",
+    portfolio: "https://prateekprasoon.com/",
   },
   {
     name: "Manahar Shyam",
@@ -77,11 +78,11 @@ export const ourTeams: OurTeamProps[] = [
     linkdeinUrl: "https://www.linkedin.com/in/manahar-shyam-a52201224/",
   },
   {
-    name: "Deep Singh",
-    description: "CMO",
-    profilePic: "/assets/images/team/deep.png",
+    name: "Shivam Kumar",
+    description: "Marketing Manager",
+    profilePic: "/assets/images/team/shivam.jpg",
     linkdein: "https",
-    linkdeinUrl: "https://www.linkedin.com/in/deep-singh00045/",
+    linkdeinUrl: "https://www.linkedin.com/in/shivam-kumar2907/",
   },
   {
     name: "Pragati Anjani",

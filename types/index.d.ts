@@ -12,6 +12,7 @@ export interface OurTeamProps {
   profilePic: string;
   linkdein: string;
   linkdeinUrl: string;
+  portfolio?: string;
 }
 
 export interface SucessStory {

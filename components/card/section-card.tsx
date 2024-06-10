@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -9,6 +10,11 @@ interface Props {
   className: string;
   imagSize?: string;
   alt?: string;
+  otherdetails?: {
+    name?: string;
+    desgination?: string;
+    portfolio?: string;
+  };
 }
 
 export default function SectionCard({
@@ -19,6 +25,7 @@ export default function SectionCard({
   className,
   alt,
   imagSize,
+  otherdetails,
 }: Props) {
   return (
     <section className="mx-auto flex max-w-7xl flex-col  ">
@@ -39,13 +46,27 @@ export default function SectionCard({
           )}
         </div>
 
-        <Image
-          src={imgUrl}
-          alt={alt || "IT Consultancy & Solutions"}
-          width={570}
-          height={620}
-          className={imagSize}
-        />
+        <div className="relative">
+          <Image
+            src={imgUrl}
+            alt={alt || "IT Consultancy & Solutions"}
+            width={570}
+            height={620}
+            className={imagSize}
+          />
+          {otherdetails && otherdetails.portfolio && (
+            <div className="absolute right-[31%] top-[82%] text-center text-[#F2EFEF]">
+              <Link href={otherdetails?.portfolio} target="_blank">
+                <p className="text-xl font-semibold sm:text-2xl">
+                  {otherdetails?.name}
+                </p>
+                <span className="text-base sm:text-lg">
+                  {otherdetails?.desgination}
+                </span>
+              </Link>
+            </div>
+          )}
+        </div>
       </div>
     </section>
   );

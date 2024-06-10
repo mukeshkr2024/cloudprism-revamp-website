@@ -7,10 +7,10 @@ import React, { useState } from "react";
 
 export default function TeamCard({
   description,
-  linkdein,
   name,
   profilePic,
   linkdeinUrl,
+  portfolio,
 }: OurTeamProps) {
   const [hovered, setHovered] = useState(false);
   return (
@@ -25,7 +25,11 @@ export default function TeamCard({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <Link href={linkdeinUrl} className="absolute right-4 top-4">
+      <Link
+        href={linkdeinUrl}
+        className="absolute right-4 top-4"
+        target="_blank"
+      >
         <Image
           src="/assets/icons/linkdein-dark.svg"
           width={20}
@@ -39,15 +43,31 @@ export default function TeamCard({
           alt={" IT Consultancy & Solutions"}
           width={103}
           height={103}
+          className="rounded-full "
         />
-        <div className="flex flex-col gap-[2px] text-center">
-          <span className="line-clamp-1 text-lg font-semibold text-white">
-            {name}
-          </span>
-          <p className="line-clamp-1 text-sm font-light text-[#C6C6C6] sm:text-base">
-            {description}
-          </p>
-        </div>
+        {portfolio ? (
+          <Link
+            href={portfolio}
+            target="_blank"
+            className="flex flex-col gap-[2px] text-center"
+          >
+            <span className="line-clamp-1 text-lg font-semibold text-white">
+              {name}
+            </span>
+            <p className="line-clamp-1 text-sm font-light text-[#C6C6C6] sm:text-base">
+              {description}
+            </p>
+          </Link>
+        ) : (
+          <div className="flex flex-col gap-[2px] text-center">
+            <span className="line-clamp-1 text-lg font-semibold text-white">
+              {name}
+            </span>
+            <p className="line-clamp-1 text-sm font-light text-[#C6C6C6] sm:text-base">
+              {description}
+            </p>
+          </div>
+        )}
       </div>
     </div>
   );
