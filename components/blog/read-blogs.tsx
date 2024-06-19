@@ -6,7 +6,7 @@ import CustomButton from "../shared/custom-button";
 import { Blog } from "@/.contentlayer/generated";
 
 export default function ReadBlogs({ blogs }: { blogs: Blog[] }) {
-  const allBlogs = blogs.slice(0, 44);
+  const allBlogs = blogs.slice(0, 46);
 
   const [displayedBlogs, setDisplayedBlogs] = useState<Blog[]>([]);
   const [loadCount, setLoadCount] = useState(8);
