@@ -8,14 +8,13 @@ export const metadata: Metadata = {
   description:
     " Efficient Communication and Data Centralization: Hedera Dx Implements CloudPrism Solutions on Salesforce",
   alternates: {
-    canonical:
-      "https://cloudprism.in/case-study/efficient-comms-data-centralization-hedera-dx-cloud-prism-salesforce",
+    canonical: "https://cloudprism.in/case-study/efficient-comms-data",
   },
   openGraph: {
     title: "Hedera Dx Implements CloudPrism Solutions on Salesforce",
     description:
       " Efficient Communication and Data Centralization: Hedera Dx Implements CloudPrism Solutions on Salesforce",
-    url: "https://cloudprism.in/case-study/efficient-comms-data-centralization-hedera-dx-cloud-prism-salesforce",
+    url: "https://cloudprism.in/case-study/efficient-comms-data",
     siteName: "Cloudprism",
     locale: "en_US",
     type: "article",
