@@ -56,7 +56,11 @@ export default function SectionCard({
           />
           {otherdetails && otherdetails.portfolio && (
             <div className="absolute right-[31%] top-[82%] text-center text-[#F2EFEF]">
-              <Link href={otherdetails?.portfolio} target="_blank">
+              <Link
+                href={otherdetails?.portfolio}
+                target="_blank"
+                rel="noopener"
+              >
                 <p className="text-xl font-semibold sm:text-2xl">
                   {otherdetails?.name}
                 </p>

@@ -93,6 +93,7 @@ const EventDetailsPage = () => {
                     The{" "}
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://www.cloudprism.in"
                       className="text-xl font-semibold text-white"
                     >
@@ -108,6 +109,7 @@ const EventDetailsPage = () => {
                   <p className="blog_paragraph">
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://muledreamin.com/recap.php"
                       className="text-xl font-semibold text-white"
                     >
@@ -179,6 +181,7 @@ const EventDetailsPage = () => {
                     The{" "}
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://muledreamin.com/recap.php"
                       className="text-xl font-semibold text-white"
                     >

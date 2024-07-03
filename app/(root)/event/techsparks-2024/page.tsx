@@ -86,6 +86,7 @@ const EventDetailsPage = () => {
                   <p className="blog_paragraph">
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://www.cloudprism.in"
                       className="text-xl font-semibold text-white"
                     >
@@ -94,6 +95,7 @@ const EventDetailsPage = () => {
                     had the privilege of participating in{" "}
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://yourstory.com/techsparks2024"
                       className="text-xl font-semibold text-white"
                     >
@@ -158,6 +160,7 @@ const EventDetailsPage = () => {
                     Overall, our experience at
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://yourstory.com/techsparks2024"
                       className="text-xl font-semibold text-white"
                     >

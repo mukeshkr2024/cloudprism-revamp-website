@@ -88,6 +88,7 @@ const EventDetailsPage = () => {
                   </h1>
                   <p className="blog_paragraph">
                     <Link
+                      rel="noopener"
                       target="_blank"
                       href="https://www.cloudprism.in"
                       className="text-xl font-semibold text-white"
@@ -141,6 +142,7 @@ const EventDetailsPage = () => {
                     As proud sponsors,{" "}
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://www.cloudprism.in"
                       className="text-xl font-semibold text-white"
                     >

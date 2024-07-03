@@ -48,6 +48,7 @@ const components = {
     <a
       {...props}
       target="_blank"
+      rel="noopener"
       className="text-[20px] font-semibold  text-white"
     />
   ),

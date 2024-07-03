@@ -29,6 +29,7 @@ export default function TeamCard({
         href={linkdeinUrl}
         className="absolute right-4 top-4"
         target="_blank"
+        rel="noopener"
       >
         <Image
           src="/assets/icons/linkdein-dark.svg"
@@ -49,6 +50,7 @@ export default function TeamCard({
           <Link
             href={portfolio}
             target="_blank"
+            rel="noopener"
             className="flex flex-col gap-[2px] text-center"
           >
             <span className="line-clamp-1 text-lg font-semibold text-white">

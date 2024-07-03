@@ -95,6 +95,7 @@ const EventDetailsPage = () => {
                   <p className="blog_paragraph">
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://muledreamin.com/recap.php"
                       className="text-xl font-semibold text-white"
                     >
@@ -104,6 +105,7 @@ const EventDetailsPage = () => {
                     was proud to be a Silver Sponsor at the{" "}
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://muledreamin.com/recap.php"
                       className="text-xl font-semibold text-white"
                     >

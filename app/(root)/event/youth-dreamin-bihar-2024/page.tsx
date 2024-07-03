@@ -86,6 +86,7 @@ const EventDetailsPage = () => {
                     Team proudly{" "}
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://www.cloudprism.in"
                       className="text-xl font-semibold text-white"
                     >

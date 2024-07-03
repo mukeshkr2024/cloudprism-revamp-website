@@ -94,12 +94,14 @@ const EventDetailsPage = () => {
                       target="_blank"
                       href="https://indiadreamin.in/2023/02/19/india-dreamin-23-announcement/#:~:text=Get%20ready%20to%20be%20a,the%20Salesforce%20ecosystem%20in%20India."
                       className="text-xl font-semibold text-white"
+                      rel="noopener"
                     >
                       India Dreamin&apos;23
                     </Link>
                     ,
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://www.cloudprism.in"
                       className="text-xl font-semibold text-white"
                     >
@@ -131,6 +133,7 @@ const EventDetailsPage = () => {
                     India
                     <Link
                       target="_blank"
+                      rel="noopener"
                       href="https://indiadreamin.in/2023/02/19/india-dreamin-23-announcement/#:~:text=Get%20ready%20to%20be%20a,the%20Salesforce%20ecosystem%20in%20India."
                       className="text-xl font-semibold text-white"
                     >
