@@ -70,7 +70,7 @@ export default function Footer() {
               Pune, Maharashtra 411014
             </p>
             <div className="flex items-center gap-2">
-              <Phone className="size-4" /> <p> +91 8527704702</p>
+              <Phone className="size-4" /> <p> +91 7004535083</p>
             </div>
           </div>
           <div className="md:flex-1">

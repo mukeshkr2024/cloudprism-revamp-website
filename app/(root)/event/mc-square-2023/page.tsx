@@ -104,12 +104,12 @@ const EventDetailsPage = () => {
                     <GalleryView images={images} />
                   </div>
 
-                  <p className="blog_paragraph">
+                  <h2 className="blog_paragraph">
                     had the privilege of attending the MC2 - Hyderabad Edition
                     event, where we proudly served as a silver sponsor. This
                     event was a beacon for knowledge, synergy, and social impact
                     within the marketing cloud sphere.
-                  </p>
+                  </h2>
                 </div>
 
                 {/* <Slideshow images={images} length={3} /> */}
