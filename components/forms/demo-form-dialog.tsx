@@ -248,8 +248,8 @@ const DemoFormPopup: React.FC = () => {
               <p>Mail us: hello@cloudprism.in</p>
               <p>Website: www.cloudprism.in</p>
               <p className="mt-6">
-                Building Name: Gera Imperium Alpha, Block Sector: Vitthal Nagar,
-                Kharadi, Pune, 411014
+                Office 620, 6th Floor, Gera Imperium Rise, Wipro Circle, Phase
+                II, Hinjewadi, Pune, Pimpri Chinchwad, Maharashtra, 411057
               </p>
               <div className="mb-6 mt-2 flex gap-1.5">
                 {socialLinks.map((item) => (

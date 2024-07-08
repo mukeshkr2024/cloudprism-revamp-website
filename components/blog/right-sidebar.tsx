@@ -18,7 +18,6 @@ export default function RightSideBar({ author, role }: RightSideBarProps) {
       <div className="flex w-full flex-col gap-y-3  text-white  lg:gap-y-4">
         <p className="text-sm text-[#A4A4A4] sm:text-base">WRITTEN BY</p>
         <p className="text-sm font-semibold sm:text-base ">{author}</p>
-        {/* <p className="text-sm text-[#A4A4A4] sm:text-base">{role}</p> */}
       </div>
 
       <div className="mt-10 flex w-full flex-col items-center justify-center   text-white">

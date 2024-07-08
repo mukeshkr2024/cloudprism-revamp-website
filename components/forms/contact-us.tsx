@@ -207,8 +207,8 @@ export const ContactUsForm = () => {
           </div>
           <div className="flex flex-col gap-y-2">
             <p className="max-w-[300px]">
-              Building Name: Gera Imperium Alpha, Block Sector: Vitthal Nagar,
-              Kharadi, Pune, 411014
+              Office 620, 6th Floor, Gera Imperium Rise, Wipro Circle, Phase II,
+              Hinjewadi, Pune, Pimpri Chinchwad, Maharashtra, 411057
             </p>
             <div className="mt-4 flex gap-1.5">
               {socialLinks.map((item) => (

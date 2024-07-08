@@ -64,10 +64,14 @@ export default function Footer() {
             </div>
           </div>
           <div className="md:flex-1">
-            <p className="max-w-xs">
+            {/* <p className="max-w-xs">
               Office no: 917, <br className="sm:hidden" />
               Gera Imperium Alpha, Rajaram Patil Nagar, Vitthal Nagar, Kharadi,
               Pune, Maharashtra 411014
+            </p> */}
+            <p className="max-w-xs">
+              Office 620, 6th Floor, Gera Imperium Rise, Wipro Circle, Phase II,
+              Hinjewadi, Pune, Pimpri Chinchwad, Maharashtra, 411057
             </p>
             <div className="flex items-center gap-2">
               <Phone className="size-4" /> <p> +91 7004535083</p>
