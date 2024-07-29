@@ -21,5 +21,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
+    - run: npm install --force
     - run: npm run build --if-present
+    - name: Change Directory
+      run: cd /home/ubuntu/actions-runner/_work/cloudprism-revamp-website/cloudprism-revamp-website
+    - run: pm2 restart 0
