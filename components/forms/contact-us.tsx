@@ -89,7 +89,7 @@ export const ContactUsForm = () => {
               </h3>
             )}
             <h1 className="mt-10 text-3xl font-bold md:mt-14 md:text-4xl">
-              Get in touch with us!.
+              Get in touch with us!
             </h1>
             <h2 className="text-[19px] text-[#949494]">
               Let us know more about you.
