@@ -9,6 +9,9 @@ module.exports = {
         wait_ready: true,
         listen_timeout: 5000,
         max_restarts: 5,
+        env_production: {
+          NODE_ENV: 'production',
+        }
       }
     ]
   };
