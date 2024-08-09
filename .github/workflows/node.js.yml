@@ -28,5 +28,17 @@ jobs:
     - name: Build the project
       run: npm run build --if-present
 
-    - name: Deploy with PM2
-      run: pm2 restart all
+    - name: Deploy to Green Environment
+      run: |
+        # Replace with your deployment script or command for the green environment
+        ./deploy-to-green.sh
+
+    - name: Switch Traffic to Green Environment
+      run: |
+        # Replace with your command to switch traffic (e.g., update load balancer)
+        ./switch-traffic.sh
+
+    - name: Clean up Blue Environment
+      run: |
+        # Optionally, clean up the blue environment if needed
+        ./clean-up-blue.sh
