@@ -1,0 +1,43 @@
+name: Node.js CI (Development)
+
+on:
+  push:
+    branches: [ "dev" ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    strategy:
+      matrix:
+        node-version: [20.16.0]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm install --force
+
+    - name: Build the project
+      run: npm run build --if-present
+
+    - name: Deploy with PM2 (Development)
+      run: |
+        # Navigate to the correct project directory
+        cd /path/to/action/runner/_work/dev/dev
+
+        # Stop the dev process if running
+        pm2 stop dev-app || true  
+
+        # Start the app using PM2 with the specified name
+        pm2 start npm --name "dev-app" -- run start:dev  
+
+        # Save the PM2 process list
+        pm2 save
