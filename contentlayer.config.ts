@@ -5,6 +5,7 @@ const Blog = defineDocumentType(() => ({
   name: "Blog",
   filePathPattern: "blogs/**/*.mdx",
   contentType: "mdx",
+  disableImportAliasWarning: true,
   fields: {
     title: {
       type: "string",
